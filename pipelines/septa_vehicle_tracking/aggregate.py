@@ -6,15 +6,19 @@ Produces: $TFP_DATA_DIR/septa_tracking/trip_runs.parquet (one row per trip run)
           datasets/septa_bus_delay/*.csv                  (committed to the repo)
 Run:      python aggregate.py
 
-Each trip run is matched to the GTFS schedule version that was in force on its
-service day: the latest version that took effect on or before that day and
-contains the trip_id. That gives the route as published, direction, and
-scheduled start hour.
+Each trip run is matched to the GTFS schedule version in force on its service
+day (the latest version that took effect on or before that day). Trips whose
+trip_id is not in that version are left unmatched rather than borrowed from an
+older version, because SEPTA sometimes reuses a trip_id for a different route.
+The match gives the published route, direction and scheduled start time, and
+the scheduled start time sets the service day.
 
 The tables are descriptive only (counts and delay percentiles). Choices like
 an on-time cutoff or peak-period windows are left to whoever uses the data.
 """
 
+import hashlib
+import shutil
 from pathlib import Path
 
 import duckdb
@@ -47,37 +51,71 @@ VISIT_METRICS = f"""
 """
 
 
+def input_fingerprint(work):
+    """Changes whenever this script, the stop visits or the GTFS index change."""
+    h = hashlib.sha256(Path(__file__).read_bytes())
+    inputs = sorted((work / "septa_tracking" / "stop_visits").glob("month=*/*.parquet"))
+    inputs.append(work / "septa_gtfs" / "trips_index.parquet")
+    for path in inputs:
+        stat = path.stat()
+        h.update(f"{path}|{stat.st_size}|{stat.st_mtime_ns}\n".encode())
+    return h.hexdigest()
+
+
 def build_runs(con, visits, work, runs_path):
     con.execute(
         f"""
         COPY (
         WITH r AS (
-            SELECT trip_id, run_start, any_value(service_date) AS service_date,
+            SELECT trip_id, run_start, any_value(service_date) AS observed_service_date,
                    count(*) AS stop_visits,
                    arg_min(delay_minutes, reached_at) AS first_delay_min,
                    arg_max(delay_minutes, reached_at) AS last_delay_min
             FROM {visits} GROUP BY trip_id, run_start
         ),
-        candidates AS (
-            SELECT r.trip_id, r.run_start, t.*,
-                   row_number() OVER (PARTITION BY r.trip_id, r.run_start
-                                      ORDER BY t.feed_effective DESC, t.feed_version DESC) AS pick
+        versions AS (
+            SELECT DISTINCT feed_version, feed_effective
+            FROM read_parquet('{work}/septa_gtfs/trips_index.parquet')
+        ),
+        in_force AS (
+            SELECT r.trip_id, r.run_start, v.feed_version
+            FROM r ASOF JOIN versions v ON r.observed_service_date >= v.feed_effective
+        ),
+        matched AS (
+            SELECT r.*, t.feed_version, upper(t.route_short_name) AS route_short_name,
+                   {MODES} AS mode, t.direction_id, t.trip_headsign,
+                   CAST(split_part(t.first_departure, ':', 1) AS INTEGER) AS start_hour,
+                   CAST(split_part(t.first_departure, ':', 1) AS INTEGER) * 3600
+                     + CAST(split_part(t.first_departure, ':', 2) AS INTEGER) * 60
+                     + CAST(split_part(t.first_departure, ':', 3) AS INTEGER) AS start_seconds
             FROM r
-            JOIN read_parquet('{work}/septa_gtfs/trips_index.parquet') t
-              ON t.trip_id = r.trip_id AND t.feed = 'bus'
-             AND t.feed_effective <= r.service_date
+            LEFT JOIN in_force f USING (trip_id, run_start)
+            LEFT JOIN read_parquet('{work}/septa_gtfs/trips_index.parquet') t
+              ON t.feed = 'bus' AND t.feed_version = f.feed_version AND t.trip_id = r.trip_id
+        ),
+        dated AS (
+            -- The service day is the local date whose midnight plus the scheduled
+            -- start time lands nearest the first poll. This puts a 26:50 (2:50 a.m.)
+            -- owl trip on the day before, however late it was first seen.
+            SELECT * EXCLUDE (start_seconds),
+                   coalesce(
+                       CAST(timezone('America/New_York', run_start)
+                            - to_seconds(start_seconds) + INTERVAL 12 HOUR AS DATE),
+                       observed_service_date) AS service_date
+            FROM matched
         )
-        SELECT r.*, strftime(r.service_date, '%Y-%m') AS month,
-               CASE dayofweek(r.service_date) WHEN 0 THEN 'sunday'
-                    WHEN 6 THEN 'saturday' ELSE 'weekday' END AS day_type,
-               c.feed_version, c.route_short_name, {MODES} AS mode,
-               c.direction_id, c.trip_headsign,
-               CAST(split_part(c.first_departure, ':', 1) AS INTEGER) AS start_hour
-        FROM r LEFT JOIN candidates c
-          ON c.trip_id = r.trip_id AND c.run_start = r.run_start AND c.pick = 1
+        SELECT *, strftime(service_date, '%Y-%m') AS month,
+               CASE dayofweek(service_date) WHEN 0 THEN 'sunday'
+                    WHEN 6 THEN 'saturday' ELSE 'weekday' END AS day_type
+        FROM dated
         ) TO '{runs_path}' (FORMAT parquet)
         """
     )
+
+
+def month_index(month):
+    year, mon = month.split("-")
+    return int(year) * 12 + int(mon)
 
 
 def main():
@@ -89,41 +127,53 @@ def main():
     con.execute(f"SET threads = {THREADS}")
     con.execute("SET preserve_insertion_order = false")
 
-    visits = (f"read_parquet('{work}/septa_tracking/stop_visits/*/*.parquet', "
-              "hive_partitioning = true)")
-    runs_path = work / "septa_tracking" / "trip_runs.parquet"
+    tracking = work / "septa_tracking"
+    visit_dirs = tracking / "stop_visits"
+    visits = f"read_parquet('{visit_dirs}/month=*/*.parquet', hive_partitioning = true)"
+    runs_path = tracking / "trip_runs.parquet"
+    parts = tracking / "csv_parts"
 
-    # One row per trip run (about 3M), matched to its schedule. This is the only
-    # table built up front; each CSV below streams the stop visits against it.
-    # Delete trip_runs.parquet and csv_parts/ to rebuild from scratch.
+    # trip_runs.parquet and csv_parts/ let a crashed run resume. Throw both away
+    # whenever the inputs or this script change, so stale results are never reused.
+    fingerprint = input_fingerprint(work)
+    stamp = tracking / "aggregate_inputs.sha256"
+    if not stamp.exists() or stamp.read_text() != fingerprint:
+        runs_path.unlink(missing_ok=True)
+        shutil.rmtree(parts, ignore_errors=True)
+        stamp.unlink(missing_ok=True)
+
+    # One row per trip run (about 3M), matched to its schedule.
     if not runs_path.exists():
-        build_runs(con, visits, work, runs_path)
+        tmp = runs_path.with_name(runs_path.name + ".tmp")
+        build_runs(con, visits, work, tmp)
+        tmp.rename(runs_path)
+        stamp.write_text(fingerprint)
     matched, total = con.execute(
         f"SELECT count(route_short_name), count(*) FROM '{runs_path}'"
     ).fetchone()
     print(f"matched {matched:,} of {total:,} trip runs to a schedule ({matched / total:.1%})")
 
-
     con.execute(f"CREATE TABLE runs AS SELECT * FROM '{runs_path}' "
                 "WHERE route_short_name IS NOT NULL")
     months = [r[0] for r in con.execute("SELECT DISTINCT month FROM runs ORDER BY 1").fetchall()]
+    visit_months = sorted(p.name.split("=")[1] for p in visit_dirs.glob("month=*"))
 
-    # Tables with many groups are built a month at a time, reading only that
-    # month's files, so DuckDB never has to hold the whole year's state.
+    # Tables with many groups are built a month at a time, so DuckDB never has
+    # to hold the whole year's state.
     by_month = {
         "route_month.csv": (f"""
             SELECT mode, route_short_name AS route, month, {VISIT_METRICS}
-            FROM v GROUP BY ALL""", "mode, route, month"),
+            FROM vm GROUP BY ALL""", "mode, route, month"),
         "route_month_hour.csv": (f"""
             SELECT mode, route_short_name AS route, direction_id, month, day_type,
                    start_hour AS scheduled_start_hour, {VISIT_METRICS}
-            FROM v GROUP BY ALL""",
+            FROM vm GROUP BY ALL""",
             "mode, route, direction_id, month, day_type, scheduled_start_hour"),
         "stop_route_month.csv": (f"""
             SELECT stop_id, mode, route_short_name AS route, direction_id, month,
                    {VISIT_METRICS}
-            FROM v GROUP BY ALL HAVING count(*) >= 20""",
-            "stop_id, route, direction_id, month"),
+            FROM vm GROUP BY ALL HAVING count(*) >= 20""",
+            "stop_id, mode, route, direction_id, month"),
     }
     whole_year = {
         "route_end_of_trip_month.csv": f"""
@@ -136,31 +186,34 @@ def main():
             FROM runs GROUP BY ALL ORDER BY service_date""",
     }
 
-    parts = work / "septa_tracking" / "csv_parts"
     parts.mkdir(exist_ok=True)
-    visit_dirs = work / "septa_tracking" / "stop_visits"
-    for i, month in enumerate(months):
-        # A trip's service month can differ from the calendar month of its stop
-        # visits (late-night trips cross midnight), so read this month's files
-        # and the next month's, and keep only trips in this service month.
-        files = [f"'{visit_dirs}/month={m}/*.parquet'" for m in months[i:i + 2]]
+    for month in months:
+        todo = [name for name in by_month if not (parts / f"{name}.{month}").exists()]
+        if not todo:
+            continue
+        # A run's service month can differ from the month it started in (a trip
+        # just after midnight on the 1st can belong to the last day of the month
+        # before), so read the visit files for this month and its neighbors.
+        nearby = [m for m in visit_months if abs(month_index(m) - month_index(month)) <= 1]
+        files = ", ".join(f"'{visit_dirs}/month={m}/*.parquet'" for m in nearby)
         con.execute(
             f"""
-            CREATE OR REPLACE VIEW v AS
+            CREATE OR REPLACE TEMP TABLE vm AS
             SELECT s.stop_id, s.delay_minutes, s.trip_id || '|' || s.run_start AS run_key,
-                   runs.*
-            FROM read_parquet([{', '.join(files)}]) s
+                   runs.mode, runs.route_short_name, runs.direction_id, runs.month,
+                   runs.day_type, runs.start_hour
+            FROM read_parquet([{files}]) s
             JOIN runs USING (trip_id, run_start)
             WHERE runs.month = '{month}'
             """
         )
-        for name, (sql, _) in by_month.items():
+        for name in todo:
             part = parts / f"{name}.{month}"
-            if not part.exists():
-                tmp = part.with_name(part.name + ".tmp")
-                con.execute(f"COPY ({sql}) TO '{tmp}' (HEADER, DELIMITER ',')")
-                tmp.rename(part)
+            tmp = part.with_name(part.name + ".tmp")
+            con.execute(f"COPY ({by_month[name][0]}) TO '{tmp}' (HEADER, DELIMITER ',')")
+            tmp.rename(part)
         print(f"{month}: done", flush=True)
+    con.execute("DROP TABLE IF EXISTS vm")
 
     for name, (_, order) in by_month.items():
         whole_year[name] = (f"SELECT * FROM read_csv('{parts}/{name}.*', all_varchar = true) "
@@ -168,7 +221,8 @@ def main():
     for name, sql in whole_year.items():
         path = OUT_DIR / name
         con.execute(f"COPY ({sql}) TO '{path}' (HEADER, DELIMITER ',')")
-        rows = con.execute(f"SELECT count(*) FROM read_csv('{path}')").fetchone()[0]
+        rows = con.execute(
+            f"SELECT count(*) FROM read_csv('{path}', all_varchar = true)").fetchone()[0]
         print(f"wrote {name}: {rows:,} rows, {path.stat().st_size / 1e6:.1f} MB", flush=True)
 
 

@@ -47,21 +47,25 @@ with little memory, lower `TFP_MEMORY_LIMIT` (default `3GB`) and `TFP_THREADS`
 ## Method
 
 1. **Ingest.** The CSV is read straight from the zip. Rows with no GPS fix
-   (timestamp 0, blank position; mostly Regional Rail) are dropped. Route IDs
-   are normalized, since the feed spells some several ways (`T5 BUS`,
-   `T5 Bus`, `T5_BUS`).
+   (timestamp 0, blank position; mostly Regional Rail) are dropped.
 2. **Stop visits.** The feed records each vehicle on every poll, so a bus stuck
    in traffic shows up many more times than one running on time. Averaging raw
    rows would overweight slow trips. Instead, each trip is cut into stop
    visits: an unbroken stretch of polls with the same `next_stop_id`. The
    delay at the last poll of that stretch is the delay as the vehicle reaches
    the stop. SEPTA reuses a `trip_id` every day a trip runs, so a gap of more
-   than 90 minutes starts a new run.
+   than 90 minutes starts a new run. Runs are assembled with a day of data on
+   either side of each month, so trips crossing midnight at a month's end stay
+   whole.
 3. **Match to the schedule.** Each run is matched to the GTFS version in force
    on its service day (the latest release that took effect on or before that
-   day and contains the `trip_id`). That supplies the published route name,
-   direction and scheduled start time. Trips starting before 3 a.m. count
-   toward the previous service day.
+   day). A `trip_id` missing from that version is left unmatched rather than
+   looked up in an older one, since SEPTA occasionally reuses IDs for other
+   routes. The match supplies the published route name, direction and
+   scheduled start time. Route names are upper-cased because SEPTA spells some
+   inconsistently between versions (`T5 Bus` / `T5 BUS`). The service day comes
+   from the scheduled start: GTFS writes an owl trip leaving at 2:50 a.m. as
+   `26:50` on the previous day, and the trip is counted on that day.
 4. **Summarize.** Counts and delay percentiles by route, direction, month,
    day type and scheduled start hour. No on-time cutoff or peak windows are
    applied. See the dataset README for column definitions.

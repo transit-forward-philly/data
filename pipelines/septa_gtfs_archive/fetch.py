@@ -10,11 +10,14 @@ Run:      python fetch.py 2025-11-01 2026-10-31
           (start and end dates of the period you need schedules for)
 
 Already-downloaded versions are skipped, so rerunning only fetches new ones.
+Set TFP_MEMORY_LIMIT and TFP_THREADS (as for the vehicle-tracking pipeline) to
+limit how much memory DuckDB uses while indexing.
 """
 
 import io
 import json
 import os
+import shutil
 import sys
 import urllib.request
 import zipfile
@@ -24,6 +27,8 @@ from pathlib import Path
 import duckdb
 
 RELEASES_URL = "https://api.github.com/repos/septadev/GTFS/releases?per_page=100&page={page}"
+MEMORY_LIMIT = os.environ.get("TFP_MEMORY_LIMIT", "3GB")
+THREADS = int(os.environ.get("TFP_THREADS", "2"))
 
 
 def data_dir():
@@ -61,23 +66,31 @@ def pick_versions(releases, start, end):
 
 def download(tag, url, root):
     target = root / tag
-    if (target / "bus" / "trips.txt").exists():
+    if target.exists():
         return
     print(f"downloading {tag}")
     with urllib.request.urlopen(url) as resp:
         outer = zipfile.ZipFile(io.BytesIO(resp.read()))
+    # Unpack into a temporary folder and rename at the end, so an interrupted
+    # download is retried next time instead of being mistaken for a complete one.
+    tmp = root / f".tmp-{tag}"
+    shutil.rmtree(tmp, ignore_errors=True)
     # SEPTA ships two feeds inside one zip: google_bus.zip and google_rail.zip.
     for inner_name, mode in (("google_bus.zip", "bus"), ("google_rail.zip", "rail")):
         inner = zipfile.ZipFile(io.BytesIO(outer.read(inner_name)))
-        dest = target / mode
-        dest.mkdir(parents=True, exist_ok=True)
+        dest = tmp / mode
+        dest.mkdir(parents=True)
         for name in inner.namelist():
             if name.endswith(".txt") and "/" not in name:
                 (dest / name).write_bytes(inner.read(name))
+    tmp.rename(target)
 
 
 def build_index(root, tags):
     con = duckdb.connect()
+    con.execute(f"SET temp_directory = '{root / 'duckdb_tmp'}'")
+    con.execute(f"SET memory_limit = '{MEMORY_LIMIT}'")
+    con.execute(f"SET threads = {THREADS}")
     parts = []
     for tag in tags:
         for mode in ("bus", "rail"):

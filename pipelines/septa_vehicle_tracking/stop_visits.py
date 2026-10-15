@@ -16,7 +16,13 @@ Steps, for bus, trolley and Metro (Regional Rail is left for later):
      operates, so a gap of more than 90 minutes starts a new run.
   3. Within a run, each unbroken stretch of the same next_stop_id is one stop
      visit. Its delay is the delay at the last poll of that stretch.
+
+Output is filed by the calendar month (Eastern time) in which each run starts.
+Each month also reads a day on either side, so a trip that crosses midnight at
+the end of a month stays one run instead of being cut in two.
 """
+
+import shutil
 
 import duckdb
 
@@ -38,12 +44,20 @@ def main():
     con.execute("SET preserve_insertion_order = false")
     months = sorted(p.name.split("=")[1] for p in positions.glob("month=*"))
 
-    for month in months:
+    for i, month in enumerate(months):
         target = out_dir / f"month={month}"
         if target.exists():
             print(f"{month}: already built, skipping")
             continue
-        target.mkdir()
+        # Write to a temporary folder and rename at the end, so a crash never
+        # leaves a half-built month that later runs would mistake for done.
+        tmp = out_dir / f".tmp-month={month}"
+        if tmp.exists():
+            shutil.rmtree(tmp)
+        tmp.mkdir()
+        files = ", ".join(f"'{positions}/month={m}/*.parquet'" for m in months[max(i - 1, 0):i + 2])
+        start = f"timezone('America/New_York', TIMESTAMP '{month}-01')"
+        end = f"timezone('America/New_York', TIMESTAMP '{month}-01' + INTERVAL 1 MONTH)"
         con.execute(
             f"""
             COPY (
@@ -51,8 +65,10 @@ def main():
                 SELECT DISTINCT ON (trip_id, observed_at)
                        trip_id, route_id, next_stop_id, observed_at, delay_minutes,
                        seat_availability
-                FROM read_parquet('{positions}/month={month}/*.parquet')
+                FROM read_parquet([{files}])
                 WHERE feed = 'bus_metro' AND trip_id IS NOT NULL
+                  AND observed_at >= {start} - INTERVAL 1 DAY
+                  AND observed_at < {end} + INTERVAL 1 DAY
                   AND next_stop_id IS NOT NULL AND delay_minutes IS NOT NULL
                 ORDER BY trip_id, observed_at, polled_at DESC
             ),
@@ -93,10 +109,12 @@ def main():
                 arg_max(seat_availability, observed_at) AS seat_availability,
                 count(*) AS polls
             FROM runs
+            WHERE run_start >= {start} AND run_start < {end}
             GROUP BY trip_id, run_no, run_start, visit_no, next_stop_id
-            ) TO '{target}' (FORMAT parquet, COMPRESSION zstd, PER_THREAD_OUTPUT true)
+            ) TO '{tmp}' (FORMAT parquet, COMPRESSION zstd, PER_THREAD_OUTPUT true)
             """
         )
+        tmp.rename(target)
         visits, runs = con.execute(
             f"""SELECT count(*), count(DISTINCT (trip_id, run_start))
                 FROM read_parquet('{target}/*.parquet')"""
