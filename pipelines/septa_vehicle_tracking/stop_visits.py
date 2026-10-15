@@ -97,7 +97,8 @@ def main():
             )
             SELECT
                 trip_id,
-                -- Service day: trips that start before 3 a.m. belong to the day before.
+                -- Rough service day (first poll minus 3 hours), used only to pick a GTFS
+                -- version. aggregate.py sets the real service day from the schedule.
                 CAST(timezone('America/New_York', run_start) - INTERVAL 3 HOUR AS DATE)
                     AS service_date,
                 run_start,

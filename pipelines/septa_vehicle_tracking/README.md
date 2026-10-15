@@ -26,8 +26,9 @@ the TFP data committee.
 ## How to run
 
 Needs Python 3.11+ and about 20 GB of free disk for working files (an external
-drive is fine). On a laptop writing to a USB drive the steps took about 20,
-10, 25 and 20 minutes.
+drive is fine). On an 8 GB laptop writing to a USB drive the four steps took
+about 20, 10, 75 and 25 minutes. `stop_visits.py` is slow because each month
+also reads its neighbors; it prints a line as each month finishes.
 
 ```bash
 pip install -r requirements.txt

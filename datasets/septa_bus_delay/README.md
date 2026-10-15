@@ -21,7 +21,7 @@ which describes the method in full. In short:
    visits**: the delay at the last poll before the vehicle's next stop changes.
    This avoids overweighting slow trips, which show up in more polls.
 2. Each trip is matched to the GTFS schedule version in force that day, for
-   route, direction and scheduled start time. 95.3% of 3.13M trip runs matched;
+   route, direction and scheduled start time. 95.6% of 3.13M trip runs matched;
    unmatched trips are left out of these tables.
 3. The tables give counts and delay percentiles only. **No on-time cutoff or
    peak-period definition is applied**; use the hourly table to group hours
@@ -34,10 +34,10 @@ which describes the method in full. In short:
 
 | File | Rows | Description |
 |---|---|---|
-| `route_month.csv` | 1,938 | Route × month |
-| `route_month_hour.csv` | 167,387 | Route × direction × month × day type × scheduled start hour |
-| `route_end_of_trip_month.csv` | 1,938 | Route × month, delay at the last stop observed on each trip |
-| `stop_route_month.csv` | 222,898 | Stop × route × direction × month (groups with 20+ stop visits) |
+| `route_month.csv` | 1,939 | Route × month |
+| `route_month_hour.csv` | 167,563 | Route × direction × month × day type × scheduled start hour |
+| `route_end_of_trip_month.csv` | 1,939 | Route × month, delay at the last stop observed on each trip |
+| `stop_route_month.csv` | 222,986 | Stop × route × direction × month (groups with 20+ stop visits) |
 | `coverage_by_day.csv` | 281 | Trips and stop visits observed each service day |
 
 ## Columns

@@ -62,55 +62,72 @@ def input_fingerprint(work):
     return h.hexdigest()
 
 
+def match_sql(trips, source, date_col):
+    """Match each run in `source` to the GTFS version in force on `date_col`."""
+    return f"""
+        SELECT s.*, t.feed_version, upper(t.route_short_name) AS route_short_name,
+               {MODES} AS mode, t.direction_id, t.trip_headsign,
+               CAST(split_part(t.first_departure, ':', 1) AS INTEGER) AS start_hour,
+               CAST(split_part(t.first_departure, ':', 1) AS INTEGER) * 3600
+                 + CAST(split_part(t.first_departure, ':', 2) AS INTEGER) * 60
+                 + CAST(split_part(t.first_departure, ':', 3) AS INTEGER) AS start_seconds
+        FROM {source} s
+        LEFT JOIN (
+            SELECT s.trip_id, s.run_start, v.feed_version
+            FROM {source} s ASOF JOIN versions v ON s.{date_col} >= v.feed_effective
+        ) f USING (trip_id, run_start)
+        LEFT JOIN {trips} t
+          ON t.feed = 'bus' AND t.feed_version = f.feed_version AND t.trip_id = s.trip_id
+    """
+
+
 def build_runs(con, visits, work, runs_path):
+    trips = f"read_parquet('{work}/septa_gtfs/trips_index.parquet')"
     con.execute(
         f"""
         COPY (
         WITH r AS (
-            SELECT trip_id, run_start, any_value(service_date) AS observed_service_date,
+            SELECT trip_id, run_start, any_value(service_date) AS observed_date,
                    count(*) AS stop_visits,
                    arg_min(delay_minutes, reached_at) AS first_delay_min,
                    arg_max(delay_minutes, reached_at) AS last_delay_min
             FROM {visits} GROUP BY trip_id, run_start
         ),
+        -- SEPTA sometimes reissues a version for the same start date (v202608232,
+        -- then v202608233). Keep only the latest reissue for each date, so the
+        -- match is the same on every run.
         versions AS (
-            SELECT DISTINCT feed_version, feed_effective
-            FROM read_parquet('{work}/septa_gtfs/trips_index.parquet')
+            SELECT feed_effective, max(feed_version) AS feed_version
+            FROM {trips} GROUP BY feed_effective
         ),
-        in_force AS (
-            SELECT r.trip_id, r.run_start, v.feed_version
-            FROM r ASOF JOIN versions v ON r.observed_service_date >= v.feed_effective
-        ),
-        matched AS (
-            SELECT r.*, t.feed_version, upper(t.route_short_name) AS route_short_name,
-                   {MODES} AS mode, t.direction_id, t.trip_headsign,
-                   CAST(split_part(t.first_departure, ':', 1) AS INTEGER) AS start_hour,
-                   CAST(split_part(t.first_departure, ':', 1) AS INTEGER) * 3600
-                     + CAST(split_part(t.first_departure, ':', 2) AS INTEGER) * 60
-                     + CAST(split_part(t.first_departure, ':', 3) AS INTEGER) AS start_seconds
-            FROM r
-            LEFT JOIN in_force f USING (trip_id, run_start)
-            LEFT JOIN read_parquet('{work}/septa_gtfs/trips_index.parquet') t
-              ON t.feed = 'bus' AND t.feed_version = f.feed_version AND t.trip_id = r.trip_id
-        ),
+        -- Pass 1: a rough match on the observed date, only to read the trip's
+        -- scheduled start time. The service day is the local date whose midnight
+        -- plus that start time lands nearest the first poll, which puts a 26:50
+        -- (2:50 a.m.) owl trip on the day before, however late it was first seen.
+        first_pass AS ({match_sql(trips, 'r', 'observed_date')}),
         dated AS (
-            -- The service day is the local date whose midnight plus the scheduled
-            -- start time lands nearest the first poll. This puts a 26:50 (2:50 a.m.)
-            -- owl trip on the day before, however late it was first seen.
-            SELECT * EXCLUDE (start_seconds),
+            SELECT r.*,
                    coalesce(
-                       CAST(timezone('America/New_York', run_start)
-                            - to_seconds(start_seconds) + INTERVAL 12 HOUR AS DATE),
-                       observed_service_date) AS service_date
-            FROM matched
-        )
-        SELECT *, strftime(service_date, '%Y-%m') AS month,
+                       CAST(timezone('America/New_York', r.run_start)
+                            - to_seconds(m.start_seconds) + INTERVAL 12 HOUR AS DATE),
+                       r.observed_date) AS service_date
+            FROM r JOIN first_pass m USING (trip_id, run_start)
+        ),
+        -- Pass 2: the real match, against the version in force on the service day.
+        final AS ({match_sql(trips, 'dated', 'service_date')})
+        SELECT * EXCLUDE (start_seconds, observed_date),
+               strftime(service_date, '%Y-%m') AS month,
                CASE dayofweek(service_date) WHEN 0 THEN 'sunday'
                     WHEN 6 THEN 'saturday' ELSE 'weekday' END AS day_type
-        FROM dated
+        FROM final
         ) TO '{runs_path}' (FORMAT parquet)
         """
     )
+
+
+def natural(col):
+    """Sort numerically where the value is a number (route 2 before 10), else as text."""
+    return f"TRY_CAST({col} AS INTEGER) NULLS LAST, {col}"
 
 
 def month_index(month):
@@ -163,23 +180,26 @@ def main():
     by_month = {
         "route_month.csv": (f"""
             SELECT mode, route_short_name AS route, month, {VISIT_METRICS}
-            FROM vm GROUP BY ALL""", "mode, route, month"),
+            FROM vm GROUP BY ALL""", f"mode, {natural('route')}, month"),
         "route_month_hour.csv": (f"""
             SELECT mode, route_short_name AS route, direction_id, month, day_type,
                    start_hour AS scheduled_start_hour, {VISIT_METRICS}
             FROM vm GROUP BY ALL""",
-            "mode, route, direction_id, month, day_type, scheduled_start_hour"),
+            f"mode, {natural('route')}, direction_id, month, day_type, "
+            "CAST(scheduled_start_hour AS INTEGER)"),
         "stop_route_month.csv": (f"""
             SELECT stop_id, mode, route_short_name AS route, direction_id, month,
                    {VISIT_METRICS}
             FROM vm GROUP BY ALL HAVING count(*) >= 20""",
-            "stop_id, mode, route, direction_id, month"),
+            f"{natural('stop_id')}, mode, {natural('route')}, direction_id, month"),
     }
     whole_year = {
         "route_end_of_trip_month.csv": f"""
-            SELECT mode, route_short_name AS route, month, count(*) AS trips_observed,
-                   {delay_stats('last_delay_min')}
-            FROM runs GROUP BY ALL ORDER BY mode, route, month""",
+            SELECT * FROM (
+                SELECT mode, route_short_name AS route, month, count(*) AS trips_observed,
+                       {delay_stats('last_delay_min')}
+                FROM runs GROUP BY ALL
+            ) ORDER BY mode, {natural('route')}, month""",
         "coverage_by_day.csv": """
             SELECT service_date, count(*) AS trips_observed,
                    sum(stop_visits) AS stop_visits, count(DISTINCT route_short_name) AS routes
@@ -216,8 +236,9 @@ def main():
     con.execute("DROP TABLE IF EXISTS vm")
 
     for name, (_, order) in by_month.items():
-        whole_year[name] = (f"SELECT * FROM read_csv('{parts}/{name}.*', all_varchar = true) "
-                            f"ORDER BY {order}")
+        # Only finished parts (name.YYYY-MM), never a .tmp left by a crash.
+        whole_year[name] = (f"SELECT * FROM read_csv('{parts}/{name}.????-??', "
+                            f"all_varchar = true) ORDER BY {order}")
     for name, sql in whole_year.items():
         path = OUT_DIR / name
         con.execute(f"COPY ({sql}) TO '{path}' (HEADER, DELIMITER ',')")
