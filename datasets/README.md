@@ -4,4 +4,4 @@ Cleaned, documented datasets. Each dataset gets its own folder with its data fil
 
 | Dataset | Description | Last updated |
 |---|---|---|
-| *None yet* | | |
+| [`septa_bus_delay`](septa_bus_delay/) | SEPTA bus, trolley and Metro delay by route, stop, month and hour, Nov 2025 – Oct 2026 | 2026-10-15 |
