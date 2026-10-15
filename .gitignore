@@ -1,0 +1,23 @@
+# Large raw inputs: download these with a script in pipelines/ instead of committing them
+*.zip
+*.osm.pbf
+*.gz
+raw/
+cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Secrets and local settings
+.env
+*.key
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
