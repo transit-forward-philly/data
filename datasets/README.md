@@ -4,4 +4,4 @@ Cleaned, documented datasets. Each dataset gets its own folder with its data fil
 
 | Dataset | Description | Last updated |
 |---|---|---|
-| *None yet* | | |
+| [SEPTA FY27 unfunded capital projects](septa-fy27-unfunded-projects/) | 46 deferred or descoped projects, $2.04B, by county, ADA projects flagged | 2026-10-15 |
