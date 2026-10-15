@@ -24,4 +24,4 @@ This repo is just getting started, so some folders are still empty.
 
 ## Contributing
 
-You don't need to write code to help. See [CONTRIBUTING.md](CONTRIBUTING.md).
+You don't need to write code to help, and you don't need to open pull requests either. See [CONTRIBUTING.md](CONTRIBUTING.md) for all the ways to contribute and [SECURITY.md](SECURITY.md) for how we keep the repo safe.
