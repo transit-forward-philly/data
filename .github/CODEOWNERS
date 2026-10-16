@@ -1,0 +1,14 @@
+# Who must review changes to each part of the repo.
+# A pull request touching these paths needs approval from a listed owner
+# once "Require review from Code Owners" is turned on for the main branch.
+#
+# Replace @CODE-REVIEWER with the GitHub username of the volunteer who
+# reviews scripts and automation.
+
+# Default: any maintainer can review
+*                @jongeeting
+
+# Code that runs: scripts, automation, and repo settings
+/pipelines/      @CODE-REVIEWER @jongeeting
+/.github/        @CODE-REVIEWER @jongeeting
+SECURITY.md      @CODE-REVIEWER @jongeeting
