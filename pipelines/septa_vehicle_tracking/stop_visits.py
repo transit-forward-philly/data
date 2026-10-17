@@ -22,7 +22,9 @@ Each month also reads a day on either side, so a trip that crosses midnight at
 the end of a month stays one run instead of being cut in two.
 """
 
+import hashlib
 import shutil
+from pathlib import Path
 
 import duckdb
 
@@ -31,11 +33,28 @@ from common import MEMORY_LIMIT, THREADS, data_dir
 RUN_GAP_MINUTES = 90
 
 
+def input_fingerprint(positions):
+    """Changes whenever this script or the ingested positions change."""
+    h = hashlib.sha256(Path(__file__).read_bytes())
+    for path in sorted(positions.glob("month=*/*.parquet")):
+        stat = path.stat()
+        h.update(f"{path}|{stat.st_size}|{stat.st_mtime_ns}\n".encode())
+    return h.hexdigest()
+
+
 def main():
     root = data_dir() / "septa_tracking"
     positions = root / "positions"
     out_dir = root / "stop_visits"
+    # Finished months are skipped so a crashed run can resume, but a new ingest
+    # or a change to this script means every month must be rebuilt.
+    fingerprint = input_fingerprint(positions)
+    stamp = root / "stop_visits_inputs.sha256"
+    if out_dir.exists() and (not stamp.exists() or stamp.read_text() != fingerprint):
+        print("positions or stop_visits.py changed; rebuilding every month")
+        shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+    stamp.write_text(fingerprint)
 
     con = duckdb.connect()
     con.execute(f"SET temp_directory = '{data_dir() / 'duckdb_tmp'}'")

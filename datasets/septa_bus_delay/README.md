@@ -35,12 +35,17 @@ which describes the method in full. In short:
 | File | Rows | Description |
 |---|---|---|
 | `route_month.csv` | 1,939 | Route × month |
-| `route_month_hour.csv` | 167,563 | Route × direction × month × day type × scheduled start hour |
+| `route_month_hour.csv` | 164,407 | Route × direction × month × day type × scheduled start hour (groups with 20+ stop visits) |
 | `route_end_of_trip_month.csv` | 1,939 | Route × month, delay at the last stop observed on each trip |
 | `stop_route_month.csv` | 222,986 | Stop × route × direction × month (groups with 20+ stop visits) |
-| `coverage_by_day.csv` | 281 | Trips and stop visits observed each service day |
+| `coverage_by_day.csv` | 281 | Trips and stop visits each service day, counting only trips matched to a schedule (the ones in the other tables) |
 
 ## Columns
+
+`route`, `stop_id` and `direction_id` are text (routes include `47M`, `T1`,
+`T5 BUS`). Tools that guess types from the first rows may read them as numbers
+and then fail; in DuckDB use `read_csv(..., sample_size = -1)`, in pandas
+`dtype={"route": str, "stop_id": str}`.
 
 | Column | Type | Units | Description |
 |---|---|---|---|

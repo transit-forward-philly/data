@@ -38,6 +38,7 @@ python ingest.py /path/to/septa_tracking_20261014.zip           # zip → monthl
 python ../septa_gtfs_archive/fetch.py 2025-11-01 2026-10-31      # past schedules
 python stop_visits.py                                            # one row per trip per stop
 python aggregate.py                                              # writes the CSVs
+python validate.py                                               # checks them
 ```
 
 Each step skips work that is already done, except `ingest.py`, which refuses
@@ -59,9 +60,12 @@ with little memory, lower `TFP_MEMORY_LIMIT` (default `3GB`) and `TFP_THREADS`
    either side of each month, so trips crossing midnight at a month's end stay
    whole.
 3. **Match to the schedule.** Each run is matched to the GTFS version in force
-   on its service day (the latest release that took effect on or before that
-   day). A `trip_id` missing from that version is left unmatched rather than
-   looked up in an older one, since SEPTA occasionally reuses IDs for other
+   on its service day (the latest start date on or before that day). SEPTA
+   sometimes issues several versions for one start date, and the real-time
+   feed keeps the older one's trip IDs until the newer one is published, so a
+   trip matches the latest of those versions that contains its `trip_id`. A
+   `trip_id` found in none of them is left unmatched rather than looked up
+   under an older start date, since SEPTA occasionally reuses IDs for other
    routes. The match supplies the published route name, direction and
    scheduled start time. Route names are upper-cased because SEPTA spells some
    inconsistently between versions (`T5 Bus` / `T5 BUS`). The service day comes

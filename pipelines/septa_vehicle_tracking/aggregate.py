@@ -26,6 +26,9 @@ import duckdb
 from common import MEMORY_LIMIT, THREADS, data_dir
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+# Groups with fewer stop visits than this are left out of the hourly and stop
+# tables, where percentiles from a handful of readings would be noise.
+MIN_VISITS = 20
 OUT_DIR = REPO_ROOT / "datasets" / "septa_bus_delay"
 
 MODES = """
@@ -63,7 +66,15 @@ def input_fingerprint(work):
 
 
 def match_sql(trips, source, date_col):
-    """Match each run in `source` to the GTFS version in force on `date_col`."""
+    """Match each run in `source` to the GTFS schedule in force on `date_col`.
+
+    The schedule in force is the latest start date on or before that day. SEPTA
+    sometimes issues several versions for one start date (v202602220, then
+    v202602221 two weeks later), and the real-time feed keeps using the older
+    one's trip_ids until the newer one is published. So a trip matches the
+    latest reissue for that start date that contains its trip_id. That is the
+    same answer on every run, and it never reaches back to an older start date.
+    """
     return f"""
         SELECT s.*, t.feed_version, upper(t.route_short_name) AS route_short_name,
                {MODES} AS mode, t.direction_id, t.trip_headsign,
@@ -73,11 +84,13 @@ def match_sql(trips, source, date_col):
                  + CAST(split_part(t.first_departure, ':', 3) AS INTEGER) AS start_seconds
         FROM {source} s
         LEFT JOIN (
-            SELECT s.trip_id, s.run_start, v.feed_version
-            FROM {source} s ASOF JOIN versions v ON s.{date_col} >= v.feed_effective
+            SELECT s.trip_id, s.run_start, d.feed_effective
+            FROM {source} s ASOF JOIN start_dates d ON s.{date_col} >= d.feed_effective
         ) f USING (trip_id, run_start)
         LEFT JOIN {trips} t
-          ON t.feed = 'bus' AND t.feed_version = f.feed_version AND t.trip_id = s.trip_id
+          ON t.feed = 'bus' AND t.feed_effective = f.feed_effective AND t.trip_id = s.trip_id
+        QUALIFY row_number() OVER (PARTITION BY s.trip_id, s.run_start
+                                   ORDER BY t.feed_version DESC NULLS LAST) = 1
     """
 
 
@@ -93,13 +106,7 @@ def build_runs(con, visits, work, runs_path):
                    arg_max(delay_minutes, reached_at) AS last_delay_min
             FROM {visits} GROUP BY trip_id, run_start
         ),
-        -- SEPTA sometimes reissues a version for the same start date (v202608232,
-        -- then v202608233). Keep only the latest reissue for each date, so the
-        -- match is the same on every run.
-        versions AS (
-            SELECT feed_effective, max(feed_version) AS feed_version
-            FROM {trips} GROUP BY feed_effective
-        ),
+        start_dates AS (SELECT DISTINCT feed_effective FROM {trips}),
         -- Pass 1: a rough match on the observed date, only to read the trip's
         -- scheduled start time. The service day is the local date whose midnight
         -- plus that start time lands nearest the first poll, which puts a 26:50
@@ -184,13 +191,13 @@ def main():
         "route_month_hour.csv": (f"""
             SELECT mode, route_short_name AS route, direction_id, month, day_type,
                    start_hour AS scheduled_start_hour, {VISIT_METRICS}
-            FROM vm GROUP BY ALL""",
+            FROM vm GROUP BY ALL HAVING count(*) >= {MIN_VISITS}""",
             f"mode, {natural('route')}, direction_id, month, day_type, "
             "CAST(scheduled_start_hour AS INTEGER)"),
         "stop_route_month.csv": (f"""
             SELECT stop_id, mode, route_short_name AS route, direction_id, month,
                    {VISIT_METRICS}
-            FROM vm GROUP BY ALL HAVING count(*) >= 20""",
+            FROM vm GROUP BY ALL HAVING count(*) >= {MIN_VISITS}""",
             f"{natural('stop_id')}, mode, {natural('route')}, direction_id, month"),
     }
     whole_year = {
