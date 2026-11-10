@@ -1,0 +1,15 @@
+parameter,value,unit,notes
+projected_active_cards,71036,students/month,"Labeled 'SEPTA-Anticipated Student Utilization Estimate'"
+monthly_rate_expansion,110.20,dollars/card/month,5% off $116 retail
+months_billed,12,months,Includes summer
+annual_cost_expansion,93938641,dollars,"71,036 x $110.20 x 12"
+annual_cost_current,30150580,dollars,Current program total
+additional_cost,63788061,dollars,Expansion minus current
+eligible_pool_public,111292,students,SDP grades 5-12 (district + charter + alternative)
+eligible_pool_nonpublic,19284,students,PDE grades 5-12 (schools in Philadelphia)
+eligible_pool_total,130576,students,Public + non-public
+implied_participation_rate,0.544,,71036 / 130576
+scope_grades,5-12,,"Exhibit A assumption 1: 5th Grade - 12th Grade Only"
+scope_summer,yes,,"Exhibit A assumption 2: Include Summer Months"
+scope_weekends,yes,,"Exhibit A assumption 3: Include Weekends"
+scope_schools,"district charter nonpublic",,"Exhibit A assumption 4"

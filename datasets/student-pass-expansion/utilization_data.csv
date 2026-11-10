@@ -1,0 +1,8 @@
+measure,value,denominator,rate,date,source
+eligible_students,68110,,,Dec 2024,Student Fares That Work (phillystudentfares.netlify.app/costs)
+cards_assigned,52563,68110,0.771,Dec 2024,Student Fares That Work
+cards_active_monthly,32067,52563,0.610,Dec 2024,Student Fares That Work
+cards_active_of_eligible,32067,68110,0.471,Dec 2024,Student Fares That Work
+avg_monthly_billed_12mo,28358,59706,0.475,FY (Exhibit A),Derived from $30.15M / $88.60 / 12
+avg_monthly_billed_10mo,34030,59706,0.570,School year (Exhibit A),Derived from $30.15M / $88.60 / 10
+septa_projection,71036,130576,0.544,Expansion (Exhibit A),SEPTA-Anticipated Student Utilization Estimate

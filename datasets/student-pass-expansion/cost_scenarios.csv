@@ -1,0 +1,10 @@
+scenario,active_cards_monthly,monthly_rate,months_billed,summer_factor,total_annual,additional_over_current,notes
+current_program,34030,88.60,10,0,30150580,0,Actual FY billing
+exhibit_a,71036,110.20,12,1.00,93938641,63788061,SDP estimate as filed
+school_year_only,71036,110.20,10,0,78265672,48115092,No summer billing
+full_year_reduced_summer,71036,110.20,10,0.53,86568543,56417963,"Summer at 53% of school-year rate"
+current_rate_12mo,71036,88.60,12,1.00,75525523,45374943,Keep current discount
+current_rate_10mo,71036,88.60,10,0,62937936,32787356,Current rate school year only
+flat_505_all_512,130576,,,505,65940880,35790300,"Flat $505/eligible student, all grades 5-12"
+add_56_keep_rule,40000,110.20,12,1.00,52896000,22745420,"Add grades 5-6 only, keep 1.5-mile rule (estimated)"
+remove_rule_712,56000,110.20,12,1.00,74054400,43903820,"Remove 1.5-mile rule for existing 7-12 (estimated)"
