@@ -5,7 +5,7 @@
 ## Source
 
 - **Concepts and scores:** "Transportation Bill Prioritization for the 2027-28 Session" (Jon Geeting, Build Philly Now, 2026-11-10). Bill numbers, sponsors and stages are secondhand there (LegiScan, BillTrack50, Legilist, FastDemocracy, member releases) and need a final check on palegis.us.
-- **Votes:** the transit votes dataset behind [vote-transit.netlify.app](https://vote-transit.netlify.app) (`/data/data.json`, as of 2026-10-05), which cites palegis.us roll calls.
+- **Votes:** the transit votes dataset behind [vote-transit.netlify.app](https://vote-transit.netlify.app) (`/data/data.json`, as of 2026-10-05) for HB 1788, HB 257 and SB 160; palegis.us roll calls fetched with the PA Housing Votes pipeline on 2026-11-10 for HB 291 (House roll call 13 and Appropriations committee vote 40).
 - **Pulled on:** 2026-11-10
 
 ## Processing
@@ -19,14 +19,15 @@ Concepts and roll calls are [gitsheets](../../../docs/gitsheets.md) (`.gitsheets
 | File | Format | Description |
 |---|---|---|
 | `concepts/*.toml` | TOML | 20 concepts, ranked, with component scores, tier, bills, sponsor, furthest stage |
-| `roll-calls/*.toml` | TOML | 4 roll calls: HB 1788 final passage; HB 257 Saval amendment tabling and final passage; SB 160 final passage |
-| `member-votes.csv` | CSV | 353 member votes, one row per member per roll call |
+| `roll-calls/*.toml` | TOML | 6 roll calls: HB 1788 final passage; HB 257 Saval amendment tabling and final passage; SB 160 final passage; HB 291 House final passage and House Appropriations re-report |
+| `member-votes.csv` | CSV | 592 member votes, one row per member per roll call |
 
 ## Known gaps and caveats
 
 - **Scores are draft.** The memo says so; `scores_status` stays `draft` until calibrated.
 - **Momentum labels are loose.** "Medium" stands for a momentum score of 2 in some rows and 3 in others, so `momentum_score_implied` is derived from the memo's own totals.
-- **Most bills have no floor vote.** HB 2635, SB 509, HB 1146, SB 796, SB 1072, HB 1085, HB 2129 and SB 910 are in committee. Still to add: the HB 291 House vote (183-19, 2025-02-03) and the June 17, 2025 House vote on the trust fund transfer bill, whose number the memo says to confirm (HB 1364).
+- **Most bills have no floor vote.** HB 2635, SB 509, HB 1146, SB 796, SB 1072, HB 1085, HB 2129 and SB 910 are in committee. Still to add: the June 17, 2025 House vote on the trust fund transfer bill, whose number the memo says to confirm (HB 1364).
+- **Two committee members have no district or party.** Joshua Siegel and Torren Ecker voted in the HB 291 Appropriations vote but are not in the May 2026 roster, so those fields are blank for them in `member-votes.csv`.
 - **Every 2025–26 bill dies on 2026-11-30.** Bill numbers here are placeholders until re-introduction in January.
 - **Cosponsor counts** are in the memo only for HB 2635 and are not in this dataset yet.
 
