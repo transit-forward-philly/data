@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-08-25T22:53:32",
+  "30min": {
+    "median_before": 31853,
+    "median_after": 29947,
+    "mean_change_pct": -3.1,
+    "block_groups_better": 322,
+    "block_groups_worse": 803
+  },
+  "45min": {
+    "median_before": 360280,
+    "median_after": 346985,
+    "mean_change_pct": -1.77,
+    "block_groups_better": 385,
+    "block_groups_worse": 901
+  },
+  "60min": {
+    "median_before": 536447,
+    "median_after": 530536,
+    "mean_change_pct": -0.6,
+    "block_groups_better": 550,
+    "block_groups_worse": 783
+  }
+}

@@ -1,0 +1,374 @@
+route_key,trips_before,stops_served_before,route_long_name_before,mode_before,trips_after,stops_served_after,route_long_name_after,mode_after,day,status,trips_delta,stops_served_delta,renamed,low_trip_route
+89,76.0,170.0,Front-Dauphin to Arrott Transit Ctr,bus,0.0,0.0,,,wednesday,removed,-76.0,-170.0,False,False
+44,104.0,189.0,Front-Market to Ardmore,bus,64.0,118.0,Front-Market to Ardmore,bus,wednesday,retained,-40.0,-71.0,False,False
+106,38.0,176.0,Paoli to 69th St Transit Center,bus,0.0,0.0,,,wednesday,removed,-38.0,-176.0,False,False
+45,199.0,79.0,Broad-Oregon to 12th-Vine,bus,164.0,96.0,Navy Yard/Brd-Oregon to 12th-Noble,bus,wednesday,retained,-35.0,17.0,True,False
+47M,31.0,87.0,Whitmn Plz to 7th-Spg Grd via 9thSt,bus,0.0,0.0,,,wednesday,removed,-31.0,-87.0,False,False
+73,104.0,68.0,Frankford TC to Richmnd-Westmorelnd,bus,75.0,69.0,Frankford TC to Richmnd-Westmorelnd,bus,wednesday,retained,-29.0,1.0,False,False
+4,101.0,202.0,Broad-Pattison to Fern Rock TC,bus,73.0,202.0,Broad-Pattison to Fern Rock TC,bus,wednesday,retained,-28.0,0.0,False,False
+32,122.0,157.0,Broad-Carpenter to Ridge-Lyceum,bus,96.0,157.0,Broad-Carpenter to Ridge-Lyceum,bus,wednesday,retained,-26.0,0.0,False,False
+39,92.0,115.0,Richmond-Cumberland to 33rd-Dauphin,bus,70.0,114.0,Richmond-Cumberland to 33rd-Dauphin,bus,wednesday,retained,-22.0,-1.0,False,False
+49,112.0,118.0,33rd-Dauphin to 29th-Snyder,bus,93.0,93.0,33rd-Dauphin to 40th-Baltimore,bus,wednesday,retained,-19.0,-25.0,True,False
+35,17.0,60.0,Manayunk Roxborough Loop,bus,0.0,0.0,,,wednesday,removed,-17.0,-60.0,False,False
+17,190.0,116.0,Front-Mkt to 20-Johnston/Broad-Pat,bus,174.0,93.0,Front-Mkt to 20-Johnston,bus,wednesday,retained,-16.0,-23.0,True,False
+46,155.0,65.0,58th-Baltimore to 63rd-Malvern,bus,142.0,64.0,58th-Baltimore to 63rd-Malvern,bus,wednesday,retained,-13.0,-1.0,False,False
+62,8.0,116.0,9th-Market to Andorra,bus,0.0,0.0,,,wednesday,removed,-8.0,-116.0,False,False
+54,137.0,109.0,Richmond-Cambria to 33rd-Dauphin,bus,130.0,107.0,Richmond-Cambria to 33rd-Dauphin,bus,wednesday,retained,-7.0,-2.0,False,False
+57,165.0,268.0,WhitmnPlz to RisngSun-Olney/FernRck,bus,158.0,257.0,WhitmnPlz to RisngSun-Olney/FernRck,bus,wednesday,retained,-7.0,-11.0,False,False
+80,7.0,38.0,Express Horsham to Olney TC,bus,0.0,0.0,,,wednesday,removed,-7.0,-38.0,False,False
+61,124.0,136.0,9th-Market to Manayunk,bus,119.0,152.0,9th-Market to Manayunk,bus,wednesday,retained,-5.0,16.0,False,False
+78,2.0,6.0,Express Cornwells Hghts to Ctr City,bus,0.0,0.0,,,wednesday,removed,-2.0,-6.0,False,True
+150,11.0,11.0,Parx Casino to Plymouth Meeting,bus,10.0,11.0,Parx Casino to Plymouth Meeting,bus,wednesday,retained,-1.0,0.0,False,False
+447,4.0,133.0,Frankford TC to Henry-Cinnaminson,bus,3.0,132.0,Frankford TC to Henry-Cinnaminson,bus,wednesday,retained,-1.0,-1.0,False,True
+65,167.0,129.0,Germantown-Chelten to 69th St TC,bus,166.0,132.0,Germantown-Chelten to 69th St TC,bus,wednesday,retained,-1.0,3.0,False,False
+1,54.0,252.0,Parx Casino to 54th-City,bus,54.0,251.0,Parx Casino to 54th-City,bus,wednesday,retained,0.0,-1.0,False,False
+103,57.0,89.0,Ardmore to 69th St Transit Center,bus,57.0,89.0,Ardmore to 69th St Transit Center,bus,wednesday,retained,0.0,0.0,False,False
+104,109.0,222.0,West Chester U to 69th St TC,bus,109.0,224.0,West Chester U to 69th St TC,bus,wednesday,retained,0.0,2.0,False,False
+107,47.0,190.0,Lawrence Park to 69th St TC,bus,47.0,190.0,Lawrence Park to 69th St TC,bus,wednesday,retained,0.0,0.0,False,False
+108,159.0,167.0,UPS/Airport to 69th St Transit Ctr,bus,159.0,173.0,UPS/Airport to 69th St Transit Ctr,bus,wednesday,retained,0.0,6.0,False,False
+109,119.0,156.0,Chester Transit Ctr to 69th St TC,bus,119.0,157.0,Chester Transit Ctr to 69th St TC,bus,wednesday,retained,0.0,1.0,False,False
+111,64.0,134.0,Chadds Ford to 69th St Transit Ctr,bus,64.0,132.0,Chadds Ford to 69th St Transit Ctr,bus,wednesday,retained,0.0,-2.0,False,False
+112,53.0,95.0,DCCC to 69th St Transit Center,bus,53.0,96.0,DCCC to 69th St Transit Center,bus,wednesday,retained,0.0,1.0,False,False
+113,151.0,279.0,Claymont TC to 69th St Transit Ctr,bus,151.0,280.0,Claymont TC to 69th St Transit Ctr,bus,wednesday,retained,0.0,1.0,False,False
+114,66.0,254.0,Wawa Station to Darby Transit Ctr,bus,66.0,254.0,Wawa Station to Darby Transit Ctr,bus,wednesday,retained,0.0,0.0,False,False
+115,47.0,234.0,DCCC/Darby Transit Ctr to Airport,bus,47.0,240.0,DCCC/Darby Transit Ctr to Airport,bus,wednesday,retained,0.0,6.0,False,False
+117,67.0,190.0,Penn State U to I-95 Industrial Pk,bus,67.0,191.0,Penn State U to I-95 Industrial Pk,bus,wednesday,retained,0.0,1.0,False,False
+118,29.0,129.0,Newtown Square to Chester TC,bus,29.0,129.0,Newtown Square to Chester TC,bus,wednesday,retained,0.0,0.0,False,False
+119,36.0,166.0,Cheyney U to Chester Transit Center,bus,36.0,166.0,Cheyney U to Chester Transit Center,bus,wednesday,retained,0.0,0.0,False,False
+12,98.0,95.0,Columbus-Dock to 50th-Woodland,bus,98.0,95.0,Columbus-Dock to 50th-Woodland,bus,wednesday,retained,0.0,0.0,False,False
+120,26.0,150.0,Cheyney U to 69th St Transit Center,bus,26.0,151.0,Cheyney U to 69th St Transit Center,bus,wednesday,retained,0.0,1.0,False,False
+123,53.0,62.0,King of Prussia to 69th St TC,bus,53.0,63.0,King of Prussia to 69th St TC,bus,wednesday,retained,0.0,1.0,False,False
+124,55.0,89.0,Chesterbrook to 13th-Market,bus,55.0,87.0,Chesterbrook to 13th-Market,bus,wednesday,retained,0.0,-2.0,False,False
+125,64.0,88.0,Valley Forge to 13th-Market,bus,64.0,86.0,Valley Forge to 13th-Market,bus,wednesday,retained,0.0,-2.0,False,False
+126,40.0,112.0,Lawrence Park via Manoa to 69th TC,bus,40.0,113.0,Lawrence Park via Manoa to 69th TC,bus,wednesday,retained,0.0,1.0,False,False
+127,26.0,122.0,Trenton Transit Ctr to OxfordValley,bus,26.0,122.0,Trenton Transit Ctr to OxfordValley,bus,wednesday,retained,0.0,0.0,False,False
+128,21.0,164.0,Neshaminy to Oxford Valley Mall,bus,21.0,165.0,Neshaminy to Oxford Valley Mall,bus,wednesday,retained,0.0,1.0,False,False
+129,35.0,202.0,Frankford-Knights to Oxford Valley,bus,35.0,202.0,Frankford-Knights to Oxford Valley,bus,wednesday,retained,0.0,0.0,False,False
+130,33.0,165.0,BCCC to Frankford-Knights,bus,33.0,165.0,BCCC to Frankford-Knights,bus,wednesday,retained,0.0,0.0,False,False
+131,46.0,67.0,Audubon to Norristown Transit Ctr,bus,46.0,67.0,Audubon to Norristown Transit Ctr,bus,wednesday,retained,0.0,0.0,False,False
+132,28.0,107.0,Telford to Montgomery Mall,bus,28.0,107.0,Telford to Montgomery Mall,bus,wednesday,retained,0.0,0.0,False,False
+133,11.0,51.0,Frankford-Knights to Bensalem,bus,11.0,51.0,Frankford-Knights to Bensalem,bus,wednesday,retained,0.0,0.0,False,False
+135,31.0,135.0,West Chester TC to Coatesville,bus,31.0,134.0,West Chester TC to Coatesville,bus,wednesday,retained,0.0,-1.0,False,False
+139,32.0,110.0,Limerick to King of Prussia,bus,32.0,113.0,Limerick to King of Prussia,bus,wednesday,retained,0.0,3.0,False,False
+16,107.0,162.0,City Hall to Cheltenham-Ogontz,bus,107.0,162.0,City Hall to Cheltenham-Ogontz,bus,wednesday,retained,0.0,0.0,False,False
+18,196.0,217.0,Fox Chase to Cedarbrook Plaza,bus,196.0,217.0,Fox Chase to Cedarbrook Plaza,bus,wednesday,retained,0.0,0.0,False,False
+19,49.0,177.0,Torresdale Station to Frankford TC,bus,49.0,157.0,Torresdale Station to Frankford TC,bus,wednesday,retained,0.0,-20.0,False,False
+2,127.0,177.0,20-Johnston to Pulaski-Hunting Park,bus,127.0,177.0,20-Johnston to Pulaski-Hunting Park,bus,wednesday,retained,0.0,0.0,False,False
+20,151.0,231.0,Philadelphia Mills to Frankford TC,bus,151.0,232.0,Philadelphia Mills to Frankford TC,bus,wednesday,retained,0.0,1.0,False,False
+206,15.0,48.0,Commons at Great Vly to Paoli Sta,bus,15.0,48.0,Commons at Great Vly to Paoli Sta,bus,wednesday,retained,0.0,0.0,False,False
+21,202.0,128.0,Columbus-Dock to 69th St TC,bus,202.0,128.0,Columbus-Dock to 69th St TC,bus,wednesday,retained,0.0,0.0,False,False
+22,93.0,228.0,Warminster/Willow Grove to Olney TC,bus,93.0,228.0,Warminster/Willow Grove to Olney TC,bus,wednesday,retained,0.0,0.0,False,False
+23,225.0,204.0,11th Market to Chestnut Hill,bus,225.0,205.0,11th Market to Chestnut Hill,bus,wednesday,retained,0.0,1.0,False,False
+24,72.0,183.0,Southamptn/Rockldge to Frankford TC,bus,72.0,183.0,Southamptn/Rockldge to Frankford TC,bus,wednesday,retained,0.0,0.0,False,False
+26,183.0,219.0,Frankford TC to Chelten Av Station,bus,183.0,219.0,Frankford TC to Chelten Av Station,bus,wednesday,retained,0.0,0.0,False,False
+27,120.0,158.0,Broad-Carpenter to Plymouth Meeting,bus,120.0,156.0,Broad-Carpenter to Plymouth Meeting,bus,wednesday,retained,0.0,-2.0,False,False
+28,65.0,203.0,Fern Rock TC to Torresdale-Cottman,bus,65.0,203.0,Fern Rock TC to Torresdale-Cottman,bus,wednesday,retained,0.0,0.0,False,False
+29,147.0,73.0,Pier 70 to 33rd-Dickinson,bus,147.0,73.0,Pier 70 to 33rd-Dickinson,bus,wednesday,retained,0.0,0.0,False,False
+3,171.0,144.0,33rd-Cecil B. Moore to Frankford TC,bus,171.0,144.0,33rd-Cecil B. Moore to Frankford TC,bus,wednesday,retained,0.0,0.0,False,False
+30,59.0,123.0,Gray 30th St Station to 69th St TC,bus,59.0,121.0,Gray 30th St Station to 69th St TC,bus,wednesday,retained,0.0,-2.0,False,False
+31,88.0,161.0,City Hall to 76th-City,bus,88.0,164.0,City Hall to 76th-City,bus,wednesday,retained,0.0,3.0,False,False
+310,35.0,31.0,Horsham Loop,bus,35.0,31.0,Horsham Loop,bus,wednesday,retained,0.0,0.0,False,False
+33,185.0,104.0,5th-Market to 23rd-Venango,bus,185.0,104.0,5th-Market to 23rd-Venango,bus,wednesday,retained,0.0,0.0,False,False
+37,107.0,182.0,Chester Transit Ctr to Broad-Snyder,bus,107.0,187.0,Chester Transit Ctr to Broad-Snyder,bus,wednesday,retained,0.0,5.0,False,False
+38,93.0,137.0,5th-Market to Wissahickon TC,bus,93.0,138.0,5th-Market to Wissahickon TC,bus,wednesday,retained,0.0,1.0,False,False
+409,1.0,49.0,59th-Balitmore to 84th-Crane,bus,1.0,49.0,59th-Balitmore to 84th-Crane,bus,wednesday,retained,0.0,0.0,False,True
+41,76.0,155.0,J - Cheltn-Wsshkn to Richmnd-Orthdx,bus,76.0,155.0,Chelten-Wissahckn to Richmnd-Orthdx,bus,wednesday,retained,0.0,0.0,True,False
+411,1.0,44.0,74th-Elmwood to 46th-Ludlow,bus,1.0,44.0,74th-Elmwood to 46th-Ludlow,bus,wednesday,retained,0.0,0.0,False,True
+415,1.0,24.0,46th-Ludlow to Passyunk-Elmwood,bus,1.0,24.0,46th-Ludlow to Passyunk-Elmwood,bus,wednesday,retained,0.0,0.0,False,True
+42,216.0,148.0,2nd-Spruce to 61st-Pine/Wycombe,bus,216.0,148.0,2nd-Spruce to 61st-Pine/Wycombe,bus,wednesday,retained,0.0,0.0,False,False
+426,2.0,84.0,Torresdale-Bridge to 10th-Lycoming,bus,2.0,84.0,Torresdale-Bridge to 10th-Lycoming,bus,wednesday,retained,0.0,0.0,False,True
+428,2.0,55.0,Richmond-Venango to 10th-Lycomng,bus,2.0,55.0,Richmond-Venango to 10th-Lycomng,bus,wednesday,retained,0.0,0.0,False,True
+43,98.0,114.0,Richmond-Cumberland to 50th-Parksde,bus,98.0,115.0,Richmond-Cumberland to 50th-Parksde,bus,wednesday,retained,0.0,1.0,False,False
+433,2.0,156.0,Castor-Cottman to 10th-Lycomng,bus,2.0,156.0,Castor-Cottman to 10th-Lycomng,bus,wednesday,retained,0.0,0.0,False,True
+438,2.0,52.0,Germantown to Upper Roxborough,bus,2.0,52.0,Germantown to Upper Roxborough,bus,wednesday,retained,0.0,0.0,False,True
+439,4.0,55.0,Germantown to Roxborough,bus,4.0,55.0,Germantown to Roxborough,bus,wednesday,retained,0.0,0.0,False,True
+441,2.0,77.0,Andorra/Roxborough to Broad-Vine,bus,2.0,77.0,Andorra/Roxborough to Broad-Vine,bus,wednesday,retained,0.0,0.0,False,True
+442,1.0,58.0,Henry-Roberts to Barren Hill,bus,1.0,58.0,Henry-Roberts to Barren Hill,bus,wednesday,retained,0.0,0.0,False,True
+445,1.0,86.0,Roxborough to Frankford Transit Ctr,bus,1.0,86.0,Roxborough to Frankford Transit Ctr,bus,wednesday,retained,0.0,0.0,False,True
+446,3.0,110.0,Henry-Cinnaminsn to Junipr-Commerce,bus,3.0,110.0,Henry-Cinnaminsn to Junipr-Commerce,bus,wednesday,retained,0.0,0.0,False,True
+448,2.0,82.0,Broad-Vine to Upper Roxborough,bus,2.0,82.0,Broad-Vine to Upper Roxborough,bus,wednesday,retained,0.0,0.0,False,True
+450,2.0,89.0,Frankford-Linden to Bustletn-Verree,bus,2.0,89.0,Frankford-Linden to Bustletn-Verree,bus,wednesday,retained,0.0,0.0,False,True
+452,2.0,86.0,Academy-Medford to Bustleton-Verree,bus,2.0,85.0,Academy-Medford to Bustleton-Verree,bus,wednesday,retained,0.0,-1.0,False,True
+461,2.0,95.0,Bustleton-Verree to Academy-Chalfnt,bus,2.0,94.0,Bustleton-Verree to Academy-Chalfnt,bus,wednesday,retained,0.0,-1.0,False,True
+462,2.0,117.0,Welsh-Bridal to Academy-Chalfont,bus,2.0,117.0,Welsh-Bridal to Academy-Chalfont,bus,wednesday,retained,0.0,0.0,False,True
+476,4.0,72.0,Southamptn-Blvd to Verree-Marchman,bus,4.0,71.0,Southamptn-Blvd to Verree-Marchman,bus,wednesday,retained,0.0,-1.0,False,True
+477,4.0,61.0,Academy-Comly to Verree-Marchman,bus,4.0,61.0,Academy-Comly to Verree-Marchman,bus,wednesday,retained,0.0,0.0,False,True
+478,5.0,39.0,Welsh-Blvd to Verree-Marchman,bus,5.0,39.0,Welsh-Blvd to Verree-Marchman,bus,wednesday,retained,0.0,0.0,False,True
+48,150.0,123.0,Front-Market to 27th-Allegheny,bus,150.0,121.0,Front-Market to 27th-Allegheny,bus,wednesday,retained,0.0,-2.0,False,False
+484,2.0,110.0,Holy Redmr Hosptl to Cottmn-Torrsdl,bus,2.0,110.0,Holy Redmr Hosptl to Cottmn-Torrsdl,bus,wednesday,retained,0.0,0.0,False,True
+490,2.0,40.0,Fox Chase Loop to Verree-Marchman,bus,2.0,40.0,Fox Chase Loop to Verree-Marchman,bus,wednesday,retained,0.0,0.0,False,True
+492,9.0,56.0,Bustletn-Rennard to Verree-Marchman,bus,9.0,55.0,Bustletn-Rennard to Verree-Marchman,bus,wednesday,retained,0.0,-1.0,False,False
+495,2.0,185.0,Southmptn-Worthngtn to 10th-Lycomng,bus,2.0,205.0,Southmptn-Worthngtn to 10th-Lycomng,bus,wednesday,retained,0.0,20.0,False,True
+5,96.0,123.0,2nd-Market to Frankford Transit Ctr,bus,96.0,116.0,2nd-Market to Frankford Transit Ctr,bus,wednesday,retained,0.0,-7.0,False,False
+50,66.0,128.0,Parx to Frankford Transit Center,bus,66.0,128.0,Parx to Frankford Transit Center,bus,wednesday,retained,0.0,0.0,False,False
+51,187.0,173.0,L - PlymthMtg/ChestntHl to Olney TC,bus,187.0,173.0,Plymth Mtg/Chestnt Hill to Olney TC,bus,wednesday,retained,0.0,0.0,True,False
+52,223.0,174.0,49th-Woodlnd to 54th-City/Parksd Lp,bus,223.0,131.0,49th-Woodlnd to Wiss TC/Parksd Lp,bus,wednesday,retained,0.0,-43.0,True,False
+55,120.0,262.0,Doylestown/Willow Grove to Olney TC,bus,120.0,262.0,Doylestown/Willow Grove to Olney TC,bus,wednesday,retained,0.0,0.0,False,False
+56,194.0,163.0,23rd-Venango to Torresdale-Cottman,bus,194.0,164.0,23rd-Venango to Torresdale-Cottman,bus,wednesday,retained,0.0,1.0,False,False
+58,170.0,276.0,Neshaminy/Somerton to Frankford TC,bus,170.0,276.0,Neshaminy/Somerton to Frankford TC,bus,wednesday,retained,0.0,0.0,False,False
+6,172.0,59.0,Cheltenham-Ogontz to Olney TC,bus,172.0,59.0,Cheltenham-Ogontz to Olney TC,bus,wednesday,retained,0.0,0.0,False,False
+63,212.0,231.0,G - Lanknau/Overbrk to ColCom/FdCtr,bus,212.0,217.0,Lanknau/Overbrk to ColCom/FdCtr,bus,wednesday,retained,0.0,-14.0,True,False
+67,133.0,267.0,Phila Mills/Bustletn to Frankfrd TC,bus,133.0,267.0,Phila Mills/Bustletn to Frankfrd TC,bus,wednesday,retained,0.0,0.0,False,False
+68,82.0,152.0,Broad-Oregon to UPS/69th St TC,bus,82.0,159.0,Broad-Oregon to UPS/69th St TC,bus,wednesday,retained,0.0,7.0,False,False
+7,103.0,233.0,Pier 70 to 33rd-Dauphin,bus,103.0,219.0,Pier 70 to 33rd-Dauphin,bus,wednesday,retained,0.0,-14.0,False,False
+70,174.0,187.0,Frank-Grg/Torsdl-Cottmn to FernRock,bus,174.0,187.0,Frank-Grg/Torsdl-Cottmn to FernRock,bus,wednesday,retained,0.0,0.0,False,False
+71,109.0,161.0,H - Broad-Erie to Cheltenham-Ogontz,bus,109.0,161.0,Broad-Erie to Cheltenham-Ogontz,bus,wednesday,retained,0.0,0.0,True,False
+77,26.0,173.0,Roosevelt-Cottman to Chestnut Hill,bus,26.0,172.0,Roosevelt-Cottman to Chestnut Hill,bus,wednesday,retained,0.0,-1.0,False,False
+8,71.0,28.0,Olney TC to Frankford TC,bus,71.0,28.0,Olney TC to Frankford TC,bus,wednesday,retained,0.0,0.0,False,False
+81,107.0,139.0,XH - Broad-Erie to Cheltenham-Ogntz,bus,107.0,137.0,Broad-Erie to Cheltenham-Ogntz,bus,wednesday,retained,0.0,-2.0,True,False
+84,87.0,271.0,Bustletn-CountyLn/PhilaMills to FTC,bus,87.0,272.0,Bustletn-CountyLn/PhilaMills to FTC,bus,wednesday,retained,0.0,1.0,False,False
+88,77.0,186.0,Bethayres/Frankford-Gregg to FTC,bus,77.0,186.0,Bethayres/Frankford-Gregg to FTC,bus,wednesday,retained,0.0,0.0,False,False
+90,33.0,100.0,Plymouth Mtng. to Norristown TC,bus,33.0,100.0,Plymouth Mtng. to Norristown TC,bus,wednesday,retained,0.0,0.0,False,False
+92,24.0,160.0,West Chester to King of Prussia,bus,24.0,160.0,West Chester to King of Prussia,bus,wednesday,retained,0.0,0.0,False,False
+93,51.0,141.0,Pottstown to Norristown Transit Ctr,bus,51.0,142.0,Pottstown to Norristown Transit Ctr,bus,wednesday,retained,0.0,1.0,False,False
+94,31.0,95.0,Montgomery Mall to Chestnut Hill,bus,31.0,95.0,Montgomery Mall to Chestnut Hill,bus,wednesday,retained,0.0,0.0,False,False
+95,29.0,164.0,Gulph Mills to Willow Grove Mall,bus,29.0,164.0,Gulph Mills to Willow Grove Mall,bus,wednesday,retained,0.0,0.0,False,False
+96,66.0,103.0,Lansdale to Norristown Transit Ctr,bus,66.0,103.0,Lansdale to Norristown Transit Ctr,bus,wednesday,retained,0.0,0.0,False,False
+97,40.0,147.0,Chestnut Hill to Norristown TC,bus,40.0,147.0,Chestnut Hill to Norristown TC,bus,wednesday,retained,0.0,0.0,False,False
+98,60.0,75.0,Plymouth Mtng to Norristown TC,bus,60.0,75.0,Plymouth Mtng to Norristown TC,bus,wednesday,retained,0.0,0.0,False,False
+99,62.0,127.0,Phoenixville to Norristown TC,bus,62.0,127.0,Phoenixville to Norristown TC,bus,wednesday,retained,0.0,0.0,False,False
+B1 OWL,49.0,58.0,Midnight-5am Service (Bus) for B1,bus,49.0,58.0,Midnight-5am Service (Bus) for B1,bus,wednesday,retained,0.0,0.0,False,False
+BLVDDIR,151.0,20.0,Blvd Direct Neshaminy Mall to FTC,bus,151.0,20.0,Blvd Direct Neshaminy Mall to FTC,bus,wednesday,retained,0.0,0.0,False,False
+K,152.0,174.0,Ridge-Midvale to Arrott Transit Ctr,bus,152.0,171.0,Ridge-Midvale to Arrott Transit Ctr,bus,wednesday,retained,0.0,-3.0,False,False
+L1 OWL,39.0,56.0,Midnight-5am Service (Bus) for L1,bus,39.0,56.0,Midnight-5am Service (Bus) for L1,bus,wednesday,retained,0.0,0.0,False,False
+LUCYGO,49.0,17.0,Gold Loop through University City,bus,49.0,18.0,Gold Loop through University City,bus,wednesday,retained,0.0,1.0,False,False
+LUCYGR,43.0,19.0,Green Loop through University City,bus,43.0,20.0,Green Loop through University City,bus,wednesday,retained,0.0,1.0,False,False
+110,76.0,147.0,Penn State U to 69th St Transit Ctr,bus,77.0,148.0,Penn State U to 69th St Transit Ctr,bus,wednesday,retained,1.0,1.0,False,False
+14,172.0,217.0,FTC to Neshaminy/Oxford Valley,bus,173.0,217.0,FTC to Neshaminy/Oxford Valley,bus,wednesday,retained,1.0,0.0,False,False
+201,32.0,27.0,Ft Wash Office Ctr to Fort Wash Sta,bus,33.0,27.0,Ft Wash Office Ctr to Fort Wash Sta,bus,wednesday,retained,1.0,0.0,False,False
+204,23.0,83.0,Eagleview to Paoli Train Station,bus,24.0,83.0,Eagleview to Paoli Train Station,bus,wednesday,retained,1.0,0.0,False,False
+475,3.0,82.0,Bustltn-County Ln to Verree-Marchmn,bus,4.0,81.0,Bustltn-County Ln to Verree-Marchmn,bus,wednesday,retained,1.0,-1.0,False,True
+9,108.0,111.0,4th-Walnut to Andorra,bus,109.0,111.0,4th-Walnut to Andorra,bus,wednesday,retained,1.0,0.0,False,False
+82,199.0,145.0,R - Wissahckn TC/Henry-Midvl to FTC,bus,201.0,146.0,Wisshkn TC/Henry-Midvl to FrankfdTC,bus,wednesday,retained,2.0,1.0,True,False
+40,154.0,175.0,2nd-Lombard to Conshohocken-Monumnt,bus,159.0,175.0,2nd-Lombard to Conshohocken-Monumnt,bus,wednesday,retained,5.0,0.0,False,False
+53,86.0,119.0,Wayne-Carpenter to Broad-Hunting Pk,bus,91.0,149.0,Emlen-Carpenter to Rich-Westmorland,bus,wednesday,retained,5.0,30.0,True,False
+79,165.0,70.0,Columbus Commons to 29th-Snyder,bus,176.0,101.0,Columbus Commons to 29th-Snyder,bus,wednesday,retained,11.0,31.0,False,False
+47,221.0,202.0,Whitman Plaza to 5th-Godfrey,bus,238.0,200.0,Whitman Plaza to 5th-Godfrey,bus,wednesday,retained,17.0,-2.0,False,False
+105,53.0,103.0,Rosemont to 69th St Transit Center,bus,71.0,181.0,Paoli to 69th St Transit Center,bus,wednesday,retained,18.0,78.0,True,False
+64,121.0,159.0,50th-Parkside to Pier 70,bus,139.0,145.0,50th-Parkside to Pier 70,bus,wednesday,retained,18.0,-14.0,False,False
+60,197.0,111.0,35th-Allegheny to Rich-Westmoreland,bus,227.0,125.0,Wiss TC/35-Algny to Rich-Westmrlnd,bus,wednesday,retained,30.0,14.0,True,False
+25,106.0,194.0,Frankford TC to Columbus Commons,bus,149.0,147.0,Frankford TC to Front-Spring Garden,bus,wednesday,retained,43.0,-47.0,True,False
+72,0.0,0.0,,,66.0,102.0,Cedarbrook Plaza to Frankford Trans,bus,wednesday,added,66.0,102.0,False,False
+76,0.0,0.0,,,69.0,147.0,Rising Sun-Olney to Columbus Comm,bus,wednesday,added,69.0,147.0,False,False
+M1 Bus,0.0,0.0,,,126.0,2.0,NHSL Shuttle Bus,bus,wednesday,added,126.0,2.0,False,False
+89,36.0,170.0,Front-Dauphin to Arrott Transit Ctr,bus,0.0,0.0,,,saturday,removed,-36.0,-170.0,False,False
+47M,34.0,87.0,Whitmn Plz to 7th-Spg Grd via 9thSt,bus,0.0,0.0,,,saturday,removed,-34.0,-87.0,False,False
+45,155.0,79.0,Broad-Oregon to 12th-Vine,bus,127.0,96.0,Navy Yard/Brd-Oregon to 12th-Noble,bus,saturday,retained,-28.0,17.0,True,False
+49,89.0,118.0,33rd-Dauphin to 29th-Snyder,bus,62.0,93.0,33rd-Dauphin to 40th-Baltimore,bus,saturday,retained,-27.0,-25.0,True,False
+106,24.0,176.0,Paoli to 69th St Transit Center,bus,0.0,0.0,,,saturday,removed,-24.0,-176.0,False,False
+4,88.0,202.0,Broad-Pattison to Fern Rock TC,bus,68.0,202.0,Broad-Pattison to Fern Rock TC,bus,saturday,retained,-20.0,0.0,False,False
+32,81.0,156.0,Broad-Carpenter to Ridge-Lyceum,bus,62.0,156.0,Broad-Carpenter to Ridge-Lyceum,bus,saturday,retained,-19.0,0.0,False,False
+73,86.0,67.0,Frankford TC to Richmnd-Westmorelnd,bus,70.0,68.0,Frankford TC to Richmnd-Westmorelnd,bus,saturday,retained,-16.0,1.0,False,False
+35,14.0,60.0,Manayunk Roxborough Loop,bus,0.0,0.0,,,saturday,removed,-14.0,-60.0,False,False
+44,45.0,127.0,Front-Market to Ardmore,bus,34.0,104.0,Front-Market to Ardmore,bus,saturday,retained,-11.0,-23.0,False,False
+17,142.0,133.0,Front-Mkt to 20-Johnston/Broad-Pat,bus,132.0,93.0,Front-Mkt to 20-Johnston,bus,saturday,retained,-10.0,-40.0,True,False
+6,132.0,59.0,Cheltenham-Ogontz to Olney TC,bus,122.0,59.0,Cheltenham-Ogontz to Olney TC,bus,saturday,retained,-10.0,0.0,False,False
+47,153.0,201.0,Whitman Plaza to 5th-Godfrey,bus,144.0,199.0,Whitman Plaza to 5th-Godfrey,bus,saturday,retained,-9.0,-2.0,False,False
+61,90.0,136.0,9th-Market to Manayunk,bus,81.0,152.0,9th-Market to Manayunk,bus,saturday,retained,-9.0,16.0,False,False
+54,108.0,109.0,Richmond-Cambria to 33rd-Dauphin,bus,102.0,107.0,Richmond-Cambria to 33rd-Dauphin,bus,saturday,retained,-6.0,-2.0,False,False
+53,72.0,119.0,Wayne-Carpenter to Broad-Hunting Pk,bus,69.0,149.0,Emlen-Carpenter to Rich-Westmorland,bus,saturday,retained,-3.0,30.0,True,False
+40,80.0,186.0,2nd-Lombard to Conshohocken-Monumnt,bus,78.0,186.0,2nd-Lombard to Conshohocken-Monumnt,bus,saturday,retained,-2.0,0.0,False,False
+104,55.0,216.0,West Chester U to 69th St TC,bus,54.0,218.0,West Chester U to 69th St TC,bus,saturday,retained,-1.0,2.0,False,False
+1,24.0,203.0,Parx Casino to 54th-City,bus,24.0,202.0,Parx Casino to 54th-City,bus,saturday,retained,0.0,-1.0,False,False
+103,35.0,89.0,Ardmore to 69th St Transit Center,bus,35.0,89.0,Ardmore to 69th St Transit Center,bus,saturday,retained,0.0,0.0,False,False
+107,28.0,188.0,Lawrence Park to 69th St TC,bus,28.0,188.0,Lawrence Park to 69th St TC,bus,saturday,retained,0.0,0.0,False,False
+108,103.0,156.0,UPS/Airport to 69th St Transit Ctr,bus,103.0,162.0,UPS/Airport to 69th St Transit Ctr,bus,saturday,retained,0.0,6.0,False,False
+109,96.0,156.0,Chester Transit Ctr to 69th St TC,bus,96.0,157.0,Chester Transit Ctr to 69th St TC,bus,saturday,retained,0.0,1.0,False,False
+110,53.0,138.0,Penn State U to 69th St Transit Ctr,bus,53.0,138.0,Penn State U to 69th St Transit Ctr,bus,saturday,retained,0.0,0.0,False,False
+111,35.0,127.0,Chadds Ford to 69th St Transit Ctr,bus,35.0,126.0,Chadds Ford to 69th St Transit Ctr,bus,saturday,retained,0.0,-1.0,False,False
+112,22.0,95.0,DCCC to 69th St Transit Center,bus,22.0,96.0,DCCC to 69th St Transit Center,bus,saturday,retained,0.0,1.0,False,False
+113,110.0,271.0,Claymont TC to 69th St Transit Ctr,bus,110.0,272.0,Claymont TC to 69th St Transit Ctr,bus,saturday,retained,0.0,1.0,False,False
+114,35.0,236.0,Wawa Station to Darby Transit Ctr,bus,35.0,236.0,Wawa Station to Darby Transit Ctr,bus,saturday,retained,0.0,0.0,False,False
+115,39.0,82.0,DCCC/Darby Transit Ctr to Airport,bus,39.0,88.0,DCCC/Darby Transit Ctr to Airport,bus,saturday,retained,0.0,6.0,False,False
+117,68.0,190.0,Penn State U to I-95 Industrial Pk,bus,68.0,191.0,Penn State U to I-95 Industrial Pk,bus,saturday,retained,0.0,1.0,False,False
+118,24.0,129.0,Newtown Square to Chester TC,bus,24.0,129.0,Newtown Square to Chester TC,bus,saturday,retained,0.0,0.0,False,False
+119,30.0,166.0,Cheyney U to Chester Transit Center,bus,30.0,166.0,Cheyney U to Chester Transit Center,bus,saturday,retained,0.0,0.0,False,False
+12,64.0,95.0,Columbus-Dock to 50th-Woodland,bus,64.0,95.0,Columbus-Dock to 50th-Woodland,bus,saturday,retained,0.0,0.0,False,False
+120,14.0,150.0,Cheyney U to 69th St Transit Center,bus,14.0,152.0,Cheyney U to 69th St Transit Center,bus,saturday,retained,0.0,2.0,False,False
+123,56.0,62.0,King of Prussia to 69th St TC,bus,56.0,63.0,King of Prussia to 69th St TC,bus,saturday,retained,0.0,1.0,False,False
+124,57.0,89.0,Chesterbrook to 13th-Market,bus,57.0,87.0,Chesterbrook to 13th-Market,bus,saturday,retained,0.0,-2.0,False,False
+125,49.0,88.0,Valley Forge to 13th-Market,bus,49.0,86.0,Valley Forge to 13th-Market,bus,saturday,retained,0.0,-2.0,False,False
+126,26.0,84.0,Lawrence Park via Manoa to 69th TC,bus,26.0,85.0,Lawrence Park via Manoa to 69th TC,bus,saturday,retained,0.0,1.0,False,False
+127,17.0,122.0,Trenton Transit Ctr to OxfordValley,bus,17.0,122.0,Trenton Transit Ctr to OxfordValley,bus,saturday,retained,0.0,0.0,False,False
+128,16.0,164.0,Neshaminy to Oxford Valley Mall,bus,16.0,165.0,Neshaminy to Oxford Valley Mall,bus,saturday,retained,0.0,1.0,False,False
+129,32.0,177.0,Frankford-Knights to Oxford Valley,bus,32.0,178.0,Frankford-Knights to Oxford Valley,bus,saturday,retained,0.0,1.0,False,False
+130,29.0,150.0,BCCC to Frankford-Knights,bus,29.0,150.0,BCCC to Frankford-Knights,bus,saturday,retained,0.0,0.0,False,False
+131,32.0,52.0,Audubon to Norristown Transit Ctr,bus,32.0,57.0,Audubon to Norristown Transit Ctr,bus,saturday,retained,0.0,5.0,False,False
+132,24.0,107.0,Telford to Montgomery Mall,bus,24.0,107.0,Telford to Montgomery Mall,bus,saturday,retained,0.0,0.0,False,False
+133,2.0,51.0,Frankford-Knights to Bensalem,bus,2.0,51.0,Frankford-Knights to Bensalem,bus,saturday,retained,0.0,0.0,False,True
+135,26.0,135.0,West Chester TC to Coatesville,bus,26.0,134.0,West Chester TC to Coatesville,bus,saturday,retained,0.0,-1.0,False,False
+139,21.0,110.0,Limerick to King of Prussia,bus,21.0,113.0,Limerick to King of Prussia,bus,saturday,retained,0.0,3.0,False,False
+14,125.0,187.0,FTC to Neshaminy/Oxford Valley,bus,125.0,185.0,FTC to Neshaminy/Oxford Valley,bus,saturday,retained,0.0,-2.0,False,False
+150,8.0,11.0,Parx Casino to Plymouth Meeting,bus,8.0,11.0,Parx Casino to Plymouth Meeting,bus,saturday,retained,0.0,0.0,False,False
+16,90.0,162.0,City Hall to Cheltenham-Ogontz,bus,90.0,162.0,City Hall to Cheltenham-Ogontz,bus,saturday,retained,0.0,0.0,False,False
+18,152.0,205.0,Fox Chase to Cedarbrook Plaza,bus,152.0,205.0,Fox Chase to Cedarbrook Plaza,bus,saturday,retained,0.0,0.0,False,False
+19,24.0,177.0,Torresdale Station to Frankford TC,bus,24.0,157.0,Torresdale Station to Frankford TC,bus,saturday,retained,0.0,-20.0,False,False
+2,78.0,166.0,20-Johnston to Pulaski-Hunting Park,bus,78.0,166.0,20-Johnston to Pulaski-Hunting Park,bus,saturday,retained,0.0,0.0,False,False
+20,119.0,210.0,Philadelphia Mills to Frankford TC,bus,119.0,210.0,Philadelphia Mills to Frankford TC,bus,saturday,retained,0.0,0.0,False,False
+204,12.0,65.0,Eagleview to Paoli Train Station,bus,12.0,65.0,Eagleview to Paoli Train Station,bus,saturday,retained,0.0,0.0,False,False
+21,136.0,128.0,Columbus-Dock to 69th St TC,bus,136.0,128.0,Columbus-Dock to 69th St TC,bus,saturday,retained,0.0,0.0,False,False
+22,69.0,226.0,Warminster/Willow Grove to Olney TC,bus,69.0,226.0,Warminster/Willow Grove to Olney TC,bus,saturday,retained,0.0,0.0,False,False
+23,165.0,204.0,11th Market to Chestnut Hill,bus,165.0,205.0,11th Market to Chestnut Hill,bus,saturday,retained,0.0,1.0,False,False
+24,66.0,183.0,Southamptn/Rockldge to Frankford TC,bus,66.0,183.0,Southamptn/Rockldge to Frankford TC,bus,saturday,retained,0.0,0.0,False,False
+26,90.0,180.0,Frankford TC to Chelten Av Station,bus,90.0,180.0,Frankford TC to Chelten Av Station,bus,saturday,retained,0.0,0.0,False,False
+27,57.0,158.0,Broad-Carpenter to Plymouth Meeting,bus,57.0,156.0,Broad-Carpenter to Plymouth Meeting,bus,saturday,retained,0.0,-2.0,False,False
+28,26.0,203.0,Fern Rock TC to Torresdale-Cottman,bus,26.0,203.0,Fern Rock TC to Torresdale-Cottman,bus,saturday,retained,0.0,0.0,False,False
+29,98.0,73.0,Pier 70 to 33rd-Dickinson,bus,98.0,73.0,Pier 70 to 33rd-Dickinson,bus,saturday,retained,0.0,0.0,False,False
+3,107.0,146.0,33rd-Cecil B. Moore to Frankford TC,bus,107.0,146.0,33rd-Cecil B. Moore to Frankford TC,bus,saturday,retained,0.0,0.0,False,False
+30,42.0,123.0,Gray 30th St Station to 69th St TC,bus,42.0,121.0,Gray 30th St Station to 69th St TC,bus,saturday,retained,0.0,-2.0,False,False
+31,60.0,161.0,City Hall to 76th-City,bus,60.0,164.0,City Hall to 76th-City,bus,saturday,retained,0.0,3.0,False,False
+310,17.0,31.0,Horsham Loop,bus,17.0,31.0,Horsham Loop,bus,saturday,retained,0.0,0.0,False,False
+33,164.0,104.0,5th-Market to 23rd-Venango,bus,164.0,104.0,5th-Market to 23rd-Venango,bus,saturday,retained,0.0,0.0,False,False
+37,83.0,149.0,Chester Transit Ctr to Broad-Snyder,bus,83.0,154.0,Chester Transit Ctr to Broad-Snyder,bus,saturday,retained,0.0,5.0,False,False
+38,64.0,137.0,5th-Market to Wissahickon TC,bus,64.0,138.0,5th-Market to Wissahickon TC,bus,saturday,retained,0.0,1.0,False,False
+41,42.0,155.0,J - Cheltn-Wsshkn to Richmnd-Orthdx,bus,42.0,155.0,Chelten-Wissahckn to Richmnd-Orthdx,bus,saturday,retained,0.0,0.0,True,False
+42,152.0,148.0,2nd-Spruce to 61st-Pine/Wycombe,bus,152.0,148.0,2nd-Spruce to 61st-Pine/Wycombe,bus,saturday,retained,0.0,0.0,False,False
+43,66.0,114.0,Richmond-Cumberland to 50th-Parksde,bus,66.0,115.0,Richmond-Cumberland to 50th-Parksde,bus,saturday,retained,0.0,1.0,False,False
+48,134.0,123.0,Front-Market to 27th-Allegheny,bus,134.0,121.0,Front-Market to 27th-Allegheny,bus,saturday,retained,0.0,-2.0,False,False
+5,66.0,123.0,2nd-Market to Frankford Transit Ctr,bus,66.0,116.0,2nd-Market to Frankford Transit Ctr,bus,saturday,retained,0.0,-7.0,False,False
+50,59.0,124.0,Parx to Frankford Transit Center,bus,59.0,124.0,Parx to Frankford Transit Center,bus,saturday,retained,0.0,0.0,False,False
+51,113.0,168.0,L - PlymthMtg/ChestntHl to Olney TC,bus,113.0,168.0,Plymth Mtg/Chestnt Hill to Olney TC,bus,saturday,retained,0.0,0.0,True,False
+52,200.0,99.0,49th-Woodlnd to 54th-City/Parksd Lp,bus,200.0,122.0,49th-Woodlnd to Wiss TC/Parksd Lp,bus,saturday,retained,0.0,23.0,True,False
+55,98.0,257.0,Doylestown/Willow Grove to Olney TC,bus,98.0,257.0,Doylestown/Willow Grove to Olney TC,bus,saturday,retained,0.0,0.0,False,False
+56,116.0,159.0,23rd-Venango to Torresdale-Cottman,bus,116.0,160.0,23rd-Venango to Torresdale-Cottman,bus,saturday,retained,0.0,1.0,False,False
+58,129.0,275.0,Neshaminy/Somerton to Frankford TC,bus,129.0,275.0,Neshaminy/Somerton to Frankford TC,bus,saturday,retained,0.0,0.0,False,False
+63,144.0,225.0,G - Lanknau/Overbrk to ColCom/FdCtr,bus,144.0,211.0,Lanknau/Overbrk to ColCom/FdCtr,bus,saturday,retained,0.0,-14.0,True,False
+65,117.0,129.0,Germantown-Chelten to 69th St TC,bus,117.0,132.0,Germantown-Chelten to 69th St TC,bus,saturday,retained,0.0,3.0,False,False
+67,77.0,234.0,Phila Mills/Bustletn to Frankfrd TC,bus,77.0,234.0,Phila Mills/Bustletn to Frankfrd TC,bus,saturday,retained,0.0,0.0,False,False
+68,38.0,60.0,Broad-Oregon to UPS/69th St TC,bus,38.0,57.0,Broad-Oregon to UPS/69th St TC,bus,saturday,retained,0.0,-3.0,False,False
+7,84.0,233.0,Pier 70 to 33rd-Dauphin,bus,84.0,219.0,Pier 70 to 33rd-Dauphin,bus,saturday,retained,0.0,-14.0,False,False
+70,115.0,185.0,Frank-Grg/Torsdl-Cottmn to FernRock,bus,115.0,185.0,Frank-Grg/Torsdl-Cottmn to FernRock,bus,saturday,retained,0.0,0.0,False,False
+71,89.0,159.0,H - Broad-Erie to Cheltenham-Ogontz,bus,89.0,159.0,Broad-Erie to Cheltenham-Ogontz,bus,saturday,retained,0.0,0.0,True,False
+77,26.0,173.0,Roosevelt-Cottman to Chestnut Hill,bus,26.0,172.0,Roosevelt-Cottman to Chestnut Hill,bus,saturday,retained,0.0,-1.0,False,False
+81,86.0,137.0,XH - Broad-Erie to Cheltenham-Ogntz,bus,86.0,135.0,Broad-Erie to Cheltenham-Ogntz,bus,saturday,retained,0.0,-2.0,True,False
+82,138.0,150.0,R - Wissahckn TC/Henry-Midvl to FTC,bus,138.0,151.0,Wisshkn TC/Henry-Midvl to FrankfdTC,bus,saturday,retained,0.0,1.0,True,False
+84,38.0,270.0,Bustletn-CountyLn/PhilaMills to FTC,bus,38.0,271.0,Bustletn-CountyLn/PhilaMills to FTC,bus,saturday,retained,0.0,1.0,False,False
+88,60.0,185.0,Bethayres/Frankford-Gregg to FTC,bus,60.0,185.0,Bethayres/Frankford-Gregg to FTC,bus,saturday,retained,0.0,0.0,False,False
+9,75.0,110.0,4th-Walnut to Andorra,bus,75.0,110.0,4th-Walnut to Andorra,bus,saturday,retained,0.0,0.0,False,False
+90,31.0,100.0,Plymouth Mtng. to Norristown TC,bus,31.0,100.0,Plymouth Mtng. to Norristown TC,bus,saturday,retained,0.0,0.0,False,False
+92,27.0,128.0,West Chester to King of Prussia,bus,27.0,128.0,West Chester to King of Prussia,bus,saturday,retained,0.0,0.0,False,False
+93,36.0,139.0,Pottstown to Norristown Transit Ctr,bus,36.0,140.0,Pottstown to Norristown Transit Ctr,bus,saturday,retained,0.0,1.0,False,False
+94,25.0,96.0,Montgomery Mall to Chestnut Hill,bus,25.0,96.0,Montgomery Mall to Chestnut Hill,bus,saturday,retained,0.0,0.0,False,False
+95,26.0,164.0,Gulph Mills to Willow Grove Mall,bus,26.0,164.0,Gulph Mills to Willow Grove Mall,bus,saturday,retained,0.0,0.0,False,False
+96,36.0,103.0,Lansdale to Norristown Transit Ctr,bus,36.0,103.0,Lansdale to Norristown Transit Ctr,bus,saturday,retained,0.0,0.0,False,False
+97,36.0,147.0,Chestnut Hill to Norristown TC,bus,36.0,147.0,Chestnut Hill to Norristown TC,bus,saturday,retained,0.0,0.0,False,False
+98,34.0,54.0,Plymouth Mtng to Norristown TC,bus,34.0,54.0,Plymouth Mtng to Norristown TC,bus,saturday,retained,0.0,0.0,False,False
+99,55.0,120.0,Phoenixville to Norristown TC,bus,55.0,120.0,Phoenixville to Norristown TC,bus,saturday,retained,0.0,0.0,False,False
+B1 OWL,42.0,58.0,Midnight-5am Service (Bus) for B1,bus,42.0,58.0,Midnight-5am Service (Bus) for B1,bus,saturday,retained,0.0,0.0,False,False
+BLVDDIR,139.0,20.0,Blvd Direct Neshaminy Mall to FTC,bus,139.0,20.0,Blvd Direct Neshaminy Mall to FTC,bus,saturday,retained,0.0,0.0,False,False
+K,106.0,174.0,Ridge-Midvale to Arrott Transit Ctr,bus,106.0,171.0,Ridge-Midvale to Arrott Transit Ctr,bus,saturday,retained,0.0,-3.0,False,False
+L1 OWL,39.0,56.0,Midnight-5am Service (Bus) for L1,bus,39.0,56.0,Midnight-5am Service (Bus) for L1,bus,saturday,retained,0.0,0.0,False,False
+39,60.0,115.0,Richmond-Cumberland to 33rd-Dauphin,bus,63.0,114.0,Richmond-Cumberland to 33rd-Dauphin,bus,saturday,retained,3.0,-1.0,False,False
+46,104.0,65.0,58th-Baltimore to 63rd-Malvern,bus,116.0,64.0,58th-Baltimore to 63rd-Malvern,bus,saturday,retained,12.0,-1.0,False,False
+57,104.0,249.0,WhitmnPlz to RisngSun-Olney/FernRck,bus,118.0,257.0,WhitmnPlz to RisngSun-Olney/FernRck,bus,saturday,retained,14.0,8.0,False,False
+60,128.0,109.0,35th-Allegheny to Rich-Westmoreland,bus,152.0,123.0,Wiss TC/35-Algny to Rich-Westmrlnd,bus,saturday,retained,24.0,14.0,True,False
+64,72.0,159.0,50th-Parkside to Pier 70,bus,97.0,145.0,50th-Parkside to Pier 70,bus,saturday,retained,25.0,-14.0,False,False
+105,34.0,103.0,Rosemont to 69th St Transit Center,bus,66.0,181.0,Paoli to 69th St Transit Center,bus,saturday,retained,32.0,78.0,True,False
+25,66.0,194.0,Frankford TC to Columbus Commons,bus,106.0,147.0,Frankford TC to Front-Spring Garden,bus,saturday,retained,40.0,-47.0,True,False
+79,96.0,70.0,Columbus Commons to 29th-Snyder,bus,141.0,101.0,Columbus Commons to 29th-Snyder,bus,saturday,retained,45.0,31.0,False,False
+72,0.0,0.0,,,61.0,102.0,Cedarbrook Plaza to Frankford Trans,bus,saturday,added,61.0,102.0,False,False
+76,0.0,0.0,,,64.0,147.0,Rising Sun-Olney to Columbus Comm,bus,saturday,added,64.0,147.0,False,False
+M1 Bus,0.0,0.0,,,108.0,2.0,NHSL Shuttle Bus,bus,saturday,added,108.0,2.0,False,False
+89,36.0,170.0,Front-Dauphin to Arrott Transit Ctr,bus,0.0,0.0,,,sunday,removed,-36.0,-170.0,False,False
+49,89.0,118.0,33rd-Dauphin to 29th-Snyder,bus,56.0,93.0,33rd-Dauphin to 40th-Baltimore,bus,sunday,retained,-33.0,-25.0,True,False
+73,86.0,67.0,Frankford TC to Richmnd-Westmorelnd,bus,67.0,68.0,Frankford TC to Richmnd-Westmorelnd,bus,sunday,retained,-19.0,1.0,False,False
+17,134.0,133.0,Front-Mkt to 20-Johnston/Broad-Pat,bus,120.0,93.0,Front-Mkt to 20-Johnston,bus,sunday,retained,-14.0,-40.0,True,False
+35,14.0,60.0,Manayunk Roxborough Loop,bus,0.0,0.0,,,sunday,removed,-14.0,-60.0,False,False
+47M,14.0,87.0,Whitmn Plz to 7th-Spg Grd via 9thSt,bus,0.0,0.0,,,sunday,removed,-14.0,-87.0,False,False
+44,45.0,127.0,Front-Market to Ardmore,bus,32.0,104.0,Front-Market to Ardmore,bus,sunday,retained,-13.0,-23.0,False,False
+4,74.0,202.0,Broad-Pattison to Fern Rock TC,bus,62.0,202.0,Broad-Pattison to Fern Rock TC,bus,sunday,retained,-12.0,0.0,False,False
+6,110.0,59.0,Cheltenham-Ogontz to Olney TC,bus,98.0,59.0,Cheltenham-Ogontz to Olney TC,bus,sunday,retained,-12.0,0.0,False,False
+53,72.0,119.0,Wayne-Carpenter to Broad-Hunting Pk,bus,61.0,149.0,Emlen-Carpenter to Rich-Westmorland,bus,sunday,retained,-11.0,30.0,True,False
+54,78.0,109.0,Richmond-Cambria to 33rd-Dauphin,bus,72.0,107.0,Richmond-Cambria to 33rd-Dauphin,bus,sunday,retained,-6.0,-2.0,False,False
+32,58.0,156.0,Broad-Carpenter to Ridge-Lyceum,bus,54.0,156.0,Broad-Carpenter to Ridge-Lyceum,bus,sunday,retained,-4.0,0.0,False,False
+39,60.0,115.0,Richmond-Cumberland to 33rd-Dauphin,bus,56.0,114.0,Richmond-Cumberland to 33rd-Dauphin,bus,sunday,retained,-4.0,-1.0,False,False
+45,124.0,79.0,Broad-Oregon to 12th-Vine,bus,121.0,96.0,Navy Yard/Brd-Oregon to 12th-Noble,bus,sunday,retained,-3.0,17.0,True,False
+40,78.0,186.0,2nd-Lombard to Conshohocken-Monumnt,bus,76.0,186.0,2nd-Lombard to Conshohocken-Monumnt,bus,sunday,retained,-2.0,0.0,False,False
+104,62.0,216.0,West Chester U to 69th St TC,bus,61.0,218.0,West Chester U to 69th St TC,bus,sunday,retained,-1.0,2.0,False,False
+61,82.0,136.0,9th-Market to Manayunk,bus,81.0,152.0,9th-Market to Manayunk,bus,sunday,retained,-1.0,16.0,False,False
+103,32.0,21.0,Ardmore to 69th St Transit Center,bus,32.0,23.0,Ardmore to 69th St Transit Center,bus,sunday,retained,0.0,2.0,False,False
+108,86.0,147.0,UPS/Airport to 69th St Transit Ctr,bus,86.0,153.0,UPS/Airport to 69th St Transit Ctr,bus,sunday,retained,0.0,6.0,False,False
+109,72.0,156.0,Chester Transit Ctr to 69th St TC,bus,72.0,157.0,Chester Transit Ctr to 69th St TC,bus,sunday,retained,0.0,1.0,False,False
+110,29.0,138.0,Penn State U to 69th St Transit Ctr,bus,29.0,137.0,Penn State U to 69th St Transit Ctr,bus,sunday,retained,0.0,-1.0,False,False
+111,32.0,127.0,Chadds Ford to 69th St Transit Ctr,bus,32.0,126.0,Chadds Ford to 69th St Transit Ctr,bus,sunday,retained,0.0,-1.0,False,False
+113,86.0,271.0,Claymont TC to 69th St Transit Ctr,bus,86.0,272.0,Claymont TC to 69th St Transit Ctr,bus,sunday,retained,0.0,1.0,False,False
+114,31.0,240.0,Wawa Station to Darby Transit Ctr,bus,31.0,240.0,Wawa Station to Darby Transit Ctr,bus,sunday,retained,0.0,0.0,False,False
+115,39.0,82.0,DCCC/Darby Transit Ctr to Airport,bus,39.0,88.0,DCCC/Darby Transit Ctr to Airport,bus,sunday,retained,0.0,6.0,False,False
+117,34.0,190.0,Penn State U to I-95 Industrial Pk,bus,34.0,191.0,Penn State U to I-95 Industrial Pk,bus,sunday,retained,0.0,1.0,False,False
+119,30.0,166.0,Cheyney U to Chester Transit Center,bus,30.0,166.0,Cheyney U to Chester Transit Center,bus,sunday,retained,0.0,0.0,False,False
+12,64.0,95.0,Columbus-Dock to 50th-Woodland,bus,64.0,95.0,Columbus-Dock to 50th-Woodland,bus,sunday,retained,0.0,0.0,False,False
+120,14.0,150.0,Cheyney U to 69th St Transit Center,bus,14.0,152.0,Cheyney U to 69th St Transit Center,bus,sunday,retained,0.0,2.0,False,False
+123,41.0,62.0,King of Prussia to 69th St TC,bus,41.0,63.0,King of Prussia to 69th St TC,bus,sunday,retained,0.0,1.0,False,False
+124,41.0,89.0,Chesterbrook to 13th-Market,bus,41.0,87.0,Chesterbrook to 13th-Market,bus,sunday,retained,0.0,-2.0,False,False
+125,46.0,88.0,Valley Forge to 13th-Market,bus,46.0,86.0,Valley Forge to 13th-Market,bus,sunday,retained,0.0,-2.0,False,False
+126,26.0,68.0,Lawrence Park via Manoa to 69th TC,bus,26.0,69.0,Lawrence Park via Manoa to 69th TC,bus,sunday,retained,0.0,1.0,False,False
+129,15.0,178.0,Frankford-Knights to Oxford Valley,bus,15.0,178.0,Frankford-Knights to Oxford Valley,bus,sunday,retained,0.0,0.0,False,False
+130,15.0,57.0,BCCC to Frankford-Knights,bus,15.0,57.0,BCCC to Frankford-Knights,bus,sunday,retained,0.0,0.0,False,False
+131,32.0,52.0,Audubon to Norristown Transit Ctr,bus,32.0,57.0,Audubon to Norristown Transit Ctr,bus,sunday,retained,0.0,5.0,False,False
+132,7.0,107.0,Telford to Montgomery Mall,bus,7.0,107.0,Telford to Montgomery Mall,bus,sunday,retained,0.0,0.0,False,False
+135,26.0,135.0,West Chester TC to Coatesville,bus,26.0,134.0,West Chester TC to Coatesville,bus,sunday,retained,0.0,-1.0,False,False
+14,115.0,185.0,FTC to Neshaminy/Oxford Valley,bus,115.0,185.0,FTC to Neshaminy/Oxford Valley,bus,sunday,retained,0.0,0.0,False,False
+16,76.0,162.0,City Hall to Cheltenham-Ogontz,bus,76.0,162.0,City Hall to Cheltenham-Ogontz,bus,sunday,retained,0.0,0.0,False,False
+18,116.0,205.0,Fox Chase to Cedarbrook Plaza,bus,116.0,205.0,Fox Chase to Cedarbrook Plaza,bus,sunday,retained,0.0,0.0,False,False
+2,78.0,166.0,20-Johnston to Pulaski-Hunting Park,bus,78.0,166.0,20-Johnston to Pulaski-Hunting Park,bus,sunday,retained,0.0,0.0,False,False
+20,102.0,210.0,Philadelphia Mills to Frankford TC,bus,102.0,210.0,Philadelphia Mills to Frankford TC,bus,sunday,retained,0.0,0.0,False,False
+204,10.0,45.0,Eagleview to Paoli Train Station,bus,10.0,45.0,Eagleview to Paoli Train Station,bus,sunday,retained,0.0,0.0,False,False
+21,120.0,128.0,Columbus-Dock to 69th St TC,bus,120.0,128.0,Columbus-Dock to 69th St TC,bus,sunday,retained,0.0,0.0,False,False
+22,48.0,226.0,Warminster/Willow Grove to Olney TC,bus,48.0,226.0,Warminster/Willow Grove to Olney TC,bus,sunday,retained,0.0,0.0,False,False
+23,133.0,204.0,11th Market to Chestnut Hill,bus,133.0,205.0,11th Market to Chestnut Hill,bus,sunday,retained,0.0,1.0,False,False
+24,64.0,141.0,Southamptn/Rockldge to Frankford TC,bus,64.0,141.0,Southamptn/Rockldge to Frankford TC,bus,sunday,retained,0.0,0.0,False,False
+26,90.0,180.0,Frankford TC to Chelten Av Station,bus,90.0,180.0,Frankford TC to Chelten Av Station,bus,sunday,retained,0.0,0.0,False,False
+27,39.0,158.0,Broad-Carpenter to Plymouth Meeting,bus,39.0,156.0,Broad-Carpenter to Plymouth Meeting,bus,sunday,retained,0.0,-2.0,False,False
+28,17.0,203.0,Fern Rock TC to Torresdale-Cottman,bus,17.0,203.0,Fern Rock TC to Torresdale-Cottman,bus,sunday,retained,0.0,0.0,False,False
+29,76.0,73.0,Pier 70 to 33rd-Dickinson,bus,76.0,73.0,Pier 70 to 33rd-Dickinson,bus,sunday,retained,0.0,0.0,False,False
+3,101.0,146.0,33rd-Cecil B. Moore to Frankford TC,bus,101.0,146.0,33rd-Cecil B. Moore to Frankford TC,bus,sunday,retained,0.0,0.0,False,False
+30,42.0,123.0,Gray 30th St Station to 69th St TC,bus,42.0,121.0,Gray 30th St Station to 69th St TC,bus,sunday,retained,0.0,-2.0,False,False
+31,46.0,161.0,City Hall to 76th-City,bus,46.0,164.0,City Hall to 76th-City,bus,sunday,retained,0.0,3.0,False,False
+33,156.0,104.0,5th-Market to 23rd-Venango,bus,156.0,104.0,5th-Market to 23rd-Venango,bus,sunday,retained,0.0,0.0,False,False
+37,83.0,149.0,Chester Transit Ctr to Broad-Snyder,bus,83.0,154.0,Chester Transit Ctr to Broad-Snyder,bus,sunday,retained,0.0,5.0,False,False
+38,46.0,137.0,5th-Market to Wissahickon TC,bus,46.0,138.0,5th-Market to Wissahickon TC,bus,sunday,retained,0.0,1.0,False,False
+41,42.0,155.0,J - Cheltn-Wsshkn to Richmnd-Orthdx,bus,42.0,155.0,Chelten-Wissahckn to Richmnd-Orthdx,bus,sunday,retained,0.0,0.0,True,False
+42,136.0,148.0,2nd-Spruce to 61st-Pine/Wycombe,bus,136.0,148.0,2nd-Spruce to 61st-Pine/Wycombe,bus,sunday,retained,0.0,0.0,False,False
+43,54.0,114.0,Richmond-Cumberland to 50th-Parksde,bus,54.0,115.0,Richmond-Cumberland to 50th-Parksde,bus,sunday,retained,0.0,1.0,False,False
+48,110.0,123.0,Front-Market to 27th-Allegheny,bus,110.0,121.0,Front-Market to 27th-Allegheny,bus,sunday,retained,0.0,-2.0,False,False
+5,66.0,123.0,2nd-Market to Frankford Transit Ctr,bus,66.0,116.0,2nd-Market to Frankford Transit Ctr,bus,sunday,retained,0.0,-7.0,False,False
+50,56.0,124.0,Parx to Frankford Transit Center,bus,56.0,124.0,Parx to Frankford Transit Center,bus,sunday,retained,0.0,0.0,False,False
+51,103.0,168.0,L - PlymthMtg/ChestntHl to Olney TC,bus,103.0,168.0,Plymth Mtg/Chestnt Hill to Olney TC,bus,sunday,retained,0.0,0.0,True,False
+52,176.0,99.0,49th-Woodlnd to 54th-City/Parksd Lp,bus,176.0,122.0,49th-Woodlnd to Wiss TC/Parksd Lp,bus,sunday,retained,0.0,23.0,True,False
+55,73.0,258.0,Doylestown/Willow Grove to Olney TC,bus,73.0,258.0,Doylestown/Willow Grove to Olney TC,bus,sunday,retained,0.0,0.0,False,False
+56,90.0,159.0,23rd-Venango to Torresdale-Cottman,bus,90.0,160.0,23rd-Venango to Torresdale-Cottman,bus,sunday,retained,0.0,1.0,False,False
+57,102.0,249.0,WhitmnPlz to RisngSun-Olney/FernRck,bus,102.0,257.0,WhitmnPlz to RisngSun-Olney/FernRck,bus,sunday,retained,0.0,8.0,False,False
+58,98.0,275.0,Neshaminy/Somerton to Frankford TC,bus,98.0,275.0,Neshaminy/Somerton to Frankford TC,bus,sunday,retained,0.0,0.0,False,False
+63,107.0,226.0,G - Lanknau/Overbrk to ColCom/FdCtr,bus,107.0,212.0,Lanknau/Overbrk to ColCom/FdCtr,bus,sunday,retained,0.0,-14.0,True,False
+65,95.0,129.0,Germantown-Chelten to 69th St TC,bus,95.0,132.0,Germantown-Chelten to 69th St TC,bus,sunday,retained,0.0,3.0,False,False
+67,77.0,234.0,Phila Mills/Bustletn to Frankfrd TC,bus,77.0,234.0,Phila Mills/Bustletn to Frankfrd TC,bus,sunday,retained,0.0,0.0,False,False
+68,33.0,53.0,Broad-Oregon to UPS/69th St TC,bus,33.0,51.0,Broad-Oregon to UPS/69th St TC,bus,sunday,retained,0.0,-2.0,False,False
+7,84.0,233.0,Pier 70 to 33rd-Dauphin,bus,84.0,219.0,Pier 70 to 33rd-Dauphin,bus,sunday,retained,0.0,-14.0,False,False
+70,95.0,185.0,Frank-Grg/Torsdl-Cottmn to FernRock,bus,95.0,185.0,Frank-Grg/Torsdl-Cottmn to FernRock,bus,sunday,retained,0.0,0.0,False,False
+71,70.0,159.0,H - Broad-Erie to Cheltenham-Ogontz,bus,70.0,159.0,Broad-Erie to Cheltenham-Ogontz,bus,sunday,retained,0.0,0.0,True,False
+77,18.0,173.0,Roosevelt-Cottman to Chestnut Hill,bus,18.0,172.0,Roosevelt-Cottman to Chestnut Hill,bus,sunday,retained,0.0,-1.0,False,False
+81,67.0,137.0,XH - Broad-Erie to Cheltenham-Ogntz,bus,67.0,135.0,Broad-Erie to Cheltenham-Ogntz,bus,sunday,retained,0.0,-2.0,True,False
+82,112.0,150.0,R - Wissahckn TC/Henry-Midvl to FTC,bus,112.0,151.0,Wisshkn TC/Henry-Midvl to FrankfdTC,bus,sunday,retained,0.0,1.0,True,False
+84,38.0,172.0,Bustletn-CountyLn/PhilaMills to FTC,bus,38.0,173.0,Bustletn-CountyLn/PhilaMills to FTC,bus,sunday,retained,0.0,1.0,False,False
+88,50.0,185.0,Bethayres/Frankford-Gregg to FTC,bus,50.0,185.0,Bethayres/Frankford-Gregg to FTC,bus,sunday,retained,0.0,0.0,False,False
+9,38.0,110.0,4th-Walnut to Andorra,bus,38.0,110.0,4th-Walnut to Andorra,bus,sunday,retained,0.0,0.0,False,False
+93,28.0,136.0,Pottstown to Norristown Transit Ctr,bus,28.0,136.0,Pottstown to Norristown Transit Ctr,bus,sunday,retained,0.0,0.0,False,False
+94,8.0,96.0,Montgomery Mall to Chestnut Hill,bus,8.0,96.0,Montgomery Mall to Chestnut Hill,bus,sunday,retained,0.0,0.0,False,False
+96,32.0,102.0,Lansdale to Norristown Transit Ctr,bus,32.0,102.0,Lansdale to Norristown Transit Ctr,bus,sunday,retained,0.0,0.0,False,False
+97,28.0,142.0,Chestnut Hill to Norristown TC,bus,28.0,142.0,Chestnut Hill to Norristown TC,bus,sunday,retained,0.0,0.0,False,False
+98,20.0,54.0,Plymouth Mtng to Norristown TC,bus,20.0,54.0,Plymouth Mtng to Norristown TC,bus,sunday,retained,0.0,0.0,False,False
+99,33.0,120.0,Phoenixville to Norristown TC,bus,33.0,120.0,Phoenixville to Norristown TC,bus,sunday,retained,0.0,0.0,False,False
+B1 OWL,42.0,58.0,Midnight-5am Service (Bus) for B1,bus,42.0,58.0,Midnight-5am Service (Bus) for B1,bus,sunday,retained,0.0,0.0,False,False
+BLVDDIR,139.0,20.0,Blvd Direct Neshaminy Mall to FTC,bus,139.0,20.0,Blvd Direct Neshaminy Mall to FTC,bus,sunday,retained,0.0,0.0,False,False
+K,76.0,174.0,Ridge-Midvale to Arrott Transit Ctr,bus,76.0,171.0,Ridge-Midvale to Arrott Transit Ctr,bus,sunday,retained,0.0,-3.0,False,False
+L1 OWL,39.0,56.0,Midnight-5am Service (Bus) for L1,bus,39.0,56.0,Midnight-5am Service (Bus) for L1,bus,sunday,retained,0.0,0.0,False,False
+105,34.0,73.0,Rosemont to 69th St Transit Center,bus,37.0,92.0,Paoli to 69th St Transit Center,bus,sunday,retained,3.0,19.0,True,False
+47,125.0,201.0,Whitman Plaza to 5th-Godfrey,bus,135.0,199.0,Whitman Plaza to 5th-Godfrey,bus,sunday,retained,10.0,-2.0,False,False
+46,80.0,65.0,58th-Baltimore to 63rd-Malvern,bus,92.0,64.0,58th-Baltimore to 63rd-Malvern,bus,sunday,retained,12.0,-1.0,False,False
+64,67.0,159.0,50th-Parkside to Pier 70,bus,84.0,145.0,50th-Parkside to Pier 70,bus,sunday,retained,17.0,-14.0,False,False
+60,116.0,109.0,35th-Allegheny to Rich-Westmoreland,bus,136.0,123.0,Wiss TC/35-Algny to Rich-Westmrlnd,bus,sunday,retained,20.0,14.0,True,False
+25,66.0,194.0,Frankford TC to Columbus Commons,bus,98.0,147.0,Frankford TC to Front-Spring Garden,bus,sunday,retained,32.0,-47.0,True,False
+79,80.0,70.0,Columbus Commons to 29th-Snyder,bus,130.0,101.0,Columbus Commons to 29th-Snyder,bus,sunday,retained,50.0,31.0,False,False
+72,0.0,0.0,,,53.0,102.0,Cedarbrook Plaza to Frankford Trans,bus,sunday,added,53.0,102.0,False,False
+76,0.0,0.0,,,57.0,147.0,Rising Sun-Olney to Columbus Comm,bus,sunday,added,57.0,147.0,False,False
+M1 Bus,0.0,0.0,,,80.0,2.0,NHSL Shuttle Bus,bus,sunday,added,80.0,2.0,False,False

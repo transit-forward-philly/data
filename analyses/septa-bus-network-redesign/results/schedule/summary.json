@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-08-24T10:25:13",
+  "baseline": {
+    "tag": "v202509141",
+    "feed_version": "City Fall 2025 A_20250908",
+    "span": [
+      "20250824",
+      "20260222"
+    ]
+  },
+  "current": {
+    "tag": "v202608233",
+    "feed_version": "v202608233",
+    "span": [
+      "20260823",
+      "20270220"
+    ]
+  },
+  "modes": [
+    "bus"
+  ],
+  "subfeed": "google_bus",
+  "days": [
+    {
+      "day": "wednesday",
+      "baseline_date": "20251015",
+      "current_date": "20261014",
+      "trips_before": 11717,
+      "trips_after": 11704,
+      "routes_before": 149,
+      "routes_after": 145,
+      "stops_before": 12847,
+      "stops_after": 12600
+    },
+    {
+      "day": "saturday",
+      "baseline_date": "20251018",
+      "current_date": "20261017",
+      "trips_before": 8061,
+      "trips_after": 8210,
+      "routes_before": 115,
+      "routes_after": 114,
+      "stops_before": 12192,
+      "stops_after": 11979
+    },
+    {
+      "day": "sunday",
+      "baseline_date": "20251019",
+      "current_date": "20261018",
+      "trips_before": 6575,
+      "trips_after": 6710,
+      "routes_before": 100,
+      "routes_after": 100,
+      "stops_before": 10739,
+      "stops_after": 10603
+    }
+  ]
+}

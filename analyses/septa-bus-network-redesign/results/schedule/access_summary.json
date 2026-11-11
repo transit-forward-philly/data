@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-08-24T13:04:49",
+  "baseline": {
+    "tag": "v202509141",
+    "date": "20251015",
+    "stops_total": 12847,
+    "stops_frequent": 1141
+  },
+  "current": {
+    "tag": "v202608233",
+    "date": "20261014",
+    "stops_total": 12600,
+    "stops_frequent": 1070
+  },
+  "modes": [
+    "bus"
+  ],
+  "buffer_miles": 0.25,
+  "max_headway_mins": 15.0,
+  "parcels_total": 545796,
+  "status_counts": {
+    "neither": 338090,
+    "kept": 158642,
+    "lost": 33114,
+    "gained": 15950
+  },
+  "parcels_frequent_before": 191756,
+  "parcels_frequent_after": 174592,
+  "parcels_frequent_net": -17164,
+  "population": {
+    "block_groups": 1338,
+    "block_groups_without_population": 0,
+    "population_total": 1593208,
+    "population_with_access_before": 554434,
+    "population_with_access_after": 507512,
+    "population_with_access_net": -46922
+  }
+}
