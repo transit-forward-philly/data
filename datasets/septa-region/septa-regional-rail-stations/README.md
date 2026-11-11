@@ -37,7 +37,7 @@ Column names are SEPTA's, unchanged. The main groups:
 
 ## Known gaps and caveats
 
-- **County is wrong for some stations.** Bala, Cynwyd and Rosemont are in Montgomery County but SEPTA lists `Philadelphia`. The two stations named Highland carry inconsistent municipality and county pairs. Do not use `County` or `Municipality` for any join without checking them against a real boundary layer.
+- **County is wrong for some stations.** Bala, Cynwyd and Rosemont are in Montgomery County but SEPTA lists `Philadelphia`. The two stations named Highland carry inconsistent municipality and county pairs. Do not use `County` or `Municipality` for any join without checking them against a real boundary layer. [Regional Rail stations by district](../regional-rail-station-districts/) has corrected values from Census boundaries.
 - **Districts may not be current.** We have not checked SEPTA's district fields against the post-2022 legislative maps. Treat them as SEPTA's claim until a point-in-polygon check is done.
 - **Not one row per station.** North Philadelphia appears twice (Chestnut Hill West and Trenton lines, same `Stop_ID`), so there are 155 rows but 154 distinct stations.
 - **One station has no ridership.** 9th Street (Lansdale/Doylestown Line) has empty ridership fields.

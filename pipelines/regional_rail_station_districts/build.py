@@ -13,7 +13,7 @@ Reads, relative to the repo root:
     datasets/pennsylvania/legislators-2025-2026/records/{house,senate}/*.toml
     datasets/pennsylvania/election-2026-flips/records/{house,senate}/*.toml
 
-Each station point is placed in a district by point-in-polygon. Stations outside
+Each station point is placed in a district, county and municipality by point-in-polygon. Stations outside
 Pennsylvania (Delaware, New Jersey) get no district. SEPTA's own district fields
 are kept beside the computed ones so disagreements are visible.
 """
@@ -38,12 +38,32 @@ TIGER = {
 }
 
 
-def tiger_districts(ch, tiger_dir):
-    name, col, url = TIGER[ch]
+PLACES = {
+    "county": ("tl_2024_us_county.zip", "https://www2.census.gov/geo/tiger/TIGER2024/COUNTY/tl_2024_us_county.zip"),
+    "municipality": ("tl_2024_42_cousub.zip", "https://www2.census.gov/geo/tiger/TIGER2024/COUSUB/tl_2024_42_cousub.zip"),
+}
+
+
+def tiger_file(name, url, tiger_dir):
     path = Path(tiger_dir) / name if tiger_dir else None
     if not path or not path.exists():
         path = Path(tempfile.mkdtemp()) / name
         urllib.request.urlretrieve(url, path)
+    return path
+
+
+def tiger_places(kind, tiger_dir):
+    """Pennsylvania counties (NAME) or county subdivisions (NAMELSAD) with their geometry."""
+    name, url = PLACES[kind]
+    g = gpd.read_file(f"zip://{tiger_file(name, url, tiger_dir)}")
+    g = g[g["STATEFP"] == "42"]
+    g["place"] = g["NAME"] if kind == "county" else g["NAMELSAD"]
+    return g[["place", "geometry"]].to_crs(PROJ)
+
+
+def tiger_districts(ch, tiger_dir):
+    name, col, url = TIGER[ch]
+    path = tiger_file(name, url, tiger_dir)
     g = gpd.read_file(f"zip://{path}")
     g["district"] = g[col].astype(int).astype(str)
     return g[["district", "geometry"]].to_crs(PROJ)
@@ -75,13 +95,19 @@ def main(out, tiger_dir=None):
             near = bool(d) and pts.geometry.loc[i].distance(edges) * 0.3048 <= NEAR_M
             dist[i] = (d, near)
         res[ch] = dist
+    for kind in ("county", "municipality"):
+        j = gpd.sjoin(pts, tiger_places(kind, tiger_dir), how="left", predicate="within")
+        j = j[~j.index.duplicated(keep="first")]
+        res[kind] = {i: (p if isinstance(p, str) else "") for i, p in zip(j.index, j["place"])}
     rows = []
     for i, s in enumerate(stations):
         r = {
             "line": s["Line_Name"], "station": s["Station_Name"], "stop_id": s["Stop_ID"],
             "latitude": s["Latitude"], "longitude": s["Longitude"],
             "septa_county": s["County"], "septa_municipality": s["Municipality"],
+            "county": res["county"][i], "municipality": res["municipality"][i],
         }
+        r["county_matches_septa"] = "" if not r["county"] else str(r["county"] == s["County"]).lower()
         for ch, septa_col in (("house", "PA_State_House_District"), ("senate", "PA_State_Senate_District")):
             d, near = res[ch][i]
             sd = (s[septa_col] or "").strip()

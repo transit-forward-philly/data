@@ -1,10 +1,10 @@
 # Regional Rail stations by legislative district
 
-**One-line summary:** Each of the 155 Regional Rail station rows placed in its Pennsylvania House and Senate district, with the 2025–26 member and the unofficial 2026 election status of that seat.
+**One-line summary:** Each of the 155 Regional Rail station rows placed in its Pennsylvania House and Senate district, county and municipality, with the 2025–26 member and the unofficial 2026 election status of that seat.
 
 ## Source
 
-- **Derived from:** [SEPTA Regional Rail stations](../septa-regional-rail-stations/) (coordinates), US Census Bureau TIGER/Line 2024 state legislative districts, [PA legislators 2025–26](../../pennsylvania/legislators-2025-2026/) and [2026 election flips](../../pennsylvania/election-2026-flips/)
+- **Derived from:** [SEPTA Regional Rail stations](../septa-regional-rail-stations/) (coordinates), US Census Bureau TIGER/Line 2024 state legislative districts, counties and county subdivisions, [PA legislators 2025–26](../../pennsylvania/legislators-2025-2026/) and [2026 election flips](../../pennsylvania/election-2026-flips/)
 - **Built on:** 2026-11-10
 - **Geography:** SEPTA Regional Rail network; stations outside Pennsylvania have no district
 
@@ -23,7 +23,9 @@ Station coordinates were placed in district polygons by point-in-polygon. Script
 | Column | Description |
 |---|---|
 | `line`, `station`, `stop_id`, `latitude`, `longitude` | From the SEPTA layer |
-| `septa_county`, `septa_municipality` | SEPTA's values, unchanged (some are wrong; see the stations README) |
+| `septa_county`, `septa_municipality` | SEPTA's values, unchanged |
+| `county`, `municipality` | Computed from Census boundaries; blank outside Pennsylvania |
+| `county_matches_septa` | `true` or `false` |
 | `septa_house_district`, `septa_senate_district` | SEPTA's district assignment |
 | `house_district`, `senate_district` | Computed from Census boundaries; blank outside Pennsylvania |
 | `house_matches_septa`, `senate_matches_septa` | `true` or `false` |
@@ -35,6 +37,7 @@ Station coordinates were placed in district polygons by point-in-polygon. Script
 
 - **SEPTA's district fields are mostly out of date.** They disagree with the current maps for 51 of 149 Pennsylvania station rows in the House and 26 of 149 in the Senate. Use the computed columns.
 - **6 stations are in House seats that flipped R to D** (Cornwells Heights, Eddington, Langhorne, Neshaminy Falls, Trevose, Woodbourne) and **8 are in Senate seats that flipped R to D**. No station sits in an uncalled seat.
+- **SEPTA's county is wrong for 7 station rows:** Bala, Cynwyd and Rosemont (Montgomery, not Philadelphia), Hatboro (Montgomery, not Bucks), Highland and Angora (Philadelphia, not Delaware), and Lawndale (computed as Montgomery's Cheltenham Township; it sits on the city line, so check it). Use `county` and `municipality`.
 - Six rows (Delaware and New Jersey stations) are outside Pennsylvania and have no district.
 
 ## Known gaps and caveats
