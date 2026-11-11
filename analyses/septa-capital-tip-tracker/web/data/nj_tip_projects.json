@@ -1,0 +1,393 @@
+[
+  {
+    "DBNUM": "DR2006",
+    "Project": "PATCO Stations Modernizations",
+    "Type": "Transit Improvements",
+    "LocationCount": 9,
+    "Municipalities": "Camden City, Cherry Hill Township, Collingswood Borough, Haddon Township, Haddonfield Borough, Lindenwold Borough, Voorhees Township",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "5",
+        "senator": "Nilsa I. Cruz-Perez",
+        "sparty": "D",
+        "assembly1": "William F. Moen Jr.",
+        "a1party": "D",
+        "assembly2": "William W. Spearman",
+        "a2party": "D"
+      },
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR1803",
+    "Project": "PATCO Station Platform Rehabilitation",
+    "Type": "Transit Improvements",
+    "LocationCount": 7,
+    "Municipalities": "Camden City, Cherry Hill Township, Collingswood Borough, Haddon Township, Haddonfield Borough, Lindenwold Borough, Voorhees Township",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      },
+      {
+        "district": "5",
+        "senator": "Nilsa I. Cruz-Perez",
+        "sparty": "D",
+        "assembly1": "William F. Moen Jr.",
+        "a1party": "D",
+        "assembly2": "William W. Spearman",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR1501A",
+    "Project": "Track Drainage Improvements",
+    "Type": "Transit Improvements",
+    "LocationCount": 2,
+    "Municipalities": "Collingswood Borough, Voorhees Township",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "5",
+        "senator": "Nilsa I. Cruz-Perez",
+        "sparty": "D",
+        "assembly1": "William F. Moen Jr.",
+        "a1party": "D",
+        "assembly2": "William W. Spearman",
+        "a2party": "D"
+      },
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 2,
+    "Max_TitleVI_Score": 2,
+    "Max_IPD_Score": 19
+  },
+  {
+    "DBNUM": "DR2007",
+    "Project": "PATCO Viaduct Preservation Project",
+    "Type": "Transit Improvements",
+    "LocationCount": 2,
+    "Municipalities": "Collingswood Borough, Haddon Township",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "5",
+        "senator": "Nilsa I. Cruz-Perez",
+        "sparty": "D",
+        "assembly1": "William F. Moen Jr.",
+        "a1party": "D",
+        "assembly2": "William W. Spearman",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 1,
+    "Max_TitleVI_Score": 2,
+    "Max_IPD_Score": 13
+  },
+  {
+    "DBNUM": "DR2303",
+    "Project": "PATCO Lindenwold Shop",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Lindenwold Borough",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 2,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 23
+  },
+  {
+    "DBNUM": "D1911",
+    "Project": "PATCO Track Resurfacing & Rail Profile Grinding",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Collingswood Borough",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "5",
+        "senator": "Nilsa I. Cruz-Perez",
+        "sparty": "D",
+        "assembly1": "William F. Moen Jr.",
+        "a1party": "D",
+        "assembly2": "William W. Spearman",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "D1912",
+    "Project": "Rehabilitation of PATCO Bridges",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Haddonfield Borough",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR1501",
+    "Project": "PATCO Interlocking & Track Rehabilitation",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Collingswood Borough",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "5",
+        "senator": "Nilsa I. Cruz-Perez",
+        "sparty": "D",
+        "assembly1": "William F. Moen Jr.",
+        "a1party": "D",
+        "assembly2": "William W. Spearman",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR1802",
+    "Project": "Subway Structures Renovation",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Collingswood Borough",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "5",
+        "senator": "Nilsa I. Cruz-Perez",
+        "sparty": "D",
+        "assembly1": "William F. Moen Jr.",
+        "a1party": "D",
+        "assembly2": "William W. Spearman",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR2301",
+    "Project": "Replacement of Track Ties",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Haddon Township",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR2305",
+    "Project": "PATCO Traction Power",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Haddon Township",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR2306",
+    "Project": "PATCO Signal System",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Haddon Township",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR2307",
+    "Project": "PATCO Rail Replacement",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Haddonfield Borough",
+    "Counties": "Camden",
+    "Districts": [],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "DR2308",
+    "Project": "PATCO Retaining Wall & Enbankment Restoration",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Haddonfield Borough",
+    "Counties": "Camden",
+    "Districts": [
+      {
+        "district": "6",
+        "senator": "James Beach",
+        "sparty": "D",
+        "assembly1": "Louis D. Greenwald",
+        "a1party": "D",
+        "assembly2": "Melinda Kane",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 29
+  },
+  {
+    "DBNUM": "T2401",
+    "Project": "Light Rail Infrastructure Systems and Maintenance",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Edgewater Park Township",
+    "Counties": "Burlington",
+    "Districts": [
+      {
+        "district": "7",
+        "senator": "Troy Singleton",
+        "sparty": "D",
+        "assembly1": "Balvir Singh",
+        "a1party": "D",
+        "assembly2": "Carol A. Murphy",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 30
+  },
+  {
+    "DBNUM": "T44",
+    "Project": "NEC Improvements",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Hamilton Township",
+    "Counties": "Mercer",
+    "Districts": [
+      {
+        "district": "14",
+        "senator": "Linda R. Greenstein",
+        "sparty": "D",
+        "assembly1": "Wade P. DeAngelo",
+        "a1party": "D",
+        "assembly2": "Tennille R. McCoy",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 27
+  },
+  {
+    "DBNUM": "T95",
+    "Project": "Light Rail Infrastructure Improvements",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Edgewater Park Township",
+    "Counties": "Burlington",
+    "Districts": [
+      {
+        "district": "7",
+        "senator": "Troy Singleton",
+        "sparty": "D",
+        "assembly1": "Balvir Singh",
+        "a1party": "D",
+        "assembly2": "Carol A. Murphy",
+        "a2party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_IPD_Score": 30
+  }
+]

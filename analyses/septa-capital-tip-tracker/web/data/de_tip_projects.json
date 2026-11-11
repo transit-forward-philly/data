@@ -1,0 +1,38 @@
+[
+  {
+    "ProjectId": "NRTC-2730",
+    "Project": "Newark Regional Transportation Center",
+    "County": "New Castle",
+    "Municipality": "Newark",
+    "Category": "Management",
+    "Mode": "Transit",
+    "CurrentEstimateTotal_K": 32364.5,
+    "FY2730Total_K": 2262,
+    "SenateDistrict": "8",
+    "Senator": "David P. Sokola",
+    "SenateParty": "D",
+    "HouseDistrict": "25",
+    "Representative": "Cyndie Romer",
+    "HouseParty": "D",
+    "Note": "Amtrak/SEPTA Wilmington/Newark Line station, renamed for Sen. Carper in 2024. Directly adjacent to the existing Newark station in the Tracker's station list.",
+    "LocationCount": 1
+  },
+  {
+    "ProjectId": "CLAY-DECOM",
+    "Project": "Claymont Rail Station Decommissioning",
+    "County": "New Castle",
+    "Municipality": "Claymont",
+    "Category": "Management",
+    "Mode": "Transit",
+    "CurrentEstimateTotal_K": 2150,
+    "FY2730Total_K": 2094,
+    "SenateDistrict": "5",
+    "Senator": "Ray Seigfried",
+    "SenateParty": "D",
+    "HouseDistrict": "7",
+    "Representative": "Larry Lambert",
+    "HouseParty": "D",
+    "Note": "The existing Claymont station is being decommissioned per the FY2027-2030 WILMAPCO TIP — likely tied to the separately-funded new Claymont Regional Transportation Center replacing it (not itself in this TIP pull; verify before publishing this claim externally).",
+    "LocationCount": 1
+  }
+]
