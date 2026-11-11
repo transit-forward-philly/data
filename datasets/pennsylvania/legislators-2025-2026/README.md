@@ -1,6 +1,6 @@
 # PA legislators, 2025–26 session
 
-**One-line summary:** Who held each Pennsylvania House and Senate seat during the 2025–26 session, kept as a fixed snapshot so we can still say who represented a station or project during this session after the November 2026 election changes the roster.
+**One-line summary:** Who held each Pennsylvania House and Senate seat during the 2025–26 session (203 House and 50 Senate), kept as a fixed snapshot so we can still say who represented a station or project during this session after the November 2026 election changes the roster.
 
 ## Source
 
@@ -11,7 +11,7 @@
 
 ## Processing
 
-Converted from the PA Housing Votes member files (`src/data/members/pa-house-2025.ts` and `pa-senate-2025.ts`, last updated 2026-05-11) into one record per member. No members were added, removed or edited.
+Converted from the PA Housing Votes member files (`src/data/members/pa-house-2025.ts` and `pa-senate-2025.ts`, last updated 2026-05-11) into one record per member. Two House members who filled seats vacant in May (Districts 12 and 196) were added from the [vote-transit.netlify.app](https://vote-transit.netlify.app) roster as of 2026-10-05, and each carries a `source_note`. No other members were added, removed or edited.
 
 This dataset is a [gitsheet](../../../docs/gitsheets.md): one TOML file per member in `records/<chamber>/<district>.toml`, validated by `.gitsheets/pa-legislators-2025-2026.toml`. Every change is a commit, so a later correction shows up as a reviewable diff.
 
@@ -19,7 +19,7 @@ This dataset is a [gitsheet](../../../docs/gitsheets.md): one TOML file per memb
 
 | File | Format | Description |
 |---|---|---|
-| `records/house/*.toml`, `records/senate/*.toml` | TOML | One record per member: 201 House, 50 Senate |
+| `records/house/*.toml`, `records/senate/*.toml` | TOML | One record per member: 203 House, 50 Senate |
 
 ## Columns
 
@@ -41,7 +41,7 @@ npx -y gitsheets query pa-legislators-2025-2026 --format=csv > legislators.csv
 
 ## Known gaps and caveats
 
-- **Two House seats are missing.** Districts 12 and 196 were vacant when the roster was captured, so the House has 201 records.
+- **Two House members come from a later roster.** Brandon Dukes (D, HD-12) and George H. Margetas (R, HD-196) were not in the May 2026 snapshot; they are from the vote-transit roster as of 2026-10-05. The House is 103 D and 100 R.
 - **Snapshot, not a history.** Anyone who left or joined after May 2026 is not reflected. Check the Senate in particular, which was captured four days after the House.
 - **Not the incoming legislature.** Members elected on 2026-11-03 take office after this session ends and are not in this file.
 

@@ -39,7 +39,7 @@ Typed from the flip lists above and joined to [`legislators-2025-2026`](../legis
 - **Winners' names are missing** except SD-36. Add them from certified results rather than press accounts.
 - **Seven House races were uncalled** (HD-12, 13, 41, 131, 143, 147, 187) on 2026-11-04. Update them as they are called.
 - **Chamber totals differ across our own documents.** The election brief says about 108 House Democrats with 7 races uncalled. The transportation prioritization memo says at least 111. Settle this against certified results.
-- **HD-12 was vacant** in the 2025–26 roster, so it has no prior incumbent. The brief calls it a Democratic seat.
+- **HD-12's prior incumbent** is Brandon Dukes (D), from the 2026-10-05 roster. The seat was vacant in the May 2026 roster.
 
 ## License
 
