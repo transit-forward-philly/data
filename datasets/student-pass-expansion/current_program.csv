@@ -1,0 +1,12 @@
+measure,value,unit,source,notes
+eligible_students,59706,students,SDP Exhibit A (10/6/2026),Grades 7-12 beyond 1.5 miles
+cards_assigned,49000,students,SDP testimony (10/6/2026),Approximate
+daily_taps,45000,taps,SDP testimony (10/6/2026),Not unique students; one student can generate multiple taps
+annual_billing,30150580,dollars,SDP Exhibit A (10/6/2026),FY total paid to SEPTA
+monthly_rate,88.60,dollars/card/month,SDP Exhibit A (10/6/2026),About 24% off $116 retail pass
+retail_monthly_pass,116.00,dollars/month,SEPTA fare schedule,31-day pass
+eligible_public,29919,students,SDP Written Testimony (10/6/2026),District-operated schools
+eligible_charter,19799,students,SDP Written Testimony (10/6/2026),Charter schools
+eligible_nonpublic,9989,students,SDP Written Testimony (10/6/2026),Non-public schools
+avg_monthly_active_12mo,28358,students,Derived from Exhibit A,"$30,150,580 / $88.60 / 12 = 47.5% of eligible"
+avg_monthly_active_10mo,34030,students,Derived from Exhibit A,"$30,150,580 / $88.60 / 10 = 57% of eligible"
