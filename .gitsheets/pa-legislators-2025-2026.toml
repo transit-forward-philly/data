@@ -37,3 +37,6 @@ type = 'string'
 
 [gitsheet.schema.properties.palegis_bio_url]
 type = 'string'
+
+[gitsheet.schema.properties.source_note]
+type = 'string'
