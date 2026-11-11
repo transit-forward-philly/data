@@ -18,6 +18,7 @@ Cleaned, documented datasets. Each dataset gets its own folder with its data fil
 | Dataset | Description | Format | Last updated |
 |---|---|---|---|
 | [Student pass expansion](philadelphia/student-pass-expansion/) | Cost, enrollment, and utilization data behind SDP's $63.8M expansion estimate | CSV | 2026-11-10 |
+| [SEPTA Key Advantage partners](philadelphia/septa-key-advantage/) | 70 employers on SEPTA's Sept 2026 Key Advantage list, with member counts, worksite addresses and council districts | CSV + GeoJSON | 2026-11-11 |
 
 ## Pennsylvania
 
