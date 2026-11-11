@@ -22,7 +22,7 @@ This is a [gitsheet](../../../docs/gitsheets.md): one TOML file per concept in `
 
 ## Bills and sessions
 
-Every bill number in a concept is a **2025–26** session number, marked by `bills_session`. That session ends on 2026-11-30, so those numbers will not carry over: bills must be re-introduced in January 2027 with new numbers. Votes on these bills are in [`transportation-votes-2025-26`](../transportation-votes-2025-26/).
+Every bill number in a concept is a **2025–26** session number, marked by `bills_session`. That session ends on 2026-11-30, so those numbers will not carry over: bills must be re-introduced in January 2027 with new numbers. Votes on these bills are in [`transportation-votes`](../transportation-votes/).
 
 Concepts with no bill number have no bill on record. Earlier-session items the memo cites (HB 291's predecessor, SB 121 of 2023, HB 1307 and HB 902, Act 38 of 2023, Act 101 of 2016) are mentioned in each concept's `notes` or `furthest_stage` text and are not separate records.
 
