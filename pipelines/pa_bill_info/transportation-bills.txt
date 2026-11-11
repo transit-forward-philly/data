@@ -1,0 +1,18 @@
+# Bills named in the 2027-28 transportation prioritization memo (2025-26 session numbers).
+# One per line: BILLID or BILLID:SESSION_YEAR. Lines starting with # are ignored.
+hb1364
+hb1788
+hb257
+sb160
+hb291
+hb2635
+sb509
+hb1955
+hb1146
+sb796
+sb1072
+hb1085
+hb2129
+sb910
+# Earlier session cited by the memo (Senate passed SB 121 28-21 in 2023, State Police off the Motor License Fund).
+sb121:2023
