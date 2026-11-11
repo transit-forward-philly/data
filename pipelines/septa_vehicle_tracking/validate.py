@@ -1,4 +1,4 @@
-"""Sanity-check the published CSVs in datasets/septa_bus_delay/.
+"""Sanity-check the published CSVs in datasets/septa-region/septa-bus-delay/.
 
 Run:      python validate.py
 Needs:    duckdb (no working data; it reads only the committed CSVs)
@@ -14,7 +14,7 @@ from pathlib import Path
 
 import duckdb
 
-DATASET = Path(__file__).resolve().parents[2] / "datasets" / "septa_bus_delay"
+DATASET = Path(__file__).resolve().parents[2] / "datasets" / "septa-region" / "septa-bus-delay"
 
 KEYS = {
     "route_month.csv": "mode, route, month",

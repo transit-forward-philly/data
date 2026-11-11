@@ -3,7 +3,7 @@
 Source:   $TFP_DATA_DIR/septa_tracking/stop_visits/   (from stop_visits.py)
           $TFP_DATA_DIR/septa_gtfs/trips_index.parquet (from ../septa_gtfs_archive)
 Produces: $TFP_DATA_DIR/septa_tracking/trip_runs.parquet (one row per trip run)
-          datasets/septa_bus_delay/*.csv                  (committed to the repo)
+          datasets/septa-region/septa-bus-delay/*.csv                  (committed to the repo)
 Run:      python aggregate.py
 
 Each trip run is matched to the GTFS schedule version in force on its service
@@ -29,7 +29,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 # Groups with fewer stop visits than this are left out of the hourly and stop
 # tables, where percentiles from a handful of readings would be noise.
 MIN_VISITS = 20
-OUT_DIR = REPO_ROOT / "datasets" / "septa_bus_delay"
+OUT_DIR = REPO_ROOT / "datasets" / "septa-region" / "septa-bus-delay"
 
 MODES = """
     CASE route_type WHEN '3' THEN 'bus' WHEN '0' THEN 'trolley'

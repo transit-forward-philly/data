@@ -1,0 +1,38 @@
+[gitsheet]
+root = 'datasets/pennsylvania/transportation-bills-2027-28/roll-calls'
+path = '${{ vote_key }}'
+
+[gitsheet.schema]
+type = 'object'
+required = ['vote_key', 'bill', 'chamber', 'date', 'motion', 'tally', 'source_url']
+additionalProperties = false
+
+[gitsheet.schema.properties.vote_key]
+type = 'string'
+
+[gitsheet.schema.properties.bill]
+type = 'string'
+
+[gitsheet.schema.properties.chamber]
+enum = ['house', 'senate']
+
+[gitsheet.schema.properties.date]
+type = 'string'
+
+[gitsheet.schema.properties.motion]
+type = 'string'
+
+[gitsheet.schema.properties.tally]
+type = 'string'
+
+[gitsheet.schema.properties.source_url]
+type = 'string'
+
+[gitsheet.schema.properties.pro_position]
+enum = ['Yea', 'Nay']
+
+[gitsheet.schema.properties.yes_means]
+type = 'string'
+
+[gitsheet.schema.properties.no_means]
+type = 'string'

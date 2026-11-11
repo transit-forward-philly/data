@@ -14,7 +14,7 @@ by route, stop, month and scheduled start hour, from SEPTA's own real-time feed.
 
 ## Processing
 
-Built by [`pipelines/septa_vehicle_tracking/`](../../pipelines/septa_vehicle_tracking/),
+Built by [`pipelines/septa_vehicle_tracking/`](../../../pipelines/septa_vehicle_tracking/),
 which describes the method in full. In short:
 
 1. The feed records each vehicle on every poll. Each trip is cut into **stop

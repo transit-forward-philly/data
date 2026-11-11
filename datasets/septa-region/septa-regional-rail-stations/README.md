@@ -11,7 +11,7 @@
 
 ## Processing
 
-Every attribute SEPTA publishes was kept as is. Only the internal `OBJECTID` and `GlobalID` columns were dropped, and rows were sorted by line then station. Script: [`pipelines/septa_regional_rail_stations/fetch.py`](../../pipelines/septa_regional_rail_stations/fetch.py).
+Every attribute SEPTA publishes was kept as is. Only the internal `OBJECTID` and `GlobalID` columns were dropped, and rows were sorted by line then station. Script: [`pipelines/septa_regional_rail_stations/fetch.py`](../../../pipelines/septa_regional_rail_stations/fetch.py).
 
 ## Files
 

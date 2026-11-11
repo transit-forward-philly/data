@@ -1,0 +1,42 @@
+[gitsheet]
+root = 'datasets/pennsylvania/election-2026-flips/records'
+path = '${{ chamber }}/${{ district }}'
+
+[gitsheet.schema]
+type = 'object'
+required = ['chamber', 'district', 'outcome', 'result_status', 'as_of', 'source']
+additionalProperties = false
+
+[gitsheet.schema.properties.chamber]
+enum = ['house', 'senate']
+
+[gitsheet.schema.properties.district]
+type = 'string'
+pattern = '^[0-9]{1,3}$'
+
+[gitsheet.schema.properties.outcome]
+enum = ['flip_r_to_d', 'flip_d_to_r', 'uncalled']
+
+[gitsheet.schema.properties.result_status]
+enum = ['unofficial', 'certified']
+
+[gitsheet.schema.properties.as_of]
+type = 'string'
+
+[gitsheet.schema.properties.prior_party]
+enum = ['D', 'R']
+
+[gitsheet.schema.properties.prior_incumbent]
+type = 'string'
+
+[gitsheet.schema.properties.new_party]
+enum = ['D', 'R']
+
+[gitsheet.schema.properties.winner_name]
+type = 'string'
+
+[gitsheet.schema.properties.note]
+type = 'string'
+
+[gitsheet.schema.properties.source]
+type = 'string'
