@@ -36,3 +36,6 @@ type = 'string'
 
 [gitsheet.schema.properties.no_means]
 type = 'string'
+
+[gitsheet.schema.properties.committee]
+type = 'string'
