@@ -1,5 +1,5 @@
 [gitsheet]
-root = 'datasets/pennsylvania/transportation-bills-2027-28/concepts'
+root = 'datasets/pennsylvania/transportation-priorities-2027-28/concepts'
 path = '${{ slug }}'
 
 [gitsheet.schema]
