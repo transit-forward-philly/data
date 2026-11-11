@@ -1,0 +1,15 @@
+administrative = 3
+bills = ["HB 2635"]
+concept = "Speed camera municipal opt-in (HB 2635)"
+cost = 5
+effectiveness = 5
+furthest_stage = "Referred to Transportation June 15, 2026"
+governor = 3
+momentum = "Medium"
+momentum_score_implied = 3
+rank = 4
+score_in_memo = 46
+scores_status = "draft"
+slug = "04-speed-camera-municipal-opt-in-hb-2635"
+sponsor = "Khan (D-Phila.), 9 D and 5 R cosponsors"
+tier = 1

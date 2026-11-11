@@ -1,0 +1,42 @@
+[gitsheet]
+root = 'datasets/pennsylvania/legislators-2025-2026/records'
+path = '${{ chamber }}/${{ district }}'
+
+[gitsheet.schema]
+type = 'object'
+required = ['chamber', 'district', 'full_name', 'last_name', 'party']
+additionalProperties = false
+
+[gitsheet.schema.properties.chamber]
+enum = ['house', 'senate']
+
+[gitsheet.schema.properties.district]
+type = 'string'
+pattern = '^[0-9]{1,3}$'
+
+[gitsheet.schema.properties.full_name]
+type = 'string'
+
+[gitsheet.schema.properties.last_name]
+type = 'string'
+
+[gitsheet.schema.properties.party]
+enum = ['D', 'R', 'I']
+
+[gitsheet.schema.properties.status]
+enum = ['current', 'former']
+
+[gitsheet.schema.properties.term_end]
+type = 'string'
+
+[gitsheet.schema.properties.term_end_note]
+type = 'string'
+
+[gitsheet.schema.properties.email]
+type = 'string'
+
+[gitsheet.schema.properties.palegis_bio_url]
+type = 'string'
+
+[gitsheet.schema.properties.source_note]
+type = 'string'

@@ -1,0 +1,15 @@
+admin_cap = true
+administrative = 1
+concept = "Congestion pricing, cordon pricing, bridge tolling enabling law"
+cost = 5
+effectiveness = 4
+furthest_stage = "No record"
+governor = 1
+momentum = "No record"
+momentum_score_implied = 0
+notes = "Administrative score of 1 caps this concept at Tier 3."
+rank = 18
+score_in_memo = 26
+scores_status = "draft"
+slug = "18-congestion-pricing-cordon-pricing-bridge-tolling-enabling-la"
+tier = 3

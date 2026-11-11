@@ -1,0 +1,8 @@
+chamber = "house"
+district = "12"
+full_name = "Brandon Dukes"
+last_name = "Dukes"
+palegis_bio_url = "https://www.palegis.us/house/members/bio/2067/rep-brandon-dukes"
+party = "D"
+source_note = "Not in the May 2026 roster (seat was vacant then). Added from the vote-transit.netlify.app roster, as of 2026-10-05."
+status = "current"

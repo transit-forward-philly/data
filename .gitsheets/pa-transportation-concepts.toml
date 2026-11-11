@@ -1,0 +1,71 @@
+[gitsheet]
+root = 'datasets/pennsylvania/transportation-bills-2027-28/concepts'
+path = '${{ slug }}'
+
+[gitsheet.schema]
+type = 'object'
+required = ['slug', 'rank', 'concept', 'effectiveness', 'administrative', 'governor', 'cost', 'momentum', 'score_in_memo', 'tier', 'scores_status']
+additionalProperties = false
+
+[gitsheet.schema.properties.slug]
+type = 'string'
+
+[gitsheet.schema.properties.rank]
+type = 'integer'
+
+[gitsheet.schema.properties.concept]
+type = 'string'
+
+[gitsheet.schema.properties.effectiveness]
+type = 'integer'
+minimum = 0
+maximum = 5
+
+[gitsheet.schema.properties.administrative]
+type = 'integer'
+minimum = 0
+maximum = 5
+
+[gitsheet.schema.properties.governor]
+type = 'integer'
+minimum = 0
+maximum = 5
+
+[gitsheet.schema.properties.cost]
+type = 'integer'
+minimum = 0
+maximum = 5
+
+[gitsheet.schema.properties.momentum]
+enum = ['High', 'Medium', 'Low', 'No record']
+
+[gitsheet.schema.properties.momentum_score_implied]
+type = 'integer'
+minimum = 0
+maximum = 5
+
+[gitsheet.schema.properties.score_in_memo]
+type = 'integer'
+
+[gitsheet.schema.properties.tier]
+type = 'integer'
+minimum = 1
+maximum = 3
+
+[gitsheet.schema.properties.admin_cap]
+type = 'boolean'
+
+[gitsheet.schema.properties.scores_status]
+enum = ['draft', 'calibrated']
+
+[gitsheet.schema.properties.bills]
+type = 'array'
+
+[gitsheet.schema.properties.sponsor]
+type = 'string'
+
+[gitsheet.schema.properties.furthest_stage]
+type = 'string'
+
+[gitsheet.schema.properties.notes]
+type = 'string'

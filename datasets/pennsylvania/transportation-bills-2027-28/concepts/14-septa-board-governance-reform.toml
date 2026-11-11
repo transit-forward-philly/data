@@ -1,0 +1,13 @@
+administrative = 3
+concept = "SEPTA board governance reform"
+cost = 5
+effectiveness = 2
+furthest_stage = "No record"
+governor = 2
+momentum = "Low"
+momentum_score_implied = 1
+rank = 14
+score_in_memo = 29
+scores_status = "draft"
+slug = "14-septa-board-governance-reform"
+tier = 3

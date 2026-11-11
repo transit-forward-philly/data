@@ -1,0 +1,16 @@
+administrative = 4
+bills = ["HB 2129", "SB 910"]
+concept = "Natural gas severance tax (HB 2129, SB 910)"
+cost = 5
+effectiveness = 2
+furthest_stage = "Introduced Jan 12, 2026 (HB 2129) and July 8, 2025 (SB 910); in committee"
+governor = 1
+momentum = "Medium"
+momentum_score_implied = 2
+notes = "SB 910 proposes 6.5%."
+rank = 11
+score_in_memo = 32
+scores_status = "draft"
+slug = "11-natural-gas-severance-tax-hb-2129-sb-910"
+sponsor = "Pielli and Khan; Senate sponsor to confirm"
+tier = 3

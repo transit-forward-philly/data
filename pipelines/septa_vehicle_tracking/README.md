@@ -1,7 +1,7 @@
 # SEPTA vehicle tracking → bus delay by route
 
 Turns a raw dump of SEPTA's real-time vehicle positions into delay tables by
-route, stop, month and scheduled start hour. Output: [`datasets/septa_bus_delay/`](../../datasets/septa_bus_delay/).
+route, stop, month and scheduled start hour. Output: [`datasets/septa-region/septa-bus-delay/`](../../datasets/septa-region/septa-bus-delay/).
 
 ## Source
 

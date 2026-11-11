@@ -1,0 +1,15 @@
+administrative = 4
+bills = ["SB 1072"]
+concept = "Red light camera reauthorization or permanence"
+cost = 5
+effectiveness = 4
+furthest_stage = "Sunset July 15, 2027 (75 Pa.C.S. 3116 and 3117, Act 101 of 2016)"
+governor = 4
+momentum = "Medium"
+momentum_score_implied = 3
+notes = "SB 1072 adds second-class counties (in committee since Oct 21, 2025). A statewide mock bill circulated Aug 2026 requires a local referendum; not introduced as far as the memo found."
+rank = 2
+score_in_memo = 47
+scores_status = "draft"
+slug = "02-red-light-camera-reauthorization-or-permanence"
+tier = 1
