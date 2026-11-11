@@ -11,29 +11,37 @@
 
 ## Processing
 
-Converted from the PA Housing Votes member files (`src/data/members/pa-house-2025.ts` and `pa-senate-2025.ts`, last updated 2026-05-11) into one CSV, sorted by chamber and district. No members were added, removed or edited.
+Converted from the PA Housing Votes member files (`src/data/members/pa-house-2025.ts` and `pa-senate-2025.ts`, last updated 2026-05-11) into one record per member. No members were added, removed or edited.
+
+This dataset is a [gitsheet](../../../docs/gitsheets.md): one TOML file per member in `records/<chamber>/<district>.toml`, validated by `.gitsheets/pa-legislators-2025-2026.toml`. Every change is a commit, so a later correction shows up as a reviewable diff.
 
 ## Files
 
 | File | Format | Description |
 |---|---|---|
-| `pa-legislators-2025-2026.csv` | CSV | One row per member: 201 House, 50 Senate |
+| `records/house/*.toml`, `records/senate/*.toml` | TOML | One record per member: 201 House, 50 Senate |
 
 ## Columns
 
 | Column | Type | Description |
 |---|---|---|
-| `chamber` | text | `House` or `Senate` |
-| `district` | integer | District number |
+| `chamber` | text | `house` or `senate` |
+| `district` | text | District number, e.g. `19` |
 | `full_name`, `last_name` | text | As palegis.us lists them |
 | `party` | text | `D` or `R` |
 | `status` | text | `current` as of the capture date |
 | `term_end`, `term_end_note`, `email` | text | Optional, mostly empty |
 | `palegis_bio_url` | text | Member's page on palegis.us |
 
+## Get it as a table
+
+```bash
+npx -y gitsheets query pa-legislators-2025-2026 --format=csv > legislators.csv
+```
+
 ## Known gaps and caveats
 
-- **Two House seats are missing.** Districts 12 and 196 were vacant when the roster was captured, so the House has 201 rows.
+- **Two House seats are missing.** Districts 12 and 196 were vacant when the roster was captured, so the House has 201 records.
 - **Snapshot, not a history.** Anyone who left or joined after May 2026 is not reflected. Check the Senate in particular, which was captured four days after the House.
 - **Not the incoming legislature.** Members elected on 2026-11-03 take office after this session ends and are not in this file.
 

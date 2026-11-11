@@ -8,7 +8,7 @@ Everything here is free to use. We hope it's useful to researchers, reporters, s
 
 | Folder | What it holds |
 |---|---|
-| [`datasets/`](datasets/) | Cleaned, documented datasets you can download (CSV, GeoJSON) |
+| [`datasets/`](datasets/) | Cleaned, documented datasets you can download (CSV, GeoJSON, and [gitsheets](docs/gitsheets.md) records), grouped by geography |
 | [`pipelines/`](pipelines/) | Scripts that pull public data from its source so datasets can be refreshed |
 | [`analyses/`](analyses/) | Research projects, one folder each, with methods and outputs |
 | [`docs/`](docs/) | Templates and guides for contributors |
