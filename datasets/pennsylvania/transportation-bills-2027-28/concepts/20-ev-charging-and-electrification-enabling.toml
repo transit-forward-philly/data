@@ -1,0 +1,13 @@
+administrative = 3
+concept = "EV charging and electrification enabling"
+cost = 3
+effectiveness = 2
+furthest_stage = "No record"
+governor = 3
+momentum = "No record"
+momentum_score_implied = 0
+rank = 20
+score_in_memo = 24
+scores_status = "draft"
+slug = "20-ev-charging-and-electrification-enabling"
+tier = 3

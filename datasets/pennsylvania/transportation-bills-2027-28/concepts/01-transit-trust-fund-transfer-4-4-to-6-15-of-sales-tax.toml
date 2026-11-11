@@ -1,0 +1,16 @@
+administrative = 5
+bills = ["HB 1364 (number unconfirmed)", "HB 1788", "SB 796"]
+concept = "Transit trust fund transfer (4.4% to 6.15% of sales tax)"
+cost = 2
+effectiveness = 5
+furthest_stage = "Passed House June 17, 2025; five House passages in all; no Senate action"
+governor = 5
+momentum = "High"
+momentum_score_implied = 4
+notes = "HB 1788 passed the House Aug 11, 2025 (confirm it is the funding package); SB 796 is a rental vehicle tax for transit, in committee since June 16, 2025."
+rank = 1
+score_in_memo = 51
+scores_status = "draft"
+slug = "01-transit-trust-fund-transfer-4-4-to-6-15-of-sales-tax"
+sponsor = "Neilson (D-Phila.)"
+tier = 1

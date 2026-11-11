@@ -1,0 +1,15 @@
+administrative = 5
+bills = ["HB 1085"]
+concept = "State Police off the Motor License Fund (HB 1085)"
+cost = 1
+effectiveness = 2
+furthest_stage = "In committee since Mar 31, 2025"
+governor = 4
+momentum = "Medium"
+momentum_score_implied = 3
+notes = "Senate passed SB 121 in 2023 (28-21)."
+rank = 9
+score_in_memo = 35
+scores_status = "draft"
+slug = "09-state-police-off-the-motor-license-fund-hb-1085"
+tier = 2

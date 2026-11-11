@@ -1,0 +1,15 @@
+administrative = 4
+bills = ["HB 1146"]
+concept = "Local-option transit taxes (HB 1146)"
+cost = 5
+effectiveness = 4
+furthest_stage = "In committee"
+governor = 2
+momentum = "Medium"
+momentum_score_implied = 2
+notes = "Prior session: HB 1307 (Hohenstein) and HB 902 (Waxman). Sponsor to confirm."
+rank = 7
+score_in_memo = 40
+scores_status = "draft"
+slug = "07-local-option-transit-taxes-hb-1146"
+tier = 2

@@ -1,0 +1,15 @@
+administrative = 4
+concept = "E-bike three-class definition with local control"
+cost = 5
+effectiveness = 3
+furthest_stage = "Awaiting committee action"
+governor = 3
+momentum = "Medium"
+momentum_score_implied = 3
+notes = "Bill number not found; Rep. Cooper proposal plus 2025 and 2026 cosponsor memos."
+rank = 6
+score_in_memo = 42
+scores_status = "draft"
+slug = "06-e-bike-three-class-definition-with-local-control"
+sponsor = "Cooper (R-55) and others"
+tier = 2

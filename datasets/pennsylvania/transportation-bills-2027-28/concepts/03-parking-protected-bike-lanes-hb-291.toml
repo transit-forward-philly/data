@@ -1,0 +1,16 @@
+administrative = 5
+bills = ["HB 291"]
+concept = "Parking-protected bike lanes (HB 291)"
+cost = 5
+effectiveness = 3
+furthest_stage = "Passed House 183-19 on Feb 3, 2025; stalled in Senate; passed House 198-5 last session"
+governor = 3
+momentum = "High"
+momentum_score_implied = 4
+notes = "Susan's and Emily's Law."
+rank = 3
+score_in_memo = 47
+scores_status = "draft"
+slug = "03-parking-protected-bike-lanes-hb-291"
+sponsor = "Daley (D) and Maloney (R)"
+tier = 1

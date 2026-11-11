@@ -1,0 +1,13 @@
+administrative = 4
+concept = "Daylighting and intersection parking preemption"
+cost = 5
+effectiveness = 3
+furthest_stage = "No record"
+governor = 3
+momentum = "No record"
+momentum_score_implied = 0
+rank = 10
+score_in_memo = 33
+scores_status = "draft"
+slug = "10-daylighting-and-intersection-parking-preemption"
+tier = 3

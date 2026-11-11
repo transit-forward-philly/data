@@ -1,0 +1,13 @@
+administrative = 3
+concept = "Plate cover ban, front plates, plate enforcement"
+cost = 5
+effectiveness = 2
+furthest_stage = "No record"
+governor = 2
+momentum = "No record"
+momentum_score_implied = 0
+rank = 16
+score_in_memo = 26
+scores_status = "draft"
+slug = "16-plate-cover-ban-front-plates-plate-enforcement"
+tier = 3

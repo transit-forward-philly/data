@@ -1,0 +1,16 @@
+administrative = 4
+bills = ["SB 509", "HB 1955"]
+concept = "Local police radar (SB 509)"
+cost = 5
+effectiveness = 3
+furthest_stage = "In Senate Transportation since Mar 26, 2025"
+governor = 3
+momentum = "High"
+momentum_score_implied = 4
+notes = "HB 1955 is the House companion."
+rank = 5
+score_in_memo = 45
+scores_status = "draft"
+slug = "05-local-police-radar-sb-509"
+sponsor = "Rothman (R) with Democratic and Republican cosponsors"
+tier = 1
