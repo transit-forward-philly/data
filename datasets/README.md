@@ -26,5 +26,5 @@ Cleaned, documented datasets. Each dataset gets its own folder with its data fil
 | [PA legislators, 2025–26 session](pennsylvania/legislators-2025-2026/) | Fixed snapshot of 203 House and 50 Senate members (May 2026, plus two vacancies filled by October) | gitsheet | 2026-11-10 |
 | [2026 election results](pennsylvania/election-2026-results/) | Winners of all 228 legislative races (203 House, 25 Senate), with prior incumbents and flips; unofficial | gitsheet | 2026-11-10 |
 | [Transportation priorities, 2027–28](pennsylvania/transportation-priorities-2027-28/) | 20 scored concepts from the prioritization memo, with the 2025–26 bills that carry each | gitsheet | 2026-11-10 |
-| [Transportation votes, 2025–26](pennsylvania/transportation-votes/) | Floor and committee roll calls on transit funding and bike lane bills, with every member's vote | gitsheet + CSV | 2026-11-10 |
+| [Transportation votes](pennsylvania/transportation-votes/) | 21 floor and committee roll calls on transit funding, bike lane and radar bills (2023–24 and 2025–26), with every member's vote | gitsheet + CSV | 2026-11-10 |
 | [Boundaries](pennsylvania/boundaries/) | House and Senate districts, counties, municipalities, with census and permit facts | GeoJSON | 2026-11-10 |
