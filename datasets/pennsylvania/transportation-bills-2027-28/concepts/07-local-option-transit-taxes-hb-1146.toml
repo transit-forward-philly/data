@@ -1,5 +1,6 @@
 administrative = 4
 bills = ["HB 1146"]
+bills_session = "2025-26"
 concept = "Local-option transit taxes (HB 1146)"
 cost = 5
 effectiveness = 4

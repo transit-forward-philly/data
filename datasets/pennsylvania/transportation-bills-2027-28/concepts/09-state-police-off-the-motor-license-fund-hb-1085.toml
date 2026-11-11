@@ -1,5 +1,6 @@
 administrative = 5
 bills = ["HB 1085"]
+bills_session = "2025-26"
 concept = "State Police off the Motor License Fund (HB 1085)"
 cost = 1
 effectiveness = 2

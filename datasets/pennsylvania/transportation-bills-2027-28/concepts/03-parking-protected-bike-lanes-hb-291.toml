@@ -1,5 +1,6 @@
 administrative = 5
 bills = ["HB 291"]
+bills_session = "2025-26"
 concept = "Parking-protected bike lanes (HB 291)"
 cost = 5
 effectiveness = 3

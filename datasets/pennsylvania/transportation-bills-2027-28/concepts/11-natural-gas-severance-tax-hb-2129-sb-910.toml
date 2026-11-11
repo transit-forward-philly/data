@@ -1,5 +1,6 @@
 administrative = 4
 bills = ["HB 2129", "SB 910"]
+bills_session = "2025-26"
 concept = "Natural gas severance tax (HB 2129, SB 910)"
 cost = 5
 effectiveness = 2

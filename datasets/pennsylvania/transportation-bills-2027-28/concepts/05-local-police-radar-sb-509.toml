@@ -1,5 +1,6 @@
 administrative = 4
 bills = ["SB 509", "HB 1955"]
+bills_session = "2025-26"
 concept = "Local police radar (SB 509)"
 cost = 5
 effectiveness = 3
