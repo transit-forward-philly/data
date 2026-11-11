@@ -27,7 +27,7 @@ Concepts and roll calls are [gitsheets](../../../docs/gitsheets.md) (`.gitsheets
 - **Scores are draft.** The memo says so; `scores_status` stays `draft` until calibrated.
 - **Momentum labels are loose.** "Medium" stands for a momentum score of 2 in some rows and 3 in others, so `momentum_score_implied` is derived from the memo's own totals.
 - **Most bills have no floor vote.** HB 2635, SB 509, HB 1146, SB 796, SB 1072, HB 1085, HB 2129 and SB 910 are in committee. Still to add: the June 17, 2025 House vote on the trust fund transfer bill, whose number the memo says to confirm (HB 1364).
-- **Two committee members have no district or party.** Joshua Siegel and Torren Ecker voted in the HB 291 Appropriations vote but are not in the May 2026 roster, so those fields are blank for them in `member-votes.csv`.
+- **Two committee members have no district or party.** Joshua Siegel and Torren Ecker voted in the HB 291 Appropriations vote but are not in the May 2026 roster, so those fields are blank for them in `member-votes.csv`. Siegel left the House to become Lehigh County Executive. We have not confirmed why Ecker is missing.
 - **Every 2025–26 bill dies on 2026-11-30.** Bill numbers here are placeholders until re-introduction in January.
 - **Cosponsor counts** are in the memo only for HB 2635 and are not in this dataset yet.
 
