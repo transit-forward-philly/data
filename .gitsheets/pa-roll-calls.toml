@@ -1,5 +1,5 @@
 [gitsheet]
-root = 'datasets/pennsylvania/transportation-votes-2025-26/roll-calls'
+root = 'datasets/pennsylvania/transportation-votes/roll-calls'
 path = '${{ vote_key }}'
 
 [gitsheet.schema]

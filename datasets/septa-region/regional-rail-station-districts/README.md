@@ -17,6 +17,7 @@ Station coordinates were placed in district polygons by point-in-polygon. Script
 | File | Format | Description |
 |---|---|---|
 | `regional-rail-station-districts.csv` | CSV | One row per station per line, 155 rows |
+| `census-geocoder-check.csv` | CSV | Independent check of the 149 Pennsylvania rows against the Census address geocoder |
 
 ## Columns
 
@@ -41,6 +42,10 @@ Station coordinates were placed in district polygons by point-in-polygon. Script
 - **6 stations are in House seats that flipped R to D:** Cornwells Heights, Eddington, Neshaminy Falls and Trevose (HD-18, Bryan F. Allen Jr. replacing K.C. Tomlinson) and Langhorne and Woodbourne (HD-142, Kristin Egan replacing Joe Hogan). **8 are in Senate seats that flipped R to D:** SD-6 (Eileen Hartnett Albillar replacing Frank Farry) and SD-24 (Christopher Thomas replacing Tracy Pennycuick). No station sits in a seat still being counted.
 - **SEPTA's county is wrong for 6 station rows:** Bala, Cynwyd and Rosemont (Montgomery, not Philadelphia), Hatboro (Montgomery, not Bucks), and Highland and Angora (Philadelphia, not Delaware). Use `county` and `municipality`.
 - Six rows (Delaware and New Jersey stations) are outside Pennsylvania and have no district.
+
+## Independent check
+
+The Census Bureau's address geocoder was given each station's street address (script: [`check_with_census_geocoder.py`](../../../pipelines/regional_rail_station_districts/check_with_census_geocoder.py)). It matched 120 of the 149 Pennsylvania rows; 29 addresses did not match. Of the 120 matched, the House district agreed for 108 and the Senate district for 119 (the one difference is Fernwood-Yeadon, a boundary case). The 12 House differences are listed in `census-geocoder-check.csv`: 7 are within about 100 m of a district edge, and the rest are likely address-versus-coordinate differences (several SEPTA addresses have typos, for example "Philadaelphia" and "Villonova"). Lawndale, resolved separately, agrees with the geocoder (HD 203, SD 3). Treat the differing rows, and the 29 unmatched ones, as the least certain.
 
 ## Known gaps and caveats
 

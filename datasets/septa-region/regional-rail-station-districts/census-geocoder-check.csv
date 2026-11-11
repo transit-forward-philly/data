@@ -1,0 +1,150 @@
+line,station,address,our_house,our_senate,near_house_edge,matched_address,census_house,census_senate,result
+Airport Line,Airport Terminal A,"Airport Terminal A, Philadelphia 19153",185,1,false,,,,unmatched
+Airport Line,Airport Terminal B,"Airport Terminal B, Philadelphia 19153",185,1,false,,,,unmatched
+Airport Line,Airport Terminals C&D,"Airport Terminals C&D, Philadelphia 19153",185,1,false,,,,unmatched
+Airport Line,Airport Terminals E&F,"Airport Terminals E&F, Philadelphia 19153",185,1,false,,,,unmatched
+Airport Line,Eastwick,"8511 Bartram Ave, Philadelphia 19153",185,1,false,"8511 BARTRAM AVE, PHILADELPHIA, PA, 19153",185,1,agree
+Chestnut Hill East Line,Chestnut Hill East,"100 E. Chestnut Hill Ave, Philadelphia 19118",194,4,false,"100 E CHESTNUT HILL AVE, PHILADELPHIA, PA, 19118",194,4,agree
+Chestnut Hill East Line,Germantown,"150 E. Chelten Ave, Philadelphia 19144",201,4,false,"150 E CHELTEN AVE, PHILADELPHIA, PA, 19144",201,4,agree
+Chestnut Hill East Line,Gravers,"8321 Anderson St, Philadelphia 19118",194,4,false,"8321 ANDERSON ST, PHILADELPHIA, PA, 19118",194,4,agree
+Chestnut Hill East Line,Mount Airy,"149 E. Gowen Ave, Philadelphia 19119",200,4,false,"149 E GOWEN AVE, PHILADELPHIA, PA, 19119",200,4,agree
+Chestnut Hill East Line,Sedgwick,"7139 Devon St, Philadelphia 19119",200,4,false,"7139 DEVON ST, PHILADELPHIA, PA, 19119",200,4,agree
+Chestnut Hill East Line,Stenton,"6797 Blakemore St, Philadelphia 19119",200,4,false,,,,unmatched
+Chestnut Hill East Line,Washington Lane,"823 E. Washington Ln, Philadelphia 19138",201,4,true,"823 E WASHINGTON LN, PHILADELPHIA, PA, 19138",200,4,differs
+Chestnut Hill East Line,Wister,"5230 Belfield Ave, Philadelphia 19144",201,4,false,"5230 BELFIELD AVE, PHILADELPHIA, PA, 19144",201,4,agree
+Chestnut Hill East Line,Wyndmoor,"256 Wyndmoor St, Philadelphia 19118",194,4,false,,,,unmatched
+Chestnut Hill West Line,Allen Lane,"7260 Cresheim Rd, Philadelphia 19119",200,4,false,"7260 CRESHEIM RD, PHILADELPHIA, PA, 19119",200,4,agree
+Chestnut Hill West Line,Carpenter,"201 Carpenter Ln, Philadelphia 19119",200,4,false,"201 CARPENTER LN, PHILADELPHIA, PA, 19119",200,4,agree
+Chestnut Hill West Line,Chelten Avenue,"359 W. Chelten Ave, Philadelphia 19144",201,4,false,"359 W CHELTEN AVE, PHILADELPHIA, PA, 19144",201,4,agree
+Chestnut Hill West Line,Chestnut Hill West,"9 W. Evergreen Ave, Philadelphia 19118",194,4,false,"9 W EVERGREEN AVE, PHILADELPHIA, PA, 19118",194,4,agree
+Chestnut Hill West Line,Highland,"8452 St. Martins Ln, Philadelphia 19118",194,4,false,"8452 SAINT MARTINS LN, PHILADELPHIA, PA, 19118",194,4,agree
+Chestnut Hill West Line,North Philadelphia,"1503 W. Indiana Ave, Philadelphia 19132",190,3,false,"1503 W INDIANA AVE, PHILADELPHIA, PA, 19132",190,3,agree
+Chestnut Hill West Line,Queen Lane,"575 W. Queen Ln , Philadelphia 19144",201,7,true,"575 W QUEEN LN, PHILADELPHIA, PA, 19144",198,7,differs
+Chestnut Hill West Line,St. Martins,"320 W. Willow Grove Ave, Philadelphia 19118",200,4,true,"320 W WILLOW GROVE AVE, PHILADELPHIA, PA, 19118",200,4,agree
+Chestnut Hill West Line,Tulpehocken,"333 W. Tulpehocken St, Philadelphia 19144",201,4,false,"333 E TULPEHOCKEN ST, PHILADELPHIA, PA, 19144",201,4,agree
+Chestnut Hill West Line,Upsal,"6505 Greene St, Philadelphia 19119",200,4,false,"6505 GREENE ST, PHILADELPHIA, PA, 19119",200,4,agree
+Cynwyd Line,Bala,"9 City Ave, Philadelphia 19131",148,17,true,,,,unmatched
+Cynwyd Line,Cynwyd,"1 E. Montgomery Ave, Bala Cynwyd 19004",148,17,false,"1 MONTGOMERY AVE, BALA CYNWYD, PA, 19004",148,17,agree
+Cynwyd Line,Wynnefield Avenue,"5024  Wynnfield Ave, Philadelphia 19131",190,7,true,"5024 WYNNEFIELD AVE, PHILADELPHIA, PA, 19131",192,7,differs
+Fox Chase Line,Cheltenham,"589 Hasbrook Ave, Philadelphia 19111",203,2,true,,,,unmatched
+Fox Chase Line,Fox Chase,"440 Rhawn St, Philadelphia 19111",172,5,false,"440 RHAWN ST, PHILADELPHIA, PA, 19111",172,5,agree
+Fox Chase Line,Lawndale,"105 Devereaux Ave, Philadelphia 19111",203,3,true,"105 DEVEREAUX AVE, PHILADELPHIA, PA, 19111",203,3,agree
+Fox Chase Line,Olney,"5411 N. Mascher St, Philadelphia 19120",179,3,false,"5411 N MASCHER ST, PHILADELPHIA, PA, 19120",179,3,agree
+Fox Chase Line,Ryers,"701 Cottman Ave, Philadelphia 19111",172,5,true,"701 COTTMAN AVE, PHILADELPHIA, PA, 19111",172,5,agree
+Joint,30th Street Station,"2955 Market St, Philadaelphia 19104",10,7,false,"2955 MARKET ST, PHILADELPHIA, PA, 19104",10,7,agree
+Joint,Elkins Park,"7876 Spring Ave, Elkins Park 19027",154,4,false,"7876 SPRING AVE, ELKINS PARK, PA, 19027",154,4,agree
+Joint,Fern Rock T.C.,"900 Nedro Ave, Philadelphia 19141",198,3,false,"900 W NEDRO AVE, PHILADELPHIA, PA, 19141",198,3,agree
+Joint,Glenside,"49 W. Glenside Ave, Glenside 19038",154,4,true,"49 W GLENSIDE AVE, GLENSIDE, PA, 19038",154,4,agree
+Joint,Jefferson,"1100 Market St, Philadaelphia 19107",175,1,false,"1100 MARKET ST, PHILADELPHIA, PA, 19107",182,1,differs
+Joint,Jenkintown-Wyncote,"2 Greenwood Ave, Jenkintown 19046",154,4,false,,,,unmatched
+Joint,Melrose Park,"900 Valley Rd, Elkins Park 19027",154,4,false,"900 VALLEY RD, ELKINS PARK, PA, 19027",154,4,agree
+Joint,North Broad,"2693 N. Broad St (near Lehigh Ave), Philadelphia 19133",181,3,false,"2693 N BROAD ST, PHILADELPHIA, PA, 19132",181,3,agree
+Joint,Penn Medicine,"3149 Convention Blvd, Philadaelphia 19104",188,8,false,,,,unmatched
+Joint,Suburban Station,"1600 J.F.K Blvd, Philadaelphia 19103",182,1,false,"1600 JOHN F KENNEDY BLVD, PHILADELPHIA, PA, 19103",182,1,agree
+Joint,Temple University,"927 W. Berks St, Philadelphia 19122",181,3,false,"927 W BERKS ST, PHILADELPHIA, PA, 19122",181,3,agree
+Joint,Wayne Junction,"2129 Windrim Ave, Philadaelphia 19144",198,3,false,"2129 WINDRIM AVE, PHILADELPHIA, PA, 19141",198,3,agree
+Lansdale Doylestown Line,9th Street,"141 W. Ninth St, Lansdale 19446",53,12,false,,,,unmatched
+Lansdale Doylestown Line,Ambler,"35 W. Butler Ave, Ambler 19002",151,12,false,"35 W BUTLER AVE, AMBLER, PA, 19002",151,12,agree
+Lansdale Doylestown Line,Chalfont,"13 Sunset Ave, Chalfont 18914",29,10,false,"13 SUNSET AVE, CHALFONT, PA, 18914",29,10,agree
+Lansdale Doylestown Line,Colmar,"107 Bethlehem Pk, Colmar 18915",53,12,false,"107 BETHLEHEM PIKE, COLMAR, PA, 18915",53,12,agree
+Lansdale Doylestown Line,Delaware Valley University,"700 E. Butler Ave (on campus), Doylestown 18901",29,10,false,"700 E BUTLER AVE, DOYLESTOWN, PA, 18901",29,10,agree
+Lansdale Doylestown Line,Doylestown,"130 S. Clinton St, Doylestown 18901",29,10,false,"130 S CLINTON ST, DOYLESTOWN, PA, 18901",29,10,agree
+Lansdale Doylestown Line,Fort Washington,"7299 Station Ave, Fort Washington 19034",148,7,false,,,,unmatched
+Lansdale Doylestown Line,Fortuna,"101 Cowpath Rd, Landsdale 19446",53,12,false,,,,unmatched
+Lansdale Doylestown Line,Gwynedd Valley,"521 Plymouth Rd, Ambler 19002",61,12,false,,,,unmatched
+Lansdale Doylestown Line,Lansdale,"80 W. Main St, Landsdale 19446",53,12,false,"80 W MAIN ST, LANSDALE, PA, 19446",53,12,agree
+Lansdale Doylestown Line,Link Belt,"3367 E. Walnut St, Chalfont 18915",53,12,false,,,,unmatched
+Lansdale Doylestown Line,New Britain,"100 S. Tamenend, Doylestown 18901",29,10,false,"100 S TAMENEND AVE, DOYLESTOWN, PA, 18901",29,10,agree
+Lansdale Doylestown Line,North Hills,"85 Station Ave, Glenside 19038",153,4,true,"85 STATION AVE, GLENSIDE, PA, 19038",153,4,agree
+Lansdale Doylestown Line,North Wales,"605 Beaver St, North Wales 19454",61,24,false,"605 BEAVER ST, NORTH WALES, PA, 19454",61,24,agree
+Lansdale Doylestown Line,Oreland,"1502 Bruce Rd, Oreland 19075",154,4,false,"1502 BRUCE RD, ORELAND, PA, 19075",154,4,agree
+Lansdale Doylestown Line,Penllyn,"908 Pershing Rd, Blue Bell 19422",61,12,false,"908 PERSHING RD, BLUE BELL, PA, 19422",61,12,agree
+Lansdale Doylestown Line,Pennbrook,"1114 Church Rd, Landsdale 19446",53,12,false,,,,unmatched
+Manayunk Norristown Line,Allegheny,"3235 N. 22nd St, Philadelphia 19140",190,3,false,"3235 N 22ND ST, PHILADELPHIA, PA, 19140",190,3,agree
+Manayunk Norristown Line,Conshohocken,"20  Washington St, Conshohocken 19428",54,7,false,"20 WASHINGTON ST, CONSHOHOCKEN, PA, 19428",54,7,agree
+Manayunk Norristown Line,East Falls,"3610 Midvale Ave, Philadelphia 19129",194,7,false,"3610 MIDVALE AVE, PHILADELPHIA, PA, 19129",194,7,agree
+Manayunk Norristown Line,Elm Street,"793 Markley St, Norristown 19401",54,17,false,"793 MARKLEY ST, NORRISTOWN, PA, 19401",54,17,agree
+Manayunk Norristown Line,Ivy Ridge,"4910 Umbria St, Philadelphia 19128",194,7,false,"4910 UMBRIA ST, PHILADELPHIA, PA, 19127",194,7,agree
+Manayunk Norristown Line,Main Street,"305 W. Main St at Markley St, Norristown 19401",54,17,false,"W MAIN ST & MARKLEY ST, NORRISTOWN, PA, 19401",54,17,agree
+Manayunk Norristown Line,Manayunk,"117 Carson St, Philadelphia 19127",194,7,false,"117 CARSON ST, PHILADELPHIA, PA, 19127",194,7,agree
+Manayunk Norristown Line,Miquon,"1096 River Rd, Conshohocken 19428",148,7,false,"1096 RIVER RD, CONSHOHOCKEN, PA, 19428",148,7,agree
+Manayunk Norristown Line,Norristown T.C.,"103 Dekalb St, Norristown 19401",54,17,false,"103 DEKALB ST, NORRISTOWN, PA, 19405",149,17,differs
+Manayunk Norristown Line,Spring Mill,"98 Station Ave (near Hector St), Conshohocken 19428",148,7,false,,,,unmatched
+Manayunk Norristown Line,Wissahickon,"5100 Rochelle Ave, Philadelphia 19128",194,7,false,,,,unmatched
+Media Elwyn Line,49th Street,"49th St & Chester Ave, Philadelphia 19143",188,8,false,"S 49TH ST & CHESTER AVE, PHILADELPHIA, PA, 19143",188,8,agree
+Media Elwyn Line,Angora,"1099 S. 58th St, Philadelphia 19143",188,8,true,"1099 S 58TH ST, PHILADELPHIA, PA, 19143",188,8,agree
+Media Elwyn Line,Clifton-Aldan,"1 Springfield Rd, Clifton Heights 19018",163,26,false,"1 SPRINGFIELD RD, CLIFTON HEIGHTS, PA, 19018",163,26,agree
+Media Elwyn Line,Elwyn,"149 Elwyn Rd, Media 19063",161,9,true,"149 ELWYN RD, MEDIA, PA, 19063",168,9,differs
+Media Elwyn Line,Fernwood-Yeadon,"413 S. Church Ln, Lansdowne 19050",164,26,true,"413 CHURCH LN, LANSDOWNE, PA, 19050",191,8,differs
+Media Elwyn Line,Gladstone,"198 Walsh Rd, Lansdowne 19050",164,26,false,"198 WALSH RD, LANSDOWNE, PA, 19050",164,26,agree
+Media Elwyn Line,Lansdowne,"45 S. Lansdowne Ave, Lansdowne 19050",164,26,false,"45 S LANSDOWNE AVE, LANSDOWNE, PA, 19050",164,26,agree
+Media Elwyn Line,Media,"309 Media Station Rd, Media 19063",165,26,false,"309 MEDIA STATION RD, MEDIA, PA, 19063",165,26,agree
+Media Elwyn Line,Morton,"2 S. Morton Ave, Morton 19070",165,26,false,"2 S MORTON AVE, MORTON, PA, 19070",165,26,agree
+Media Elwyn Line,Moylan-Rose Valley,"4 Manchester Rd, Media 19063",161,9,true,"4 MANCHESTER RD, MEDIA, PA, 19063",161,9,agree
+Media Elwyn Line,Primos,"446 S. Oak Ave, Clifton Heights 19018",163,26,false,"446 S OAK AVE, CLIFTON HEIGHTS, PA, 19018",163,26,agree
+Media Elwyn Line,Secane,"1297 Providence Rd, Clifton Heights 19018",163,26,false,"1297 PROVIDENCE RD, CLIFTON HEIGHTS, PA, 19018",162,26,differs
+Media Elwyn Line,Swarthmore,"2 S. Chester Rd, Swarthmore 19081",165,26,false,,,,unmatched
+Media Elwyn Line,Wallingford,"141 E. Possum Hollow Rd, Wallingford 19086",161,9,false,"141 E POSSUM HOLLOW RD, WALLINGFORD, PA, 19086",161,9,agree
+Paoli Thorndale Line,Ardmore,"39 Station Rd, Ardmore 19003",149,17,false,"39 STATION RD, ARDMORE, PA, 19003",149,17,agree
+Paoli Thorndale Line,Berwyn,"654 E. Lancaster Ave, Berwyn 19312",157,19,false,"654 LANCASTER AVE, BERWYN, PA, 19312",157,19,agree
+Paoli Thorndale Line,Bryn Mawr,"54 N. Bryn Mawr Ave, Bryn Mawr 19010",149,17,false,"54 N BRYN MAWR AVE, BRYN MAWR, PA, 19010",149,17,agree
+Paoli Thorndale Line,Daylesford,"1301 Lancaster Ave, Berwyn 19312",157,19,false,"1301 LANCASTER AVE, BERWYN, PA, 19312",157,19,agree
+Paoli Thorndale Line,Devon,"1 N. Devon Blvd (off Lancaster Ave), Devon 19333",157,19,false,"1 N DEVON BLVD, DEVON, PA, 19333",157,19,agree
+Paoli Thorndale Line,Downingtown,"159 Viaduct Ave, Downingtown 19335",155,19,false,"159 VIADUCT AVE, DOWNINGTOWN, PA, 19335",155,19,agree
+Paoli Thorndale Line,Exton,"445 Walkertown Rd (off PA Route 100), Exton 19341",167,19,false,"445 WALKERTOWN RD, EXTON, PA, 19341",167,19,agree
+Paoli Thorndale Line,Haverford,"43 Haverford Station Rd, Haverford 19041",149,17,false,"43 HAVERFORD STATION RD, HAVERFORD, PA, 19041",149,17,agree
+Paoli Thorndale Line,Malvern,"15 N. Warren Ave (near King St), Malvern 19355",167,19,false,,,,unmatched
+Paoli Thorndale Line,Merion,"293 Idris Rd, Merion Station 19066",148,17,false,"293 IDRIS RD, MERION STATION, PA, 19066",148,17,agree
+Paoli Thorndale Line,Narberth,"211 Elmwood Ave, Narbeth 19072",148,17,false,"211 ELMWOOD AVE, NARBERTH, PA, 19072",148,17,agree
+Paoli Thorndale Line,Overbrook,"2195 N. 63rd St (off City Ave), Merion Station 19066",192,7,true,,,,unmatched
+Paoli Thorndale Line,Paoli,"13 N. Valley Rd (near Lincoln Highway), Paoli 19301",157,19,false,"13 N VALLEY RD, PAOLI, PA, 19301",157,19,agree
+Paoli Thorndale Line,Radnor,"291 King of Prussia Rd, Wayne 19087",168,17,false,"291 KING OF PRUSSIA RD, WAYNE, PA, 19087",149,17,differs
+Paoli Thorndale Line,Rosemont,"43 Airdale Rd, Bryn Mawr 19010",149,17,false,"43 AIRDALE RD, BRYN MAWR, PA, 19010",149,17,agree
+Paoli Thorndale Line,St. Davids,"53 Chamounix Rd (near Lancaster Ave), Wayne 19087",168,17,false,"53 CHAMOUNIX RD, WAYNE, PA, 19087",168,17,agree
+Paoli Thorndale Line,Strafford,"97 Old Eagle School Rd, Wayne 19087",157,19,false,"97 OLD EAGLE SCHOOL RD, WAYNE, PA, 19087",157,19,agree
+Paoli Thorndale Line,Thorndale,"201 S. Bailey Rd, Thorndale 19372",74,44,false,"201 N BAILEY RD, THORNDALE, PA, 19372",74,44,agree
+Paoli Thorndale Line,Villanova,"308 N. Spring Mill Rd, Villonova 19085",168,17,false,"308 N SPRING MILL RD, VILLANOVA, PA, 19085",149,17,differs
+Paoli Thorndale Line,Wayne,"145 N. Wayne Ave, Wayne 19087",168,17,false,"145 N WAYNE AVE, WAYNE, PA, 19087",168,17,agree
+Paoli Thorndale Line,Whitford,"401 Spackman Ln, Exton 19341",167,19,false,,,,unmatched
+Paoli Thorndale Line,Wynnewood,"67 E. Wynnewood Rd, Wynnewood 19096",148,17,true,"67 E WYNNEWOOD RD, WYNNEWOOD, PA, 19096",149,17,differs
+Trenton Line,Bridesburg,"2202 Bridge St, Philadelphia 19137",177,2,true,"2202 BRIDGE ST, PHILADELPHIA, PA, 19137",177,2,agree
+Trenton Line,Bristol,"790 Washington St, Bristol 19007",141,10,false,"790 WASHINGTON ST, BRISTOL, PA, 19007",141,10,agree
+Trenton Line,Cornwells Heights,"799 Station Ave (off I-95), Bensalem 19020",18,6,false,"799 STATION AVE, BENSALEM, PA, 19020",18,6,agree
+Trenton Line,Croydon,"751 Bristol Pike, Croydon 19021",141,10,false,"751 BRISTOL PIKE, CROYDON, PA, 19021",141,10,agree
+Trenton Line,Eddington,"1099 Street Rd, Bensalem 19020",18,6,false,,,,unmatched
+Trenton Line,Holmesburg Junction,"4783 Rhawn St, Philadelphia 19136",173,5,false,"4783 RHAWN ST, PHILADELPHIA, PA, 19136",173,5,agree
+Trenton Line,Levittown,"8301 Bristol Pike, Bristol 19007",140,10,false,,,,unmatched
+Trenton Line,North Philadelphia,"2900 N. Broad St, Philadelphia 19132",190,3,false,"2900 N BROAD ST, PHILADELPHIA, PA, 19132",190,3,agree
+Trenton Line,Tacony,"4938 Disston St, Philadelphia 19135",173,5,false,"4938 DISSTON ST, PHILADELPHIA, PA, 19135",173,5,agree
+Trenton Line,Torresdale,"9648 James St, Philadelphia 19114",173,5,true,,,,unmatched
+Warminster Line,Ardsley,"2620 Jenkintown Rd, Glenside 19038",153,4,false,"2620 JENKINTOWN RD, GLENSIDE, PA, 19038",153,4,agree
+Warminster Line,Crestmont,"2198 Rubicam Ave, Willow Grove 19090",152,4,false,"2198 RUBICAM AVE, WILLOW GROVE, PA, 19090",152,4,agree
+Warminster Line,Hatboro,"40 S. Penn St, Hatbro 19040",152,12,false,"40 S PENN ST, HATBORO, PA, 19040",152,12,agree
+Warminster Line,Roslyn,"1095 Easton Rd, Abington 19001",153,4,false,"1095 EASTON RD, ABINGTON, PA, 19001",153,4,agree
+Warminster Line,Warminster,"100 Station Dr, Warminster 18974",144,6,false,,,,unmatched
+Warminster Line,Willow Grove,"215 Davisville Rd (off Old York Rd), Willow Grove 19090",152,12,false,"215 DAVISVILLE RD, WILLOW GROVE, PA, 19090",152,12,agree
+West Trenton Line,Bethayres,"500 Station Ave, Huntingdon Valley 19006",152,12,false,"500 STATION AVE, HUNTINGDON VALLEY, PA, 19006",152,12,agree
+West Trenton Line,Forest Hills,"299 Byberry Rd, Philadelphia 19116",170,5,false,"299 BYBERRY RD, PHILADELPHIA, PA, 19116",170,5,agree
+West Trenton Line,Langhorne,"137 Comly Ave, Langhorne 19047",142,6,false,"137 COMLY AVE, LANGHORNE, PA, 19047",142,6,agree
+West Trenton Line,Meadowbrook,"1430 Old Valley Rd, Jenkintown 19046",153,4,false,"1430 OLD VALLEY RD, JENKINTOWN, PA, 19046",153,4,agree
+West Trenton Line,Neshaminy Falls,"4255 E. Bristol Rd, Trevose 19053",18,6,false,"4255 E BRISTOL RD, TREVOSE, PA, 19053",18,6,agree
+West Trenton Line,Noble,"801 Old York Rd, Jenkintown 19046",153,4,true,"801 OLD YORK RD, JENKINTOWN, PA, 19046",153,4,agree
+West Trenton Line,Philmont,"106 Tomlinson Rd, Huntingdon Valley 19006",152,12,false,"106 TOMLINSON RD, HUNTINGDON VALLEY, PA, 19006",152,12,agree
+West Trenton Line,Rydal,"1470 Susquehanna Rd, Jenkintown 19046",153,4,false,"1470 SUSQUEHANNA RD, JENKINTOWN, PA, 19046",153,4,agree
+West Trenton Line,Somerton,"13623 Philmont Ave, Philadelphia 19116",170,5,false,"13623 PHILMONT AVE, PHILADELPHIA, PA, 19116",170,5,agree
+West Trenton Line,Trevose,"1100 Boundbrook Ave, Trevose 19053",18,6,false,,,,unmatched
+West Trenton Line,Woodbourne,"903 Woodbourne Rd, Langhorne 19047",142,6,false,,,,unmatched
+West Trenton Line,Yardley,"13 Reading Ave, Morrisville 19067",31,10,false,"13 READING AVE, MORRISVILLE, PA, 19067",31,10,agree
+Wilmington Newark Line,Chester T.C.,"550 Avenue of the States, Chester 19013",159,9,false,"550 AVE OF THE STATES, CHESTER, PA, 19013",159,9,agree
+Wilmington Newark Line,Crum Lynne,"350 W. Ridley Ave, Ridley Park 19078",162,26,false,"350 W RIDLEY AVE, RIDLEY PARK, PA, 19078",162,26,agree
+Wilmington Newark Line,Curtis Park,"400 Oak Ave, Sharon Hill 19079",162,8,false,"400 OAK AVE, SHARON HILL, PA, 19079",162,8,agree
+Wilmington Newark Line,Darby,"399 S. 4th St, Darby 19023",191,8,true,"399 S 4TH ST, DARBY, PA, 19023",185,8,differs
+Wilmington Newark Line,Eddystone,"650 Saville Ave, Crum Lynne 19022",159,9,false,"650 SAVILLE AVE, CRUM LYNNE, PA, 19022",159,9,agree
+Wilmington Newark Line,Folcroft,"1555 Baltimore Ave, Folcroft 19032",162,8,false,"1555 BALTIMORE AVE, FOLCROFT, PA, 19032",162,8,agree
+Wilmington Newark Line,Glenolden,"85 E. Glenolden Ave, Glenolden 19036",162,26,false,"85 E GLENOLDEN AVE, GLENOLDEN, PA, 19036",162,26,agree
+Wilmington Newark Line,Highland Avenue,"450 Highland Ave, Chester 19013",159,9,false,"450 HIGHLAND AVE, CHESTER, PA, 19013",159,9,agree
+Wilmington Newark Line,Marcus Hook,"20 W. 12th St, Marcus Hook 19061",159,9,false,,,,unmatched
+Wilmington Newark Line,Norwood,"498 Welcome Ave, Norwood 19074",162,8,false,"498 WELCOME AVE, NORWOOD, PA, 19074",162,8,agree
+Wilmington Newark Line,Prospect Park,"749 Maryland Ave, Propect Park 19076",162,26,false,"749 MARYLAND AVE, PROSPECT PARK, PA, 19076",162,26,agree
+Wilmington Newark Line,Ridley Park,"201 E. Hinckley Ave, Ridley Park 19078",162,26,false,"201 E HINCKLEY AVE, RIDLEY PARK, PA, 19078",162,26,agree
+Wilmington Newark Line,Sharon Hill,"414 Sharon Ave, Sharon Hill 19079",162,8,false,"414 SHARON AVE, SHARON HILL, PA, 19079",162,8,agree
