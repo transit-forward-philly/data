@@ -10,6 +10,7 @@ Cleaned, documented datasets. Each dataset gets its own folder with its data fil
 | [SEPTA FY27 unfunded capital projects](septa-region/septa-fy27-unfunded-projects/) | 46 deferred or descoped projects, $2.04B, by county, ADA projects flagged | CSV | 2026-10-15 |
 | [SEPTA Regional Rail stations](septa-region/septa-regional-rail-stations/) | 155 station rows with location, accessibility, amenities, ridership counts and SEPTA-assigned districts | CSV | 2026-11-10 |
 | [Regional Rail stations by district](septa-region/regional-rail-station-districts/) | Each station placed in its PA House and Senate district, with 2025–26 member and 2026 seat status | CSV | 2026-11-10 |
+| [Reimagining Regional Rail claim catalog](septa-region/rrr-claim-catalog/) | 16 fact-check claims from a 2020 regional rail webinar, with status and next check | gitsheet | 2026-11-10 |
 
 ## Philadelphia
 
