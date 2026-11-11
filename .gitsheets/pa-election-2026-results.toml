@@ -1,0 +1,51 @@
+[gitsheet]
+root = 'datasets/pennsylvania/election-2026-results/records'
+path = '${{ chamber }}/${{ district }}'
+
+[gitsheet.schema]
+type = 'object'
+required = ['chamber', 'district', 'outcome', 'result_status', 'as_of', 'source']
+additionalProperties = false
+
+[gitsheet.schema.properties.chamber]
+enum = ['house', 'senate']
+
+[gitsheet.schema.properties.district]
+type = 'string'
+pattern = '^[0-9]{1,3}$'
+
+[gitsheet.schema.properties.outcome]
+enum = ['hold', 'flip_r_to_d', 'flip_d_to_r', 'uncounted']
+
+[gitsheet.schema.properties.winner]
+type = 'string'
+
+[gitsheet.schema.properties.winner_party]
+enum = ['D', 'R', 'I', 'L']
+
+[gitsheet.schema.properties.prior_incumbent]
+type = 'string'
+
+[gitsheet.schema.properties.prior_party]
+enum = ['D', 'R', 'I']
+
+[gitsheet.schema.properties.incumbent_defeated]
+type = 'boolean'
+
+[gitsheet.schema.properties.unopposed]
+type = 'boolean'
+
+[gitsheet.schema.properties.other_candidates]
+type = 'string'
+
+[gitsheet.schema.properties.result_status]
+enum = ['unofficial', 'certified']
+
+[gitsheet.schema.properties.as_of]
+type = 'string'
+
+[gitsheet.schema.properties.note]
+type = 'string'
+
+[gitsheet.schema.properties.source]
+type = 'string'

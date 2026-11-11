@@ -1,0 +1,12 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "142"
+incumbent_defeated = true
+other_candidates = "Joseph M. Hogan (R)"
+outcome = "flip_r_to_d"
+prior_incumbent = "Joe Hogan"
+prior_party = "R"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+winner = "Kristin Egan"
+winner_party = "D"

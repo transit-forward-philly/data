@@ -1,0 +1,11 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "52"
+outcome = "hold"
+prior_incumbent = "Ryan Warner"
+prior_party = "R"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+unopposed = true
+winner = "Ryan Warner"
+winner_party = "R"

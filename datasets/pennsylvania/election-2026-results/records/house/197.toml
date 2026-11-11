@@ -1,0 +1,11 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "197"
+outcome = "hold"
+prior_incumbent = "Danilo Burgos"
+prior_party = "D"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+unopposed = true
+winner = "Danilo Burgos"
+winner_party = "D"

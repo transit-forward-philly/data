@@ -1,0 +1,11 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "149"
+outcome = "hold"
+prior_incumbent = "Tim Briggs"
+prior_party = "D"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+unopposed = true
+winner = "Tim Briggs"
+winner_party = "D"

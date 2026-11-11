@@ -1,0 +1,11 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "190"
+outcome = "hold"
+prior_incumbent = "G. Roni Green"
+prior_party = "D"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+unopposed = true
+winner = "Roni Green"
+winner_party = "D"
