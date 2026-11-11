@@ -1,0 +1,12 @@
+as_of = "2026-11-10"
+chamber = "senate"
+district = "40"
+incumbent_defeated = true
+other_candidates = "Rosemary Brown (R)"
+outcome = "flip_r_to_d"
+prior_incumbent = "Rosemary M. Brown"
+prior_party = "R"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+winner = "Brian A Wrightson"
+winner_party = "D"

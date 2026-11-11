@@ -1,0 +1,12 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "187"
+incumbent_defeated = true
+other_candidates = "Gary Day (R)"
+outcome = "flip_r_to_d"
+prior_incumbent = "Gary Day"
+prior_party = "R"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+winner = "Rachel Marie Guynn-Cuevas"
+winner_party = "D"

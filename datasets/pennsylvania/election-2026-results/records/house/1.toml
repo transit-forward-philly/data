@@ -1,0 +1,11 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "1"
+outcome = "hold"
+prior_incumbent = "Patrick Harkins"
+prior_party = "D"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+unopposed = true
+winner = "Pat Harkins"
+winner_party = "D"

@@ -1,0 +1,12 @@
+as_of = "2026-11-10"
+chamber = "senate"
+district = "36"
+incumbent_defeated = true
+other_candidates = "James Andrew Malone (D)"
+outcome = "flip_d_to_r"
+prior_incumbent = "James Andrew Malone"
+prior_party = "D"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+winner = "Tom Jones"
+winner_party = "R"

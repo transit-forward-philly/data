@@ -1,0 +1,12 @@
+as_of = "2026-11-10"
+chamber = "house"
+district = "160"
+incumbent_defeated = true
+other_candidates = "Craig Williams (R)"
+outcome = "flip_r_to_d"
+prior_incumbent = "Craig Williams"
+prior_party = "R"
+result_status = "unofficial"
+source = "MultiState, Pennsylvania 2026 Election Results, https://www.multistate.us/elections/results/pennsylvania-2026"
+winner = "Elizabeth Moro"
+winner_party = "D"
