@@ -24,4 +24,10 @@ This repo is just getting started, so some folders are still empty.
 
 ## Contributing
 
-You don't need to write code to help. See [CONTRIBUTING.md](CONTRIBUTING.md).
+You don't need to write code to help, and you don't need to open pull requests either. See [CONTRIBUTING.md](CONTRIBUTING.md) for all the ways to contribute and [SECURITY.md](SECURITY.md) for how we keep the repo safe. Everyone here follows our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Contributors
+
+Thanks to everyone who has helped build this. Add yourself in your first contribution, or ask a maintainer to.
+
+- Transit Forward Philly Data Committee
