@@ -14,6 +14,24 @@ The memo table was typed into one record per concept. Each memo score was recomp
 
 Concepts and roll calls are [gitsheets](../../../docs/gitsheets.md) (`.gitsheets/pa-transportation-concepts.toml` and `pa-roll-calls.toml`). Member-by-member votes are a CSV.
 
+## Which session is which
+
+The concepts are **2027–28 priorities**. Every bill number and vote in this dataset is from the **2025–26 session**, which ends Nov 30, 2026, so those numbers will not carry over. Bills must be re-introduced in January 2027 with new numbers. Each roll call and member vote carries a `session` field, and each concept with bills has `bills_session`.
+
+**2025–26 session, in this dataset**
+
+| Bill | What | Votes included |
+|---|---|---|
+| HB 1364 | Public Transportation Trust Fund Transfer Act | House final passage 107-96 (June 17, 2025); Appropriations 22-15 (June 16, 2025) |
+| HB 1788 | Transit and roads funding package | House final passage 108-95 (Aug 11, 2025) |
+| HB 257 | Senate transit funding amendments | Senate: tabling of the Saval amendment and final passage, both 27-22 (Aug 12, 2025) |
+| SB 160 | General Appropriation Act of 2025 | Senate final passage 27-22 (Aug 12, 2025) |
+| HB 291 | Parking-protected bike lanes | House final passage 183-19 (Feb 3, 2025); Appropriations 37-0 (Feb 3, 2025) |
+
+**2025–26 session bills named in the memo with no floor vote:** HB 2635, SB 509, HB 1955, HB 1146, SB 796, SB 1072, HB 1085, HB 2129, SB 910. All are in committee.
+
+**Earlier sessions, cited by the memo but not in this dataset:** the House passing HB 291's predecessor 198-5 ("last session", 2023–24), the Senate passing SB 121 on State Police funding 28-21 in 2023, prior-session local-option tax bills HB 1307 and HB 902, Act 38 of 2023 (HB 1284) on speed cameras, and the red light sunset in Act 101 of 2016 (HB 950 of 2015). The memo says the House has passed a transit funding bill five times; we have two of those votes (HB 1364 and HB 1788), and the memo does not say which sessions the other three were in.
+
 ## Files
 
 | File | Format | Description |
