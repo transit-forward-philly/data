@@ -1,0 +1,1022 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Greater Philadelphia Transit Project Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16231c;
+    --ink-soft:#4a5a51;
+    --bg:#EAE7E4;
+    --surface:#ffffff;
+    --surface-2:#F5F3F1;
+    --line:#d8d3cb;
+    --accent:#00844D;
+    --accent-soft:#d7ebe0;
+    --dem:#2f5fa8;
+    --rep:#b23b3b;
+    --warn-bg:#fbe9d0;
+    --warn-line:#e0a34f;
+    --warn-ink:#6b3f0a;
+    --chip-bg:#F5F3F1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#eef1f7;
+      --ink-soft:#b3c2ba;
+      --bg:#0f1712;
+      --surface:#182019;
+      --surface-2:#1f2921;
+      --line:#324035;
+      --accent:#2fb37c;
+      --accent-soft:#173226;
+      --dem:#7ba3e8;
+      --rep:#e08080;
+      --warn-bg:#3a2c12;
+      --warn-line:#8a5a1e;
+      --warn-ink:#f0c98a;
+      --chip-bg:#1f2921;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#eef1f7;
+    --ink-soft:#b3c2ba;
+    --bg:#0f1712;
+    --surface:#182019;
+    --surface-2:#1f2921;
+    --line:#324035;
+    --accent:#2fb37c;
+    --accent-soft:#173226;
+    --dem:#7ba3e8;
+    --rep:#e08080;
+    --warn-bg:#3a2c12;
+    --warn-line:#8a5a1e;
+    --warn-ink:#f0c98a;
+    --chip-bg:#1f2921;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Hanken Grotesk",system-ui,sans-serif;
+    padding-inline:16px;
+    padding-block:20px 48px;
+  }
+  .wrap{max-width:1080px;margin:0 auto;}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;}
+  h1{
+    font-size:clamp(1.5rem,4vw,2.1rem);
+    margin:0 0 4px;
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+  }
+  h2.section{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);margin:18px 0 8px;}
+  h2.section:first-child{margin-top:0;}
+  .subtitle{color:var(--ink-soft);margin:0 0 18px;font-size:.95rem;}
+  .warning{
+    background:var(--warn-bg);
+    border:1px solid var(--warn-line);
+    color:var(--warn-ink);
+    border-radius:10px;
+    padding:14px 16px;
+    margin-bottom:20px;
+    font-size:.9rem;
+    line-height:1.5;
+  }
+  .warning b{display:block;font-size:.98rem;margin-bottom:4px;}
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
+    gap:10px;
+    margin-bottom:20px;
+  }
+  .stat{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:10px 12px;
+  }
+  .stat .n{font-family:"IBM Plex Mono",monospace;font-size:1.35rem;font-weight:600;display:block;}
+  .stat .l{font-size:.72rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em;}
+  .tabs{display:flex;gap:6px;margin-bottom:14px;border-bottom:1px solid var(--line);}
+  .tab{
+    appearance:none;border:none;background:none;cursor:pointer;
+    padding:9px 14px;font:inherit;font-weight:600;color:var(--ink-soft);
+    border-bottom:2px solid transparent;margin-bottom:-1px;font-size:.92rem;
+  }
+  .tab.active{color:var(--accent);border-bottom-color:var(--accent);}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;align-items:center;}
+  input[type=search]{
+    flex:1;min-width:180px;
+    padding:9px 12px;border:1px solid var(--line);border-radius:8px;
+    background:var(--surface);color:var(--ink);font:inherit;font-size:.9rem;
+  }
+  .chip{
+    appearance:none;border:1px solid var(--line);background:var(--chip-bg);color:var(--ink-soft);
+    border-radius:999px;padding:6px 12px;font:inherit;font-size:.8rem;font-weight:500;cursor:pointer;
+    white-space:nowrap;
+  }
+  .chip.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .card{
+    background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    overflow:hidden;
+  }
+  table{width:100%;border-collapse:collapse;font-size:.86rem;}
+  thead th{
+    text-align:left;background:var(--surface-2);color:var(--ink-soft);
+    font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;
+    padding:9px 12px;font-weight:600;position:sticky;top:0;
+  }
+  thead th.sortable{cursor:pointer;user-select:none;white-space:nowrap;}
+  thead th.sortable:hover{color:var(--ink);}
+  thead th.sortable .arrow{display:inline-block;margin-left:3px;opacity:.35;font-size:.7em;}
+  thead th.sortable.sorted .arrow{opacity:1;color:var(--accent);}
+  .sort-group{display:flex;gap:6px;align-items:center;margin-bottom:10px;}
+  .sort-group .lbl{font-size:.72rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em;margin-right:2px;}
+  tbody td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top;}
+  tbody tr:hover{background:var(--surface-2);}
+  tbody tr.clickable{cursor:pointer;}
+  tr.detail-row td{background:var(--surface-2);padding:14px 16px;}
+  .scroll{overflow-x:auto;}
+  .county-pill{
+    display:inline-block;padding:2px 8px;border-radius:999px;font-size:.72rem;font-weight:600;
+    background:var(--accent-soft);color:var(--accent);
+  }
+  .party{
+    display:inline-block;width:1.5em;text-align:center;border-radius:4px;font-size:.72rem;font-weight:700;
+    color:#fff;
+  }
+  .party.d{background:var(--dem);}
+  .party.r{background:var(--rep);}
+  .flag{color:var(--warn-ink);font-size:.76rem;}
+  .empty{padding:30px;text-align:center;color:var(--ink-soft);}
+  .leg-group{
+    background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:14px 16px;margin-bottom:10px;cursor:pointer;
+  }
+  .leg-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;}
+  .leg-name{font-weight:600;font-size:1rem;}
+  .leg-name .caret{display:inline-block;margin-right:6px;color:var(--ink-soft);font-size:.8rem;transition:transform .15s;}
+  .leg-group.open .leg-name .caret{transform:rotate(90deg);}
+  .leg-meta{color:var(--ink-soft);font-size:.8rem;}
+  .leg-stations{margin-top:8px;font-size:.85rem;color:var(--ink-soft);}
+  .leg-stations b{color:var(--ink);font-weight:500;}
+  .leg-detail{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);display:none;}
+  .leg-group.open .leg-detail{display:block;}
+  .proj-mini{
+    background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:6px;font-size:.82rem;
+  }
+  .proj-mini .pm-title{font-weight:600;}
+  .proj-mini .pm-meta{color:var(--ink-soft);font-size:.78rem;margin-top:2px;}
+  .cta-btn{
+    display:inline-block;margin-top:6px;padding:6px 12px;border-radius:8px;border:1px dashed var(--line);
+    background:none;color:var(--ink-soft);font:inherit;font-size:.78rem;font-weight:600;cursor:not-allowed;
+  }
+  .pbar{position:relative;height:18px;border-radius:9px;overflow:hidden;background:var(--line);display:flex;min-width:120px;}
+  .pbar .seg-high{background:var(--accent);}
+  .pbar .seg-mini{background:var(--accent-soft);}
+  .pbar .seg-low{background:transparent;}
+  .pbar-label{font-size:.72rem;color:var(--ink-soft);margin-left:6px;white-space:nowrap;}
+  .pbar-row{display:flex;align-items:center;}
+  .star{color:var(--accent);}
+  .platform-station-row td{padding:6px 12px;font-size:.82rem;}
+  .badge-high{background:var(--accent);color:#fff;}
+  .badge-mini{background:var(--accent-soft);color:var(--accent);}
+  .badge-low{background:var(--surface-2);color:var(--ink-soft);border:1px solid var(--line);}
+  .platform-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.72rem;font-weight:600;}
+  .foot{margin-top:22px;font-size:.78rem;color:var(--ink-soft);line-height:1.6;}
+  .foot-row{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:22px;}
+  .bpn-badge{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+  .bpn-badge img{width:32px;height:32px;border-radius:6px;display:block;}
+  .bpn-badge span{font-size:.72rem;color:var(--ink-soft);line-height:1.3;}
+  ::selection{background:var(--accent-soft);}
+</style>
+
+<div class="wrap">
+  <h1>Greater Philadelphia Transit Project Tracker</h1>
+  <p class="subtitle">SEPTA transit capital projects, their geography, and the elected officials who represent them &mdash; the base layer for a future call-to-action campaign.</p>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="station">By station</button>
+    <button class="tab" data-tab="legislator">By legislator</button>
+    <button class="tab" data-tab="project">Projects</button>
+    <button class="tab" data-tab="platform">Platform punch list</button>
+    <button class="tab" data-tab="unfunded">At risk (unfunded)</button>
+  </div>
+
+  <div id="view-station">
+    <div class="controls">
+      <input type="search" id="search" placeholder="Search station, municipality, or rep&hellip;">
+      <button class="chip active" data-county="all">All counties</button>
+      <button class="chip" data-county="Philadelphia">Philadelphia</button>
+      <button class="chip" data-county="Montgomery">Montgomery</button>
+      <button class="chip" data-county="Delaware">Delaware</button>
+      <button class="chip" data-county="Bucks">Bucks</button>
+      <button class="chip" data-county="Chester">Chester</button>
+      <button class="chip" data-county="Mercer">Mercer (NJ)</button>
+      <button class="chip" data-county="New Castle">New Castle (DE)</button>
+    </div>
+    <div class="card scroll">
+      <table>
+        <thead>
+          <tr id="station-head">
+            <th class="sortable" data-key="Station">Station<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="Municipality">Municipality<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="County">County<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="PA_House_District" data-type="num">PA House<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="House_Rep_Current">Rep (current)<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="PA_Senate_District" data-type="num">PA Senate<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="Senator_Current">Senator (current)<span class="arrow">&#9660;</span></th>
+          </tr>
+        </thead>
+        <tbody id="station-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="view-legislator" hidden>
+    <div class="controls">
+      <input type="search" id="search-leg" placeholder="Search legislator name&hellip;">
+      <button class="chip active" data-chamber="all">Both chambers</button>
+      <button class="chip" data-chamber="house">PA House</button>
+      <button class="chip" data-chamber="senate">PA Senate</button>
+    </div>
+    <div class="sort-group">
+      <span class="lbl">Rank by</span>
+      <button class="chip active" data-legsort="stations">Most stations</button>
+      <button class="chip" data-legsort="projects">Most TIP projects</button>
+      <button class="chip" data-legsort="name">A&ndash;Z</button>
+    </div>
+    <p class="subtitle" style="margin-top:0;">Click a legislator to see TIP capital projects in their district and who else shares them.</p>
+    <h2 class="section">Pennsylvania</h2>
+    <div id="legislator-body-pa"></div>
+    <h2 class="section">Out of state</h2>
+    <div id="legislator-body-out"></div>
+  </div>
+
+  <div id="view-project" hidden>
+    <div class="sort-group">
+      <span class="lbl">State</span>
+      <button class="chip active" data-projstate="pa">Pennsylvania (SEPTA)</button>
+      <button class="chip" data-projstate="nj">New Jersey (PATCO)</button>
+      <button class="chip" data-projstate="de">Delaware (WILMAPCO)</button>
+    </div>
+    <div class="sort-group" id="tip-filter-group">
+      <span class="lbl">Show</span>
+      <button class="chip active" data-tipfilter="all">All projects</button>
+      <button class="chip" data-tipfilter="ontip">On TIP only</button>
+      <button class="chip" data-tipfilter="budget">Budget-only (not on TIP)</button>
+    </div>
+    <p class="subtitle" id="proj-subtitle" style="margin-top:0;"></p>
+    <div class="controls">
+      <input type="search" id="search-proj" placeholder="Search project name&hellip;">
+    </div>
+
+    <div id="proj-pa-view" class="card scroll">
+      <table>
+        <thead>
+          <tr id="capital-line-head">
+            <th class="sortable" data-key="line">Line / Category<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="count" data-type="num">Projects<span class="arrow">&#9660;</span></th>
+            <th class="sortable sorted" data-key="total12yr" data-type="num">12-Year Total<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="fy27" data-type="num">FY2027<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="onTip" data-type="num">On TIP / Total<span class="arrow">&#9660;</span></th>
+          </tr>
+        </thead>
+        <tbody id="capital-line-body"></tbody>
+      </table>
+    </div>
+
+    <div id="proj-other-view" class="card scroll" hidden>
+      <table>
+        <thead>
+          <tr id="project-head">
+            <th class="sortable" data-key="Project">Project<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="MPMS_ID" data-type="num">MPMS ID<span class="arrow">&#9660;</span></th>
+            <th class="sortable sorted" data-key="LocationCount" data-type="num" data-dir="-1">Locations<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="DistrictCount" data-type="num">Districts touched<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="Max_LowIncome_Score" data-type="num">LI<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="Max_TitleVI_Score" data-type="num">T6<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="Max_Composite_Score" data-type="num">Comp<span class="arrow">&#9660;</span></th>
+          </tr>
+        </thead>
+        <tbody id="project-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="view-platform" hidden>
+    <p class="subtitle" style="margin-top:0;">SEPTA's own station data: which of the 155 Regional Rail stations already have High-level (fully accessible boarding), Mini-high (partial), or Low (not accessible) platforms &mdash; the real punch list behind "15-minute service" and full accessibility. &#9733; = one of the six named S-Line priority termini. <b>Note:</b> Wawa station is missing entirely from SEPTA's public station database, despite being a named S-Line priority &mdash; flagged, not filled in.</p>
+    <div class="card scroll">
+      <table>
+        <thead>
+          <tr id="platform-line-head">
+            <th class="sortable" data-key="line">Line<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="total" data-type="num">Stations<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="high" data-type="num">High<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="mini" data-type="num">Mini-high<span class="arrow">&#9660;</span></th>
+            <th class="sortable" data-key="low" data-type="num">Low<span class="arrow">&#9660;</span></th>
+            <th class="sortable sorted" data-key="pctHigh" data-type="num">% Fully Accessible<span class="arrow">&#9660;</span></th>
+          </tr>
+        </thead>
+        <tbody id="platform-line-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div id="view-unfunded" hidden>
+    <p class="subtitle" style="margin-top:0;">SEPTA's FY27 list of 46 capital projects that are <b>deferred or descoped for lack of funding</b> ($2.04B). Where a project or program also appears in SEPTA's funded capital budget, the row shows that budget line and the TIP program that carries it. Links are hand-reviewed; unlinked projects have no capital budget row we could find. "Same program" means the unfunded row is extra scope or a later phase of a funded program, not a duplicate.</p>
+    <div class="controls">
+      <input type="search" id="search-unf" placeholder="Search project&hellip;">
+      <button class="chip active" data-unfstatus="all">All</button>
+      <button class="chip" data-unfstatus="Deferred">Deferred</button>
+      <button class="chip" data-unfstatus="Descoped">Descoped</button>
+      <button class="chip" data-unfstatus="ada">ADA only</button>
+      <button class="chip" data-unfstatus="linked">Linked to capital budget</button>
+    </div>
+    <div class="card scroll">
+      <table>
+        <thead><tr>
+          <th>Project</th><th>County</th><th>Status</th><th>Value ($M)</th><th>In capital budget / TIP</th>
+        </tr></thead>
+        <tbody id="unfunded-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot-row">
+    <div class="foot">
+      155 SEPTA Regional Rail stations across the current network. 149 fall in Pennsylvania. Trenton Transit Center and West Trenton (Mercer Co., NJ) show NJ Legislative District 15 officials. Wilmington, Claymont, Churchmans Crossing, and Newark (New Castle Co., DE) show Delaware Senate/House officials, verified via Delaware FirstMap's official district boundaries.
+    </div>
+    <div class="bpn-badge"><span>Transit Forward<br>Philly</span></div>
+  </div>
+</div>
+
+<script>
+let DATA = [];
+let TIP = [];
+let NJTIP = [];
+let DETIP = [];
+let PLATFORM = [];
+let CAPITAL = [];
+let UNFUNDED = [];
+
+const S_LINE_TERMINI = new Set(['Airport Line','Media Elwyn Line','Paoli Thorndale Line','Manayunk Norristown Line','Chestnut Hill East Line','Fox Chase Line']);
+
+Promise.all([
+  fetch('data/data.json').then(r=>r.json()),
+  fetch('data/tip_projects.json').then(r=>r.json()),
+  fetch('data/nj_tip_projects.json').then(r=>r.json()),
+  fetch('data/de_tip_projects.json').then(r=>r.json()),
+  fetch('data/platform_punchlist.json').then(r=>r.json()),
+  fetch('data/capital_budget.json').then(r=>r.json()),
+  fetch('data/unfunded_projects.json').then(r=>r.json())
+]).then(([rows, tip, njtip, detip, platform, capital, unfunded])=>{
+  UNFUNDED = unfunded;
+  DATA = rows;
+  TIP = tip;
+  NJTIP = njtip;
+  DETIP = detip;
+  PLATFORM = platform;
+  CAPITAL = capital;
+  render();
+}).catch(()=>{
+  document.getElementById('station-body').innerHTML = '<tr><td colspan="7" class="empty">Could not load station data.</td></tr>';
+});
+
+function isOutOfPA(r){ return r.County === 'New Castle' || r.County === 'Mercer'; }
+
+let countyFilter = 'all';
+let searchTerm = '';
+let stationSort = {key:'Station', dir:1, type:'text'};
+
+function partyBadge(p){
+  if(p === 'D') return '<span class="party d">D</span>';
+  if(p === 'R') return '<span class="party r">R</span>';
+  return '';
+}
+
+function applySort(rows, sort, getVal){
+  const sorted = rows.slice();
+  sorted.sort((a,b)=>{
+    let va = getVal ? getVal(a) : a[sort.key];
+    let vb = getVal ? getVal(b) : b[sort.key];
+    if(sort.type === 'num'){
+      va = va===null||va===undefined||va===''?-Infinity:Number(va);
+      vb = vb===null||vb===undefined||vb===''?-Infinity:Number(vb);
+      return (va - vb) * sort.dir;
+    }
+    va = (va||'').toString().toLowerCase();
+    vb = (vb||'').toString().toLowerCase();
+    if(va < vb) return -1 * sort.dir;
+    if(va > vb) return 1 * sort.dir;
+    return 0;
+  });
+  return sorted;
+}
+
+function wireSortableHead(headEl, sortState, onSort){
+  headEl.querySelectorAll('th.sortable').forEach(th=>{
+    th.classList.toggle('sorted', th.dataset.key === sortState.key);
+    const arrow = th.querySelector('.arrow');
+    if(th.dataset.key === sortState.key) arrow.innerHTML = sortState.dir === 1 ? '&#9650;' : '&#9660;';
+    th.onclick = ()=>{
+      if(sortState.key === th.dataset.key){
+        sortState.dir *= -1;
+      } else {
+        sortState.key = th.dataset.key;
+        sortState.type = th.dataset.type === 'num' ? 'num' : 'text';
+        sortState.dir = th.dataset.type === 'num' ? -1 : 1;
+      }
+      onSort();
+    };
+  });
+}
+
+function renderStations(){
+  const tbody = document.getElementById('station-body');
+  const q = searchTerm.toLowerCase();
+  let rows = DATA.filter(r=>{
+    if(countyFilter !== 'all' && r.County !== countyFilter) return false;
+    if(q && !(r.Station.toLowerCase().includes(q) || r.Municipality.toLowerCase().includes(q) || (r.House_Rep_Current||'').toLowerCase().includes(q) || (r.Senator_Current||'').toLowerCase().includes(q))) return false;
+    return true;
+  });
+  rows = applySort(rows, stationSort);
+  wireSortableHead(document.getElementById('station-head'), stationSort, renderStations);
+  if(!rows.length){
+    tbody.innerHTML = '<tr><td colspan="7" class="empty">No stations match.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(r=>{
+    if(!r.PA_House_District && r.NJ_Legislative_District){
+      return `
+      <tr>
+        <td><strong>${r.Station}</strong></td>
+        <td>${r.Municipality}</td>
+        <td><span class="county-pill">${r.County}, NJ</span></td>
+        <td class="mono">NJ LD${r.NJ_Legislative_District}</td>
+        <td>${r.NJ_Assembly_Members} ${partyBadge(r.NJ_Assembly_Party)}</td>
+        <td class="mono">NJ LD${r.NJ_Legislative_District}</td>
+        <td>${r.NJ_Senator_Current} ${partyBadge(r.NJ_Senate_Party)}</td>
+      </tr>`;
+    }
+    if(!r.PA_House_District && r.DE_Senate_District){
+      return `
+      <tr>
+        <td><strong>${r.Station}</strong></td>
+        <td>${r.Municipality}</td>
+        <td><span class="county-pill">${r.County}, DE</span></td>
+        <td class="mono">DE House ${r.DE_House_District}</td>
+        <td>${r.DE_Rep_Current} ${partyBadge(r.DE_House_Party)}</td>
+        <td class="mono">DE Senate ${r.DE_Senate_District}</td>
+        <td>${r.DE_Senator_Current} ${partyBadge(r.DE_Senate_Party)}</td>
+      </tr>`;
+    }
+    return `
+    <tr>
+      <td><strong>${r.Station}</strong></td>
+      <td>${r.Municipality}</td>
+      <td><span class="county-pill">${r.County}</span></td>
+      <td class="mono">${r.PA_House_District||'&mdash;'}</td>
+      <td>${r.House_Rep_Current||'&mdash;'} ${partyBadge(r.House_Party)}</td>
+      <td class="mono">${r.PA_Senate_District||'&mdash;'}</td>
+      <td>${r.Senator_Current||'&mdash;'} ${partyBadge(r.Senate_Party)}</td>
+    </tr>`;
+  }).join('');
+}
+
+let legChamber = 'all';
+let legSearch = '';
+let openLeg = null;
+let legSort = 'stations';
+
+function projectsForDistrict(chamber, district){
+  return TIP.filter(p=>{
+    const list = chamber === 'house' ? p.Houses : p.Senates;
+    return list.some(d => String(d.district) === String(district));
+  });
+}
+
+function otherLegislatorsOn(project, excludeKey){
+  const all = [];
+  project.Houses.forEach(h=>{ const k='house|'+h.rep; if(k!==excludeKey) all.push(`${h.rep} (PA House ${h.district})`); });
+  project.Senates.forEach(s=>{ const k='senate|'+s.senator; if(k!==excludeKey) all.push(`${s.senator} (PA Senate ${s.district})`); });
+  return all;
+}
+
+function legDetailHtml(g, key){
+  const chamber = g.chamber === 'PA House' ? 'house' : 'senate';
+  const projects = projectsForDistrict(chamber, g.district);
+  if(!projects.length) return `<div class="leg-detail"><em>No TIP capital projects currently touch this district.</em></div>`;
+  return `<div class="leg-detail">
+    <div style="font-size:.8rem;color:var(--ink-soft);margin-bottom:6px;"><b style="color:var(--ink);">TIP projects in this district:</b></div>
+    ${projects.map(p=>{
+      const others = otherLegislatorsOn(p, key);
+      return `<div class="proj-mini">
+        <div class="pm-title">${p.Project}</div>
+        <div class="pm-meta">MPMS ${p.MPMS_ID} &middot; ${p.Municipalities}</div>
+        ${others.length ? `<div class="pm-meta">Also shared with: ${others.join(', ')}</div>` : ''}
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
+function renderLegislators(){
+  const paGroups = {};
+  const outGroups = {};
+  DATA.forEach(r=>{
+    if(!isOutOfPA(r)){
+      if((legChamber === 'all' || legChamber === 'house') && r.House_Rep_Current){
+        const key = 'house|'+r.House_Rep_Current;
+        if(!paGroups[key]) paGroups[key] = {key, name:r.House_Rep_Current, party:r.House_Party, chamber:'PA House', district:r.PA_House_District, stations:[]};
+        paGroups[key].stations.push(r);
+      }
+      if((legChamber === 'all' || legChamber === 'senate') && r.Senator_Current){
+        const key = 'senate|'+r.Senator_Current;
+        if(!paGroups[key]) paGroups[key] = {key, name:r.Senator_Current, party:r.Senate_Party, chamber:'PA Senate', district:r.PA_Senate_District, stations:[]};
+        paGroups[key].stations.push(r);
+      }
+    } else {
+      if(r.NJ_Senator_Current){
+        const key = 'nj-senate|'+r.NJ_Senator_Current;
+        if(!outGroups[key]) outGroups[key] = {key, name:r.NJ_Senator_Current, party:r.NJ_Senate_Party, chamber:'NJ Senate', district:'LD'+r.NJ_Legislative_District, stations:[], noExpand:true};
+        outGroups[key].stations.push(r);
+      }
+      if(r.NJ_Assembly_Members){
+        const key = 'nj-assembly|'+r.NJ_Assembly_Members;
+        if(!outGroups[key]) outGroups[key] = {key, name:r.NJ_Assembly_Members, party:r.NJ_Assembly_Party, chamber:'NJ Assembly', district:'LD'+r.NJ_Legislative_District, stations:[], noExpand:true};
+        outGroups[key].stations.push(r);
+      }
+      if(r.DE_Senator_Current){
+        const key = 'de-senate|'+r.DE_Senator_Current;
+        if(!outGroups[key]) outGroups[key] = {key, name:r.DE_Senator_Current, party:r.DE_Senate_Party, chamber:'DE Senate', district:r.DE_Senate_District, stations:[], noExpand:true};
+        outGroups[key].stations.push(r);
+      }
+      if(r.DE_Rep_Current){
+        const key = 'de-house|'+r.DE_Rep_Current;
+        if(!outGroups[key]) outGroups[key] = {key, name:r.DE_Rep_Current, party:r.DE_House_Party, chamber:'DE House', district:r.DE_House_District, stations:[], noExpand:true};
+        outGroups[key].stations.push(r);
+      }
+    }
+  });
+
+  function projCount(g){
+    if(g.chamber === 'PA House') return projectsForDistrict('house', g.district).length;
+    if(g.chamber === 'PA Senate') return projectsForDistrict('senate', g.district).length;
+    if(g.chamber === 'NJ Senate' || g.chamber === 'NJ Assembly'){
+      const ld = String(g.district).replace('LD','');
+      return NJTIP.filter(p => p.Districts.some(d => String(d.district) === ld)).length;
+    }
+    if(g.chamber === 'DE Senate') return DETIP.filter(p => String(p.SenateDistrict) === String(g.district)).length;
+    if(g.chamber === 'DE House') return DETIP.filter(p => String(p.HouseDistrict) === String(g.district)).length;
+    return 0;
+  }
+
+  function renderGroup(g){
+    const munis = [...new Set(g.stations.map(s=>s.Municipality))];
+    const isOpen = openLeg === g.key;
+    const pc = projCount(g);
+    return `
+    <div class="leg-group ${isOpen?'open':''}" data-legkey="${g.key}">
+      <div class="leg-head">
+        <span class="leg-name">${g.noExpand?'':'<span class="caret">&#9656;</span>'}${g.name} ${partyBadge(g.party)}</span>
+        <span class="leg-meta mono">${g.chamber} &middot; District ${g.district} &middot; ${g.stations.length} station${g.stations.length===1?'':'s'} &middot; ${pc} TIP project${pc===1?'':'s'}</span>
+      </div>
+      <div class="leg-stations"><b>Stations:</b> ${g.stations.map(s=>s.Station).join(', ')}</div>
+      <div class="leg-stations"><b>Municipalities:</b> ${munis.join(', ')}</div>
+      ${g.noExpand ? '' : (isOpen ? legDetailHtml(g, g.key) : '')}
+    </div>`;
+  }
+
+  const q = legSearch.toLowerCase();
+  let paList = Object.values(paGroups);
+  if(q) paList = paList.filter(g=>g.name.toLowerCase().includes(q));
+  if(legSort === 'stations') paList.sort((a,b)=> b.stations.length - a.stations.length);
+  else if(legSort === 'projects') paList.sort((a,b)=> projCount(b) - projCount(a));
+  else paList.sort((a,b)=> a.name.localeCompare(b.name));
+  const paContainer = document.getElementById('legislator-body-pa');
+  paContainer.innerHTML = paList.length ? paList.map(renderGroup).join('') : '<div class="empty">No legislators match.</div>';
+  paContainer.querySelectorAll('.leg-group').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const key = el.dataset.legkey;
+      openLeg = (openLeg === key) ? null : key;
+      renderLegislators();
+    });
+  });
+
+  let outList = Object.values(outGroups);
+  if(q) outList = outList.filter(g=>g.name.toLowerCase().includes(q));
+  if(legSort === 'stations') outList.sort((a,b)=> b.stations.length - a.stations.length);
+  else if(legSort === 'projects') outList.sort((a,b)=> projCount(b) - projCount(a));
+  else outList.sort((a,b)=> a.name.localeCompare(b.name));
+  const outContainer = document.getElementById('legislator-body-out');
+  outContainer.innerHTML = outList.length ? outList.map(renderGroup).join('') : '<div class="empty">No out-of-state officials match.</div>';
+}
+
+function renderStats(){
+  const total = DATA.length;
+  const outOfPA = DATA.filter(isOutOfPA).length;
+  const counties = new Set(DATA.filter(r=>!isOutOfPA(r)).map(r=>r.County)).size;
+  const legislators = new Set();
+  DATA.forEach(r=>{ if(r.House_Rep_Current) legislators.add('h'+r.House_Rep_Current); if(r.Senator_Current) legislators.add('s'+r.Senator_Current); });
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><span class="n mono">${total}</span><span class="l">Stations</span></div>
+    <div class="stat"><span class="n mono">${counties}</span><span class="l">PA counties</span></div>
+    <div class="stat"><span class="n mono">${legislators.size}</span><span class="l">Current legislators</span></div>
+    <div class="stat"><span class="n mono">${TIP.length}</span><span class="l">TIP projects</span></div>
+  `;
+}
+
+let projSearch = '';
+let openProj = null;
+let projState = 'pa';
+let projSort = {key:'LocationCount', dir:-1, type:'num'};
+let tipFilter = 'all';
+
+function projId(r){
+  if(projState === 'pa') return r.MPMS_ID;
+  if(projState === 'nj') return r.DBNUM;
+  return r.ProjectId;
+}
+
+function projDetailHtml(p){
+  if(projState === 'de'){
+    return `<tr class="detail-row"><td colspan="7">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <div><b>County</b><div class="leg-meta">${p.County||'&mdash;'}</div></div>
+        <div><b>Municipality</b><div class="leg-meta">${p.Municipality||'&mdash;'}</div></div>
+        <div><b>Category / Mode</b><div class="leg-meta">${p.Category} / ${p.Mode}</div></div>
+        <div><b>DE Senate</b><div class="leg-meta">${p.Senator} ${partyBadge(p.SenateParty)} <span class="mono">(District ${p.SenateDistrict})</span></div></div>
+        <div><b>DE House</b><div class="leg-meta">${p.Representative} ${partyBadge(p.HouseParty)} <span class="mono">(District ${p.HouseDistrict})</span></div></div>
+        <div><b>Note</b><div class="leg-meta">${p.Note||'&mdash;'}</div></div>
+      </div>
+      <button class="cta-btn" disabled title="Coming soon: form letters + mailto to these lawmakers">Take action &rarr; (coming soon)</button>
+    </td></tr>`;
+  }
+  if(projState === 'pa'){
+    const houses = p.Houses.map(h=>`${h.rep} ${partyBadge(h.party)} <span class="mono">(House ${h.district})</span>`).join('<br>');
+    const senates = p.Senates.map(s=>`${s.senator} ${partyBadge(s.party)} <span class="mono">(Senate ${s.district})</span>`).join('<br>');
+    return `<tr class="detail-row"><td colspan="7">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+        <div><b>Municipalities</b><div class="leg-meta">${p.Municipalities||'&mdash;'}</div></div>
+        <div><b>Counties</b><div class="leg-meta">${p.Counties||'&mdash;'}</div></div>
+        <div><b>PA House reps</b><div class="leg-meta">${houses||'&mdash;'}</div></div>
+        <div><b>PA Senators</b><div class="leg-meta">${senates||'&mdash;'}</div></div>
+      </div>
+      <button class="cta-btn" disabled title="Coming soon: form letters + mailto to these lawmakers">Take action &rarr; (coming soon)</button>
+    </td></tr>`;
+  }
+  const districts = p.Districts.map(d=>
+    `<div style="margin-bottom:6px;"><span class="mono">NJ LD${d.district}</span><br>
+      ${d.senator} ${partyBadge(d.sparty)} (Senate)<br>
+      ${d.assembly1} ${partyBadge(d.a1party)} (Assembly)<br>
+      ${d.assembly2} ${partyBadge(d.a2party)} (Assembly)
+    </div>`
+  ).join('');
+  return `<tr class="detail-row"><td colspan="7">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;">
+      <div><b>Municipalities</b><div class="leg-meta">${p.Municipalities||'&mdash;'}</div></div>
+      <div><b>Counties</b><div class="leg-meta">${p.Counties||'&mdash;'}</div></div>
+      <div><b>NJ Legislative Districts</b><div class="leg-meta">${districts||'&mdash;'}</div></div>
+    </div>
+    <button class="cta-btn" disabled title="Coming soon: form letters + mailto to these lawmakers">Take action &rarr; (coming soon)</button>
+  </td></tr>`;
+}
+
+const PROJ_LABELS = {
+  pa: {id:'MPMS ID', locations:'Locations', districts:'Districts touched', li:'LI', t6:'T6', comp:'Comp'},
+  nj: {id:'DB Number', locations:'Locations', districts:'Districts touched', li:'LI', t6:'T6', comp:'IPD'},
+  de: {id:'Project ID', locations:'County', districts:'Category', li:'Current Est ($K)', t6:'FY27–30 ($K)', comp:'Mode'}
+};
+
+function renderProjects(){
+  document.getElementById('tip-filter-group').hidden = projState !== 'pa';
+  document.getElementById('proj-pa-view').hidden = projState !== 'pa';
+  document.getElementById('proj-other-view').hidden = projState === 'pa';
+  if(projState === 'pa'){
+    document.getElementById('proj-subtitle').textContent = "SEPTA's FY2027 capital budget (145 line items) — the pre-TIP signal: SEPTA's own full capital program, of which only a subset is significant enough to appear on DVRPC's TIP. Filter by whether each project is On TIP or budget-only. Rows grouped by Regional Rail/Metro line where line-specific; systemwide items (fleets, IT, bonds) shown separately.";
+    renderCapital();
+    return;
+  }
+  const tbody = document.getElementById('project-body');
+  const source = projState === 'nj' ? NJTIP : DETIP;
+  const q = projSearch.toLowerCase();
+  let rows = source.filter(r => !q || r.Project.toLowerCase().includes(q) || (r.Municipalities||r.Municipality||'').toLowerCase().includes(q));
+  rows = applySort(rows, projSort, r => {
+    if(projSort.key === 'DistrictCount'){
+      if(projState === 'pa') return r.Houses.length + r.Senates.length;
+      if(projState === 'nj') return r.Districts.length;
+      return r.Category;
+    }
+    if(projSort.key === 'Max_Composite_Score'){
+      if(projState === 'nj') return r.Max_IPD_Score;
+      if(projState === 'de') return r.Mode;
+      return r.Max_Composite_Score;
+    }
+    if(projSort.key === 'MPMS_ID') return projId(r);
+    if(projSort.key === 'LocationCount' && projState === 'de') return r.County;
+    if(projSort.key === 'Max_LowIncome_Score' && projState === 'de') return r.CurrentEstimateTotal_K;
+    if(projSort.key === 'Max_TitleVI_Score' && projState === 'de') return r.FY2730Total_K;
+    return r[projSort.key];
+  });
+  wireSortableHead(document.getElementById('project-head'), projSort, renderProjects);
+  const labels = PROJ_LABELS[projState];
+  const setLabel = (key, text) => { const h = document.querySelector(`#project-head [data-key="${key}"]`); if(h) h.firstChild.textContent = text; };
+  setLabel('MPMS_ID', labels.id);
+  setLabel('LocationCount', labels.locations);
+  setLabel('DistrictCount', labels.districts);
+  setLabel('Max_LowIncome_Score', labels.li);
+  setLabel('Max_TitleVI_Score', labels.t6);
+  setLabel('Max_Composite_Score', labels.comp);
+  // DE relabels these two numeric columns to text fields (County/Category) — force their sort type to match
+  const locHead = document.querySelector('#project-head [data-key="LocationCount"]');
+  const distHead = document.querySelector('#project-head [data-key="DistrictCount"]');
+  if(locHead) locHead.dataset.type = projState === 'de' ? 'text' : 'num';
+  if(distHead) distHead.dataset.type = projState === 'de' ? 'text' : 'num';
+  document.getElementById('proj-subtitle').textContent = projState === 'nj'
+    ? "17 PATCO and NJ Transit regional-rail capital projects from the DVRPC FY2024 TIP for NJ (FY26–29), Camden/Burlington/Mercer counties — deduplicated from 35 individual project locations (excludes 1 unrelated highway-bridge project). Click a project for its full political footprint. LI/T6/IPD are DVRPC's Low-Income, Title VI, and Indicators of Potential Disadvantage equity scores, max across all locations."
+    : "2 transit-mode capital projects tied to SEPTA-served Delaware stations, from WILMAPCO's FY2027-2030 TIP project map (New Castle County) — the only 2 of 49 mapped WILMAPCO projects geographically matched to Wilmington/Newark/Claymont/Churchmans Crossing. DE Senate/House districts verified via Delaware FirstMap's official district boundaries.";
+  if(!rows.length){
+    tbody.innerHTML = '<tr><td colspan="7" class="empty">No projects match.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(r=>{
+    const isOpen = openProj === String(projId(r));
+    let col3, col4, col5, col6, col7, subtitle2;
+    if(projState === 'pa'){
+      col3 = r.LocationCount; col4 = `${r.Houses.length}H / ${r.Senates.length}S`;
+      col5 = r.Max_LowIncome_Score; col6 = r.Max_TitleVI_Score; col7 = r.Max_Composite_Score;
+      subtitle2 = r.Sponsor;
+    } else if(projState === 'nj'){
+      col3 = r.LocationCount; col4 = `${r.Districts.length} LD${r.Districts.length===1?'':'s'}`;
+      col5 = r.Max_LowIncome_Score; col6 = r.Max_TitleVI_Score; col7 = r.Max_IPD_Score;
+      subtitle2 = r.Type || 'PATCO';
+    } else {
+      col3 = r.County; col4 = r.Category;
+      col5 = '$' + r.CurrentEstimateTotal_K.toLocaleString(); col6 = '$' + r.FY2730Total_K.toLocaleString(); col7 = r.Mode;
+      subtitle2 = r.Municipality;
+    }
+    const mainRow = `
+    <tr class="clickable" data-projid="${projId(r)}">
+      <td><strong>${isOpen?'&#9662;':'&#9656;'} ${r.Project}</strong><br><span class="leg-meta">${subtitle2}</span></td>
+      <td class="mono">${projId(r)}</td>
+      <td class="mono">${col3}</td>
+      <td class="mono">${col4}</td>
+      <td class="mono">${col5}</td>
+      <td class="mono">${col6}</td>
+      <td class="mono">${col7}</td>
+    </tr>`;
+    return mainRow + (isOpen ? projDetailHtml(r) : '');
+  }).join('');
+  tbody.querySelectorAll('tr.clickable').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const id = el.dataset.projid;
+      openProj = (openProj === id) ? null : id;
+      renderProjects();
+    });
+  });
+}
+
+let platformSort = {key:'pctHigh', dir:-1, type:'num'};
+let openPlatformLine = null;
+
+function platformByLine(){
+  const byLine = {};
+  PLATFORM.forEach(s=>{
+    if(!byLine[s.Line]) byLine[s.Line] = {line:s.Line, total:0, high:0, mini:0, low:0, stations:[]};
+    const g = byLine[s.Line];
+    g.total++;
+    if(s.PlatformType==='High') g.high++;
+    else if(s.PlatformType==='Mini') g.mini++;
+    else g.low++;
+    g.stations.push(s);
+  });
+  return Object.values(byLine).map(g=>({...g, pctHigh: Math.round(100*g.high/g.total), pctAny: Math.round(100*(g.high+g.mini)/g.total)}));
+}
+
+function platformStationRows(stations, lineKey){
+  const isOpen = openPlatformLine === lineKey;
+  if(!isOpen) return '';
+  const sorted = stations.slice().sort((a,b)=> a.Station.localeCompare(b.Station));
+  return `<tr class="detail-row"><td colspan="6"><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;">
+    ${sorted.map(s=>{
+      const cls = s.PlatformType==='High'?'badge-high':(s.PlatformType==='Mini'?'badge-mini':'badge-low');
+      return `<div class="proj-mini" style="margin-bottom:0;">
+        <div class="pm-title">${s.Station} <span class="platform-badge ${cls}">${s.PlatformType}</span></div>
+        <div class="pm-meta">${s.Municipality||'&mdash;'}, ${s.County||'&mdash;'} &middot; PA House ${s.PA_House_District||'&mdash;'} (${s.House_Rep_Current||'&mdash;'}) &middot; PA Senate ${s.PA_Senate_District||'&mdash;'} (${s.Senator_Current||'&mdash;'})</div>
+      </div>`;
+    }).join('')}
+  </div></td></tr>`;
+}
+
+function renderPlatform(){
+  const tbody = document.getElementById('platform-line-body');
+  let rows = platformByLine();
+  rows = applySort(rows, platformSort);
+  wireSortableHead(document.getElementById('platform-line-head'), platformSort, renderPlatform);
+  tbody.innerHTML = rows.map(r=>{
+    const isOpen = openPlatformLine === r.line;
+    const star = S_LINE_TERMINI.has(r.line) ? ' <span class="star" title="Named S-Line priority">&#9733;</span>' : '';
+    const barHigh = 100*r.high/r.total, barMini = 100*r.mini/r.total;
+    const displayName = r.line === 'Joint' ? 'Center City / Shared Trunk' : r.line.replace(/ Line$/,'');
+    const mainRow = `
+    <tr class="clickable" data-line="${r.line}">
+      <td><strong>${isOpen?'&#9662;':'&#9656;'} ${displayName}</strong>${star}</td>
+      <td class="mono">${r.total}</td>
+      <td class="mono">${r.high}</td>
+      <td class="mono">${r.mini}</td>
+      <td class="mono">${r.low}</td>
+      <td>
+        <div class="pbar-row">
+          <div class="pbar"><div class="seg-high" style="width:${barHigh}%"></div><div class="seg-mini" style="width:${barMini}%"></div></div>
+          <span class="pbar-label">${r.pctHigh}% high, ${r.pctAny}% any</span>
+        </div>
+      </td>
+    </tr>`;
+    return mainRow + platformStationRows(r.stations, r.line);
+  }).join('');
+  tbody.querySelectorAll('tr.clickable').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const key = el.dataset.line;
+      openPlatformLine = (openPlatformLine === key) ? null : key;
+      renderPlatform();
+    });
+  });
+}
+
+let capitalSort = {key:'total12yr', dir:-1, type:'num'};
+let openCapitalGroup = null;
+
+function tipByMpms(mpms){
+  return TIP.find(p => String(p.MPMS_ID) === String(mpms));
+}
+
+function capitalByGroup(){
+  const q = projSearch.toLowerCase();
+  let filtered = q ? CAPITAL.filter(r=>r.Project.toLowerCase().includes(q)) : CAPITAL;
+  if(tipFilter === 'ontip') filtered = filtered.filter(r=>r.OnTIP);
+  else if(tipFilter === 'budget') filtered = filtered.filter(r=>!r.OnTIP);
+  const groups = {};
+  filtered.forEach(r=>{
+    const key = r.Line || (r.Systemwide ? 'Systemwide / Fleet / Financial' : 'Other');
+    if(!groups[key]) groups[key] = {line:key, count:0, fy27:0, total12yr:0, onTip:0, rows:[]};
+    const g = groups[key];
+    g.count++;
+    g.fy27 += r.FY2027Budget_M || 0;
+    g.total12yr += r.TwelveYearTotal_M || 0;
+    if(r.OnTIP) g.onTip++;
+    g.rows.push(r);
+  });
+  return Object.values(groups);
+}
+
+function money(m){
+  if(m === null || m === undefined) return '&mdash;';
+  return '$' + m.toLocaleString(undefined, {maximumFractionDigits:1}) + 'M';
+}
+
+function capitalRowsHtml(rows, key){
+  if(openCapitalGroup !== key) return '';
+  const sorted = rows.slice().sort((a,b)=> (b.TwelveYearTotal_M||0) - (a.TwelveYearTotal_M||0));
+  return `<tr class="detail-row"><td colspan="5"><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;">
+    ${sorted.map(r=>{
+      const tipBadge = r.OnTIP ? '<span class="platform-badge badge-high">On TIP</span>' : (r.Systemwide ? '<span class="platform-badge badge-low">Systemwide</span>' : '<span class="platform-badge badge-mini">Budget only</span>');
+      const loc = r.Municipality ? `${r.Municipality}, ${r.County}${r.PA_House_District?` &middot; House ${r.PA_House_District} (${r.House_Rep_Current||'&mdash;'}) &middot; Senate ${r.PA_Senate_District} (${r.Senator_Current||'&mdash;'})`:''}` : (r.Systemwide ? 'Systemwide / multi-site' : '&mdash;');
+      const tip = r.OnTIP ? tipByMpms(r.MPMS) : null;
+      const equity = tip ? `<div class="pm-meta">TIP equity (bucket-level, "${tip.Project}"): LI ${tip.Max_LowIncome_Score} &middot; T6 ${tip.Max_TitleVI_Score} &middot; Comp ${tip.Max_Composite_Score}</div>` : '';
+      return `<div class="proj-mini" style="margin-bottom:0;">
+        <div class="pm-title">${r.Project} ${tipBadge}</div>
+        <div class="pm-meta">${money(r.TwelveYearTotal_M)} 12-yr &middot; ${money(r.FY2027Budget_M)} FY27 &middot; MPMS ${r.MPMS||'&mdash;'}</div>
+        <div class="pm-meta">${loc}</div>
+        ${equity}
+      </div>`;
+    }).join('')}
+  </div></td></tr>`;
+}
+
+function renderCapital(){
+  const tbody = document.getElementById('capital-line-body');
+  let rows = capitalByGroup();
+  rows = applySort(rows, capitalSort);
+  wireSortableHead(document.getElementById('capital-line-head'), capitalSort, renderCapital);
+  if(!rows.length){
+    tbody.innerHTML = '<tr><td colspan="5" class="empty">No projects match.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(g=>{
+    const isOpen = openCapitalGroup === g.line;
+    const mainRow = `
+    <tr class="clickable" data-capline="${g.line}">
+      <td><strong>${isOpen?'&#9662;':'&#9656;'} ${g.line}</strong></td>
+      <td class="mono">${g.count}</td>
+      <td class="mono">${money(g.total12yr)}</td>
+      <td class="mono">${money(g.fy27)}</td>
+      <td class="mono">${g.onTip} / ${g.count}</td>
+    </tr>`;
+    return mainRow + capitalRowsHtml(g.rows, g.line);
+  }).join('');
+  tbody.querySelectorAll('tr.clickable').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const key = el.dataset.capline;
+      openCapitalGroup = (openCapitalGroup === key) ? null : key;
+      renderCapital();
+    });
+  });
+}
+
+
+let unfStatus = 'all';
+let unfSearch = '';
+function renderUnfunded(){
+  const q = unfSearch.toLowerCase();
+  let rows = UNFUNDED.filter(r=>{
+    if(q && !r.project.toLowerCase().includes(q)) return false;
+    if(unfStatus === 'Deferred' || unfStatus === 'Descoped') return r.status === unfStatus;
+    if(unfStatus === 'ada') return r.ada;
+    if(unfStatus === 'linked') return !!r.match_type;
+    return true;
+  }).sort((a,b)=> b.value_millions - a.value_millions);
+  const total = rows.reduce((s,r)=>s+r.value_millions,0);
+  document.getElementById('unfunded-body').innerHTML = rows.length ? rows.map(r=>{
+    const typeLabel = {same_project:'Same project', same_program:'Same program', related:'Related'}[r.match_type] || '';
+    const link = r.match_type ? `<span class="platform-badge badge-mini">${typeLabel}</span> ${r.capital_project} <span class="mono">(${money(r.capital_12yr_musd)} 12-yr)</span><div class="pm-meta">TIP MPMS ${r.tip_mpms}: ${r.tip_title}${r.match_note?' &middot; '+r.match_note:''}</div>` : '<span class="leg-meta">Not in funded capital budget</span>';
+    return `<tr>
+      <td><strong>${r.project}</strong>${r.ada?' <span class="platform-badge badge-high">ADA</span>':''}${r.note?`<div class="pm-meta">${r.note}</div>`:''}</td>
+      <td>${r.county}</td><td>${r.status}</td><td class="mono">${r.value_millions.toLocaleString(undefined,{minimumFractionDigits:2})}</td><td>${link}</td></tr>`;
+  }).join('') + `<tr><td colspan="3"><strong>Total (${rows.length})</strong></td><td class="mono"><strong>${total.toLocaleString(undefined,{minimumFractionDigits:2})}</strong></td><td></td></tr>` : '<tr><td colspan="5" class="empty">No projects match.</td></tr>';
+}
+
+function render(){
+  renderStats();
+  renderStations();
+  renderLegislators();
+  renderProjects();
+  renderPlatform();
+  renderUnfunded();
+}
+
+document.getElementById('search-unf').addEventListener('input', e=>{ unfSearch = e.target.value; renderUnfunded(); });
+document.querySelectorAll('[data-unfstatus]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    unfStatus = btn.dataset.unfstatus;
+    document.querySelectorAll('[data-unfstatus]').forEach(b=>b.classList.toggle('active', b===btn));
+    renderUnfunded();
+  });
+});
+document.getElementById('search').addEventListener('input', e=>{ searchTerm = e.target.value; renderStations(); });
+document.getElementById('search-leg').addEventListener('input', e=>{ legSearch = e.target.value; renderLegislators(); });
+document.getElementById('search-proj').addEventListener('input', e=>{ projSearch = e.target.value; renderProjects(); });
+document.querySelectorAll('[data-tipfilter]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    tipFilter = btn.dataset.tipfilter;
+    document.querySelectorAll('[data-tipfilter]').forEach(b=>b.classList.toggle('active', b===btn));
+    renderCapital();
+  });
+});
+document.querySelectorAll('[data-county]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    countyFilter = btn.dataset.county;
+    document.querySelectorAll('[data-county]').forEach(b=>b.classList.toggle('active', b===btn));
+    renderStations();
+  });
+});
+document.querySelectorAll('[data-chamber]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    legChamber = btn.dataset.chamber;
+    document.querySelectorAll('[data-chamber]').forEach(b=>b.classList.toggle('active', b===btn));
+    renderLegislators();
+  });
+});
+document.querySelectorAll('[data-legsort]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    legSort = btn.dataset.legsort;
+    document.querySelectorAll('[data-legsort]').forEach(b=>b.classList.toggle('active', b===btn));
+    renderLegislators();
+  });
+});
+document.querySelectorAll('[data-projstate]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    projState = btn.dataset.projstate;
+    openProj = null;
+    projSort = {key:'LocationCount', dir:-1, type:'num'};
+    document.querySelectorAll('[data-projstate]').forEach(b=>b.classList.toggle('active', b===btn));
+    renderProjects();
+  });
+});
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active', b===btn));
+    document.getElementById('view-station').hidden = btn.dataset.tab !== 'station';
+    document.getElementById('view-legislator').hidden = btn.dataset.tab !== 'legislator';
+    document.getElementById('view-project').hidden = btn.dataset.tab !== 'project';
+    document.getElementById('view-platform').hidden = btn.dataset.tab !== 'platform';
+    document.getElementById('view-unfunded').hidden = btn.dataset.tab !== 'unfunded';
+  });
+});
+</script>
+
+</body></html>

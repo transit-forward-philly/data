@@ -1,0 +1,1328 @@
+[
+ {
+  "county": "Bucks",
+  "status": "Deferred",
+  "project": "Neshaminy Boulevard Loop/End of Line",
+  "value_millions": 3.75,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Chester",
+  "status": "Deferred",
+  "project": "Exton Station Multimodal Improvements",
+  "value_millions": 6.0,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Chester",
+  "status": "Deferred",
+  "project": "Paoli Transportation Center (Phase 2)",
+  "value_millions": 51.2,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Chester",
+  "status": "Deferred",
+  "project": "Malvern Station (High-Level Platforms)",
+  "value_millions": 51.89,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Delaware",
+  "status": "Deferred",
+  "project": "Marcus Hook Station",
+  "value_millions": 41.25,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Delaware",
+  "status": "Deferred",
+  "project": "Villanova Station - M1 Line [NHSL]",
+  "value_millions": 8.82,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Delaware",
+  "status": "Deferred",
+  "project": "Frazer Transportation Building (\"Phase 4\")",
+  "value_millions": 38.7,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Delaware",
+  "status": "Deferred",
+  "project": "69th Street TC Multi-Modal & ADA Improvements",
+  "value_millions": 10.0,
+  "ada": true,
+  "note": "",
+  "match_type": "same_project",
+  "capital_project": "69th Street Transportation Center Multi-Modal & ADA Improvements",
+  "capital_12yr_musd": 2.0,
+  "tip_mpms": "77183",
+  "tip_title": "Transit and Regional Rail Station Program",
+  "match_note": "",
+  "houses": [
+   {
+    "district": "10",
+    "rep": "Amen Brown",
+    "party": "D"
+   },
+   {
+    "district": "141",
+    "rep": "Tina M. Davis",
+    "party": "D"
+   },
+   {
+    "district": "154",
+    "rep": "Napoleon J. Nelson",
+    "party": "D"
+   },
+   {
+    "district": "164",
+    "rep": "Gina H. Curry",
+    "party": "D"
+   },
+   {
+    "district": "165",
+    "rep": "Jennifer O'Mara",
+    "party": "D"
+   },
+   {
+    "district": "175",
+    "rep": "MaryLouise Isaacson",
+    "party": "D"
+   },
+   {
+    "district": "18",
+    "rep": "Kathleen C. Tomlinson",
+    "party": "R"
+   },
+   {
+    "district": "181",
+    "rep": "Malcolm Kenyatta",
+    "party": "D"
+   },
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "184",
+    "rep": "Elizabeth Fiedler",
+    "party": "D"
+   },
+   {
+    "district": "194",
+    "rep": "Tarik Khan",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   },
+   {
+    "district": "198",
+    "rep": "Darisha K. Parker",
+    "party": "D"
+   },
+   {
+    "district": "54",
+    "rep": "Greg Scott",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "10",
+    "senator": "Steven J. Santarsiero",
+    "party": "D"
+   },
+   {
+    "district": "17",
+    "senator": "Amanda M. Cappelletti",
+    "party": "D"
+   },
+   {
+    "district": "26",
+    "senator": "Timothy P. Kearney",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "4",
+    "senator": "Art Haywood",
+    "party": "D"
+   },
+   {
+    "district": "6",
+    "senator": "Frank A. Farry",
+    "party": "R"
+   },
+   {
+    "district": "7",
+    "senator": "Vincent J. Hughes",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Montgomery",
+  "status": "Deferred",
+  "project": "Norristown Corridor Improvements",
+  "value_millions": 25.08,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Montgomery",
+  "status": "Deferred",
+  "project": "Norristown TC Multi-Modal & ADA Improvements",
+  "value_millions": 5.0,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Montgomery",
+  "status": "Deferred",
+  "project": "Noble Station (Construction)",
+  "value_millions": 29.8,
+  "ada": true,
+  "note": "",
+  "match_type": "same_project",
+  "capital_project": "Noble Station on the West Trenton Line",
+  "capital_12yr_musd": 2.0,
+  "tip_mpms": "77183",
+  "tip_title": "Transit and Regional Rail Station Program",
+  "match_note": "Unfunded row is the construction phase; the capital budget row carries $2.0M in the 12-year plan.",
+  "houses": [
+   {
+    "district": "10",
+    "rep": "Amen Brown",
+    "party": "D"
+   },
+   {
+    "district": "141",
+    "rep": "Tina M. Davis",
+    "party": "D"
+   },
+   {
+    "district": "154",
+    "rep": "Napoleon J. Nelson",
+    "party": "D"
+   },
+   {
+    "district": "164",
+    "rep": "Gina H. Curry",
+    "party": "D"
+   },
+   {
+    "district": "165",
+    "rep": "Jennifer O'Mara",
+    "party": "D"
+   },
+   {
+    "district": "175",
+    "rep": "MaryLouise Isaacson",
+    "party": "D"
+   },
+   {
+    "district": "18",
+    "rep": "Kathleen C. Tomlinson",
+    "party": "R"
+   },
+   {
+    "district": "181",
+    "rep": "Malcolm Kenyatta",
+    "party": "D"
+   },
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "184",
+    "rep": "Elizabeth Fiedler",
+    "party": "D"
+   },
+   {
+    "district": "194",
+    "rep": "Tarik Khan",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   },
+   {
+    "district": "198",
+    "rep": "Darisha K. Parker",
+    "party": "D"
+   },
+   {
+    "district": "54",
+    "rep": "Greg Scott",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "10",
+    "senator": "Steven J. Santarsiero",
+    "party": "D"
+   },
+   {
+    "district": "17",
+    "senator": "Amanda M. Cappelletti",
+    "party": "D"
+   },
+   {
+    "district": "26",
+    "senator": "Timothy P. Kearney",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "4",
+    "senator": "Art Haywood",
+    "party": "D"
+   },
+   {
+    "district": "6",
+    "senator": "Frank A. Farry",
+    "party": "R"
+   },
+   {
+    "district": "7",
+    "senator": "Vincent J. Hughes",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Montgomery",
+  "status": "Deferred",
+  "project": "Bridgeport Station",
+  "value_millions": 18.13,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Montgomery",
+  "status": "Deferred",
+  "project": "Willow Grove Station",
+  "value_millions": 51.27,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "Airport Corridor Improvements",
+  "value_millions": 24.56,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "North Philadelphia Infrastructure",
+  "value_millions": 6.96,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "Fern Rock Transportation Center Pedestrian Access",
+  "value_millions": 30.0,
+  "ada": false,
+  "note": "",
+  "match_type": "related",
+  "capital_project": "Fern Rock Transportation Center Safety Improvements",
+  "capital_12yr_musd": 4.14,
+  "tip_mpms": "121367",
+  "tip_title": "Safe, Clean, and Secure Program",
+  "match_note": "Same station, different named project.",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "NRG Station Ventilation Improvements, Phase 2",
+  "value_millions": 10.27,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "Lawndale Station Grade Separation & High-Level Platforms",
+  "value_millions": 25.33,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "Ellsworth-Federal Station",
+  "value_millions": 37.23,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "Logan Station",
+  "value_millions": 36.8,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "Lombard-South Station",
+  "value_millions": 34.36,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Deferred",
+  "project": "Removal of Abandoned Trolley Tracks",
+  "value_millions": 15.16,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Descoped",
+  "project": "Trolley Tunnel Track",
+  "value_millions": 1.0,
+  "ada": false,
+  "note": "",
+  "match_type": "same_project",
+  "capital_project": "Trolley Tunnel Track",
+  "capital_12yr_musd": 8.64,
+  "tip_mpms": "102565",
+  "tip_title": "Track & Right-of-Way Improvement Program",
+  "match_note": "",
+  "houses": [
+   {
+    "district": "164",
+    "rep": "Gina H. Curry",
+    "party": "D"
+   },
+   {
+    "district": "74",
+    "rep": "Dan K. Williams",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "26",
+    "senator": "Timothy P. Kearney",
+    "party": "D"
+   },
+   {
+    "district": "44",
+    "senator": "Katie J. Muth",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Philadelphia",
+  "status": "Descoped",
+  "project": "Broad St. Line [B] Railcar Replacements & Infrastructure",
+  "value_millions": 726.31,
+  "ada": true,
+  "note": "Marked ** in source; footnote not included in the list",
+  "match_type": "same_project",
+  "capital_project": "Broad Street Line (B) Vehicle Replacement and Infrastructure",
+  "capital_12yr_musd": 1.0,
+  "tip_mpms": "123965",
+  "tip_title": "Broad Street Line [B] Vehicle & Infrastructure",
+  "match_note": "Capital budget carries $1.0M in the 12-year plan; the unfunded list holds the bulk of the project.",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Additional Regional Rail & Rail Transit ADA Stations",
+  "value_millions": 224.97,
+  "ada": true,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Future Bus End of Line Projects",
+  "value_millions": 15.32,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Better Bus Stops",
+  "value_millions": 6.03,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Garage / Shop Overhead Doors",
+  "value_millions": 7.66,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Bicycle Transit Access Program",
+  "value_millions": 3.29,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Transit Substation Program",
+  "value_millions": 140.0,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Regional and Transit Rail Substation Program",
+  "capital_12yr_musd": 0.0,
+  "tip_mpms": "60651",
+  "tip_title": "Substations and Power Improvements",
+  "match_note": "",
+  "houses": [
+   {
+    "district": "142",
+    "rep": "Joe Hogan",
+    "party": "R"
+   },
+   {
+    "district": "174",
+    "rep": "Ed Neilson",
+    "party": "D"
+   },
+   {
+    "district": "175",
+    "rep": "MaryLouise Isaacson",
+    "party": "D"
+   },
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "185",
+    "rep": "Regina G. Young",
+    "party": "D"
+   },
+   {
+    "district": "198",
+    "rep": "Darisha K. Parker",
+    "party": "D"
+   },
+   {
+    "district": "200",
+    "rep": "Christopher M. Rabb",
+    "party": "D"
+   },
+   {
+    "district": "201",
+    "rep": "Andre D. Carroll",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "4",
+    "senator": "Art Haywood",
+    "party": "D"
+   },
+   {
+    "district": "5",
+    "senator": "Joe Picozzi",
+    "party": "R"
+   },
+   {
+    "district": "6",
+    "senator": "Frank A. Farry",
+    "party": "R"
+   },
+   {
+    "district": "8",
+    "senator": "Anthony H. Williams",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Bus Purchase Program: 20 New Zero Emission Bus Purchases for Testing",
+  "value_millions": 41.0,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Deferred",
+  "project": "Zero Emission Bus (ZEB) Retrofit Pilot",
+  "value_millions": 11.3,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Amtrak Keystone Line Modernization",
+  "value_millions": 23.6,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Efficiency & Accountability Capital",
+  "value_millions": 2.6,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Facilities Critical Infrastructure Program",
+  "value_millions": 20.0,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Facilities Critical Infrastructure Program",
+  "capital_12yr_musd": 12.35,
+  "tip_mpms": "102569",
+  "tip_title": "Maintenance & Transportation Facilities",
+  "match_note": "",
+  "houses": [
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "185",
+    "rep": "Regina G. Young",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "8",
+    "senator": "Anthony H. Williams",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Maintenance & Training Facilities Improvement Program",
+  "value_millions": 34.46,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Maintenance & Training Facilities Improvement Program",
+  "capital_12yr_musd": 4.81,
+  "tip_mpms": "102569",
+  "tip_title": "Maintenance & Transportation Facilities",
+  "match_note": "",
+  "houses": [
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "185",
+    "rep": "Regina G. Young",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "8",
+    "senator": "Anthony H. Williams",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Vehicle Engineering & Maintenance Shop Equipment Program",
+  "value_millions": 26.64,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Vehicle Engineering & Maintenance Shop Equipment",
+  "capital_12yr_musd": 16.79,
+  "tip_mpms": "102569",
+  "tip_title": "Maintenance & Transportation Facilities",
+  "match_note": "",
+  "houses": [
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "185",
+    "rep": "Regina G. Young",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "8",
+    "senator": "Anthony H. Williams",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Wheel Truing Program - Phase 2",
+  "value_millions": 2.87,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Wheel Truing Program",
+  "capital_12yr_musd": 3.54,
+  "tip_mpms": "102569",
+  "tip_title": "Maintenance & Transportation Facilities",
+  "match_note": "Unfunded row is Phase 2.",
+  "houses": [
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "185",
+    "rep": "Regina G. Young",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "8",
+    "senator": "Anthony H. Williams",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Climate Adaptation & Mitigation Program (Implementation)",
+  "value_millions": 23.0,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Climate Adaptation and Mitigation Program",
+  "capital_12yr_musd": 1.73,
+  "tip_mpms": "121366",
+  "tip_title": "Resiliency and Sustainaiblity Program",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "On-Site Power for Major Facilities",
+  "value_millions": 2.67,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "On-Site Power for Major Facilities",
+  "capital_12yr_musd": 5.0,
+  "tip_mpms": "121366",
+  "tip_title": "Resiliency and Sustainaiblity Program",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Cleaning Equipment",
+  "value_millions": 16.71,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Cleaning Equipment",
+  "capital_12yr_musd": 14.15,
+  "tip_mpms": "121367",
+  "tip_title": "Safe, Clean, and Secure Program",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Safety and Security Infrastructure Hardening Program",
+  "value_millions": 28.16,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Safety and Security Infrastructure Hardening Program",
+  "capital_12yr_musd": 8.7,
+  "tip_mpms": "121367",
+  "tip_title": "Safe, Clean, and Secure Program",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Safety and Security Shop, Yards & Office Hardening",
+  "value_millions": 49.0,
+  "ada": false,
+  "note": "",
+  "match_type": "related",
+  "capital_project": "Safety and Security Infrastructure Hardening Program",
+  "capital_12yr_musd": 8.7,
+  "tip_mpms": "121367",
+  "tip_title": "Safe, Clean, and Secure Program",
+  "match_note": "Separate unfunded line for shops, yards and offices under the same hardening effort.",
+  "houses": [],
+  "senates": []
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Rail Transit Wayfinding and Signage",
+  "value_millions": 11.0,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Rail Transit Wayfinding & Signage",
+  "capital_12yr_musd": 7.79,
+  "tip_mpms": "77183",
+  "tip_title": "Transit and Regional Rail Station Program",
+  "match_note": "",
+  "houses": [
+   {
+    "district": "10",
+    "rep": "Amen Brown",
+    "party": "D"
+   },
+   {
+    "district": "141",
+    "rep": "Tina M. Davis",
+    "party": "D"
+   },
+   {
+    "district": "154",
+    "rep": "Napoleon J. Nelson",
+    "party": "D"
+   },
+   {
+    "district": "164",
+    "rep": "Gina H. Curry",
+    "party": "D"
+   },
+   {
+    "district": "165",
+    "rep": "Jennifer O'Mara",
+    "party": "D"
+   },
+   {
+    "district": "175",
+    "rep": "MaryLouise Isaacson",
+    "party": "D"
+   },
+   {
+    "district": "18",
+    "rep": "Kathleen C. Tomlinson",
+    "party": "R"
+   },
+   {
+    "district": "181",
+    "rep": "Malcolm Kenyatta",
+    "party": "D"
+   },
+   {
+    "district": "182",
+    "rep": "Ben Waxman",
+    "party": "D"
+   },
+   {
+    "district": "184",
+    "rep": "Elizabeth Fiedler",
+    "party": "D"
+   },
+   {
+    "district": "194",
+    "rep": "Tarik Khan",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   },
+   {
+    "district": "198",
+    "rep": "Darisha K. Parker",
+    "party": "D"
+   },
+   {
+    "district": "54",
+    "rep": "Greg Scott",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "10",
+    "senator": "Steven J. Santarsiero",
+    "party": "D"
+   },
+   {
+    "district": "17",
+    "senator": "Amanda M. Cappelletti",
+    "party": "D"
+   },
+   {
+    "district": "26",
+    "senator": "Timothy P. Kearney",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "4",
+    "senator": "Art Haywood",
+    "party": "D"
+   },
+   {
+    "district": "6",
+    "senator": "Frank A. Farry",
+    "party": "R"
+   },
+   {
+    "district": "7",
+    "senator": "Vincent J. Hughes",
+    "party": "D"
+   }
+  ]
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Transit Priority Projects",
+  "value_millions": 49.7,
+  "ada": false,
+  "note": "",
+  "match_type": "same_program",
+  "capital_project": "Transit Priority Projects",
+  "capital_12yr_musd": 0.0,
+  "tip_mpms": "123962",
+  "tip_title": "Bus Network Program",
+  "match_note": "Capital budget row has $0 in the 12-year plan.",
+  "houses": [
+   {
+    "district": "173",
+    "rep": "Pat Gallagher",
+    "party": "D"
+   },
+   {
+    "district": "184",
+    "rep": "Elizabeth Fiedler",
+    "party": "D"
+   },
+   {
+    "district": "197",
+    "rep": "Danilo Burgos",
+    "party": "D"
+   }
+  ],
+  "senates": [
+   {
+    "district": "1",
+    "senator": "Nikil Saval",
+    "party": "D"
+   },
+   {
+    "district": "3",
+    "senator": "Sharif Street",
+    "party": "D"
+   },
+   {
+    "district": "5",
+    "senator": "Joe Picozzi",
+    "party": "R"
+   }
+  ]
+ },
+ {
+  "county": "Multi-county",
+  "status": "Descoped",
+  "project": "Bus Stop Signage",
+  "value_millions": 12.27,
+  "ada": false,
+  "note": "",
+  "match_type": "",
+  "capital_project": "",
+  "capital_12yr_musd": null,
+  "tip_mpms": "",
+  "tip_title": "",
+  "match_note": "",
+  "houses": [],
+  "senates": []
+ }
+]

@@ -1,0 +1,661 @@
+[
+  {
+    "MPMS_ID": 95402,
+    "Project": "Bridge Program",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 22,
+    "Municipalities": "Abington Township, Bridgeport Borough, Cheltenham Township, Doylestown Township, Ewing Township, Lower Merion Township, Morton Borough, Norristown Borough, Philadelphia, Radnor Township, Upper Merion Township, Upper Providence Township",
+    "Counties": "Bucks, Delaware, Mercer, Montgomery, Philadelphia",
+    "Houses": [
+      {
+        "district": "149",
+        "rep": "Tim Briggs",
+        "party": "D"
+      },
+      {
+        "district": "153",
+        "rep": "Benjamin V. Sanchez",
+        "party": "D"
+      },
+      {
+        "district": "154",
+        "rep": "Napoleon J. Nelson",
+        "party": "D"
+      },
+      {
+        "district": "165",
+        "rep": "Jennifer O'Mara",
+        "party": "D"
+      },
+      {
+        "district": "168",
+        "rep": "Lisa A. Borowski",
+        "party": "D"
+      },
+      {
+        "district": "190",
+        "rep": "G. Roni Green",
+        "party": "D"
+      },
+      {
+        "district": "200",
+        "rep": "Christopher M. Rabb",
+        "party": "D"
+      },
+      {
+        "district": "201",
+        "rep": "Andre D. Carroll",
+        "party": "D"
+      },
+      {
+        "district": "29",
+        "rep": "Tim Brennan",
+        "party": "D"
+      },
+      {
+        "district": "54",
+        "rep": "Greg Scott",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "10",
+        "senator": "Steven J. Santarsiero",
+        "party": "D"
+      },
+      {
+        "district": "17",
+        "senator": "Amanda M. Cappelletti",
+        "party": "D"
+      },
+      {
+        "district": "26",
+        "senator": "Timothy P. Kearney",
+        "party": "D"
+      },
+      {
+        "district": "3",
+        "senator": "Sharif Street",
+        "party": "D"
+      },
+      {
+        "district": "4",
+        "senator": "Art Haywood",
+        "party": "D"
+      },
+      {
+        "district": "7",
+        "senator": "Vincent J. Hughes",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 28
+  },
+  {
+    "MPMS_ID": 77183,
+    "Project": "Transit and Regional Rail Station Program",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 16,
+    "Municipalities": "Bensalem Township, Bristol Borough, Jenkintown Borough, Norristown Borough, Philadelphia, Swarthmore Borough, Upper Darby Township",
+    "Counties": "Bucks, Delaware, Montgomery, Philadelphia",
+    "Houses": [
+      {
+        "district": "10",
+        "rep": "Amen Brown",
+        "party": "D"
+      },
+      {
+        "district": "141",
+        "rep": "Tina M. Davis",
+        "party": "D"
+      },
+      {
+        "district": "154",
+        "rep": "Napoleon J. Nelson",
+        "party": "D"
+      },
+      {
+        "district": "164",
+        "rep": "Gina H. Curry",
+        "party": "D"
+      },
+      {
+        "district": "165",
+        "rep": "Jennifer O'Mara",
+        "party": "D"
+      },
+      {
+        "district": "175",
+        "rep": "MaryLouise Isaacson",
+        "party": "D"
+      },
+      {
+        "district": "18",
+        "rep": "Kathleen C. Tomlinson",
+        "party": "R"
+      },
+      {
+        "district": "181",
+        "rep": "Malcolm Kenyatta",
+        "party": "D"
+      },
+      {
+        "district": "182",
+        "rep": "Ben Waxman",
+        "party": "D"
+      },
+      {
+        "district": "184",
+        "rep": "Elizabeth Fiedler",
+        "party": "D"
+      },
+      {
+        "district": "194",
+        "rep": "Tarik Khan",
+        "party": "D"
+      },
+      {
+        "district": "197",
+        "rep": "Danilo Burgos",
+        "party": "D"
+      },
+      {
+        "district": "198",
+        "rep": "Darisha K. Parker",
+        "party": "D"
+      },
+      {
+        "district": "54",
+        "rep": "Greg Scott",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "1",
+        "senator": "Nikil Saval",
+        "party": "D"
+      },
+      {
+        "district": "10",
+        "senator": "Steven J. Santarsiero",
+        "party": "D"
+      },
+      {
+        "district": "17",
+        "senator": "Amanda M. Cappelletti",
+        "party": "D"
+      },
+      {
+        "district": "26",
+        "senator": "Timothy P. Kearney",
+        "party": "D"
+      },
+      {
+        "district": "3",
+        "senator": "Sharif Street",
+        "party": "D"
+      },
+      {
+        "district": "4",
+        "senator": "Art Haywood",
+        "party": "D"
+      },
+      {
+        "district": "6",
+        "senator": "Frank A. Farry",
+        "party": "R"
+      },
+      {
+        "district": "7",
+        "senator": "Vincent J. Hughes",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 28
+  },
+  {
+    "MPMS_ID": 60651,
+    "Project": "Substations and Power Improvements",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 9,
+    "Municipalities": "Middletown Township, Philadelphia",
+    "Counties": "Bucks, Philadelphia",
+    "Houses": [
+      {
+        "district": "142",
+        "rep": "Joe Hogan",
+        "party": "R"
+      },
+      {
+        "district": "174",
+        "rep": "Ed Neilson",
+        "party": "D"
+      },
+      {
+        "district": "175",
+        "rep": "MaryLouise Isaacson",
+        "party": "D"
+      },
+      {
+        "district": "182",
+        "rep": "Ben Waxman",
+        "party": "D"
+      },
+      {
+        "district": "185",
+        "rep": "Regina G. Young",
+        "party": "D"
+      },
+      {
+        "district": "198",
+        "rep": "Darisha K. Parker",
+        "party": "D"
+      },
+      {
+        "district": "200",
+        "rep": "Christopher M. Rabb",
+        "party": "D"
+      },
+      {
+        "district": "201",
+        "rep": "Andre D. Carroll",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "1",
+        "senator": "Nikil Saval",
+        "party": "D"
+      },
+      {
+        "district": "3",
+        "senator": "Sharif Street",
+        "party": "D"
+      },
+      {
+        "district": "4",
+        "senator": "Art Haywood",
+        "party": "D"
+      },
+      {
+        "district": "5",
+        "senator": "Joe Picozzi",
+        "party": "R"
+      },
+      {
+        "district": "6",
+        "senator": "Frank A. Farry",
+        "party": "R"
+      },
+      {
+        "district": "8",
+        "senator": "Anthony H. Williams",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 27
+  },
+  {
+    "MPMS_ID": 123969,
+    "Project": "Mainline Schuylkill Bridges & Interlockings",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 5,
+    "Municipalities": "Philadelphia",
+    "Counties": "Philadelphia",
+    "Houses": [
+      {
+        "district": "10",
+        "rep": "Amen Brown",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "1",
+        "senator": "Nikil Saval",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 2,
+    "Max_TitleVI_Score": 2,
+    "Max_Composite_Score": 20
+  },
+  {
+    "MPMS_ID": 102569,
+    "Project": "Maintenance & Transportation Facilities Program",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 4,
+    "Municipalities": "Philadelphia",
+    "Counties": "Philadelphia",
+    "Houses": [
+      {
+        "district": "182",
+        "rep": "Ben Waxman",
+        "party": "D"
+      },
+      {
+        "district": "185",
+        "rep": "Regina G. Young",
+        "party": "D"
+      },
+      {
+        "district": "197",
+        "rep": "Danilo Burgos",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "1",
+        "senator": "Nikil Saval",
+        "party": "D"
+      },
+      {
+        "district": "3",
+        "senator": "Sharif Street",
+        "party": "D"
+      },
+      {
+        "district": "8",
+        "senator": "Anthony H. Williams",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 27
+  },
+  {
+    "MPMS_ID": 102567,
+    "Project": "Roof Program",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 3,
+    "Municipalities": "Philadelphia",
+    "Counties": "Philadelphia",
+    "Houses": [
+      {
+        "district": "177",
+        "rep": "Joseph C. Hohenstein",
+        "party": "D"
+      },
+      {
+        "district": "179",
+        "rep": "Jason Dawkins",
+        "party": "D"
+      },
+      {
+        "district": "185",
+        "rep": "Regina G. Young",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "2",
+        "senator": "Christine M. Tartaglione",
+        "party": "D"
+      },
+      {
+        "district": "8",
+        "senator": "Anthony H. Williams",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 29
+  },
+  {
+    "MPMS_ID": 123962,
+    "Project": "Bus Network Program",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 3,
+    "Municipalities": "Philadelphia",
+    "Counties": "Philadelphia",
+    "Houses": [
+      {
+        "district": "173",
+        "rep": "Pat Gallagher",
+        "party": "D"
+      },
+      {
+        "district": "184",
+        "rep": "Elizabeth Fiedler",
+        "party": "D"
+      },
+      {
+        "district": "197",
+        "rep": "Danilo Burgos",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "1",
+        "senator": "Nikil Saval",
+        "party": "D"
+      },
+      {
+        "district": "3",
+        "senator": "Sharif Street",
+        "party": "D"
+      },
+      {
+        "district": "5",
+        "senator": "Joe Picozzi",
+        "party": "R"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 23
+  },
+  {
+    "MPMS_ID": 102565,
+    "Project": "Track & Right-of-Way Improvement Program",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 2,
+    "Municipalities": "Caln Township, Upper Darby Township",
+    "Counties": "Chester, Delaware",
+    "Houses": [
+      {
+        "district": "164",
+        "rep": "Gina H. Curry",
+        "party": "D"
+      },
+      {
+        "district": "74",
+        "rep": "Dan K. Williams",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "26",
+        "senator": "Timothy P. Kearney",
+        "party": "D"
+      },
+      {
+        "district": "44",
+        "senator": "Katie J. Muth",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 3,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 26
+  },
+  {
+    "MPMS_ID": 93586,
+    "Project": "Downingtown Train Station Rehabilitation",
+    "Sponsor": "Chester",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Downingtown Borough",
+    "Counties": "Chester",
+    "Houses": [
+      {
+        "district": "155",
+        "rep": "Danielle Friel Otten",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "19",
+        "senator": "Carolyn T. Comitta",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 1,
+    "Max_TitleVI_Score": 2,
+    "Max_Composite_Score": 15
+  },
+  {
+    "MPMS_ID": 122325,
+    "Project": "North Broad Bus-Subway Transfer Improvement Project",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Philadelphia",
+    "Counties": "Philadelphia",
+    "Houses": [
+      {
+        "district": "197",
+        "rep": "Danilo Burgos",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "3",
+        "senator": "Sharif Street",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 4,
+    "Max_TitleVI_Score": 4,
+    "Max_Composite_Score": 23
+  },
+  {
+    "MPMS_ID": 60540,
+    "Project": "Parking Improvements Program \u2013 Conshohocken Station",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Conshohocken Borough",
+    "Counties": "Montgomery",
+    "Houses": [
+      {
+        "district": "54",
+        "rep": "Greg Scott",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "7",
+        "senator": "Vincent J. Hughes",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 1,
+    "Max_TitleVI_Score": 2,
+    "Max_Composite_Score": 8
+  },
+  {
+    "MPMS_ID": 73214,
+    "Project": "Ardmore Transportation Center",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Lower Merion Township",
+    "Counties": "Montgomery",
+    "Houses": [
+      {
+        "district": "149",
+        "rep": "Tim Briggs",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "17",
+        "senator": "Amanda M. Cappelletti",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 2,
+    "Max_TitleVI_Score": 2,
+    "Max_Composite_Score": 19
+  },
+  {
+    "MPMS_ID": 60335,
+    "Project": "City Hall / 15th Street Stations",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Philadelphia",
+    "Counties": "Philadelphia",
+    "Houses": [
+      {
+        "district": "182",
+        "rep": "Ben Waxman",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "1",
+        "senator": "Nikil Saval",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 2,
+    "Max_TitleVI_Score": 2,
+    "Max_Composite_Score": 14
+  },
+  {
+    "MPMS_ID": 15407,
+    "Project": "Villanova Intermodal Station",
+    "Sponsor": "SEPTA",
+    "Type": "Transit Improvements",
+    "LocationCount": 1,
+    "Municipalities": "Radnor Township",
+    "Counties": "Delaware",
+    "Houses": [
+      {
+        "district": "168",
+        "rep": "Lisa A. Borowski",
+        "party": "D"
+      }
+    ],
+    "Senates": [
+      {
+        "district": "17",
+        "senator": "Amanda M. Cappelletti",
+        "party": "D"
+      }
+    ],
+    "Max_LowIncome_Score": 1,
+    "Max_TitleVI_Score": 2,
+    "Max_Composite_Score": 14
+  }
+]
