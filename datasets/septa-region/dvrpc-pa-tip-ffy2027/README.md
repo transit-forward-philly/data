@@ -1,6 +1,6 @@
 # DVRPC FFY2027 Pennsylvania TIP projects, by legislative district
 
-**One-line summary:** The 407 mapped projects in DVRPC's draft FFY2027 Pennsylvania Transportation Improvement Program (FFY27–30), each placed in its PA House and Senate district with the 2025–26 member and the unofficial 2026 seat status.
+**One-line summary:** The 407 mapped projects in DVRPC's draft FFY2027 Pennsylvania Transportation Improvement Program (FFY27–30), each placed in its PA House and Senate district with the 2025–26 member and the unofficial 2026 winner.
 
 ## Source
 
@@ -11,7 +11,7 @@
 
 ## Processing
 
-Every DVRPC attribute was kept except the internal object ID. Each project point was placed in a House and Senate district by point-in-polygon against Census TIGER/Line 2024, then joined to the [2025–26 legislators](../../pennsylvania/legislators-2025-2026/) and the [2026 election flips](../../pennsylvania/election-2026-flips/). Script: [`pipelines/dvrpc_pa_tip/build.py`](../../../pipelines/dvrpc_pa_tip/build.py).
+Every DVRPC attribute was kept except the internal object ID. Each project point was placed in a House and Senate district by point-in-polygon against Census TIGER/Line 2024, then joined to the [2025–26 legislators](../../pennsylvania/legislators-2025-2026/) and the [2026 election results](../../pennsylvania/election-2026-results/). Script: [`pipelines/dvrpc_pa_tip/build.py`](../../../pipelines/dvrpc_pa_tip/build.py).
 
 ## Files
 
@@ -32,7 +32,8 @@ Every DVRPC attribute was kept except the internal object ID. Each project point
 | `latitude`, `longitude` | As DVRPC gives them |
 | `house_district`, `senate_district` | Computed from Census boundaries |
 | `*_member_2025_26`, `*_party_2025_26` | Member for that district |
-| `*_seat_2026_status` | `flip_r_to_d`, `flip_d_to_r`, `uncalled`, or `no_change_listed`. Unofficial, as of 2026-11-04. |
+| `*_seat_2026_status` | `hold`, `flip_r_to_d`, `flip_d_to_r`, `uncounted`, or `not_up` (Senate seats not on the 2026 ballot). Unofficial, as of 2026-11-10. |
+| `*_winner_2026`, `*_winner_party_2026` | Unofficial winner of that seat; blank where the count is unfinished or the seat was not up |
 
 ## Known gaps and caveats
 
@@ -40,7 +41,7 @@ Every DVRPC attribute was kept except the internal object ID. Each project point
 - **No dollar amounts or schedules.** This layer has locations and scores only. Costs and phasing are in DVRPC's TIP document.
 - **Not every project is mapped**, per DVRPC.
 - **Two projects have no district**, because their points fall outside Pennsylvania's legislative maps.
-- **"No change listed" is not "confirmed."** The election file lists only flipped and uncalled seats.
+- **Results are unofficial and incomplete.** They come from MultiState, and three House races (HD-41, 143, 147) were still being counted; 16 projects fall in those seats.
 - **Point-in-polygon only.** A linear project can touch several districts; this assigns it to the district of its representative point.
 
 ## License

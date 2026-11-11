@@ -60,7 +60,7 @@ def main(out, tiger_dir=None):
     rows = [f["attributes"] for f in feats]
     pts = gpd.GeoDataFrame(rows, geometry=gpd.points_from_xy([f["geometry"]["x"] for f in feats], [f["geometry"]["y"] for f in feats]), crs="EPSG:4326").to_crs(PROJ)
     legs = {ch: records(D / f"pennsylvania/legislators-2025-2026/records/{ch}") for ch in ("house", "senate")}
-    flips = {ch: records(D / f"pennsylvania/election-2026-flips/records/{ch}") for ch in ("house", "senate")}
+    results = {ch: records(D / f"pennsylvania/election-2026-results/records/{ch}") for ch in ("house", "senate")}
     place = {}
     for ch in ("house", "senate"):
         g = tiger_districts(ch, tiger_dir)
@@ -73,11 +73,13 @@ def main(out, tiger_dir=None):
         for ch in ("house", "senate"):
             d = place[ch][i]
             m = legs[ch].get(d)
-            fl = flips[ch].get(d)
+            fl = results[ch].get(d)
             o[f"{ch}_district"] = d
             o[f"{ch}_member_2025_26"] = m["full_name"] if m else ""
             o[f"{ch}_party_2025_26"] = m["party"] if m else ""
-            o[f"{ch}_seat_2026_status"] = fl["outcome"] if fl else ("" if not d else "no_change_listed")
+            o[f"{ch}_seat_2026_status"] = fl["outcome"] if fl else ("" if not d else "not_up")
+            o[f"{ch}_winner_2026"] = fl.get("winner", "") if fl else ""
+            o[f"{ch}_winner_party_2026"] = fl.get("winner_party", "") if fl else ""
         out_rows.append(o)
     out_rows.sort(key=lambda o: (o["prog"], str(o["mpms_id"]), o["road_name"]))
     with open(out, "w", newline="", encoding="utf-8") as fh:

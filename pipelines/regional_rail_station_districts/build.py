@@ -11,7 +11,7 @@ www2.census.gov into a temporary folder.
 Reads, relative to the repo root:
     datasets/septa-region/septa-regional-rail-stations/septa-regional-rail-stations.csv
     datasets/pennsylvania/legislators-2025-2026/records/{house,senate}/*.toml
-    datasets/pennsylvania/election-2026-flips/records/{house,senate}/*.toml
+    datasets/pennsylvania/election-2026-results/records/{house,senate}/*.toml
 
 Each station point is placed in a district, county and municipality by point-in-polygon. Stations outside
 Pennsylvania (Delaware, New Jersey) get no district. SEPTA's own district fields
@@ -120,7 +120,7 @@ def main(out, tiger_dir=None):
     counties_all = tiger_places("county", tiger_dir)
     pts, adjusted = adjust_near_line(pts, stations, munis_all, counties_all)
     legs = {ch: records(D / f"pennsylvania/legislators-2025-2026/records/{ch}") for ch in ("house", "senate")}
-    flips = {ch: records(D / f"pennsylvania/election-2026-flips/records/{ch}") for ch in ("house", "senate")}
+    results = {ch: records(D / f"pennsylvania/election-2026-results/records/{ch}") for ch in ("house", "senate")}
     res = {}
     for ch in ("house", "senate"):
         g = tiger_districts(ch, tiger_dir)
@@ -160,8 +160,10 @@ def main(out, tiger_dir=None):
             m = legs[ch].get(d)
             r[f"{ch}_member_2025_26"] = m["full_name"] if m else ""
             r[f"{ch}_party_2025_26"] = m["party"] if m else ""
-            f = flips[ch].get(d)
-            r[f"{ch}_seat_2026_status"] = f["outcome"] if f else ("" if not d else "no_change_listed")
+            f = results[ch].get(d)
+            r[f"{ch}_seat_2026_status"] = f["outcome"] if f else ("" if not d else "not_up")
+            r[f"{ch}_winner_2026"] = f.get("winner", "") if f else ""
+            r[f"{ch}_winner_party_2026"] = f.get("winner_party", "") if f else ""
         rows.append(r)
     with open(out, "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0]))
