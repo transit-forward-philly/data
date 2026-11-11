@@ -58,7 +58,7 @@ def tiger_places(kind, tiger_dir):
     g = gpd.read_file(f"zip://{tiger_file(name, url, tiger_dir)}")
     g = g[g["STATEFP"] == "42"]
     g["place"] = g["NAME"] if kind == "county" else g["NAMELSAD"]
-    return g[["place", "geometry"]].to_crs(PROJ)
+    return g[["place", "NAME", "COUNTYFP", "geometry"]].to_crs(PROJ)
 
 
 def tiger_districts(ch, tiger_dir):
@@ -73,6 +73,42 @@ def records(path):
     return {p.stem: tomllib.loads(p.read_text()) for p in sorted(path.glob("*.toml"))}
 
 
+NEAR_LINE_FT = 330  # about 100 m
+
+
+def adjust_near_line(pts, stations, munis, counties):
+    """Resolve stations whose point sits on a municipal line.
+
+    If SEPTA's municipality name belongs to a polygon within about 100 m of the point and is
+    not the polygon the point falls in, trust SEPTA (its street address names that municipality)
+    and move the point just inside that polygon so district assignment uses the same side.
+    Returns the adjusted points and {station index: (municipality, county)} for adjusted rows.
+    """
+    county_name = dict(zip(counties["COUNTYFP"], counties["NAME"]))
+    adjusted = {}
+    geoms = list(pts.geometry)
+    for i, s in enumerate(stations):
+        pt = geoms[i]
+        inside = munis[munis.geometry.contains(pt)]
+        want = (s["Municipality"] or "").strip().lower()
+        if not want or (len(inside) and inside.iloc[0]["NAME"].lower() == want):
+            continue
+        cand = munis[(munis["NAME"].str.lower() == want) & (munis.geometry.distance(pt) <= NEAR_LINE_FT)]
+        if cand.empty:
+            continue
+        c = cand.iloc[0]
+        inner = c.geometry.buffer(-15)  # 15 ft inside the line
+        target = inner if not inner.is_empty else c.geometry
+        geoms[i] = nearest_point(target, pt)
+        adjusted[i] = (c["place"], county_name.get(c["COUNTYFP"], ""))
+    return gpd.GeoDataFrame(pts.drop(columns="geometry"), geometry=geoms, crs=pts.crs), adjusted
+
+
+def nearest_point(geom, pt):
+    from shapely.ops import nearest_points
+    return nearest_points(geom, pt)[0]
+
+
 def main(out, tiger_dir=None):
     stations = list(csv.DictReader(open(D / "septa-region/septa-regional-rail-stations/septa-regional-rail-stations.csv")))
     pts = gpd.GeoDataFrame(
@@ -80,6 +116,9 @@ def main(out, tiger_dir=None):
         geometry=gpd.points_from_xy([float(s["Longitude"]) for s in stations], [float(s["Latitude"]) for s in stations]),
         crs="EPSG:4326",
     ).to_crs(PROJ)
+    munis_all = tiger_places("municipality", tiger_dir)
+    counties_all = tiger_places("county", tiger_dir)
+    pts, adjusted = adjust_near_line(pts, stations, munis_all, counties_all)
     legs = {ch: records(D / f"pennsylvania/legislators-2025-2026/records/{ch}") for ch in ("house", "senate")}
     flips = {ch: records(D / f"pennsylvania/election-2026-flips/records/{ch}") for ch in ("house", "senate")}
     res = {}
@@ -99,6 +138,8 @@ def main(out, tiger_dir=None):
         j = gpd.sjoin(pts, tiger_places(kind, tiger_dir), how="left", predicate="within")
         j = j[~j.index.duplicated(keep="first")]
         res[kind] = {i: (p if isinstance(p, str) else "") for i, p in zip(j.index, j["place"])}
+    for i, (muni, cty) in adjusted.items():
+        res["municipality"][i], res["county"][i] = muni, cty
     rows = []
     for i, s in enumerate(stations):
         r = {
@@ -107,6 +148,7 @@ def main(out, tiger_dir=None):
             "septa_county": s["County"], "septa_municipality": s["Municipality"],
             "county": res["county"][i], "municipality": res["municipality"][i],
         }
+        r["location_basis"] = "septa_address_near_line" if i in adjusted else "coordinates"
         r["county_matches_septa"] = "" if not r["county"] else str(r["county"] == s["County"]).lower()
         for ch, septa_col in (("house", "PA_State_House_District"), ("senate", "PA_State_Senate_District")):
             d, near = res[ch][i]

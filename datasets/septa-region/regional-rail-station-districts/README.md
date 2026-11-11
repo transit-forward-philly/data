@@ -26,6 +26,7 @@ Station coordinates were placed in district polygons by point-in-polygon. Script
 | `septa_county`, `septa_municipality` | SEPTA's values, unchanged |
 | `county`, `municipality` | Computed from Census boundaries; blank outside Pennsylvania |
 | `county_matches_septa` | `true` or `false` |
+| `location_basis` | `coordinates`, or `septa_address_near_line` for stations whose point sits within about 100 m of a municipal line (see caveats) |
 | `septa_house_district`, `septa_senate_district` | SEPTA's district assignment |
 | `house_district`, `senate_district` | Computed from Census boundaries; blank outside Pennsylvania |
 | `house_matches_septa`, `senate_matches_septa` | `true` or `false` |
@@ -37,13 +38,14 @@ Station coordinates were placed in district polygons by point-in-polygon. Script
 
 - **SEPTA's district fields are mostly out of date.** They disagree with the current maps for 51 of 149 Pennsylvania station rows in the House and 26 of 149 in the Senate. Use the computed columns.
 - **6 stations are in House seats that flipped R to D** (Cornwells Heights, Eddington, Langhorne, Neshaminy Falls, Trevose, Woodbourne) and **8 are in Senate seats that flipped R to D**. No station sits in an uncalled seat.
-- **SEPTA's county is wrong for 7 station rows:** Bala, Cynwyd and Rosemont (Montgomery, not Philadelphia), Hatboro (Montgomery, not Bucks), Highland and Angora (Philadelphia, not Delaware), and Lawndale (computed as Montgomery's Cheltenham Township; it sits on the city line, so check it). Use `county` and `municipality`.
+- **SEPTA's county is wrong for 6 station rows:** Bala, Cynwyd and Rosemont (Montgomery, not Philadelphia), Hatboro (Montgomery, not Bucks), and Highland and Angora (Philadelphia, not Delaware). Use `county` and `municipality`.
 - Six rows (Delaware and New Jersey stations) are outside Pennsylvania and have no district.
 
 ## Known gaps and caveats
 
 - **"No change listed" is not "confirmed."** The election file lists only flipped and uncalled seats, so `no_change_listed` means the seat was not flagged, not that it was certified as held.
 - **Member names are for 2025–26.** They will change in January 2027 where seats flipped or incumbents left.
+- **Stations on a municipal line.** Two stations, Lawndale and Primos, have coordinates within about 100 m of a municipal line, on the other side from the municipality SEPTA's street address names. For those rows (`location_basis = septa_address_near_line`) we trust SEPTA's municipality and take the districts from just inside it. Lawndale's coordinates fall 1 m inside Cheltenham Township, but its address is 105 Devereaux Ave, Philadelphia 19111, so it is treated as Philadelphia.
 - **Edge cases.** Rows flagged `near_boundary` could land in a neighboring district with small coordinate differences. Fernwood-Yeadon differs depending on boundary precision.
 - **Station coordinates are SEPTA's** and were not checked.
 
