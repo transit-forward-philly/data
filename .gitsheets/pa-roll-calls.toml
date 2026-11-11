@@ -4,7 +4,7 @@ path = '${{ vote_key }}'
 
 [gitsheet.schema]
 type = 'object'
-required = ['vote_key', 'bill', 'chamber', 'date', 'motion', 'tally', 'source_url']
+required = ['vote_key', 'bill', 'session', 'chamber', 'date', 'motion', 'tally', 'source_url']
 additionalProperties = false
 
 [gitsheet.schema.properties.vote_key]
@@ -39,3 +39,6 @@ type = 'string'
 
 [gitsheet.schema.properties.committee]
 type = 'string'
+
+[gitsheet.schema.properties.session]
+enum = ['2023-24', '2025-26']
