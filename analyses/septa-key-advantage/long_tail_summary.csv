@@ -1,0 +1,22 @@
+industry,partners,members,share_of_rest_members,philly_jobs_2023,share_of_philly_jobs,partners_named
+Agriculture,0,0,0.000,71,0.000,
+Mining,0,0,0.000,2,0.000,
+Utilities,0,0,0.000,5194,0.007,
+Construction,0,0,0.000,16770,0.022,
+Manufacturing,4,478,0.084,19364,0.026,FMC Corporation; Stateside Brands; Arcadium Lithium; Remark Glass
+Wholesale trade,1,42,0.007,15348,0.021,International Raw Materials
+Retail,1,16,0.003,49078,0.066,L. Priori Jewelry
+Transportation and warehousing,0,0,0.000,33180,0.044,
+Information and software,3,166,0.029,22627,0.030,HealthVerity; IONOS; CampusESP
+Finance and insurance,0,0,0.000,34179,0.046,
+Real estate,3,125,0.022,10992,0.015,Brandywine Realty Trust; Arcadia Land Company; Mt. Vernon Manor
+Professional services,15,746,0.131,67476,0.090,Defender Association of Philadelphia; Integral Molecular; Voith & Mactavish Architects; Econsult Solutions; Tempest; Hofstein Meyer Rocco Finger & Weiner; En Route Consulting; HV Law Group; Nochumson P.C.; FatBall Therapeutics; Metropolitan Acoustics; KMKM Law Group; Henry & Grogan; Vetigenics; Permit Philly
+Corporate offices,0,0,0.000,13380,0.018,
+Administrative services,3,222,0.039,36404,0.049,InspiriTec; Center City Legal Reproductions; Visit Philadelphia
+Education,8,1415,0.248,90205,0.121,Swarthmore College (staff); City Year Philadelphia; Launch of Philadelphia; Curtis Institute of Music; PHENND; ArtistYear; Rock to the Future; College Together (staff)
+Health care and social assistance,7,323,0.057,192779,0.258,Always Best Care Senior Services; The Welcoming Center; Busy Bees Learning Center; Primrose School of Center City; St. Mary's Nursery School; Noble Dental; Thomas Center for Learning
+Arts and entertainment,0,0,0.000,15301,0.021,
+Hotels and food,2,306,0.054,59675,0.080,Four Seasons Hotel Philadelphia; Malooga
+"Unions, associations and civic groups",8,222,0.039,26704,0.036,Center City District; Clean Air Council; World Affairs Council of Philadelphia; City Avenue District; Bok Building Condominium Association; Green Building United; Philadelphia Council AFL-CIO; Temple Association of University Professionals
+Government,4,1489,0.261,37202,0.050,Philadelphia Parking Authority; Pennsylvania House of Representatives; Philadelphia Housing Development Corp.; Disciplinary Board of the Supreme Court of Pa.
+Not identified,3,162,0.028,,,“Dywer” (not identified); “Catalyst Group” (not identified); “DYAD” (not identified)
