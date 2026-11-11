@@ -1,0 +1,6 @@
+as_of = "2026-09-21"
+claim = "Regional rail ridership dropped about 90% during the pandemic"
+claim_number = "10"
+next_check = "Check against NTD historical data."
+speaker = "She"
+status = "to_check"

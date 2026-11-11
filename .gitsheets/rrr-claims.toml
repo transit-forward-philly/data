@@ -1,0 +1,30 @@
+[gitsheet]
+root = 'datasets/septa-region/rrr-claim-catalog/records'
+path = '${{ claim_number }}'
+
+[gitsheet.schema]
+type = 'object'
+required = ['claim_number', 'claim', 'speaker', 'status', 'as_of']
+additionalProperties = false
+
+[gitsheet.schema.properties.claim_number]
+type = 'string'
+pattern = '^[0-9]{2}$'
+
+[gitsheet.schema.properties.claim]
+type = 'string'
+
+[gitsheet.schema.properties.speaker]
+type = 'string'
+
+[gitsheet.schema.properties.status]
+enum = ['confirmed', 'corroborated', 'complicated', 'to_check', 'source_unrecoverable']
+
+[gitsheet.schema.properties.evidence]
+type = 'string'
+
+[gitsheet.schema.properties.next_check]
+type = 'string'
+
+[gitsheet.schema.properties.as_of]
+type = 'string'
