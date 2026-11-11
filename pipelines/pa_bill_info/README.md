@@ -9,6 +9,7 @@ Fetches palegis.us bill pages and extracts prime sponsor, cosponsors (with party
     pipelines/pa_bill_info/transportation-bills.txt
   ```
   Needs `requests` and `beautifulsoup4` (the PA Housing Votes pipeline environment has both).
+- **Then fetch the roll calls it found:** `bash pipelines/pa_bill_info/fetch-rollcalls.sh` runs PA Housing Votes' `fetch_rollcall.py` for the votes not yet in the dataset.
 - **Bills file:** one per line, `hb291` or `hb291:2023` (session start year, default 2025). `transportation-bills.txt` lists the bills in the 2027–28 transportation memo.
 - **Writes:** `bill-info.csv`, `cosponsors.csv`, `roll-calls.csv`, and the raw pages in `raw/`.
 - **Offline test:** `--html-dir DIR` reads `DIR/<bill>-<year>.html` instead of fetching. It was checked against cached HB 2109 and HB 2186 pages: sponsors, 25 and 26 cosponsors, and roll calls 1119, 2264, 1075, 2201 and 1054 all match known values.
