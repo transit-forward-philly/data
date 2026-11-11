@@ -1,5 +1,5 @@
 [gitsheet]
-root = 'datasets/pennsylvania/transportation-bills-2027-28/concepts'
+root = 'datasets/pennsylvania/transportation-priorities-2027-28/concepts'
 path = '${{ slug }}'
 
 [gitsheet.schema]
@@ -69,3 +69,6 @@ type = 'string'
 
 [gitsheet.schema.properties.notes]
 type = 'string'
+
+[gitsheet.schema.properties.bills_session]
+enum = ['2023-24', '2025-26']

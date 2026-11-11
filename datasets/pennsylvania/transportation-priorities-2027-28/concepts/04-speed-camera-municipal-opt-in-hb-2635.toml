@@ -1,5 +1,6 @@
 administrative = 3
 bills = ["HB 2635"]
+bills_session = "2025-26"
 concept = "Speed camera municipal opt-in (HB 2635)"
 cost = 5
 effectiveness = 5

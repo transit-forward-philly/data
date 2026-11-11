@@ -1,5 +1,6 @@
 administrative = 5
 bills = ["HB 1364", "HB 1788", "SB 796"]
+bills_session = "2025-26"
 concept = "Transit trust fund transfer (4.4% to 6.15% of sales tax)"
 cost = 2
 effectiveness = 5

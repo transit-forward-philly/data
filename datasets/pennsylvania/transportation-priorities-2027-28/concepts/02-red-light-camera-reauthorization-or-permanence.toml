@@ -1,5 +1,6 @@
 administrative = 4
 bills = ["SB 1072"]
+bills_session = "2025-26"
 concept = "Red light camera reauthorization or permanence"
 cost = 5
 effectiveness = 4
