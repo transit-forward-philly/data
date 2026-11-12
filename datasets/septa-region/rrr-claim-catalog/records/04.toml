@@ -1,6 +1,0 @@
-as_of = "2026-09-21"
-claim = "Off-peak and evening headways are hourly"
-claim_number = "04"
-next_check = "Check against current GTFS."
-speaker = "Vuchic"
-status = "to_check"
