@@ -1,6 +1,0 @@
-as_of = "2026-09-21"
-claim = "A SEPTA survey found about zero bus-to-train transfers at Chester due to non-integrated fares"
-claim_number = "16"
-evidence = "The archival source is likely unrecoverable, but the underlying problem is still true: SEPTA's current fare page says transfers to and from Regional Rail are never free."
-speaker = "Vuchic"
-status = "source_unrecoverable"
