@@ -35,6 +35,10 @@ Every DVRPC attribute was kept except the internal object ID. Each project point
 | `*_seat_2026_status` | `hold`, `flip_r_to_d`, `flip_d_to_r`, `uncounted`, or `not_up` (Senate seats not on the 2026 ballot). Unofficial, as of 2026-11-10. |
 | `*_winner_2026`, `*_winner_party_2026` | Unofficial winner of that seat; blank where the count is unfinished or the seat was not up |
 
+## Related DVRPC layer, not yet pulled
+
+**CHSTP** is DVRPC's Coordinated Human Services Transportation Plan; its [Priority Score layer](https://catalog.dvrpc.org/dataset/coordinated-human-services-transportation-plan-chstp-priority-score) scores areas by essential services, jobs and transit accessibility to show where service could help vulnerable populations. The roadmap's planned comparison of CHSTP scores with TIP investment is not built yet. The updated plan ("Equity Through Access") was accepted by the DVRPC Board on Jan 23, 2025.
+
 ## Known gaps and caveats
 
 - **Draft.** DVRPC's metadata still has the board adoption date blank ("July __, 2026"). Check whether an adopted version has replaced the layer.

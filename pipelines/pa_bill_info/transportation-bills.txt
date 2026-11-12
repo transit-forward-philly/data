@@ -16,3 +16,5 @@ hb2129
 sb910
 # Earlier session cited by the memo (Senate passed SB 121 28-21 in 2023, State Police off the Motor License Fund).
 sb121:2023
+# HB 291's 2023-24 predecessor: a Bicycle Coalition release gives HB 1283, passed the House 198-5 on June 20, 2023 (single source; confirm).
+hb1283:2023

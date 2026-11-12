@@ -72,3 +72,6 @@ type = 'string'
 
 [gitsheet.schema.properties.bills_session]
 enum = ['2023-24', '2025-26']
+
+[gitsheet.schema.properties.palegis_checked]
+type = 'string'
