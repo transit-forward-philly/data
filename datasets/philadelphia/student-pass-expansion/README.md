@@ -24,7 +24,7 @@
 3. From each block to each school: walking at 3 mph (4.8 km/h; also 2.5 mph for grades 5–6), SEPTA transit (median trip over departures between 7:00 and 8:00 AM, walking at 3 mph to and from stops), and walking-route distance.
 4. Students were grouped into three cumulative school-trip tiers by walk time and the time transit saves. Counts under 20 students were suppressed.
 
-The per-trip outputs and scripts from that run were not kept, so the travel-time files here are its published summaries. A reproducible version will go in `analyses/`.
+The per-trip outputs and routing scripts from that run were not kept, so the travel-time files here are its published summaries. [`analyses/student-pass-expansion/scripts/build_dataset_files.py`](../../../analyses/student-pass-expansion/scripts/build_dataset_files.py) writes every file added in November 2026 (travel-time summaries, scenarios, catchment destinations); see the [analysis README](../../../analyses/student-pass-expansion/) to run it.
 
 **Eligibility scenarios** build monthly active cards from the eligible pool: students beyond 1.5 miles at the current program's monthly active rate (57% of eligible students in a school-year month), and students within 1.5 miles at half that rate (an assumption; no data exists). Shares within 1.5 miles are 40% for grades 7–12 (estimated 37–45%) and 64% for grades 5–6 (estimated 61–67%). The current-pool step (58,844) is close to the program's actual 59,706 eligible students.
 
