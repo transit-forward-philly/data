@@ -77,6 +77,12 @@ for g, tot, h, m, lo in [
     tier_rows("7-12", "sector", g, tot, [lo, m, h], shares=True)
 tier_rows("5-6", "all", "all public", 27514, [7285, 9539, 11618])
 tier_rows("5-6", "all", "all public", 27514, [8949, 11444, 14188], walk="2.5 mph (4.0 km/h)")
+# Low end: the 1,632 grade 5-6 students routed from high school catchments (6-12 and
+# K-12 schools with no other catchment) left out, and the remaining students' tier
+# shares (24.2%, 32.1%, 39.6%) applied to all 27,514.
+G56_LOW_END_PCT = [24.2, 32.1, 39.6]
+G56_LOW_END = [round(27514 * p / 100) for p in G56_LOW_END_PCT]
+tier_rows("5-6", "all", "all public, excluding high school catchment routing", 27514, G56_LOW_END)
 for g, tot, lo, m, h in [
     ("elementary", 3757, 426, 609, 810), ("k_8", 16252, 3400, 4576, 5688),
     ("middle", 2803, 740, 1058, 1397), ("6_12", 1131, 744, 865, 958),
@@ -96,12 +102,15 @@ comb = []
 for i, t in enumerate(["low", "medium", "high"]):
     g712 = [38665, 47625, 55466][i]
     g56 = [7285, 9539, 11618][i]
+    g56_low = G56_LOW_END[i]
     np_est = round(NP * g712 / 82806)
-    comb.append([t, RULES[t], g712, g56, np_est, g712 + g56 + np_est])
+    comb.append([t, RULES[t], g712, g56_low, g56, np_est,
+                 g712 + g56_low + np_est, g712 + g56 + np_est])
 write(
     "school_trip_tiers_5_12.csv",
-    ["tier", "rule", "grades_7_12_public", "grades_5_6_public", "nonpublic_5_12_assumed",
-     "total_5_12"],
+    ["tier", "rule", "grades_7_12_public", "grades_5_6_public_low_end",
+     "grades_5_6_public_high_end", "nonpublic_5_12_assumed", "total_5_12_low_end",
+     "total_5_12_high_end"],
     comb,
 )
 

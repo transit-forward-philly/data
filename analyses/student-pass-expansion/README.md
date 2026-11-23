@@ -23,9 +23,9 @@ The full method and caveats are in the [dataset README](../../datasets/philadelp
 
 ## Findings
 
-- About 55,000 to 80,000 grade 5–12 students attend a school where transit plausibly helps with the daily trip; SEPTA's projection of 71,036 monthly active cards falls inside that range.
+- About 54,300 to 80,000 grade 5–12 students attend a school where transit plausibly helps with the daily trip; SEPTA's projection of 71,036 monthly active cards falls inside that range.
 - Inside 1.5 miles, transit rarely beats walking: a median 8 minutes either way in middle school catchments, 20.5 minutes walking against 18 by transit in high school catchments.
-- Most grade 7–12 students with a long school trip are already eligible today. The new school-trip need the expansion adds is about 15,000 to 19,500 public students.
+- Most grade 7–12 students with a long school trip are already eligible today. The new school-trip need the expansion adds is about 14,500 to 19,500 public students.
 - Which months are billed moves the cost about as much as which expansion step is chosen (see [`eligibility_scenarios.csv`](../../datasets/philadelphia/student-pass-expansion/eligibility_scenarios.csv)).
 
 ## What's here

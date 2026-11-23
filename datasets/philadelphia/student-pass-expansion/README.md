@@ -98,9 +98,11 @@ The first four files are unchanged; their columns are described in their headers
 | `tier` | text | | `low`, `medium` or `high` |
 | `rule` | text | | Tier rule |
 | `grades_7_12_public` | integer | students | From `school_trip_tiers.csv` |
-| `grades_5_6_public` | integer | students | From `school_trip_tiers.csv`, at 3 mph |
+| `grades_5_6_public_low_end` | integer | students | From `school_trip_tiers.csv` at 3 mph, leaving out students routed from high school catchments (see caveats) |
+| `grades_5_6_public_high_end` | integer | students | From `school_trip_tiers.csv` at 3 mph, all routed students |
 | `nonpublic_5_12_assumed` | integer | students | The 19,284 non-public students at the grade 7–12 public share; there is no catchment data for them |
-| `total_5_12` | integer | students | Sum |
+| `total_5_12_low_end` | integer | students | Sum using the grade 5–6 low end |
+| `total_5_12_high_end` | integer | students | Sum using the grade 5–6 high end |
 
 **`within_1_5_miles.csv`**
 
@@ -150,7 +152,7 @@ The current SEPTA student pass covers grades 7–12, with a 1.5-mile distance ru
 
 The 71,036 is labeled a "utilization estimate" and at 54% of the eligible pool matches the current monthly active rate (47–57%), suggesting SEPTA already discounted for students who won't ride. The remaining questions are about summer billing, the rate, the billing model, and how students who live close to school are treated.
 
-On the school trip itself: an estimated 38,700 to 55,500 grade 7–12 public students and 7,300 to 11,600 grade 5–6 public students attend a school where transit plausibly helps; with non-public students, about 55,000 to 80,000 for grades 5–12. Inside 1.5 miles, transit rarely beats walking: a median 8 minutes either way in middle school catchments, and 20.5 minutes walking against 18 by transit in high school catchments. Most grade 7–12 students with a long school trip are already eligible today, since a 30-minute walk is about 1.5 miles.
+On the school trip itself: an estimated 38,700 to 55,500 grade 7–12 public students and 6,700 to 11,600 grade 5–6 public students attend a school where transit plausibly helps; with non-public students, about 54,300 to 80,000 for grades 5–12. Inside 1.5 miles, transit rarely beats walking: a median 8 minutes either way in middle school catchments, and 20.5 minutes walking against 18 by transit in high school catchments. Most grade 7–12 students with a long school trip are already eligible today, since a 30-minute walk is about 1.5 miles.
 
 An interactive calculator is at [phillystudentfares.netlify.app/calculator](https://phillystudentfares.netlify.app/calculator).
 
@@ -160,7 +162,7 @@ An interactive calculator is at [phillystudentfares.netlify.app/calculator](http
 - **71,036 methodology unknown.** SEPTA hasn't clarified whether this means card holders or monthly active cards.
 - **$88.60 is 23.6% off the $116 retail pass,** though it is often described as 25%; 25% off would be $87.00.
 - **Travel times are estimates by catchment, not by student.** Students are spread across where their catchment's residents live. High school catchments are large, so those estimates are coarser.
-- **No grades in the flow file.** Grade 7–12 and 5–6 counts are scaled from each school's grade mix. For grades 5–6, 1,632 students (5.9%) at 6–12 and K–12 schools were routed from high school catchments because no other catchment applies; without them the grade 5–6 tiers are 24.2%, 32.1% and 39.6% instead of 26.5%, 34.7% and 42.2%.
+- **No grades in the flow file.** Grade 7–12 and 5–6 counts are scaled from each school's grade mix. For grades 5–6, 1,632 students (5.9%) at 6–12 and K–12 schools were routed from high school catchments because no other catchment applies, and those flows are probably mostly high school students. Grade 5–6 figures are therefore given as a range: the high end includes them (26.5%, 34.7% and 42.2%), the low end leaves them out (24.2%, 32.1% and 39.6%, applied to all grade 5–6 students).
 - **Tiers cover the school trip only.** Students also ride for jobs, activities and weekends, so the high tier is not a ceiling on card use. The tiers leave out being driven, safety, weather and cost.
 - **Use by students within 1.5 miles is unknown.** The eligibility scenarios assume half the farther-away rate; `all_512_no_rule_same_use` shows the result if they ride as much.
 - **Non-public enrollment is by school location, not student residence.** PDE counts students at schools in Philadelphia; some may commute from outside the city. Non-public students are not in the travel-time work.

@@ -32,6 +32,9 @@ grade_band,walk_speed,group_type,group,group_students_est,tier,rule,students_est
 5-6,2.5 mph (4.0 km/h),all,all public,27514,low,walk over 45 min and transit saves 15+ min,8949,32.5
 5-6,2.5 mph (4.0 km/h),all,all public,27514,medium,walk over 30 min and transit saves 10+ min,11444,41.6
 5-6,2.5 mph (4.0 km/h),all,all public,27514,high,walk over 20 min and transit saves 5+ min,14188,51.6
+5-6,3.0 mph (4.8 km/h),all,"all public, excluding high school catchment routing",27514,low,walk over 45 min and transit saves 15+ min,6658,24.2
+5-6,3.0 mph (4.8 km/h),all,"all public, excluding high school catchment routing",27514,medium,walk over 30 min and transit saves 10+ min,8832,32.1
+5-6,3.0 mph (4.8 km/h),all,"all public, excluding high school catchment routing",27514,high,walk over 20 min and transit saves 5+ min,10896,39.6
 5-6,3.0 mph (4.8 km/h),school_level,elementary,3757,low,walk over 45 min and transit saves 15+ min,426,11.3
 5-6,3.0 mph (4.8 km/h),school_level,elementary,3757,medium,walk over 30 min and transit saves 10+ min,609,16.2
 5-6,3.0 mph (4.8 km/h),school_level,elementary,3757,high,walk over 20 min and transit saves 5+ min,810,21.6
