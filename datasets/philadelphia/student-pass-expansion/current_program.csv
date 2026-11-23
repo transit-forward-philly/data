@@ -1,7 +1,7 @@
 measure,value,unit,source,notes
 eligible_students,59706,students,SDP Exhibit A (10/6/2026),Grades 7-12 beyond 1.5 miles
-cards_assigned,49000,students,SDP testimony (10/6/2026),Approximate
-daily_taps,45000,taps,SDP testimony (10/6/2026),Not unique students; one student can generate multiple taps
+cards_assigned,49000,students,"SEPTA testimony (City Council Committee on Transportation & Public Utilities hearing transcript, 10/6/2026, 52:18-20)",Approximate
+est_daily_student_riders,45000,students,"SEPTA testimony (City Council Committee on Transportation & Public Utilities hearing transcript, 10/6/2026, 52:20-22; 88:5-20)","SEPTA estimate of students riding each school day, from ridership drops on district days off; not a count of taps or cards"
 annual_billing,30150580,dollars,SDP Exhibit A (10/6/2026),FY total paid to SEPTA
 monthly_rate,88.60,dollars/card/month,SDP Exhibit A (10/6/2026),About 24% off $116 retail pass
 retail_monthly_pass,116.00,dollars/month,SEPTA fare schedule,31-day pass
@@ -10,3 +10,8 @@ eligible_charter,19799,students,SDP Written Testimony (10/6/2026),Charter school
 eligible_nonpublic,9989,students,SDP Written Testimony (10/6/2026),Non-public schools
 avg_monthly_active_12mo,28358,students,Derived from Exhibit A,"$30,150,580 / $88.60 / 12 = 47.5% of eligible"
 avg_monthly_active_10mo,34030,students,Derived from Exhibit A,"$30,150,580 / $88.60 / 10 = 57% of eligible"
+monthly_tapping_students,33000,students,"SEPTA testimony (City Council Committee on Transportation & Public Utilities hearing transcript, 10/6/2026, 87:23-88:2)",Current contract model on the one-tap-per-month basis (approximate)
+minimum_billed_students_2026_27,33200,students,"SDP testimony (City Council Committee on Transportation & Public Utilities hearing transcript, 10/6/2026, 72:4-11)",SDP guarantees payment for at least this many students this school year
+contract_minimum_payment,30000000,dollars,"SEPTA testimony (City Council Committee on Transportation & Public Utilities hearing transcript, 10/6/2026, 51:7-12)",The current contract guarantees SEPTA at least $30 million
+septa_admin_payment_to_sdp_prior_year,2000000,dollars,"SDP testimony (City Council Committee on Transportation & Public Utilities hearing transcript, 10/6/2026, 79:17-23)","""just under $2 million"" SEPTA paid SDP to administer the program last year"
+septa_admin_payment_to_sdp_current_year,3600000,dollars,"SDP testimony (City Council Committee on Transportation & Public Utilities hearing transcript, 10/6/2026, 79:23-80:2)",About $3.6 million anticipated this year

@@ -1,0 +1,17 @@
+figure,value,unit,speaker,transcript_cite,what_it_means
+students_in_population,200000,students,SEPTA (Johanson),52:15-18; 43:12-15,"All students across district, charter and non-public schools used in the cost scenarios"
+eligible_students,60000,students,SEPTA (Johanson),52:18-19,"Currently eligible for a card (Exhibit A: 59,706)"
+cards_assigned,49000,students,SEPTA (Johanson),52:19-20,Cards assigned to students
+est_daily_student_riders,45000,students,SEPTA (Johanson),52:20-22; 88:5-20,"Estimated students taking a round trip each day, from ridership drops on district days off; not taps"
+monthly_tapping_students,33000,students,SEPTA (Johanson),87:23-88:2,"Current contract model, one tap per month"
+pre_covid_weekly_riders,52000,students,SEPTA (Johanson),87:13-20,"Weekly TransPass program before COVID, about $40 million a year to SEPTA"
+minimum_billed_students,33200,students,SDP (Herbstman),72:4-11,Minimum SDP will pay for this year
+contract_minimum_payment,30000000,dollars,SEPTA (Johanson),51:7-12,Contract guarantees SEPTA at least $30 million
+expansion_takeup_middle_school,0.15,share,SEPTA (Johanson),83:9-21,Assumed share of not-currently-eligible middle school students who would ride under the expansion
+expansion_takeup_high_school,0.40,share,SEPTA (Johanson),83:22-24,"Assumed share of not-currently-eligible high school students who would ride; ""we actually have no idea"" how many would (84:1-4)"
+scenario_all_students_current_restrictions,35000000,dollars per year (additional),SEPTA (Johanson),43:8-19,"All 200,000 students eligible, current time, day and month limits"
+scenario_24_7_school_year,50000000,dollars per year (additional),SEPTA (Johanson),43:20-44:2,"All students, no day or time limits, school year only"
+scenario_12_months,60000000,"dollars per year (additional, ""60-plus"")",SEPTA (Johanson),44:3-8,"All students, 12 months; offered as the breakdown of the $63.8M estimate"
+sdp_estimate_additional,63788061,dollars per year,SDP (Dr. Watlington),26:15-19,"""has not been fully vetted or approved"" (28:4-7)"
+septa_admin_payment_to_sdp_current_year,3600000,dollars,SDP (Herbstman),79:17-80:2,SEPTA pays SDP to administer the program; just under $2 million last year
+sdp_figures_read_into_record,68110 / 52563 / 32067,students,Public witness (Transit Forward),171:19-172:8,"Eligible, assigned and active (December 2024) SDP figures, read into the public record"

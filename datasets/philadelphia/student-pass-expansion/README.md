@@ -8,7 +8,8 @@
 - **SDP enrollment:** 2025–26 October 1 count, [OpenDataPhilly](https://opendataphilly.org/datasets/sdp-school-enrollment-and-demographics/). The 2026–27 count was not yet posted as of 2026-11-23.
 - **SDP catchment retention:** students by home catchment and enrolled school, 2025–26, [OpenDataPhilly](https://opendataphilly.org/datasets/sdp-school-catchment-retention/); [catchment boundaries](https://opendataphilly.org/datasets/sdp-school-catchment-areas/) for 2024–25
 - **PDE non-public enrollment:** [Private and Nonpublic Schools Enrollment 2025–26](https://www.pa.gov/agencies/education/data-and-reporting/enrollment), schools located in Philadelphia
-- **Student Fares That Work:** [phillystudentfares.netlify.app/costs](https://phillystudentfares.netlify.app/costs), SDP materials from December 2024
+- **Student Fares That Work:** [phillystudentfares.netlify.app/costs](https://phillystudentfares.netlify.app/costs), SDP materials from December 2024 (also read into the hearing record, transcript 171:19–172:8)
+- **Hearing transcript:** [City Council Committee on Transportation & Public Utilities, October 6, 2026](https://www.transcriptroom.org/tr/CAF/DownloadFile/7467908?docType=30&FileName=Committee%20on%20Transportation__%20Public%20Utilties_100626.pdf); cited as page:line
 - **Travel times:** SEPTA GTFS schedule (fall 2026 feed, service on Wednesday 2026-10-14), OpenStreetMap streets (Geofabrik Pennsylvania extract, 2026-10-22), 2020 Census blocks
 - **Geography:** Philadelphia
 - **Time period covered:** 2025–26 enrollment; current-program billing from Exhibit A (fiscal year not stated); weekday morning travel times on the fall 2026 schedule
@@ -38,6 +39,7 @@ The per-trip outputs and routing scripts from that run were not kept, so the tra
 | `enrollment_by_grade_band.csv` | CSV | Grades 5–6 and 7–12 enrollment by school type (public and non-public) |
 | `exhibit_a_assumptions.csv` | CSV | Every assumption in SDP's expansion cost estimate |
 | `utilization_data.csv` | CSV | Monthly active card rates from two sources plus SEPTA's projection |
+| `hearing_testimony.csv` | CSV | Figures stated at the October 6, 2026 hearing, with speaker and transcript page:line |
 | `cost_scenarios.csv` | CSV | Expansion cost under different program designs (billing months, rate, flat payment, eligibility) |
 | `eligibility_scenarios.csv` | CSV | Eligible students, active cards and cost at each expansion step |
 | `school_trip_tiers.csv` | CSV | Students for whom transit plausibly helps with the school trip, by tier, grade band, school level and sector |
@@ -49,7 +51,18 @@ The per-trip outputs and routing scripts from that run were not kept, so the tra
 
 ## Columns
 
-The first four files are unchanged; their columns are described in their headers and `notes`/`source` columns.
+The first four files' columns are described in their headers and `notes`/`source` columns. In `current_program.csv`, the 45,000 figure is SEPTA's estimate of students riding each day (`est_daily_student_riders`), not a count of taps.
+
+**`hearing_testimony.csv`**
+
+| Column | Type | Units | Description |
+|---|---|---|---|
+| `figure` | text | | What was stated |
+| `value` | number or text | see `unit` | The figure as stated |
+| `unit` | text | | Units |
+| `speaker` | text | | Who stated it (SEPTA or SDP witness) |
+| `transcript_cite` | text | page:line | Where it is in the hearing transcript |
+| `what_it_means` | text | | Context, and how it differs from similar figures |
 
 **`cost_scenarios.csv`**
 
@@ -150,7 +163,9 @@ The first four files are unchanged; their columns are described in their headers
 
 The current SEPTA student pass covers grades 7–12, with a 1.5-mile distance rule. SDP pays SEPTA a monthly rate ($88.60) for every card tapped at least once that month. Exhibit A projects 71,036 monthly active cards at $110.20 for 12 months = $93.9M total, $63.8M more than the current $30.15M program.
 
-The 71,036 is labeled a "utilization estimate" and at 54% of the eligible pool matches the current monthly active rate (47–57%), suggesting SEPTA already discounted for students who won't ride. The remaining questions are about summer billing, the rate, the billing model, and how students who live close to school are treated.
+The 71,036 is labeled a "utilization estimate" and at 54% of the eligible pool matches the current monthly active rate (47–57%), suggesting SEPTA already discounted for students who won't ride. SEPTA's testimony points the same way: the expansion estimate assumes that 15% of middle school students and 40% of high school students who are not currently eligible would ride, and "we actually have no idea" how many would (transcript 83:9–84:4). The remaining questions are about summer billing, the rate, the billing model, and how students who live close to school are treated.
+
+Billing is not purely per tap: the current contract guarantees SEPTA at least $30 million (51:7–12), and SDP is guaranteeing payment for at least 33,200 students this year (72:4–11). About 33,000 students tap in a month (87:23–88:2); SEPTA separately estimates about 45,000 students ride each day (52:20–22, 88:5–20). SEPTA also pays SDP to administer the program: just under $2 million last year and about $3.6 million this year (79:17–80:2).
 
 On the school trip itself: an estimated 38,700 to 55,500 grade 7–12 public students and 6,700 to 11,600 grade 5–6 public students attend a school where transit plausibly helps; with non-public students, about 54,300 to 80,000 for grades 5–12. Inside 1.5 miles, transit rarely beats walking: a median 8 minutes either way in middle school catchments, and 20.5 minutes walking against 18 by transit in high school catchments. Most grade 7–12 students with a long school trip are already eligible today, since a 30-minute walk is about 1.5 miles.
 
@@ -159,7 +174,7 @@ An interactive calculator is at [phillystudentfares.netlify.app/calculator](http
 ## Known gaps and caveats
 
 - **Month-by-month billing not available.** The biggest gap: we don't know how summer compares to school-year billing. Exhibit A gives only the annual total.
-- **71,036 methodology unknown.** SEPTA hasn't clarified whether this means card holders or monthly active cards.
+- **71,036 methodology only partly known.** The number is not in the transcript. SEPTA testified that the expansion estimate applies assumed take-up of 15% (middle school) and 40% (high school) to students not currently eligible, using SDP enrollment (46:7–19, 83:9–84:4), but not how currently eligible students are counted or how the parts add to 71,036.
 - **$88.60 is 23.6% off the $116 retail pass,** though it is often described as 25%; 25% off would be $87.00.
 - **Travel times are estimates by catchment, not by student.** Students are spread across where their catchment's residents live. High school catchments are large, so those estimates are coarser.
 - **No grades in the flow file.** Grade 7–12 and 5–6 counts are scaled from each school's grade mix. For grades 5–6, 1,632 students (5.9%) at 6–12 and K–12 schools were routed from high school catchments because no other catchment applies, and those flows are probably mostly high school students. Grade 5–6 figures are therefore given as a range: the high end includes them (26.5%, 34.7% and 42.2%), the low end leaves them out (24.2%, 32.1% and 39.6%, applied to all grade 5–6 students).
