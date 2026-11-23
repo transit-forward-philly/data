@@ -1,0 +1,6 @@
+catchment_level,catchments,mode,median_minutes,p90_minutes,max_minutes
+middle,126,walk 3.0 mph,8,13,17
+middle,126,transit,8,,
+high,22,walk 3.0 mph,20.5,33,39
+high,22,walk 2.5 mph,25.5,,
+high,22,transit,18,25,30

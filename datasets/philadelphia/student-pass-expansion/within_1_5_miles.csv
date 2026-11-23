@@ -1,0 +1,16 @@
+grade_band,group_type,group,group_students_est,pct_within_straight_line,pct_within_walking_route
+7-12,all,all public,82610,44.8,36.9
+7-12,school_level,middle,4650,66.9,58.6
+7-12,school_level,k_8,16470,74.7,68.9
+7-12,school_level,6_12,8520,25.3,19.9
+7-12,school_level,high,41070,37.5,28.5
+7-12,school_level,k_12,11910,33.9,25.4
+7-12,sector,district,53840,49.9,42.0
+7-12,sector,charter,26640,36.0,28.1
+7-12,sector,contracted alternative,2130,24.9,18.6
+5-6,all,all public,27514,67.0,60.6
+5-6,school_level,elementary,3757,85.1,79.0
+5-6,school_level,k_8,16252,73.4,67.7
+5-6,school_level,middle,2803,,56.7
+5-6,school_level,6_12,1131,,19.1
+5-6,school_level,k_12,3565,,25.2

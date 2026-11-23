@@ -1,0 +1,7 @@
+scenario,label,eligible_students,active_cards_monthly,monthly_rate,total_all_12_months,total_reduced_summer,total_school_year_only
+current_pool,"Grades 7-12, keep 1.5-mile rule (today's pool)",58844,33541,110.2,44354573,40880132,36962145
+add_56_keep_rule,"Add grades 5-6, keep 1.5-mile rule",70545,40211,110.2,53174473,49009139,44312061
+remove_rule_712,"Grades 7-12, remove 1.5-mile rule",98073,44721,110.2,59139431,54506842,49282859
+add_56_rule_remove_712,Add 5-6 with rule; remove rule for 7-12,109774,51391,110.2,67959331,62635850,56632776
+all_512_no_rule,"Grades 5-12, remove 1.5-mile rule",130576,57319,110.2,75799242,69861634,63166035
+all_512_no_rule_same_use,"Grades 5-12, no rule, students near school ride as much",130576,74428,110.2,98424010,90714130,82020009

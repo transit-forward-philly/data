@@ -1,0 +1,49 @@
+grade_band,walk_speed,group_type,group,group_students_est,tier,rule,students_est,pct_of_group
+7-12,3.0 mph (4.8 km/h),all,all public,82806,low,walk over 45 min and transit saves 15+ min,38665,46.7
+7-12,3.0 mph (4.8 km/h),all,all public,82806,medium,walk over 30 min and transit saves 10+ min,47625,57.5
+7-12,3.0 mph (4.8 km/h),all,all public,82806,high,walk over 20 min and transit saves 5+ min,55466,67.0
+7-12,3.0 mph (4.8 km/h),school_level,middle,4652,low,walk over 45 min and transit saves 15+ min,,24.6
+7-12,3.0 mph (4.8 km/h),school_level,middle,4652,medium,walk over 30 min and transit saves 10+ min,,35.8
+7-12,3.0 mph (4.8 km/h),school_level,middle,4652,high,walk over 20 min and transit saves 5+ min,,48.2
+7-12,3.0 mph (4.8 km/h),school_level,k_8,16477,low,walk over 45 min and transit saves 15+ min,,19.8
+7-12,3.0 mph (4.8 km/h),school_level,k_8,16477,medium,walk over 30 min and transit saves 10+ min,,27.0
+7-12,3.0 mph (4.8 km/h),school_level,k_8,16477,high,walk over 20 min and transit saves 5+ min,,33.6
+7-12,3.0 mph (4.8 km/h),school_level,6_12,8533,low,walk over 45 min and transit saves 15+ min,,65.1
+7-12,3.0 mph (4.8 km/h),school_level,6_12,8533,medium,walk over 30 min and transit saves 10+ min,,76.4
+7-12,3.0 mph (4.8 km/h),school_level,6_12,8533,high,walk over 20 min and transit saves 5+ min,,84.3
+7-12,3.0 mph (4.8 km/h),school_level,high,41199,low,walk over 45 min and transit saves 15+ min,,53.6
+7-12,3.0 mph (4.8 km/h),school_level,high,41199,medium,walk over 30 min and transit saves 10+ min,,65.1
+7-12,3.0 mph (4.8 km/h),school_level,high,41199,high,walk over 20 min and transit saves 5+ min,,75.8
+7-12,3.0 mph (4.8 km/h),school_level,k_12,11946,low,walk over 45 min and transit saves 15+ min,,55.5
+7-12,3.0 mph (4.8 km/h),school_level,k_12,11946,medium,walk over 30 min and transit saves 10+ min,,68.5
+7-12,3.0 mph (4.8 km/h),school_level,k_12,11946,high,walk over 20 min and transit saves 5+ min,,77.4
+7-12,3.0 mph (4.8 km/h),sector,district,53982,low,walk over 45 min and transit saves 15+ min,,42.5
+7-12,3.0 mph (4.8 km/h),sector,district,53982,medium,walk over 30 min and transit saves 10+ min,,52.5
+7-12,3.0 mph (4.8 km/h),sector,district,53982,high,walk over 20 min and transit saves 5+ min,,62.0
+7-12,3.0 mph (4.8 km/h),sector,charter,26694,low,walk over 45 min and transit saves 15+ min,,53.7
+7-12,3.0 mph (4.8 km/h),sector,charter,26694,medium,walk over 30 min and transit saves 10+ min,,66.1
+7-12,3.0 mph (4.8 km/h),sector,charter,26694,high,walk over 20 min and transit saves 5+ min,,75.6
+7-12,3.0 mph (4.8 km/h),sector,contracted alternative,2130,low,walk over 45 min and transit saves 15+ min,,66.0
+7-12,3.0 mph (4.8 km/h),sector,contracted alternative,2130,medium,walk over 30 min and transit saves 10+ min,,76.7
+7-12,3.0 mph (4.8 km/h),sector,contracted alternative,2130,high,walk over 20 min and transit saves 5+ min,,84.5
+5-6,3.0 mph (4.8 km/h),all,all public,27514,low,walk over 45 min and transit saves 15+ min,7285,26.5
+5-6,3.0 mph (4.8 km/h),all,all public,27514,medium,walk over 30 min and transit saves 10+ min,9539,34.7
+5-6,3.0 mph (4.8 km/h),all,all public,27514,high,walk over 20 min and transit saves 5+ min,11618,42.2
+5-6,2.5 mph (4.0 km/h),all,all public,27514,low,walk over 45 min and transit saves 15+ min,8949,32.5
+5-6,2.5 mph (4.0 km/h),all,all public,27514,medium,walk over 30 min and transit saves 10+ min,11444,41.6
+5-6,2.5 mph (4.0 km/h),all,all public,27514,high,walk over 20 min and transit saves 5+ min,14188,51.6
+5-6,3.0 mph (4.8 km/h),school_level,elementary,3757,low,walk over 45 min and transit saves 15+ min,426,11.3
+5-6,3.0 mph (4.8 km/h),school_level,elementary,3757,medium,walk over 30 min and transit saves 10+ min,609,16.2
+5-6,3.0 mph (4.8 km/h),school_level,elementary,3757,high,walk over 20 min and transit saves 5+ min,810,21.6
+5-6,3.0 mph (4.8 km/h),school_level,k_8,16252,low,walk over 45 min and transit saves 15+ min,3400,20.9
+5-6,3.0 mph (4.8 km/h),school_level,k_8,16252,medium,walk over 30 min and transit saves 10+ min,4576,28.2
+5-6,3.0 mph (4.8 km/h),school_level,k_8,16252,high,walk over 20 min and transit saves 5+ min,5688,35.0
+5-6,3.0 mph (4.8 km/h),school_level,middle,2803,low,walk over 45 min and transit saves 15+ min,740,26.4
+5-6,3.0 mph (4.8 km/h),school_level,middle,2803,medium,walk over 30 min and transit saves 10+ min,1058,37.7
+5-6,3.0 mph (4.8 km/h),school_level,middle,2803,high,walk over 20 min and transit saves 5+ min,1397,49.8
+5-6,3.0 mph (4.8 km/h),school_level,6_12,1131,low,walk over 45 min and transit saves 15+ min,744,65.8
+5-6,3.0 mph (4.8 km/h),school_level,6_12,1131,medium,walk over 30 min and transit saves 10+ min,865,76.5
+5-6,3.0 mph (4.8 km/h),school_level,6_12,1131,high,walk over 20 min and transit saves 5+ min,958,84.7
+5-6,3.0 mph (4.8 km/h),school_level,k_12,3565,low,walk over 45 min and transit saves 15+ min,1975,55.4
+5-6,3.0 mph (4.8 km/h),school_level,k_12,3565,medium,walk over 30 min and transit saves 10+ min,2431,68.2
+5-6,3.0 mph (4.8 km/h),school_level,k_12,3565,high,walk over 20 min and transit saves 5+ min,2764,77.5
