@@ -1,0 +1,4 @@
+tier,rule,grades_7_12_public,grades_5_6_public_low_end,grades_5_6_public_high_end,nonpublic_5_12_assumed,total_5_12_low_end,total_5_12_high_end
+low,walk over 45 min and transit saves 15+ min,38665,6658,7285,9004,54327,54954
+medium,walk over 30 min and transit saves 10+ min,47625,8832,9539,11091,67548,68255
+high,walk over 20 min and transit saves 5+ min,55466,10896,11618,12917,79279,80001

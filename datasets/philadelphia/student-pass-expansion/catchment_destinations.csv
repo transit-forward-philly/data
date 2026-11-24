@@ -1,0 +1,33 @@
+catchment_level,catchment_school,resident_students,own_catchment_school,other_district_neighborhood,district_criteria_based,district_citywide,philadelphia_charter,cyber_charter,district_virtual,alternative,outside_district_list,pct_own_catchment_school
+high,Abraham Lincoln High School,6014,1707,697,739,318,1509,763,72,172,37,28.4
+high,Benjamin Franklin High School,1232,179,103,531,102,148,97,suppressed,49,suppressed,14.5
+high,Frankford High School,4841,647,644,455,279,1737,780,suppressed,227,suppressed,13.4
+high,George Washington High School,4333,1161,423,782,287,1022,482,47,40,89,26.8
+high,Horace Furness High School,1617,394,77,754,40,228,78,suppressed,26,suppressed,24.4
+high,John Bartram High School,3434,553,278,514,285,1157,423,suppressed,163,suppressed,16.1
+high,Kensington High School,3394,331,887,307,301,708,556,suppressed,227,suppressed,9.8
+high,Martin Luther King High School,5788,521,551,1435,552,1362,907,92,285,83,9.0
+high,Northeast High School,4863,2483,444,470,127,624,523,67,104,21,51.1
+high,Olney High School,2748,657,373,368,220,560,391,29,119,31,23.9
+high,Overbrook High School,3629,361,333,652,439,1118,507,suppressed,166,suppressed,9.9
+high,Roxborough High School,1222,178,31,673,74,91,127,suppressed,30,suppressed,14.6
+high,Samuel Fels High School,3502,821,571,499,210,737,489,30,110,35,23.4
+high,South Philadelphia High School,2532,362,294,797,106,677,196,suppressed,65,suppressed,14.3
+high,Strawberry Mansion High School,2727,217,368,288,458,708,398,suppressed,227,suppressed,8.0
+high,Thomas A. Edison High School,3036,554,374,201,372,648,631,suppressed,214,suppressed,18.2
+high,Universal Charter School at Audenried,1547,119,261,442,80,428,149,suppressed,53,suppressed,7.7
+high,Vaux High School,619,106,77,103,89,109,87,suppressed,43,suppressed,17.1
+high,West Philadelphia High School,1284,195,53,383,135,276,171,suppressed,55,suppressed,15.2
+high,William L. Sayre High School,2920,334,287,488,309,922,420,suppressed,119,suppressed,11.4
+middle,Castor Gardens Middle School,1999,1206,166,59,suppressed,443,110,suppressed,0,0,60.3
+middle,Charles C.A. Baldi Middle School,2230,1371,317,41,suppressed,381,104,suppressed,0,suppressed,61.5
+middle,Feltonville School of Arts and Sciences,695,384,53,suppressed,0,204,45,suppressed,suppressed,0,55.3
+middle,General Louis Wagner School,1219,234,189,157,23,504,101,suppressed,suppressed,0,19.2
+middle,"Grover Washington, Jr. Middle School",671,248,107,suppressed,suppressed,225,73,suppressed,suppressed,0,37.0
+middle,John B. Stetson Middle School,851,388,147,suppressed,suppressed,178,100,suppressed,suppressed,suppressed,45.6
+middle,Memphis Street Academy Charter School at J.P. Jones,1663,365,388,110,123,487,166,suppressed,0,suppressed,21.9
+middle,Roberto Clemente Middle School,801,197,83,suppressed,suppressed,409,81,suppressed,suppressed,suppressed,24.6
+middle,Science Leadership Academy Middle School,85,44,suppressed,suppressed,suppressed,suppressed,suppressed,suppressed,0,0,51.8
+middle,Universal Charter School at Vare,463,35,140,65,suppressed,197,suppressed,suppressed,0,suppressed,7.6
+middle,Warren G. Harding Middle School,1965,414,268,29,38,986,213,suppressed,suppressed,suppressed,21.1
+middle,William T. Tilden Middle School,1377,198,160,37,58,757,78,suppressed,suppressed,80,14.4
