@@ -1,0 +1,156 @@
+route,name,route_type,service_kind,wed_avg_headway_min,wed_max_gap_min,sat_avg_headway_min,sat_max_gap_min,sun_avg_headway_min,sun_max_gap_min,septa_frequent_weekday,house_districts,senate_districts,council_districts,route_url
+1,Parx Casino to 54th-City,bus,regular,42.4,72.0,65.5,69.0,,,false,18; 148; 170; 172; 173; 174; 177; 179; 190; 192; 194; 197; 198; 202; 203,2; 3; 5; 6; 7; 17,4; 5; 6; 7; 8; 9; 10,https://www.septa.org/schedules/1
+2,20-Johnston to Pulaski-Hunting Park,bus,regular,16.7,24.0,31.3,32.0,31.3,32.0,false,10; 181; 182; 185; 186; 190; 195; 198,1; 3; 8,2; 5; 8,https://www.septa.org/schedules/2
+3,33rd-Cecil B. Moore to Frankford TC,bus,regular,12.6,16.0,21.2,29.0,22.5,30.0,true,177; 179; 180; 181; 190; 195; 197,1; 2; 3; 7,1; 4; 5; 6; 7,https://www.septa.org/schedules/3
+4,Broad-Pattison to Fern Rock TC,bus,regular,30.0,33.0,30.0,33.0,32.7,59.0,false,175; 181; 182; 184; 185; 190; 197; 198,1; 3; 8,1; 2; 5; 7; 8; 9,https://www.septa.org/schedules/4
+5,2nd-Market to Frankford Transit Ctr,bus,regular,22.5,34.0,32.7,45.0,32.7,45.0,false,175; 177; 179; 180; 181; 197,1; 2,1; 5; 6; 7,https://www.septa.org/schedules/5
+6,Cheltenham-Ogontz to Olney TC,bus,regular,12.9,16.0,16.7,39.0,21.8,46.0,true,154; 198; 200; 201,3; 4,8; 9,https://www.septa.org/schedules/6
+7,Pier 70 to 33rd-Dauphin,bus,regular,19.5,32.0,23.2,46.0,22.5,43.0,false,10; 182; 184; 185; 186; 190; 195,1; 3; 7; 8,1; 2; 4; 5,https://www.septa.org/schedules/7
+8,Olney TC to Frankford TC,bus,regular,27.7,32.0,,,,,false,177; 179; 197; 198; 201,2; 3; 4,7; 8; 9,https://www.septa.org/schedules/8
+9,4th-Walnut to Andorra,bus,regular,20.0,35.0,30.0,34.0,60.0,63.0,false,10; 148; 175; 182; 188; 190; 194,1; 7; 8; 17,1; 2; 3; 4; 5,https://www.septa.org/schedules/9
+12,Columbus-Dock to 50th-Woodland,bus,regular,24.0,31.0,31.3,35.0,31.3,36.0,false,175; 182; 186; 188,1; 8,1; 2; 3; 5,https://www.septa.org/schedules/12
+14,FTC to Neshaminy/Oxford Valley,bus,regular,14.7,30.0,19.5,42.0,20.0,46.0,false,18; 142; 170; 172; 173; 174; 177; 179; 202,2; 5; 6,6; 7; 10,https://www.septa.org/schedules/14
+16,City Hall to Cheltenham-Ogontz,bus,regular,20.6,38.0,23.2,30.0,30.0,32.0,false,154; 175; 181; 182; 190; 197; 198; 200; 201,1; 3; 4,1; 2; 5; 8; 9,https://www.septa.org/schedules/16
+17,Front-Mkt to 20-Johnston,bus,regular,12.4,16.0,16.4,45.0,17.1,47.0,true,10; 175; 182; 185; 186,1; 8,1; 2; 5,https://www.septa.org/schedules/17
+18,Fox Chase to Cedarbrook Plaza,bus,regular,12.2,21.0,15.0,20.0,21.8,32.0,true,154; 172; 179; 198; 200; 201; 203,2; 3; 4; 5,8; 9; 10,https://www.septa.org/schedules/18
+19,Torresdale Station to Frankford TC,bus,regular,37.9,55.0,65.5,84.0,,,false,172; 173; 174; 177; 179; 202; 203,2; 5,6; 7; 9; 10,https://www.septa.org/schedules/19
+20,Philadelphia Mills to Frankford TC,bus,regular,14.4,21.0,18.5,29.0,21.8,40.0,false,18; 170; 172; 173; 174; 177; 179; 202,2; 5; 6,6; 7; 10,https://www.septa.org/schedules/20
+21,Columbus-Dock to 69th St TC,bus,regular,10.0,14.0,14.1,24.0,16.7,25.0,true,10; 164; 175; 182; 188; 191; 192,1; 7; 8; 26,1; 2; 3; 4; 5,https://www.septa.org/schedules/21
+22,Warminster/Willow Grove to Olney TC,bus,regular,24.8,61.0,30.0,61.0,45.0,75.0,false,144; 152; 153; 154; 198; 200; 201,3; 4; 6; 12,8; 9,https://www.septa.org/schedules/22
+23,11th Market to Chestnut Hill,bus,regular,9.9,16.0,14.1,18.0,19.5,22.0,true,175; 181; 182; 190; 194; 197; 198; 200; 201,1; 3; 4; 7,1; 5; 8,https://www.septa.org/schedules/23
+24,Southamptn/Rockldge to Frankford TC,bus,regular,32.7,60.0,31.3,55.0,31.3,56.0,false,152; 153; 154; 172; 177; 178; 179; 203,2; 4; 5; 6; 12,7; 9; 10,https://www.septa.org/schedules/24
+25,Frankford TC to 2nd-Spring Garden,bus,regular,15.0,15.0,21.2,57.0,22.5,60.0,true,175; 177; 179; 180; 181; 197,1; 2,1; 5; 6; 7,https://www.septa.org/schedules/25
+26,Frankford TC to Chelten Av Station,bus,regular,11.1,29.0,25.7,57.0,25.7,56.0,false,177; 179; 198; 201; 202; 203,2; 3; 4; 5; 7,6; 7; 8; 9,https://www.septa.org/schedules/26
+27,Broad-Carpenter to Plymouth Meeting,bus,regular,18.5,37.0,36.0,45.0,60.0,62.0,false,10; 54; 148; 154; 175; 181; 182; 186; 190; 194; 195,1; 4; 7; 8; 12; 17,1; 2; 3; 4; 5,https://www.septa.org/schedules/27
+28,Fern Rock TC to Torresdale-Cottman,bus,regular,28.8,36.0,60.0,64.0,90.0,120.0,false,153; 154; 172; 173; 174; 198,3; 4; 5,6; 9; 10,https://www.septa.org/schedules/28
+29,Pier 70 to 33rd-Dickinson,bus,regular,13.8,21.0,22.5,38.0,32.7,40.0,false,184; 186,1; 8,1; 2,https://www.septa.org/schedules/29
+30,Gray 30th St Station to 69th St TC,bus,regular,36.0,45.0,51.4,62.0,51.4,62.0,false,10; 164; 188; 190; 192,7; 8; 26,3; 4,https://www.septa.org/schedules/30
+31,City Hall to 76th-City,bus,regular,24.0,32.0,34.3,61.0,45.0,60.0,false,10; 148; 175; 182; 188; 191; 192,1; 7; 8; 17,1; 2; 3; 4; 5,https://www.septa.org/schedules/31
+32,Broad-Carpenter to Ridge-Lyceum,bus,regular,20.6,32.0,30.0,31.0,32.7,61.0,false,10; 175; 181; 182; 186; 190; 194; 195,1; 3; 7; 8,1; 2; 4; 5,https://www.septa.org/schedules/32
+33,5th-Market to 23rd-Venango,bus,regular,12.0,16.0,12.9,20.0,13.6,28.0,true,10; 175; 181; 182; 190; 195; 198,1; 3,1; 5; 8,https://www.septa.org/schedules/33
+37,Chester Transit Ctr to Broad-Snyder,bus,regular,20.6,32.0,25.7,50.0,25.7,49.0,false,159; 162; 184; 185; 186,1; 8; 9; 26,2; 3,https://www.septa.org/schedules/37
+38,5th-Market to Wissahickon TC,bus,regular,20.6,33.0,31.3,39.0,45.0,49.0,false,10; 148; 175; 182; 190; 194; 195,1; 3; 7; 17,1; 2; 3; 4; 5,https://www.septa.org/schedules/38
+39,Richmond-Cumberland to 33rd-Dauphin,bus,regular,30.0,32.0,31.3,55.0,36.0,59.0,false,175; 177; 181; 190; 195; 197,1; 2; 3; 7,1; 4; 5; 7,https://www.septa.org/schedules/39
+40,2nd-Lombard to Conshohocken-Monumnt,bus,regular,13.3,24.0,30.0,38.0,31.3,40.0,false,10; 175; 182; 188; 190; 192,1; 7; 8,1; 2; 3; 4,https://www.septa.org/schedules/40
+41,Chelten-Wissahckn to Richmnd-Orthdx,bus,regular,28.8,33.0,60.0,61.0,60.0,61.0,false,177; 179; 194; 197; 198; 201,2; 3; 4; 7,4; 6; 7; 8; 9,https://www.septa.org/schedules/41
+42,2nd-Spruce to 61st-Pine/Wycombe,bus,regular,10.3,20.0,14.1,28.0,16.7,28.0,false,10; 164; 175; 182; 188; 191,1; 7; 8; 26,1; 2; 3; 5,https://www.septa.org/schedules/42
+43,Richmond-Cumberland to 50th-Parksde,bus,regular,23.2,33.0,34.3,46.0,45.0,47.0,false,10; 175; 177; 181; 190; 195,1; 3; 7,1; 3; 4; 5,https://www.septa.org/schedules/43
+44,Front-Market to Ardmore,bus,regular,31.3,60.0,60.0,74.0,65.5,81.0,false,10; 148; 149; 175; 182; 188; 190; 192,1; 7; 8; 17,1; 2; 3; 4; 5,https://www.septa.org/schedules/44
+45,Navy Yard/Brd-Oregon to 12th-Vine,bus,regular,12.4,27.0,15.0,25.0,15.3,27.0,false,175; 182; 184; 185,1; 8,1; 2,https://www.septa.org/schedules/45
+46,58th-Baltimore to 63rd-Malvern,bus,regular,15.0,17.0,17.1,51.0,22.5,60.0,true,188; 191; 192,7; 8,3; 4,https://www.septa.org/schedules/46
+47,Whitman Plaza to 5th-Godfrey,bus,regular,9.4,18.0,16.0,28.0,17.1,30.0,true,175; 179; 180; 181; 182; 184; 197; 198; 203,1; 2; 3,1; 5; 7; 8; 9,https://www.septa.org/schedules/47
+48,Front-Market to 27th-Allegheny,bus,regular,14.1,17.0,14.7,27.0,18.9,40.0,true,10; 175; 182; 190; 195,1; 3; 7,1; 4; 5,https://www.septa.org/schedules/48
+49,33rd-Dauphin to 40th-Baltimore,bus,regular,21.8,35.0,32.7,61.0,32.7,60.0,false,10; 182; 188; 190; 195,1; 3; 7; 8,2; 3; 4; 5,https://www.septa.org/schedules/49
+50,Parx to Frankford Transit Center,bus,regular,27.7,32.0,31.3,41.0,32.7,55.0,false,18; 170; 172; 173; 174; 177; 179; 202,2; 5; 6,6; 7; 10,https://www.septa.org/schedules/50
+51,Plymth Mtg/Chestnt Hill to Olney TC,bus,regular,11.4,28.0,20.0,39.0,21.8,43.0,true,54; 148; 154; 194; 198; 200; 201,3; 4; 7; 12,4; 8; 9,https://www.septa.org/schedules/51
+52,49th-Woodlnd to Wiss TC/Parksd Lp,bus,regular,10.0,19.0,10.9,19.0,13.1,29.0,true,10; 148; 186; 188; 190; 191; 192; 194,7; 8; 17,3; 4,https://www.septa.org/schedules/52
+53,Emlen-Carpenter to Rich-Westmorland,bus,regular,24.0,31.0,30.0,31.0,34.3,60.0,false,177; 179; 180; 190; 197; 198; 200; 201,2; 3; 4; 7,5; 6; 7; 8,https://www.septa.org/schedules/53
+54,Richmond-Cambria to 33rd-Dauphin,bus,regular,17.6,22.0,20.6,29.0,31.3,60.0,false,177; 180; 181; 190; 195; 197,1; 2; 3; 7,1; 4; 5; 7; 8,https://www.septa.org/schedules/54
+55,Doylestown/Willow Grove to Olney TC,bus,regular,19.5,48.0,20.0,43.0,30.0,65.0,false,29; 143; 144; 151; 152; 153; 154; 198; 201,3; 4; 6; 10; 12,8; 9,https://www.septa.org/schedules/55
+56,23rd-Venango to Torresdale-Cottman,bus,regular,11.2,19.0,18.0,27.0,26.7,31.0,true,173; 177; 179; 180; 190; 197; 198; 202,2; 3; 5; 7,4; 5; 6; 7; 8,https://www.septa.org/schedules/56
+57,WhitmnPlz to RisngSun-Olney/FernRck,bus,regular,15.0,23.0,20.6,28.0,21.8,60.0,true,154; 175; 179; 180; 181; 184; 197; 198; 203,1; 2; 3; 4,1; 5; 7; 8; 9,https://www.septa.org/schedules/57
+58,Neshaminy/Somerton to Frankford TC,bus,regular,13.1,33.0,15.7,30.0,20.6,35.0,true,18; 142; 170; 172; 174; 177; 179; 202,2; 5; 6,6; 7; 10,https://www.septa.org/schedules/58
+59,Castor-Bustleton to Arrott TC,trackless trolley,regular,14.4,20.0,22.5,31.0,30.0,31.0,false,172; 174; 177; 179; 202; 203,2; 5,7; 9; 10,https://www.septa.org/schedules/59
+60,Wiss TC/35-Algny to Rich-Westmrlnd,bus,regular,10.1,24.0,15.7,36.0,16.7,30.0,true,177; 180; 190; 194; 197,1; 2; 3; 7,1; 4; 5; 6; 7; 8,https://www.septa.org/schedules/60
+61,9th-Market to Manayunk,bus,regular,18.0,32.0,30.0,31.0,30.0,31.0,false,175; 181; 190; 194; 195,1; 3; 7,1; 4; 5,https://www.septa.org/schedules/61
+63,Lanknau/Overbrk to ColCom/FdCtr,bus,regular,10.7,20.0,15.3,24.0,21.2,35.0,true,10; 148; 184; 185; 186; 188; 190; 191; 192,1; 7; 8; 17,1; 2; 3; 4,https://www.septa.org/schedules/63
+64,50th-Parkside to Pier 70,bus,regular,14.4,17.0,20.6,30.0,22.5,60.0,true,10; 175; 182; 184; 186; 188; 190,1; 7; 8,1; 2; 3; 4,https://www.septa.org/schedules/64
+65,Germantown-Chelten to 69th St TC,bus,regular,13.8,19.0,18.5,25.0,23.2,30.0,false,148; 164; 190; 192; 194; 200; 201,4; 7; 17; 26,4; 8,https://www.septa.org/schedules/65
+66,Frankford TC to Frankford-Knights,trackless trolley,regular,7.7,17.0,12.0,15.0,15.3,18.0,true,173; 174; 177; 179; 202,2; 5,6; 7; 10,https://www.septa.org/schedules/66
+67,Phila Mills/Bustletn to Frankfrd TC,bus,regular,18.0,56.0,31.3,54.0,30.0,53.0,false,170; 172; 174; 177; 179; 202; 203,2; 5,7; 9; 10,https://www.septa.org/schedules/67
+68,Broad-Oregon to UPS/69th St TC,bus,regular,34.3,64.0,72.0,72.0,72.0,75.0,false,164; 184; 185; 191,1; 8; 26,1; 2,https://www.septa.org/schedules/68
+70,Frank-Grg/Torsdl-Cottmn to FernRock,bus,regular,12.4,26.0,19.5,39.0,22.5,39.0,true,154; 172; 173; 198; 202; 203,2; 3; 4; 5,6; 9; 10,https://www.septa.org/schedules/70
+71,Broad-Erie to Cheltenham-Ogontz,bus,regular,18.5,31.0,22.5,37.0,27.7,40.0,false,154; 190; 197; 198; 200; 201,3; 4; 7,4; 5; 8; 9,https://www.septa.org/schedules/71
+72,Cedarbrook Plaza to Frankford Trans,bus,regular,30.0,31.0,31.3,60.0,34.3,70.0,false,154; 177; 179; 198; 200; 203,2; 3; 4,7; 9,https://www.septa.org/schedules/72
+73,Frankford TC to Richmnd-Westmorelnd,bus,regular,30.0,32.0,30.0,30.0,30.0,31.0,false,177; 179,2; 5,6; 7,https://www.septa.org/schedules/73
+75,Wayne Junct to Arrott Transit Ctr,trackless trolley,regular,23.2,32.0,30.0,34.0,30.0,34.0,false,179; 197; 198,2; 3,7; 8,https://www.septa.org/schedules/75
+76,Rising Sun-Olney to Columbus Comm,bus,regular,30.0,33.0,31.3,51.0,34.3,75.0,false,175; 177; 179; 180; 181; 184; 197,1; 2; 3,1; 5; 7; 9,https://www.septa.org/schedules/76
+77,Roosevelt-Cottman to Chestnut Hill,bus,regular,60.0,63.0,60.0,62.0,80.0,164.0,false,153; 154; 172; 194; 200; 202; 203,2; 4; 5,6; 8; 9; 10,https://www.septa.org/schedules/77
+79,Columbus Commons to 29th-Snyder or 40th-Market,bus,regular,12.4,24.0,15.7,30.0,16.4,32.0,true,10; 184; 185; 186; 188,1; 7; 8,1; 2; 3,https://www.septa.org/schedules/79
+81,Broad-Erie to Cheltenham-Ogntz,bus,regular,18.5,29.0,21.8,40.0,27.7,40.0,false,154; 190; 197; 198; 200; 201,3; 4; 7,4; 5; 8; 9,https://www.septa.org/schedules/81
+82,Wisshkn TC/Henry-Midvl to FrankfdTC,bus,regular,11.8,19.0,18.5,24.0,22.5,33.0,true,177; 179; 190; 194; 197; 198,2; 3; 7,4; 5; 7; 8; 9,https://www.septa.org/schedules/82
+84,Bustletn-CountyLn/PhilaMills to FTC,bus,regular,24.8,59.0,60.0,62.0,60.0,62.0,false,142; 152; 170; 173; 174; 177; 179,2; 5; 6; 12,6; 7; 10,https://www.septa.org/schedules/84
+88,Bethayres/Frankford-Gregg to FTC,bus,regular,26.7,50.0,30.0,47.0,34.3,74.0,false,152; 153; 172; 173; 174; 177; 179; 202,2; 4; 5; 12,6; 7; 10,https://www.septa.org/schedules/88
+90,Plymouth Mtng. to Norristown TC,bus,regular,65.5,75.0,60.0,60.0,,,false,54; 70,12; 17,,https://www.septa.org/schedules/90
+92,West Chester to King of Prussia,bus,regular,80.0,88.0,72.0,90.0,,,false,149; 156; 157; 167,17; 19; 44,,https://www.septa.org/schedules/92
+93,Pottstown to Norristown Transit Ctr,bus,regular,42.4,63.0,60.0,71.0,72.0,155.0,false,54; 70; 146; 150,17; 24; 44,,https://www.septa.org/schedules/93
+94,Montgomery Mall to Chestnut Hill,bus,regular,55.4,105.0,65.5,85.0,180.0,245.0,false,53; 61; 70; 148; 151; 153; 154; 194,4; 7; 12; 24,8,https://www.septa.org/schedules/94
+95,Gulph Mills to Willow Grove Mall,bus,regular,65.5,70.0,60.0,72.0,,,false,54; 61; 148; 149; 151; 152; 153; 154,4; 7; 12; 17,,https://www.septa.org/schedules/95
+96,Lansdale to Norristown Transit Ctr,bus,regular,30.0,40.0,60.0,69.0,60.0,73.0,false,53; 54; 61; 70,12; 17; 24,,https://www.septa.org/schedules/96
+97,Chestnut Hill to Norristown TC,bus,regular,65.5,75.0,60.0,70.0,65.5,75.0,false,54; 148; 154; 194,4; 7; 12; 17,4; 8,https://www.septa.org/schedules/97
+98,Plymouth Mtng to Norristown TC,bus,regular,31.3,60.0,60.0,62.0,72.0,169.0,false,54; 61; 70,12; 17,,https://www.septa.org/schedules/98
+99,Phoenixville to Norristown TC,bus,regular,31.3,60.0,37.9,66.0,60.0,90.0,false,26; 54; 149; 150; 157,17; 19; 44,,https://www.septa.org/schedules/99
+103,Ardmore to 69th St Transit Center,bus,regular,40.0,60.0,60.0,78.0,60.0,69.0,false,148; 149; 164; 166; 192,7; 17; 26,4,https://www.septa.org/schedules/103
+104,West Chester U to 69th St TC,bus,regular,20.0,30.0,45.0,70.0,34.3,61.0,false,156; 157; 160; 164; 165; 166; 168,9; 17; 19; 26,,https://www.septa.org/schedules/104
+105,Paoli to 69th St Transit Center,bus,regular,30.0,60.0,30.0,60.0,60.0,61.0,false,148; 149; 157; 164; 166; 168; 192,7; 17; 19; 26,4,https://www.septa.org/schedules/105
+107,Lawrence Park to 69th St TC,bus,regular,48.0,72.0,65.5,90.0,,,false,162; 163; 164; 165; 166,8; 26,,https://www.septa.org/schedules/107
+108,UPS/Airport to 69th St Transit Ctr,bus,regular,15.0,30.0,24.8,35.0,30.0,31.0,true,164; 185; 191,1; 8; 26,2,https://www.septa.org/schedules/108
+109,Chester Transit Ctr to 69th St TC,bus,regular,18.5,24.0,22.5,30.0,30.0,30.0,false,159; 161; 163; 164; 165,9; 26,,https://www.septa.org/schedules/109
+110,Penn State U to 69th St Transit Ctr,bus,regular,25.7,59.0,32.7,60.0,65.5,90.0,false,161; 163; 164; 165; 166; 168,9; 17; 26,,https://www.septa.org/schedules/110
+111,Chadds Ford to 69th St Transit Ctr,bus,regular,32.7,89.0,60.0,66.0,60.0,62.0,false,160; 163; 164; 165; 168,9; 26,,https://www.septa.org/schedules/111
+112,DCCC to 69th St Transit Center,bus,regular,34.3,62.0,72.0,160.0,,,false,164; 165; 166; 168,17; 26,,https://www.septa.org/schedules/112
+113,Claymont TC to 69th St Transit Ctr,bus,regular,15.0,46.0,20.6,57.0,30.0,56.0,true,159; 161; 162; 163; 164; 191,8; 9; 26,,https://www.septa.org/schedules/113
+114,Wawa Station to Darby Transit Ctr,bus,regular,31.3,62.0,60.0,60.0,60.0,66.0,false,159; 161; 162; 163; 168; 191,8; 9; 26,,https://www.septa.org/schedules/114
+115,DCCC/Darby Transit Ctr to Airport,bus,regular,65.5,100.0,60.0,70.0,60.0,62.0,false,162; 163; 164; 165; 166; 168; 185; 191,1; 8; 17; 26,2,https://www.septa.org/schedules/115
+117,Penn State U to I-95 Industrial Pk,bus,regular,32.7,57.0,30.0,35.0,60.0,66.0,false,159; 161; 168,9,,https://www.septa.org/schedules/117
+118,Newtown Square to Chester TC,bus,regular,60.0,75.0,65.5,90.0,,,false,159; 161; 165; 168,9; 26,,https://www.septa.org/schedules/118
+119,Cheyney U to Chester Transit Center,bus,regular,60.0,75.0,72.0,80.0,72.0,80.0,false,159; 160,9,,https://www.septa.org/schedules/119
+120,Cheyney U to 69th St Transit Center,bus,regular,80.0,130.0,144.0,208.0,240.0,373.0,false,157; 160; 164; 165; 166; 168,9; 17; 19; 26,,https://www.septa.org/schedules/120
+123,King of Prussia to 69th St TC,bus,regular,36.0,74.0,32.7,65.0,42.4,100.0,false,149; 164; 166; 168,17; 26,,https://www.septa.org/schedules/123
+124,Chesterbrook to 13th-Market,bus,regular,40.0,80.0,45.0,87.0,60.0,90.0,false,10; 148; 149; 157; 175; 181; 182; 188; 190; 194,1; 7; 8; 17; 19,1; 2; 3; 4; 5,https://www.septa.org/schedules/124
+125,Valley Forge to 13th-Market,bus,regular,45.0,61.0,51.4,65.0,45.0,90.0,false,10; 148; 149; 175; 181; 182; 188; 190; 194,1; 7; 8; 17,1; 2; 3; 4; 5,https://www.septa.org/schedules/125
+126,Lawrence Park via Manoa to 69th TC,bus,regular,48.0,69.0,60.0,87.0,65.5,65.0,false,164; 165; 166,17; 26,,https://www.septa.org/schedules/126
+127,Trenton Transit Ctr to OxfordValley,bus,regular,80.0,94.0,90.0,112.0,,,false,31; 140; 141; 142,6; 10,,https://www.septa.org/schedules/127
+128,Neshaminy to Oxford Valley Mall,bus,regular,90.0,127.0,102.9,130.0,,,false,18; 140; 141; 142,6; 10,,https://www.septa.org/schedules/128
+129,Frankford-Knights to Oxford Valley,bus,regular,65.5,70.0,60.0,65.0,102.9,137.0,false,18; 140; 141; 142; 170; 173; 174,5; 6; 10,6; 10,https://www.septa.org/schedules/129
+130,BCCC to Frankford-Knights,bus,regular,60.0,73.0,65.5,83.0,102.9,151.0,false,18; 31; 142; 170; 173; 174,5; 6; 10,6; 10,https://www.septa.org/schedules/130
+131,Audubon to Norristown Transit Ctr,bus,regular,40.0,64.0,60.0,61.0,60.0,62.0,false,54; 70; 150,17; 44,,https://www.septa.org/schedules/131
+132,Telford to Montgomery Mall,bus,regular,72.0,93.0,72.0,125.0,240.0,250.0,false,53; 61; 143; 145; 151,12; 16; 24,,https://www.septa.org/schedules/132
+133,Frankford-Knights to Bensalem,bus,regular,180.0,445.0,,,,,false,18; 173; 174,5; 6,6; 10,https://www.septa.org/schedules/133
+135,West Chester TC to Coatesville,bus,regular,65.5,90.0,72.0,85.0,65.5,73.0,false,74; 155; 156; 167,19; 44,,https://www.septa.org/schedules/135
+139,Limerick to King of Prussia,bus,regular,72.0,90.0,90.0,120.0,,,false,26; 146; 149; 150; 157,17; 24; 44,,https://www.septa.org/schedules/139
+150,Parx Casino to Plymouth Meeting,bus,regular,240.0,420.0,360.0,450.0,,,false,18; 54; 142; 148; 151; 152; 153; 178,6; 7; 12,,https://www.septa.org/schedules/150
+201,Ft Wash Office Ctr to Fort Wash Sta,bus,regular,51.4,65.0,,,,,false,148; 153,7; 12,,https://www.septa.org/schedules/201
+204,Eagleview to Paoli Train Station,bus,regular,60.0,120.0,120.0,120.0,144.0,180.0,false,155; 157; 167,19; 44,,https://www.septa.org/schedules/204
+206,Commons at Great Vly to Paoli Sta,bus,regular,102.9,492.0,,,,,false,157; 167,19; 44,,https://www.septa.org/schedules/206
+310,Horsham Loop,bus,regular,30.0,35.0,60.0,65.0,,,false,151; 152,4; 12,,https://www.septa.org/schedules/310
+409,59th-Baltimore to 84th-Crane,bus,school,,,,,,,false,185; 188; 191,1; 8,2; 3,https://www.septa.org/schedules/409
+411,74th-Elmwood to 46th-Ludlow,bus,school,,,,,,,false,185; 186; 188; 191,7; 8,2; 3,https://www.septa.org/schedules/411
+415,46th-Ludlow to Passyunk-Elmwood,bus,school,,,,,,,false,10; 185; 186; 188; 191,7; 8,2; 3,https://www.septa.org/schedules/415
+426,Torresdale-Bridge to 10th-Lycoming,bus,school,,,,,,,false,177; 179; 197; 198,2; 3,5; 7; 8; 9,https://www.septa.org/schedules/426
+428,Richmond-Venango to 10th-Lycomng,bus,school,,,,,,,false,177; 180; 197,2; 3,5; 6; 7,https://www.septa.org/schedules/428
+433,Castor-Cottman to 10th-Lycomng,bus,school,,,,,,,false,172; 173; 179; 197; 198; 202; 203,2; 3; 5,5; 6; 7; 8; 9; 10,https://www.septa.org/schedules/433
+438,Germantown to Upper Roxborough,bus,school,,,,,,,false,194; 200; 201,4; 7,4; 8,https://www.septa.org/schedules/438
+439,Germantown to Roxborough,bus,school,240.0,464.0,,,,,false,194; 200; 201,4; 7,4; 8,https://www.septa.org/schedules/439
+441,Andorra/Roxborough to Broad-Vine,bus,school,,,,,,,false,10; 148; 175; 181; 190; 194; 195,1; 7; 17,1; 3; 4; 5,https://www.septa.org/schedules/441
+442,Henry-Roberts to Barren Hill,bus,school,,,,,,,false,148; 154; 190; 194,4; 7,4,https://www.septa.org/schedules/442
+445,Roxborough to Frankford Transit Ctr,bus,school,,,,,,,false,177; 179; 190; 194; 197; 198,2; 3; 7,4; 5; 7; 8,https://www.septa.org/schedules/445
+446,Henry-Cinnaminsn to Junipr-Commerce,bus,school,,,,,,,false,10; 181; 182; 190; 194; 195,1; 3; 7,4; 5,https://www.septa.org/schedules/446
+447,Frankford TC to Henry-Cinnaminson,bus,school,360.0,505.0,,,,,false,177; 179; 190; 194; 197; 198,2; 3; 7,4; 5; 7; 8; 9,https://www.septa.org/schedules/447
+448,Broad-Vine to Upper Roxborough,bus,school,360.0,475.0,,,,,false,181; 190; 194; 195,1; 3; 7,4; 5,https://www.septa.org/schedules/448
+450,Frankford-Linden to Bustletn-Verree,bus,school,,,,,,,false,170; 172; 173; 174,5,6; 10,https://www.septa.org/schedules/450
+452,Academy-Medford to Bustleton-Verree,bus,school,,,,,,,false,170; 172,5,10,https://www.septa.org/schedules/452
+461,Bustleton-Verree to Academy-Chalfnt,bus,school,,,,,,,false,142; 170; 172,5; 6,10,https://www.septa.org/schedules/461
+462,Welsh-Bridal to Academy-Chalfont,bus,school,,,,,,,false,170; 172; 173; 174,5,6; 10,https://www.septa.org/schedules/462
+475,Bustltn-County Ln to Verree-Marchmn,bus,school,240.0,504.0,,,,,false,142; 170; 172,5; 6,10,https://www.septa.org/schedules/475
+476,Southamptn-Blvd to Verree-Marchman,bus,school,360.0,680.0,,,,,false,170; 172,5,10,https://www.septa.org/schedules/476
+477,Academy-Comly to Verree-Marchman,bus,school,360.0,682.0,,,,,false,170; 172,5,10,https://www.septa.org/schedules/477
+478,Welsh-Blvd to Verree-Marchman,bus,school,360.0,674.0,,,,,false,172; 174,5,6; 10,https://www.septa.org/schedules/478
+484,Holy Redmr Hosptl to Cottmn-Torrsdl,bus,school,,,,,,,false,152; 153; 172; 173; 174,4; 5; 12,6; 10,https://www.septa.org/schedules/484
+490,Fox Chase Loop to Verree-Marchman,bus,school,,,,,,,false,172,5,10,https://www.septa.org/schedules/490
+492,Bustletn-Rennard to Verree-Marchman,bus,school,180.0,676.0,,,,,false,170; 172,5,10,https://www.septa.org/schedules/492
+495,Southmptn-Worthngtn to 10th-Lycomng,bus,school,,,,,,,false,170; 172; 177; 179; 180; 197; 202; 203,2; 3; 5,5; 7; 9; 10,https://www.septa.org/schedules/495
+B1 OWL,Midnight-5am Service (Bus) for B1,bus,overnight,,,,,,,false,175; 181; 182; 184; 185; 190; 197; 198; 201,1; 3; 4; 8,1; 2; 5; 8; 9,https://www.septa.org/schedules/B1_OWL
+BLVDDIR,Blvd Direct Neshaminy Mall to FTC,bus,regular,13.8,16.0,15.0,16.0,15.0,16.0,false,18; 170; 172; 173; 174; 177; 179; 202,2; 5; 6,6; 7; 10,https://www.septa.org/schedules/BLVDDIR
+D1 Bus,Route 101 Bus,bus,rail replacement,,,,,,,false,161; 163; 164; 165,9; 26,,https://www.septa.org/schedules/D1_BUS
+D2 Bus,Route 102 Bus,bus,rail replacement,,,,,,,false,162; 163; 164,8; 26,,https://www.septa.org/schedules/D2_BUS
+FOX Bus,Fox Chase Shuttle Bus,bus,no trips,,,,,,,false,,,,https://www.septa.org/schedules/FOX_BUS
+K,Ridge-Midvale to Arrott Transit Ctr,bus,regular,14.7,22.0,21.2,29.0,31.3,33.0,false,179; 190; 194; 198; 201; 203,2; 3; 4; 7,4; 7; 8; 9,https://www.septa.org/schedules/K
+L1 OWL,Midnight-5am Service (Bus) for L1,bus,overnight,,,,,,,false,10; 164; 175; 177; 179; 180; 181; 182; 188; 191; 192; 197,1; 2; 7; 8; 26,1; 3; 4; 5; 6; 7,https://www.septa.org/schedules/L1_OWL
+LUCYGO,Gold Loop through University City,bus,regular,17.6,30.0,,,,,false,10; 188,7; 8,3,https://www.septa.org/schedules/LUCYGO
+LUCYGR,Green Loop through University City,bus,regular,18.9,30.0,,,,,false,10; 188,7; 8,3,https://www.septa.org/schedules/LUCYGR
+M1 Bus,NHSL Shuttle Bus,bus,rail replacement,20.0,30.0,20.0,21.0,30.0,31.0,false,54; 149,17,,https://www.septa.org/schedules/M1_BUS
+MANN,Mann Loop,bus,no trips,,,,,,,false,,,,https://www.septa.org/schedules/MANN
+NOR Bus,Manayunk/Norristown Shuttle Bus,bus,rail replacement,,,,,,,false,54,7; 12; 17,,https://www.septa.org/schedules/NOR_BUS
+T Bus,City Hall to 40th-Market,bus,no trips,,,,,,,false,,,,https://www.septa.org/schedules/T_BUS
+WTR Bus,West Trenton Shuttle Bus,bus,no trips,,,,,,,false,,,,https://www.septa.org/schedules/WTR_BUS
