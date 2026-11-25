@@ -1,0 +1,1761 @@
+{
+ "type": "FeatureCollection",
+ "name": "septa_accelerate_projects",
+ "metadata": {
+  "title": "SEPTA Accelerate projects",
+  "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)",
+  "source_url": "https://www.septa.org/accelerate/",
+  "created": "2026-11-11",
+  "crs": "EPSG:4326",
+  "geometry_precision_values": {
+   "approx_station": "Hand-entered coordinates, typically within ~100-300 m. Snap to GTFS stops before district joins.",
+   "line_schematic": "Line drawn through approximate station coordinates or a few waypoints; not track-accurate.",
+   "corridor_schematic": "Street corridor drawn from a few approximate waypoints; extent partly assumed (see location_note).",
+   "endpoints_only": "Named endpoints only; alignment not given in the source.",
+   "none": "No location in the source (systemwide or unnamed sites); geometry is null."
+  },
+  "status_values": "proposed | underway | underway (procurement) | completed | status not stated"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "id": "ACC-001",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-001",
+    "name": "Transit Police expansion",
+    "program": "Safer, Cleaner SEPTA",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "systemwide",
+    "project_type": "operations",
+    "status": "underway",
+    "lines": [],
+    "description": "Expand Transit Police to 220 uniformed officers with data-driven deployment.",
+    "quantities": "220 officers",
+    "location_note": null,
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "30-31",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-002",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-002",
+    "name": "30 in 30 station deep cleaning",
+    "program": "Safer, Cleaner SEPTA",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "Metro",
+    "project_type": "operations",
+    "status": "underway",
+    "lines": [],
+    "description": "Deep clean 30 stations every 30 days.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "30-31",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-003",
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -75.2588,
+      39.9622
+     ],
+     [
+      -75.0779,
+      40.0228
+     ],
+     [
+      -75.137,
+      40.0418
+     ],
+     [
+      -75.1739,
+      39.9056
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-003",
+    "name": "Pit-crew vehicle cleaning at line ends",
+    "program": "Safer, Cleaner SEPTA",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "Metro",
+    "project_type": "operations",
+    "status": "underway",
+    "lines": [
+     "B",
+     "L"
+    ],
+    "description": "Pit-crew style cleaning of B and L vehicles at line terminals.",
+    "quantities": null,
+    "location_note": "Terminals assumed: 69th St, Frankford TC, Fern Rock TC, NRG",
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "30-31",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-004",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.2588,
+     39.9622
+    ]
+   },
+   "properties": {
+    "id": "ACC-004",
+    "name": "Full-height fare gates",
+    "program": "Safer, Cleaner SEPTA",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "Metro",
+    "project_type": "station - fare gates",
+    "status": "underway",
+    "lines": [],
+    "description": "Full-height fare gates: piloted at 69th Street, deployed at nine more stations, expanding to 13 more Metro stations over the next year.",
+    "quantities": "1 pilot + 9 deployed + 13 planned",
+    "location_note": "Only the 69th St pilot is named; the other 22 stations are not identified in the document.",
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "30-31",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-005",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-005",
+    "name": "Accessible wayfinding and signage",
+    "program": "Better Stations, Better Metro",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "Metro",
+    "project_type": "wayfinding",
+    "status": "underway",
+    "lines": [],
+    "description": "New accessible wayfinding vocabulary and signage; in place at 28 B Line stations and across Center City, 26 more stations over 18 months.",
+    "quantities": "28 done + 26 planned",
+    "location_note": "The 26 upcoming stations are not named.",
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "32-33",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-006",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.1688,
+     39.9298
+    ]
+   },
+   "properties": {
+    "id": "ACC-006",
+    "name": "Tasker-Morris Station upgrade",
+    "program": "Better Stations, Better Metro",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "Metro",
+    "project_type": "station - accessibility",
+    "status": "status not stated",
+    "lines": [
+     "B"
+    ],
+    "description": "Elevators street-to-mezzanine and mezzanine-to-platform, lighting, call boxes, HD cameras, safety and wayfinding signage. ~3,000 daily riders.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "32-33",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-007",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.1832,
+     39.9549
+    ]
+   },
+   "properties": {
+    "id": "ACC-007",
+    "name": "Drexel Station at 30th Street upgrade",
+    "program": "Better Stations, Better Metro",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "Metro",
+    "project_type": "station",
+    "status": "status not stated",
+    "lines": [
+     "L"
+    ],
+    "description": "Station upgrade cited as an example.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "32-33",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-008",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.1557,
+     39.9873
+    ]
+   },
+   "properties": {
+    "id": "ACC-008",
+    "name": "Susquehanna-Dauphin Station upgrade",
+    "program": "Better Stations, Better Metro",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "Metro",
+    "project_type": "station",
+    "status": "status not stated",
+    "lines": [
+     "B"
+    ],
+    "description": "Station upgrade cited as an example.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "32-33",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-009",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-009",
+    "name": "New Bus Network",
+    "program": "A New Era of Bus Travel",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "bus",
+    "project_type": "network redesign",
+    "status": "underway",
+    "lines": [],
+    "description": "Bus network redesign: 21 newly frequent routes (15 min or better, 7 days), route extensions and realignments; 800,000 more people within 1/4 mile of frequent bus.",
+    "quantities": "21 newly frequent routes",
+    "location_note": "The 21 frequent routes are not listed in the document.",
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "34-35",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-010",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.1535,
+      40.0775
+     ],
+     [
+      -75.1385,
+      40.0703
+     ],
+     [
+      -75.106,
+      40.0645
+     ],
+     [
+      -75.0835,
+      40.056
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-010",
+    "name": "New Route 72 (Cheltenham Avenue)",
+    "program": "A New Era of Bus Travel",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "bus",
+    "project_type": "new route",
+    "status": "proposed",
+    "lines": [
+     "72"
+    ],
+    "description": "New bus route along Cheltenham Avenue.",
+    "quantities": null,
+    "location_note": "Drawn along Cheltenham Ave; route termini are not given in the document.",
+    "scope": "site-specific",
+    "geometry_precision": "corridor_schematic",
+    "source_pages": "34-35",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-011",
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -75.1446,
+      40.039
+     ],
+     [
+      -75.1455,
+      39.93
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-011",
+    "name": "New Route 76 (Olney to Pennsport)",
+    "program": "A New Era of Bus Travel",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "bus",
+    "project_type": "new route",
+    "status": "proposed",
+    "lines": [
+     "76"
+    ],
+    "description": "New bus route connecting Olney and Pennsport.",
+    "quantities": null,
+    "location_note": "Endpoints only (Olney TC, Pennsport); alignment not given in the document.",
+    "scope": "site-specific",
+    "geometry_precision": "endpoints_only",
+    "source_pages": "34-35",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-012",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-012",
+    "name": "SEPTA GO on-demand zones",
+    "program": "A New Era of Bus Travel",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "bus",
+    "project_type": "on-demand service",
+    "status": "proposed",
+    "lines": [],
+    "description": "Three on-demand SEPTA GO zones in high-need areas.",
+    "quantities": "3 zones",
+    "location_note": "Zone locations not given.",
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "34-35",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-013",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-013",
+    "name": "Bus stop signs and ePaper displays",
+    "program": "A New Era of Bus Travel",
+    "section": "1. Strengthening Our Foundation",
+    "mode": "bus",
+    "project_type": "rider information",
+    "status": "underway",
+    "lines": [],
+    "description": "Replace tens of thousands of bus stop signs; 10 solar ePaper displays debuted in 2026, location studies for 90 more.",
+    "quantities": "10 ePaper installed + 90 studied",
+    "location_note": null,
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "34-35",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-014",
+   "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.194,
+       39.956
+      ],
+      [
+       -75.224,
+       39.975
+      ],
+      [
+       -75.2465,
+       39.9855
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.244,
+       39.9452
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.23,
+       39.939
+      ],
+      [
+       -75.258,
+       39.92
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.235,
+       39.933
+      ],
+      [
+       -75.2595,
+       39.9183
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.239,
+       39.918
+      ],
+      [
+       -75.241,
+       39.906
+      ]
+     ],
+     [
+      [
+       -75.2588,
+       39.9622
+      ],
+      [
+       -75.2925,
+       39.947
+      ],
+      [
+       -75.346,
+       39.918
+      ],
+      [
+       -75.3878,
+       39.9181
+      ]
+     ],
+     [
+      [
+       -75.2588,
+       39.9622
+      ],
+      [
+       -75.2925,
+       39.947
+      ],
+      [
+       -75.271,
+       39.9065
+      ]
+     ],
+     [
+      [
+       -75.2465,
+       39.9705
+      ],
+      [
+       -75.198,
+       39.9745
+      ],
+      [
+       -75.159,
+       39.9715
+      ],
+      [
+       -75.136,
+       39.969
+      ],
+      [
+       -75.096,
+       39.985
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-014",
+    "name": "Trolley fleet replacement (130 low-floor LRVs)",
+    "program": "Trolley Modernization",
+    "section": "2. Modernizing Our System",
+    "mode": "trolley",
+    "project_type": "fleet",
+    "status": "underway",
+    "lines": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "T5",
+     "D1",
+     "D2",
+     "G"
+    ],
+    "description": "Replace the 40-year-old trolley fleet with 130 accessible low-floor light rail vehicles.",
+    "quantities": "130 vehicles",
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "line_schematic",
+    "source_pages": "6-7, 40-41",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-015",
+   "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.194,
+       39.956
+      ],
+      [
+       -75.224,
+       39.975
+      ],
+      [
+       -75.2465,
+       39.9855
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.244,
+       39.9452
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.23,
+       39.939
+      ],
+      [
+       -75.258,
+       39.92
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.235,
+       39.933
+      ],
+      [
+       -75.2595,
+       39.9183
+      ]
+     ],
+     [
+      [
+       -75.162,
+       39.9526
+      ],
+      [
+       -75.183,
+       39.9545
+      ],
+      [
+       -75.203,
+       39.9496
+      ],
+      [
+       -75.239,
+       39.918
+      ],
+      [
+       -75.241,
+       39.906
+      ]
+     ],
+     [
+      [
+       -75.2588,
+       39.9622
+      ],
+      [
+       -75.2925,
+       39.947
+      ],
+      [
+       -75.346,
+       39.918
+      ],
+      [
+       -75.3878,
+       39.9181
+      ]
+     ],
+     [
+      [
+       -75.2588,
+       39.9622
+      ],
+      [
+       -75.2925,
+       39.947
+      ],
+      [
+       -75.271,
+       39.9065
+      ]
+     ],
+     [
+      [
+       -75.2465,
+       39.9705
+      ],
+      [
+       -75.198,
+       39.9745
+      ],
+      [
+       -75.159,
+       39.9715
+      ],
+      [
+       -75.136,
+       39.969
+      ],
+      [
+       -75.096,
+       39.985
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-015",
+    "name": "Trolley stations and corridors",
+    "program": "Trolley Modernization",
+    "section": "2. Modernizing Our System",
+    "mode": "trolley",
+    "project_type": "stations + corridor",
+    "status": "underway",
+    "lines": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "T5",
+     "D1",
+     "D2",
+     "G"
+    ],
+    "description": "Accessible stations with shelters, seating, real-time info and wayfinding; enhanced tunnel stations; sidewalk and separated bike lane improvements; stop consolidation and signal priority; 5-min peak on T, 15-min peak on D.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "line_schematic",
+    "source_pages": "6-7, 40-41",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-016",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.2588,
+      39.9622
+     ],
+     [
+      -75.247,
+      39.9625
+     ],
+     [
+      -75.2245,
+      39.96
+     ],
+     [
+      -75.214,
+      39.959
+     ],
+     [
+      -75.2017,
+      39.9572
+     ],
+     [
+      -75.1897,
+      39.9557
+     ],
+     [
+      -75.1832,
+      39.9549
+     ],
+     [
+      -75.1652,
+      39.9525
+     ],
+     [
+      -75.1535,
+      39.9512
+     ],
+     [
+      -75.1438,
+      39.9498
+     ],
+     [
+      -75.1407,
+      39.9604
+     ],
+     [
+      -75.136,
+      39.969
+     ],
+     [
+      -75.131,
+      39.9853
+     ],
+     [
+      -75.1273,
+      39.9887
+     ],
+     [
+      -75.1135,
+      39.9965
+     ],
+     [
+      -75.096,
+      40.008
+     ],
+     [
+      -75.088,
+      40.0145
+     ],
+     [
+      -75.084,
+      40.017
+     ],
+     [
+      -75.0779,
+      40.0228
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-016",
+    "name": "New L Line subway cars and signal system",
+    "program": "Modern Metro and Station Program",
+    "section": "2. Modernizing Our System",
+    "mode": "Metro",
+    "project_type": "fleet + signals",
+    "status": "underway",
+    "lines": [
+     "L"
+    ],
+    "description": "New Market-Frankford cars arriving from 2029 (open gangways, wider doors) and new signal system; up to 3-minute headways.",
+    "quantities": "200 cars",
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "line_schematic",
+    "source_pages": "8-9, 42-43",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-017",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.137,
+      40.0418
+     ],
+     [
+      -75.1446,
+      40.039
+     ],
+     [
+      -75.151,
+      40.0093
+     ],
+     [
+      -75.1557,
+      39.9873
+     ],
+     [
+      -75.159,
+      39.9715
+     ],
+     [
+      -75.161,
+      39.962
+     ],
+     [
+      -75.1636,
+      39.9524
+     ],
+     [
+      -75.1645,
+      39.9488
+     ],
+     [
+      -75.1672,
+      39.9361
+     ],
+     [
+      -75.1688,
+      39.9298
+     ],
+     [
+      -75.17,
+      39.9244
+     ],
+     [
+      -75.1715,
+      39.9168
+     ],
+     [
+      -75.1739,
+      39.9056
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-017",
+    "name": "New B Line vehicles",
+    "program": "Modern Metro and Station Program",
+    "section": "2. Modernizing Our System",
+    "mode": "Metro",
+    "project_type": "fleet",
+    "status": "proposed",
+    "lines": [
+     "B"
+    ],
+    "description": "Replace 125 B-IV cars that are 40+ years old.",
+    "quantities": "replaces 125 cars",
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "line_schematic",
+    "source_pages": "42-43",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-018",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.2588,
+      39.9622
+     ],
+     [
+      -75.29,
+      39.999
+     ],
+     [
+      -75.3172,
+      40.0213
+     ],
+     [
+      -75.3418,
+      40.0367
+     ],
+     [
+      -75.3425,
+      40.0698
+     ],
+     [
+      -75.3448,
+      40.1045
+     ],
+     [
+      -75.343,
+      40.1132
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-018",
+    "name": "New M Line vehicles",
+    "program": "Modern Metro and Station Program",
+    "section": "2. Modernizing Our System",
+    "mode": "Metro",
+    "project_type": "fleet",
+    "status": "proposed",
+    "lines": [
+     "M"
+    ],
+    "description": "Replace the 26-car Norristown High Speed Line fleet in service since 1993.",
+    "quantities": "replaces 26 cars",
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "line_schematic",
+    "source_pages": "42-43",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-019",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-019",
+    "name": "Metro Station Improvement Program",
+    "program": "Modern Metro and Station Program",
+    "section": "2. Modernizing Our System",
+    "mode": "Metro",
+    "project_type": "station - accessibility",
+    "status": "proposed",
+    "lines": [
+     "L",
+     "B",
+     "M",
+     "T",
+     "D",
+     "G"
+    ],
+    "description": "Elevators at every Metro station, new headhouses, waterproofing, lighting, communications and safety systems; full accessibility at every Metro station.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "all Metro stations",
+    "geometry_precision": "none",
+    "source_pages": "8-9, 42-43, 58",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-020",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-020",
+    "name": "Silverliner VI Regional Rail fleet",
+    "program": "Regional Rail Vehicles",
+    "section": "2. Modernizing Our System",
+    "mode": "Regional Rail",
+    "project_type": "fleet",
+    "status": "underway (procurement)",
+    "lines": [],
+    "description": "Replace the 50-year-old Silverliner IV fleet with Silverliner VI cars, 2030-2035: level boarding, bike storage, 35% faster boarding.",
+    "quantities": "230 cars",
+    "location_note": null,
+    "scope": "all Regional Rail lines",
+    "geometry_precision": "none",
+    "source_pages": "44-45",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-021",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.182,
+      39.9557
+     ],
+     [
+      -75.179,
+      39.956
+     ],
+     [
+      -75.1775,
+      39.9556
+     ],
+     [
+      -75.176,
+      39.9555
+     ],
+     [
+      -75.1745,
+      39.9553
+     ],
+     [
+      -75.173,
+      39.955
+     ],
+     [
+      -75.1677,
+      39.954
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-021",
+    "name": "Schuylkill-to-Suburban Reconstruction",
+    "program": "Rebuilding Regional Rail's Core",
+    "section": "2. Modernizing Our System",
+    "mode": "Regional Rail",
+    "project_type": "bridges + interlocking",
+    "status": "proposed",
+    "lines": [
+     "all Regional Rail"
+    ],
+    "description": "Repair Schuylkill River bridge, rehab bridge over CSX, repair 23rd St Viaduct, replace 22nd and 21st St bridges, rebuild 20th St Interlocking, reconfigure junctions for through-running. 400+ trains, 90,000+ daily riders.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "corridor_schematic",
+    "source_pages": "46-47",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-022",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.2078,
+     40.0154
+    ]
+   },
+   "properties": {
+    "id": "ACC-022",
+    "name": "Wissahickon Transit Center",
+    "program": "Building a Better Bus Network",
+    "section": "2. Modernizing Our System",
+    "mode": "bus",
+    "project_type": "transit center",
+    "status": "proposed",
+    "lines": [],
+    "description": "New shelters, lighting and operator facilities; 7,000 daily riders on 11 routes.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "48-49",
+    "dvrpc_tip_related": "115472",
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-023",
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -75.1435,
+      39.922
+     ],
+     [
+      -75.15,
+      39.9165
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-023",
+    "name": "South Philadelphia Transit Center",
+    "program": "Building a Better Bus Network",
+    "section": "2. Modernizing Our System",
+    "mode": "bus",
+    "project_type": "transit center",
+    "status": "proposed",
+    "lines": [],
+    "description": "Dual-site transit center at Pier 70 and South Front Street connecting 7 routes and consolidating ends-of-line.",
+    "quantities": null,
+    "location_note": "South Front St site location approximate.",
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "48-49",
+    "dvrpc_tip_related": "115472",
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-024",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-024",
+    "name": "Camera-Assisted Transit Enforcement",
+    "program": "Building a Better Bus Network",
+    "section": "2. Modernizing Our System",
+    "mode": "bus/trolley",
+    "project_type": "enforcement",
+    "status": "underway",
+    "lines": [],
+    "description": "Camera enforcement of bus/trolley lanes with the PPA on 16 bus routes and T and G trolleys.",
+    "quantities": "16 routes",
+    "location_note": null,
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "48-49",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-025",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-025",
+    "name": "Bus lane and corridor program",
+    "program": "Building a Better Bus Network",
+    "section": "2. Modernizing Our System",
+    "mode": "bus",
+    "project_type": "corridor",
+    "status": "underway",
+    "lines": [],
+    "description": "Up to 25 new miles of bus lanes plus enhanced stops, transit signal priority and safer streets.",
+    "quantities": "up to 25 miles",
+    "location_note": "Corridors beyond Olney Ave, Roosevelt Blvd and Route 47 not named.",
+    "scope": "systemwide",
+    "geometry_precision": "none",
+    "source_pages": "48-49",
+    "dvrpc_tip_related": "115472",
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-026",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.153,
+      40.042
+     ],
+     [
+      -75.1446,
+      40.039
+     ],
+     [
+      -75.129,
+      40.0372
+     ],
+     [
+      -75.1205,
+      40.036
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-026",
+    "name": "Olney Avenue bus corridor",
+    "program": "Building a Better Bus Network",
+    "section": "2. Modernizing Our System",
+    "mode": "bus",
+    "project_type": "corridor",
+    "status": "proposed",
+    "lines": [],
+    "description": "Block-long bus lanes, queue jumps, reconfigured intersections; 20,000 daily riders.",
+    "quantities": null,
+    "location_note": "Corridor extent not specified; drawn Ogontz Ave to Front St.",
+    "scope": "site-specific",
+    "geometry_precision": "corridor_schematic",
+    "source_pages": "48-49",
+    "dvrpc_tip_related": "115472",
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-027",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.0779,
+      40.0228
+     ],
+     [
+      -75.071,
+      40.031
+     ],
+     [
+      -75.06,
+      40.0525
+     ],
+     [
+      -75.028,
+      40.0815
+     ],
+     [
+      -75.013,
+      40.0955
+     ],
+     [
+      -74.989,
+      40.118
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-027",
+    "name": "Roosevelt Boulevard bus lanes",
+    "program": "Building a Better Bus Network",
+    "section": "2. Modernizing Our System",
+    "mode": "bus",
+    "project_type": "corridor",
+    "status": "proposed",
+    "lines": [],
+    "description": "Nearly 15 miles of new bus lanes from Frankford Transit Center to the far Northeast.",
+    "quantities": "~15 miles",
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "corridor_schematic",
+    "source_pages": "48-49",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-028",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.1557,
+      39.9165
+     ],
+     [
+      -75.1488,
+      39.951
+     ],
+     [
+      -75.144,
+      39.97
+     ],
+     [
+      -75.1375,
+      39.9915
+     ],
+     [
+      -75.1298,
+      40.0368
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-028",
+    "name": "Route 47 transit priority",
+    "program": "Building a Better Bus Network",
+    "section": "2. Modernizing Our System",
+    "mode": "bus",
+    "project_type": "corridor",
+    "status": "proposed",
+    "lines": [
+     "47"
+    ],
+    "description": "Transit signal priority and upgraded stops on narrow streets.",
+    "quantities": null,
+    "location_note": "Drawn along 5th St, Whitman Plaza to Olney Ave.",
+    "scope": "site-specific",
+    "geometry_precision": "corridor_schematic",
+    "source_pages": "48-49",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-029",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.3118,
+     40.073
+    ]
+   },
+   "properties": {
+    "id": "ACC-029",
+    "name": "Conshohocken Station TOD",
+    "program": "Transit Oriented Communities",
+    "section": "2. Modernizing Our System",
+    "mode": "Regional Rail",
+    "project_type": "TOD",
+    "status": "underway",
+    "lines": [
+     "Manayunk/Norristown"
+    ],
+    "description": "300-unit residential complex on 6.5 acres with cafe; $332M revenue over a 99-year lease.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "50-51",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-030",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.2246,
+     40.1543
+    ]
+   },
+   "properties": {
+    "id": "ACC-030",
+    "name": "Ambler Station TOD",
+    "program": "Transit Oriented Communities",
+    "section": "2. Modernizing Our System",
+    "mode": "Regional Rail",
+    "project_type": "TOD",
+    "status": "proposed",
+    "lines": [
+     "Lansdale/Doylestown"
+    ],
+    "description": "Redevelop surface parking into mixed-use infill.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "50-51",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-031",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.172,
+     40.0365
+    ]
+   },
+   "properties": {
+    "id": "ACC-031",
+    "name": "Germantown Station TOD",
+    "program": "Transit Oriented Communities",
+    "section": "2. Modernizing Our System",
+    "mode": "Regional Rail",
+    "project_type": "TOD",
+    "status": "proposed",
+    "lines": [
+     "Chestnut Hill East"
+    ],
+    "description": "Redevelop 120-128 East Chelten Avenue.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "50-51",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-032",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.2588,
+     39.9622
+    ]
+   },
+   "properties": {
+    "id": "ACC-032",
+    "name": "69th Street Transit Center TOD and South Terminal",
+    "program": "Transit Oriented Communities",
+    "section": "2. Modernizing Our System",
+    "mode": "Metro/bus",
+    "project_type": "TOD + bus facility",
+    "status": "proposed",
+    "lines": [
+     "L",
+     "D",
+     "M"
+    ],
+    "description": "Mixed-use development with South Terminal bus facility renovation; D and L connections.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "50-51",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-033",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-033",
+    "name": "Regional Rail Master Plan (15-minute network)",
+    "program": "Reimagining Regional Rail",
+    "section": "3. Leading the Region",
+    "mode": "Regional Rail",
+    "project_type": "service frequency",
+    "status": "proposed",
+    "lines": [],
+    "description": "47% more trains per week than 2019; nearly half of 150+ stations with 15-min service 7 days a week; 75 miles of new frequent rail.",
+    "quantities": null,
+    "location_note": "Station-level list is in map graphics not readable from the PDF text.",
+    "scope": "Regional Rail network",
+    "geometry_precision": "none",
+    "source_pages": "10-11, 54-57",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-034",
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -75.2445,
+      39.8765
+     ],
+     [
+      -75.4596,
+      39.901
+     ],
+     [
+      -75.0835,
+      40.0765
+     ],
+     [
+      -75.4836,
+      40.0429
+     ],
+     [
+      -75.207,
+      40.081
+     ],
+     [
+      -75.344,
+      40.118
+     ]
+    ]
+   },
+   "properties": {
+    "id": "ACC-034",
+    "name": "S Lines: three new 15-minute Regional Rail services",
+    "program": "Reimagining Regional Rail",
+    "section": "3. Leading the Region",
+    "mode": "Regional Rail",
+    "project_type": "service frequency",
+    "status": "proposed",
+    "lines": [
+     "Airport",
+     "Media/Wawa",
+     "Fox Chase",
+     "Paoli/Thorndale",
+     "Chestnut Hill East",
+     "Manayunk/Norristown"
+    ],
+    "description": "Three new 15-minute S Line services to Airport, Wawa, Fox Chase, Paoli, Chestnut Hill East and Norristown.",
+    "quantities": null,
+    "location_note": "Pairing of endpoints into the three S Lines not specified in the text.",
+    "scope": "site-specific",
+    "geometry_precision": "endpoints_only",
+    "source_pages": "54-57",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-035",
+   "geometry": null,
+   "properties": {
+    "id": "ACC-035",
+    "name": "Accessible, integrated Regional Rail network",
+    "program": "Reimagining Regional Rail",
+    "section": "3. Leading the Region",
+    "mode": "Regional Rail",
+    "project_type": "accessibility + fare integration",
+    "status": "proposed",
+    "lines": [],
+    "description": "100% accessible Regional Rail; integrated transfers with bus and Metro; fare integration with Amtrak, NJ Transit and PATCO.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "Regional Rail network",
+    "geometry_precision": "none",
+    "source_pages": "54-57",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-036",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.1652,
+     39.9525
+    ]
+   },
+   "properties": {
+    "id": "ACC-036",
+    "name": "15th Street/City Hall Station (L) renovation",
+    "program": "Modern Metro and Station Program",
+    "section": "2. Modernizing Our System",
+    "mode": "Metro",
+    "project_type": "station",
+    "status": "completed",
+    "lines": [
+     "L"
+    ],
+    "description": "New elevators, lighting, finishes and Ray King art installation.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "42-43",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-037",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.1636,
+     39.9524
+    ]
+   },
+   "properties": {
+    "id": "ACC-037",
+    "name": "City Hall Station (B) renovation",
+    "program": "Modern Metro and Station Program",
+    "section": "2. Modernizing Our System",
+    "mode": "Metro",
+    "project_type": "station",
+    "status": "completed",
+    "lines": [
+     "B"
+    ],
+    "description": "New fare gates, attendant booths, refinished stairwells and flooring.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "42-43",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-038",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.4836,
+     40.0429
+    ]
+   },
+   "properties": {
+    "id": "ACC-038",
+    "name": "Paoli Station",
+    "program": "Reimagining Regional Rail",
+    "section": "3. Leading the Region",
+    "mode": "Regional Rail",
+    "project_type": "station - accessibility",
+    "status": "completed",
+    "lines": [
+     "Paoli/Thorndale"
+    ],
+    "description": "High-level, accessible station.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "54-57",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "ACC-039",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.361,
+     39.901
+    ]
+   },
+   "properties": {
+    "id": "ACC-039",
+    "name": "Crum Creek Viaduct replacement",
+    "program": "Efficiency and Accountability",
+    "section": "Context",
+    "mode": "Regional Rail",
+    "project_type": "bridge",
+    "status": "completed",
+    "lines": [
+     "Media/Wawa"
+    ],
+    "description": "$89.9M replacement of the 1895 viaduct.",
+    "quantities": null,
+    "location_note": null,
+    "scope": "site-specific",
+    "geometry_precision": "approx_station",
+    "source_pages": "20",
+    "dvrpc_tip_related": null,
+    "source": "SEPTA Accelerate: Best-in-Class Vision for a Greater Philadelphia Region (Sept 2026)"
+   }
+  }
+ ]
+}

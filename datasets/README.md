@@ -7,10 +7,12 @@ Cleaned, documented datasets. Each dataset gets its own folder with its data fil
 | Dataset | Description | Format | Last updated |
 |---|---|---|---|
 | [SEPTA bus delay](septa-region/septa-bus-delay/) | Bus, trolley and Metro delay by route, stop, month and hour, Nov 2025 – Oct 2026 | CSV | 2026-10-15 |
+| [SEPTA bus routes](septa-region/septa-bus-routes/) | 155 bus and trackless trolley routes with measured weekday, Saturday and Sunday frequency, SEPTA's frequent marking and the House, Senate and Council districts each crosses; route lines for mapping | CSV + GeoJSON | 2026-11-25 |
 | [SEPTA FY27 unfunded capital projects](septa-region/septa-fy27-unfunded-projects/) | 46 deferred or descoped projects, $2.04B, by county, ADA projects flagged | CSV | 2026-10-15 |
 | [SEPTA Regional Rail stations](septa-region/septa-regional-rail-stations/) | 155 station rows with location, accessibility, amenities, ridership counts and SEPTA-assigned districts | CSV | 2026-11-10 |
 | [Regional Rail stations by district](septa-region/regional-rail-station-districts/) | Each station placed in its PA House and Senate district, with 2025–26 member and 2026 seat status | CSV | 2026-11-10 |
 | [SEPTA Accelerate: proposed service by station](septa-region/septa-accelerate-station-service/) | 231 Regional Rail and Metro stations with the frequency and accessibility the Accelerate plan proposes, in House, Senate and Council districts; trolley stops by district; a one-row-per-district summary | CSV | 2026-11-19 |
+| [DVRPC long-range plan: SEPTA projects and costs](septa-region/dvrpc-lrp-septa-projects/) | 84 SEPTA projects in DVRPC's Connections 2050 update (39 funded, 45 unfunded) with scope and cost, revised by Amendment 1 | CSV | 2026-11-24 |
 | [DVRPC FFY2027 TIP projects](septa-region/dvrpc-pa-tip-ffy2027/) | 407 draft PA TIP projects (70 transit) placed in House and Senate districts | CSV | 2026-11-10 |
 
 ## Philadelphia
